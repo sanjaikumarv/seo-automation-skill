@@ -1,0 +1,11 @@
+{
+  "system": "ai-automation",
+  "active_workflow": null,
+  "execution_mode": "STRICT_SEQUENTIAL",
+  "pipeline_status": "IDLE",
+  "current_step": 0,
+  "started_at": null,
+  "completed_at": null,
+  "active_step_details": null,
+  "history": []
+}
