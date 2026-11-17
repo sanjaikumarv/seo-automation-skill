@@ -1,321 +1,132 @@
 ---
 name: keyword-research
-description: Conduct comprehensive SEO keyword research to identify primary, secondary, long-tail, local SEO keywords, and search intent based on the website's business, target audience, and target location.
+description: Conduct comprehensive SEO keyword research to discover, cluster, and prioritize primary, secondary, long-tail, and local search queries with intent classification and page-to-keyword mapping.
 ---
 
-# SEO Keyword Research – Production Skill
+# SEO Keyword Research & Intent Mapping – Production Skill
 
-## 1. Role
+## 1. Role & Operational Boundary
 
-Act as a Senior SEO Strategist and Keyword Research Specialist with expertise in Google Search, keyword discovery, search intent analysis, local SEO, and competitor keyword research.
+Act as a Senior SEO Strategist and Search Intent Specialist.
 
-Your responsibility is to identify what the target audience searches for on Google and discover high-value keyword opportunities that can improve the website's organic search visibility.
+Your responsibility is to discover high-value search queries that prospective customers use on Google, deconstruct user search intent, group queries into semantic topic clusters, and map target terms directly to the website's service offerings and discovered pages.
 
-## 2. Required Inputs
+> **OPERATIONAL BOUNDARY:** This skill focuses strictly on search query discovery, search volume demand estimation, intent classification, and keyword-to-page mapping. Do not write full-length articles or landing page copy (delegated to `content-generation`) and do not perform backlink research (delegated to `off-page-seo`).
 
-Collect the following information before starting:
+---
 
-- Website URL: `{{website_url}}`
-- Website Name: `{{website_name}}`
-- Business Type: `{{business_type}}`
-- Target Country: `{{target_country}}`
-- Target City / Location: `{{target_location}}`
-- Target Audience: `{{target_audience}}`
-- Main Products / Services: `{{products_services}}`
-- Target Language: `{{target_language}}`
+## 2. Required Inputs & Prerequisites
 
-If any mandatory information is missing, ask the user before proceeding.
+### User Parameters:
+- Target Website URL: `{{website_url}}`
+- Website / Brand Name: `{{website_name}}`
+- Primary Business Niche / Offerings: `{{business_type}}`
+- Target Geographic Market: `{{target_country}}`
+- Target City / Region (for local search): `{{target_location}}`
+- Target Customer Audience: `{{target_audience}}`
 
-## 3. Research Objectives
+### Upstream Dependency (Recommended):
+- Upstream Audit Report: `outputs/seo-audit-report.md` (`SEO_AUDIT_RESULT`)
+- *Action:* Read `outputs/seo-audit-report.md` to extract the **Discovered Pages Catalog** so keywords can be mapped directly to actual website URLs.
 
-Discover and classify keywords into the following categories.
+---
 
-### A. Primary Keywords
+## 3. Keyword Research Objectives & Taxonomy
 
-Identify the most relevant keywords representing the website's main products or services.
+Discover and categorize keywords across the following five categories:
 
-Requirements:
+### A. Primary Keywords (Core Business Offerings)
+High-relevance, high-intent terms directly representing primary products or services.
+- Strong business relevance and commercial potential.
+- Aligned with high-conversion landing pages or the homepage.
+- Example pattern: `[Primary Service] Company`, `[Service] Solutions`.
 
-- High business relevance.
-- Strong alignment with the website's offerings.
-- Relevant search intent.
-- Commercial or transactional opportunities where appropriate.
+### B. Secondary & Supporting Keywords
+Sub-topic queries that support primary offerings:
+- Specific technology stacks, frameworks, methodologies, or niche service variations.
+- Synonyms and semantic variations.
+- Example pattern: `Custom [Service]`, `Enterprise [Service] Development`.
 
-Example:
-
-- Website Development Company
-- Web Development Services
-- Professional Website Developers
-
-### B. Secondary Keywords
-
-Identify supporting keywords related to primary keywords.
-
-Requirements:
-
-- Related services.
-- Specific service categories.
-- Industry-related search terms.
-- Alternative search phrases.
-- Supporting topic keywords.
-
-Example:
-
-- Custom Website Development
-- Ecommerce Website Development
-- Responsive Website Design
-- Website Redesign Services
-
-### C. Long-Tail Keywords
-
-Identify specific search queries used by potential customers.
-
-Requirements:
-
-- Conversational search queries.
-- Question-based searches.
-- Specific service requirements.
-- Problem-solving queries.
-- Purchase-intent queries.
-
-Example:
-
-- Best website development company for small businesses
-- Affordable ecommerce website development services
-- How much does it cost to build a business website?
-- Custom website development services for startups
+### C. Long-Tail & Problem-Solving Queries
+High-intent, conversational multi-word queries asked by prospective buyers:
+- Question-based searches (*"How much does ... cost?", "How to choose a ... provider"*).
+- Problem-centric searches reflecting active buying research.
 
 ### D. Local SEO Keywords
+Geographically targeted search queries based on `{{target_location}}` and `{{target_country}}`:
+- `[Service] in [Target City]`
+- `[Service] near me`
+- Local industry + location combinations.
 
-Identify location-based keywords relevant to the target business location.
+### E. Search Intent Classification
+Classify every discovered keyword into one of four standard intents:
+1. **Informational:** User seeking answers, guides, or explanations.
+2. **Navigational:** User seeking a specific company, login, or portal.
+3. **Commercial Investigation:** User comparing providers, features, pricing, or reviews.
+4. **Transactional:** User ready to hire, buy, contact, or request a quote.
 
-Requirements:
+---
 
-- City-based keywords.
-- Area and neighbourhood-based keywords where relevant.
-- Near-me search variations.
-- Location + service combinations.
-- City + industry combinations.
+## 4. Execution Methodology
 
-Example:
+1. **Ingest Site Context:** Review `outputs/seo-audit-report.md` to identify existing service pages and URL paths.
+2. **Seed Keyword Generation:** Derive seed terms from business offerings, industry terminology, and customer pain points.
+3. **Search Landscape Exploration:** Analyze search suggestions, related queries, "People Also Ask" questions, and SERP features for target geographic regions.
+4. **Intent & Demand Scoring:** Assign estimated search demand tiers (*High / Medium / Low*) and search intent.
+5. **Keyword-to-Page Mapping:** Assign primary and secondary target keywords directly to the discovered pages from the audit catalog (or flag where a new page must be created).
 
-- Website Development Company in Coimbatore
-- Web Design Company Coimbatore
-- Website Developers Near Me
-- Ecommerce Website Development in Coimbatore
-- Affordable Web Development Company in Coimbatore
+---
 
-Do not invent neighbourhoods or claim local business presence without evidence.
+## 5. Required Output Deliverable
 
-### E. Search Intent Analysis
+Save the complete keyword strategy report to:
+- **File:** `outputs/keyword-research-report.md`
+- **Context Return Variable:** `KEYWORD_RESEARCH_RESULT`
 
-Classify every keyword according to search intent.
+### Output Structure:
 
-Use these categories:
+```markdown
+# SEO Keyword Research & Strategy Report
 
-1. Informational – Users want information or answers.
-2. Navigational – Users want to find a specific website or brand.
-3. Commercial Investigation – Users compare services or providers before making a decision.
-4. Transactional – Users are ready to purchase, contact, book, or request a service.
+- **Website URL:** [URL]
+- **Target Country & Location:** [Country / Region]
+- **Audited On:** [Date]
 
-For each keyword, explain why it belongs to that category.
+## 1. Executive Summary & Strategy Overview
+[High-level overview of search demand landscape, customer intent trends, and target opportunities]
 
-## 4. Research Methodology
+## 2. Primary Keywords Matrix
+| Keyword | Search Intent | Est. Search Demand | Difficulty (Est.) | Business Value (P1/P2/P3) |
+| ------- | ------------- | ------------------ | ----------------- | ------------------------- |
+| ...     | Commercial    | High               | Medium            | P1                        |
 
-Follow these steps sequentially.
+## 3. Secondary & Supporting Keywords
+| Keyword | Related Primary Keyword | Search Intent | Target Subtopic |
+| ------- | ----------------------- | ------------- | --------------- |
 
-### Step 1: Website Analysis
+## 4. Long-Tail & Question-Based Keywords
+| Search Query | Search Intent | Customer Pain Point | Recommended Content Format |
+| ------------ | ------------- | ------------------- | -------------------------- |
 
-- Visit the supplied website.
-- Understand its business model.
-- Identify products and services.
-- Review important landing pages.
-- Extract existing keywords where observable.
-- Identify the target audience.
+## 5. Local SEO Keywords
+| Local Search Query | Target Location | Search Intent | Recommended Landing Page |
+| ------------------ | --------------- | ------------- | ------------------------ |
 
-### Step 2: Seed Keyword Generation
+## 6. Keyword-to-Page Mapping (Downstream Input for On-Page & Content)
+| Discovered Page URL | Page Classification | Primary Target Keyword | Secondary Supporting Keywords | Search Intent |
+| ------------------- | ------------------- | ---------------------- | ----------------------------- | ------------- |
+| /                   | Homepage            |                        |                               | Commercial    |
+| /services/...       | Service Page        |                        |                               | Transactional |
+| [New Page Needed]   | Solution Landing    |                        |                               | Informational |
 
-Generate relevant seed keywords from:
+## 7. Immediate Top 10 High-Impact Keyword Recommendations
+[Ranked list of top 10 keywords offering the best balance of intent and business impact]
+```
 
-- Business category.
-- Main services.
-- Products.
-- Customer problems.
-- Industry terminology.
-- Target location.
+---
 
-### Step 3: Google Search Research
+## 6. Production Quality & Safety Rules
 
-Research keyword opportunities using available sources:
-
-- Google Search autocomplete.
-- Google related searches.
-- Google People Also Ask.
-- Search result pages.
-- Relevant industry websites.
-- Google Keyword Planner, if accessible.
-- Google Trends, if accessible.
-
-Record the source and date of research.
-
-Do not claim that you accessed Google Keyword Planner or other tools unless you actually did.
-
-### Step 4: Competitor Keyword Research
-
-Identify relevant organic search competitors.
-
-Analyze:
-
-- Competitor ranking keywords.
-- Keyword gaps.
-- Competitor landing pages.
-- Search intent coverage.
-- Content opportunities.
-
-Distinguish verified competitor ranking data from keyword opportunities inferred from competitor content.
-
-### Step 5: Keyword Classification
-
-Organize all discovered keywords into:
-
-- Primary Keywords.
-- Secondary Keywords.
-- Long-Tail Keywords.
-- Local SEO Keywords.
-- Question-Based Keywords.
-- Informational Keywords.
-- Commercial Keywords.
-- Transactional Keywords.
-
-### Step 6: Keyword Prioritization
-
-Evaluate keywords based on:
-
-- Business relevance.
-- Search intent.
-- Search volume, if verified.
-- Keyword difficulty, if verified.
-- Local relevance.
-- Conversion potential.
-- Competition.
-
-Prioritize keywords based on overall business value, not search volume alone.
-
-## 5. Required Output Format
-
-Generate the research report using the following structure.
-
-### Section 1: Business Overview
-
-- Website name.
-- Website URL.
-- Business category.
-- Main services.
-- Target audience.
-- Target location.
-
-### Section 2: Primary Keywords
-
-Provide a table:
-
-| Keyword | Search Intent | Search Volume | Difficulty | Priority |
-| ------- | ------------- | ------------- | ---------- | -------- |
-
-### Section 3: Secondary Keywords
-
-| Keyword | Related Primary Keyword | Search Intent | Priority |
-| ------- | ----------------------- | ------------- | -------- |
-
-### Section 4: Long-Tail Keywords
-
-| Keyword | Search Intent | Customer Need | Recommended Page |
-| ------- | ------------- | ------------- | ---------------- |
-
-### Section 5: Local SEO Keywords
-
-| Keyword | Target Location | Search Intent | Recommended Page |
-| ------- | --------------- | ------------- | ---------------- |
-
-### Section 6: Search Intent Analysis
-
-Explain:
-
-- What the audience is searching for.
-- Why they are searching.
-- What type of content they expect.
-- Which keywords indicate buying intent.
-- Which keywords indicate research intent.
-
-### Section 7: Keyword Opportunities
-
-Identify:
-
-- High-priority keywords.
-- Low-competition opportunities, only when supported by data.
-- Local ranking opportunities.
-- Missing keyword topics.
-- Content gaps.
-
-### Section 8: Keyword-to-Page Mapping
-
-Recommend which keywords should target which website pages.
-
-Avoid assigning the same primary keyword to multiple competing pages.
-
-### Section 9: Content Recommendations
-
-Recommend:
-
-- New landing pages.
-- Service pages.
-- Blog articles.
-- Location-specific pages.
-- FAQ content.
-
-### Section 10: Final Keyword Strategy
-
-Provide:
-
-- Top 10 recommended keywords.
-- Top 10 local SEO keywords.
-- Top 10 long-tail keywords.
-- Recommended keyword targeting strategy.
-- Immediate SEO opportunities.
-
-## 6. Research Quality Rules
-
-1. Never fabricate search volume or keyword difficulty.
-2. Use verified data whenever available.
-3. If metrics are unavailable, write "Not available".
-4. Clearly distinguish observed search suggestions from actual keyword ranking data.
-5. Avoid irrelevant keywords.
-6. Do not recommend keyword stuffing.
-7. Consider the target country's language and search behaviour.
-8. Explain assumptions and data limitations.
-9. Include source references and research dates.
-10. Do not claim guaranteed Google rankings.
-
-## 7. Final Deliverable
-
-Save the complete report as:
-
-`output/keyword-research.md`
-
-Also return a structured summary containing:
-
-- Total keywords discovered.
-- Primary keyword count.
-- Secondary keyword count.
-- Long-tail keyword count.
-- Local SEO keyword count.
-- Search intent distribution.
-- Top keyword recommendations.
-- Data limitations.
-
-## 8. Completion Status
-
-Once the research is complete, return:
-
-`KEYWORD_RESEARCH_RESULT`
-
-This result must be available to the Master Orchestrator as input for the next sequential skill: Competitor Analysis.
+1. **Strict Data Honesty:** Never fabricate exact monthly search volumes or keyword difficulty percentages. When API metrics are not available, use estimated tiers: *High / Medium / Low (Estimated based on search volume indicators)*.
+2. **Prevent Cannibalization:** Never assign the exact same primary target keyword to multiple pages in the mapping table.
+3. **Save & Export:** Save report to `outputs/keyword-research-report.md` and export `KEYWORD_RESEARCH_RESULT`.

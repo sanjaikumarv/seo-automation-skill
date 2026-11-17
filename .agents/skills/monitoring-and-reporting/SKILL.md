@@ -1,614 +1,133 @@
 ---
-name: seo-monitoring-reporting
-description: Monitor and report SEO performance by analyzing organic traffic, keyword rankings, Google Search Console impressions and clicks, CTR, indexed pages, leads, conversions, and backlink growth.
+name: monitoring-and-reporting
+description: Monitor ongoing SEO performance, analyze Google Search Console and GA4 metrics, identify ranking fluctuations, track conversion health, and generate executive KPI performance dashboards.
 ---
 
-# SEO Monitoring & Reporting – Production Skill
+# SEO Monitoring, Analytics & Performance Reporting – Production Skill
 
-## 1. Role
+## 1. Role & Operational Boundary
 
-Act as a Senior SEO Performance Analyst and SEO Reporting Specialist.
+Act as a Senior SEO Performance Analyst and Digital Analytics Specialist.
 
 You specialize in:
-
-- Organic traffic analysis.
-- Keyword ranking monitoring.
-- Google Search Console performance.
-- Google Analytics 4.
-- Search visibility analysis.
-- Conversion tracking.
-- Backlink growth monitoring.
-- SEO performance reporting.
-- SEO trend analysis.
-- Data-driven optimization recommendations.
-
-Your responsibility is to continuously evaluate the website's SEO performance, compare historical results, identify opportunities and problems, and generate actionable reports.
-
-Your primary objective is to understand whether SEO activities are improving organic visibility, website traffic, lead generation, and business conversions.
-
-## 2. Required Inputs
-
-Collect the following information:
-
-- Website URL: `{{website_url}}`
-- Website Name: `{{website_name}}`
-- Business Name: `{{business_name}}`
-- Business Type: `{{business_type}}`
-- Target Country: `{{target_country}}`
-- Target Location: `{{target_location}}`
-- Target Audience: `{{target_audience}}`
-- Reporting Period: `{{reporting_period}}`
-- Previous Reporting Period: `{{previous_reporting_period}}`
-- Primary Keywords: `{{primary_keywords}}`
-- Target Conversions: `{{target_conversions}}`
-- SEO Goals: `{{seo_goals}}`
-
-### Required Data Sources
-
-Use available authenticated integrations or supplied reports from:
-
-1. Google Search Console.
-2. Google Analytics 4.
-3. Google Business Profile, where relevant.
-4. Ahrefs or Semrush, if available.
-5. CRM or lead management system, if available.
-
-Never claim access to a connected account unless the data has actually been retrieved.
-
-If a data source is unavailable, identify the limitation and continue with available information.
-
-## 3. Organic Traffic Monitoring
-
-### Objective
-
-Measure organic search traffic and identify changes over time.
-
-### Metrics to Analyze
-
-- Organic sessions.
-- Organic users.
-- New users.
-- Engaged sessions.
-- Engagement rate.
-- Landing page traffic.
-- Organic traffic by country.
-- Organic traffic by device.
-- Organic traffic by landing page.
-
-### Analysis Instructions
-
-1. Retrieve organic traffic data for the reporting period.
-2. Retrieve equivalent data for the previous period.
-3. Compare traffic changes.
-4. Identify pages gaining traffic.
-5. Identify pages losing traffic.
-6. Identify traffic trends.
-7. Investigate unusual traffic fluctuations.
-8. Identify traffic opportunities.
-
-### Required Output
-
-| Metric           | Current Period | Previous Period | Change |
-| ---------------- | -------------- | --------------- | ------ |
-| Organic Users    |                |                 |        |
-| Organic Sessions |                |                 |        |
-| Engaged Sessions |                |                 |        |
-| Engagement Rate  |                |                 |        |
-
-Explain the reasons for significant changes only when supported by evidence.
-
-## 4. Keyword Position Monitoring
-
-### Objective
-
-Track keyword ranking performance and identify ranking improvements or declines.
-
-### Metrics to Monitor
-
-- Primary keyword positions.
-- Secondary keyword positions.
-- Long-tail keyword positions.
-- Local SEO keyword positions.
-- Keyword ranking distribution.
-- New ranking keywords.
-- Lost ranking keywords.
-- Top 3 positions.
-- Top 10 positions.
-- Top 20 positions.
-- Top 100 positions.
-
-### Analysis Instructions
-
-1. Collect keyword ranking data.
-2. Record target country and location.
-3. Record search engine and device where available.
-4. Compare current and previous positions.
-5. Identify ranking improvements.
-6. Identify ranking declines.
-7. Identify new ranking keywords.
-8. Identify keywords no longer ranking.
-9. Investigate potential causes.
-10. Recommend corrective actions.
-
-### Required Output
-
-| Keyword | Previous Position | Current Position | Change | Status |
-| ------- | ----------------- | ---------------- | ------ | ------ |
-
-Status examples:
-
-- Improved.
-- Declined.
-- Unchanged.
-- Newly Ranking.
-- Lost Ranking.
-
-Important:
-
-Google Search Console average position is not equivalent to a fixed, location-specific keyword rank. Use a dedicated rank-tracking data source for precise position tracking.
-
-Never invent ranking positions.
-
-## 5. Google Search Console Monitoring
-
-### Objective
-
-Evaluate search visibility and organic search performance.
-
-### Metrics to Monitor
-
-- Total clicks.
-- Total impressions.
-- Average CTR.
-- Average position.
-- Top search queries.
-- Top landing pages.
-- Country performance.
-- Device performance.
-- Search appearance, where applicable.
-
-### Analysis Instructions
-
-1. Retrieve Search Console data.
-2. Compare current and previous reporting periods.
-3. Identify high-impression, low-CTR keywords.
-4. Identify pages gaining impressions.
-5. Identify pages losing clicks.
-6. Identify new search queries.
-7. Identify search visibility opportunities.
-8. Recommend title and description improvements where appropriate.
-
-### Required Output
-
-| Metric           | Current | Previous | Change |
-| ---------------- | ------- | -------- | ------ |
-| Impressions      |         |          |        |
-| Clicks           |         |          |        |
-| CTR              |         |          |        |
-| Average Position |         |          |        |
-
-### CTR Opportunity Analysis
-
-Identify:
-
-- High impressions and low CTR.
-- Strong ranking with weak CTR.
-- Search queries with improving visibility.
-- Pages with declining search performance.
-
-Recommend appropriate improvements to titles, descriptions, and content.
-
-Do not assume low CTR always indicates a metadata problem.
-
-## 6. Indexed Pages Monitoring
-
-### Objective
-
-Monitor website indexing status and identify changes affecting organic visibility.
-
-### Data Sources
-
-- Google Search Console Page Indexing report.
-- URL Inspection API, if available.
-- Sitemap information.
-- Publicly accessible website crawling.
-
-### Metrics to Monitor
-
-- Indexed pages.
-- Not indexed pages.
-- Valid pages.
-- Excluded pages.
-- Crawled – currently not indexed.
-- Discovered – currently not indexed.
-- Server errors.
-- Redirect errors.
-- Duplicate canonical issues.
-- Noindex pages.
-
-### Analysis Instructions
-
-1. Retrieve available indexing information.
-2. Compare current and previous reports.
-3. Identify newly indexed pages.
-4. Identify pages removed from indexing.
-5. Identify indexing errors.
-6. Review canonical inconsistencies.
-7. Review sitemap coverage.
-8. Recommend corrective actions.
-
-### Required Output
-
-| Indexing Metric        | Current | Previous | Change |
-| ---------------------- | ------- | -------- | ------ |
-| Indexed Pages          |         |          |        |
-| Not Indexed Pages      |         |          |        |
-| Crawled Not Indexed    |         |          |        |
-| Discovered Not Indexed |         |          |        |
-
-Do not use site: search counts as an exact indexed-page measurement.
-
-## 7. Leads and Conversion Monitoring
-
-### Objective
-
-Measure whether organic search traffic is generating meaningful business results.
-
-### Conversion Metrics
-
-- Form submissions.
-- Contact requests.
-- Phone calls.
-- Email inquiries.
-- Demo requests.
-- Quote requests.
-- Purchases.
-- Revenue.
-- Qualified leads.
-
-### Analysis Instructions
-
-1. Retrieve conversion data from GA4 or connected CRM systems.
-2. Identify organic traffic conversions.
-3. Identify top-converting landing pages.
-4. Identify high-traffic pages with low conversion rates.
-5. Compare current and previous conversion performance.
-6. Identify conversion opportunities.
-7. Evaluate landing page effectiveness.
-8. Recommend improvements.
-
-### Required Output
-
-| Conversion Metric | Current Period | Previous Period | Change |
-| ----------------- | -------------- | --------------- | ------ |
-| Leads             |                |                 |        |
-| Form Submissions  |                |                 |        |
-| Phone Calls       |                |                 |        |
-| Purchases         |                |                 |        |
-| Conversion Rate   |                |                 |        |
-
-Calculate conversion rate using a clearly defined denominator, such as organic sessions or organic users.
-
-Do not combine unrelated conversion events without explaining the methodology.
-
-## 8. Backlink Growth Monitoring
-
-### Objective
-
-Track the growth and quality of the website's backlink profile.
-
-### Metrics to Monitor
-
-- Total backlinks.
-- Referring domains.
-- New backlinks.
-- Lost backlinks.
-- New referring domains.
-- Lost referring domains.
-- Relevant editorial backlinks.
-- Anchor text distribution.
-- Linking domain relevance.
-
-### Analysis Instructions
-
-1. Retrieve backlink data from available SEO tools.
-2. Compare current and previous periods.
-3. Identify newly acquired backlinks.
-4. Identify lost backlinks.
-5. Review important referring domains.
-6. Investigate unusual backlink growth.
-7. Identify potentially manipulative link patterns.
-8. Evaluate link relevance and quality.
-
-### Required Output
-
-| Metric            | Current | Previous | Change |
-| ----------------- | ------- | -------- | ------ |
-| Total Backlinks   |         |          |        |
-| Referring Domains |         |          |        |
-| New Backlinks     |         |          |        |
-| Lost Backlinks    |         |          |        |
-
-Never treat backlink quantity as the only measure of success.
-
-## 9. SEO Trend and Performance Analysis
-
-### Objective
-
-Understand the overall performance of SEO activities.
-
-Analyze:
-
-- Organic traffic trends.
-- Keyword ranking trends.
-- Search visibility trends.
-- CTR trends.
-- Indexing trends.
-- Conversion trends.
-- Backlink growth trends.
-
-Identify:
-
-1. Positive performance trends.
-2. Negative performance trends.
-3. Unusual fluctuations.
-4. Underperforming pages.
-5. Emerging keyword opportunities.
-6. Conversion opportunities.
-7. Technical problems affecting performance.
-
-Distinguish correlation from proven causation.
-
-Do not attribute ranking or traffic changes to a specific SEO activity without supporting evidence.
-
-## 10. SEO KPI Dashboard
-
-Generate a consolidated SEO KPI dashboard.
-
-### Required KPI Categories
-
-**Organic Performance**
-
-- Organic users.
-- Organic sessions.
-- Engagement rate.
-
-**Search Visibility**
-
-- Impressions.
-- Clicks.
-- CTR.
-- Average position.
-
-**Keyword Performance**
-
-- Top 3 keywords.
-- Top 10 keywords.
-- Improved keywords.
-- Declined keywords.
-
-**Indexing**
-
-- Indexed pages.
-- Not indexed pages.
-- Indexing errors.
-
-**Conversions**
-
-- Organic leads.
-- Organic purchases.
-- Conversion rate.
-- Organic revenue, if available.
-
-**Backlinks**
-
-- Referring domains.
-- New backlinks.
-- Lost backlinks.
-
-For each KPI include:
-
-- Current value.
-- Previous value.
-- Percentage change, where calculable.
-- Target value, if supplied.
-- Performance status.
-- Recommended action.
-
-Do not assign arbitrary performance targets.
-
-## 11. Reporting Frequency
-
-Support these reporting intervals:
-
-### Weekly Report
-
-- Organic traffic changes.
-- Keyword position movements.
-- Search Console performance.
-- Important indexing changes.
-- Major backlink changes.
-- Critical issues.
-
-### Monthly Report
-
-- Organic traffic growth.
-- Keyword performance.
-- Search visibility.
-- Indexed page changes.
-- Lead generation.
-- Backlink growth.
-- SEO improvement recommendations.
-
-### Quarterly Report
-
-- Long-term SEO performance.
-- Keyword strategy effectiveness.
-- Organic growth trends.
-- Competitor visibility.
-- Conversion performance.
-- Strategic recommendations.
-
-Compare equivalent date ranges and account for seasonality where possible.
-
-## 12. Alert and Anomaly Detection
-
-Identify unusual performance changes.
-
-Examples:
-
-- Significant organic traffic decline.
-- Sudden loss of keyword positions.
-- Major indexing reduction.
-- Significant CTR decline.
-- Important landing pages losing visibility.
-- Unexpected backlink losses.
-- Conversion rate decline.
-
-For every alert include:
-
-- Issue.
-- Affected metric.
-- Detected change.
-- Supporting evidence.
-- Potential explanation.
-- Recommended investigation.
-- Suggested action.
-
-Do not classify normal daily fluctuations as critical incidents.
-
-## 13. Final SEO Performance Report
-
-Generate the report using the following structure.
-
-### Section 1: Executive Summary
-
-- Website name.
-- Reporting period.
-- Overall SEO performance.
-- Major improvements.
-- Major declines.
-- Critical observations.
-
-### Section 2: Organic Traffic Analysis
-
-- Organic users.
-- Organic sessions.
-- Traffic trends.
-- Top landing pages.
-- Underperforming pages.
-
-### Section 3: Keyword Position Analysis
-
-- Improved keywords.
-- Declined keywords.
-- Newly ranking keywords.
-- Lost keywords.
-- Top-performing keywords.
-
-### Section 4: Google Search Console Analysis
-
-- Impressions.
-- Clicks.
-- CTR.
-- Average position.
-- Search query analysis.
-- Page performance.
-
-### Section 5: Indexing Performance
-
-- Indexed pages.
-- Not indexed pages.
-- Indexing errors.
-- New indexed pages.
-- Lost indexed pages.
-
-### Section 6: Leads and Conversions
-
-- Organic leads.
-- Form submissions.
-- Phone inquiries.
-- Purchases.
-- Conversion rate.
-- Revenue, where available.
-
-### Section 7: Backlink Growth
-
-- Total backlinks.
-- Referring domains.
-- New backlinks.
-- Lost backlinks.
-- Link quality observations.
-
-### Section 8: Performance Trends
-
-- Positive trends.
-- Negative trends.
-- Opportunities.
-- Anomalies.
-
-### Section 9: Recommended Actions
-
-Prioritize actions into:
-
-- Critical.
-- High.
-- Medium.
-- Low.
-
-### Section 10: Next Reporting Period Strategy
-
-Provide an actionable SEO plan for the next reporting period.
-
-## 14. Accuracy and Data Integrity Rules
-
-1. Never invent SEO performance metrics.
-2. Never assume access to Google Analytics or Search Console.
-3. Use actual retrieved data.
-4. Clearly identify unavailable metrics.
-5. Distinguish estimates from verified measurements.
-6. Compare equivalent reporting periods.
-7. Preserve historical results.
-8. Explain calculation methodology.
-9. Identify tracking gaps.
-10. Never guarantee future rankings or traffic growth.
-
-## 15. Final Deliverables
-
-Save the complete report as:
-
-`output/seo-monitoring-report.md`
-
-Also generate:
-
-- SEO KPI dashboard.
-- Organic traffic report.
-- Keyword position report.
-- Google Search Console report.
-- Indexing performance report.
-- Lead and conversion report.
-- Backlink growth report.
-- Performance trend analysis.
-- Recommended action plan.
-
-## 16. Completion Status
-
-Return:
-
-`SEO_MONITORING_RESULT`
-
-Include:
-
-- Website URL.
-- Reporting period.
-- Organic traffic performance.
-- Keyword ranking performance.
-- Search Console performance.
-- Indexed page status.
-- Lead and conversion performance.
-- Backlink growth.
-- Critical alerts.
-- Recommended actions.
-- Data source limitations.
-
-Pass SEO_MONITORING_RESULT to the Master Orchestrator as the final output of the SEO monitoring workflow.
+- Google Analytics 4 (GA4) organic session, engagement, and conversion tracking.
+- Google Search Console (GSC) performance analysis (clicks, impressions, CTR, average position).
+- Keyword ranking trajectory tracking (rank gains, drops, new rankings, and lost queries).
+- SEO health monitoring and crawl coverage changes over time.
+- Executive KPI dashboard compilation and prioritized optimization roadmaps.
+
+> **OPERATIONAL BOUNDARY:** This skill is focused on performance monitoring, historical period-over-period comparison, analytics diagnosis, and periodic reporting. Initial technical audits are handled by `seo-audit`, and new content drafting is handled by `content-generation`.
+
+---
+
+## 2. Required Inputs & Prerequisites
+
+### User Parameters:
+- Target Website URL: `{{website_url}}`
+- Website / Brand Name: `{{website_name}}`
+- Reporting Frequency: `{{reporting_frequency}}` (Weekly / Monthly / Quarterly)
+- Current Reporting Period: `{{reporting_period}}` (e.g. *October 2026*)
+- Comparison Baseline Period: `{{previous_period}}` (e.g. *September 2026*)
+- Core Target Keywords: `{{primary_keywords}}`
+- Google Search Console Access: `{{gsc_access}}` (Available / Not Available)
+- Google Analytics 4 Access: `{{ga_access}}` (Available / Not Available)
+
+---
+
+## 3. Performance Monitoring Modules
+
+### A. Organic Traffic Performance (Google Analytics 4)
+1. **Key Metrics to Track:**
+   - Organic Sessions & Active Users.
+   - Engaged Sessions & Engagement Rate (target > 55%).
+   - Average Engagement Time per Session.
+   - Top-performing organic landing pages.
+2. **Analysis:** Compare current period vs previous period (and year-over-year if data is available) to identify growth drivers or traffic drops.
+
+### B. Search Visibility & Click-Through Rate (Google Search Console)
+1. **Aggregate Search Metrics:**
+   - Total Clicks & Impressions.
+   - Average Search Click-Through Rate (CTR).
+   - Average Position across all queries.
+2. **Query Performance Quadrant Analysis:**
+   - *High Impression / Low CTR Queries:* Prime candidates for Title tag & Meta description optimization.
+   - *Positions 4–10 (Striking Distance Queries):* High-impact opportunities to push into top 3 through content updates and internal linking.
+   - *Declining Queries:* Queries with significant impression or position drops requiring immediate investigation.
+
+### C. Keyword Ranking Trajectory
+1. Track position changes for core target keywords:
+   - Rank Gains (keywords improving by 3+ positions).
+   - Rank Drops (keywords falling by 3+ positions).
+   - New Ranking Keywords (queries entering top 100 for the first time).
+   - Lost Keywords (queries dropped out of top 100).
+2. Monitor local map pack ranking stability for target locations.
+
+### D. Indexing Health & Technical Hygiene
+1. Valid indexed URLs vs excluded URLs in GSC Page Indexing.
+2. Detection of new crawl errors, 404 spikes, or accidental `noindex` deployments.
+3. Core Web Vitals field data shifts (Good / Needs Improvement / Poor URLs).
+
+### E. Business Leads & Conversion Impact
+1. Organic conversion events: form submissions, phone call clicks, booking requests, transactions.
+2. Organic conversion rate calculation (`(Organic Conversions / Organic Sessions) * 100`).
+3. Identifying high-traffic pages with poor conversion rates to recommend UX/CRO improvements.
+
+---
+
+## 4. Required Output Deliverable
+
+Save the complete monthly performance dashboard to:
+- **File:** `outputs/seo-monitoring-report.md`
+- **Context Return Variable:** `SEO_MONITORING_RESULT`
+
+### Output Structure:
+
+```markdown
+# SEO Performance Monitoring & Executive KPI Dashboard
+
+- **Website URL:** [URL]
+- **Reporting Period:** [Current Period vs Previous Period]
+- **Status:** COMPLETED
+
+## 1. Executive Summary & Performance Highlights
+[High-level summary of traffic trajectory, major wins, urgent warnings, and business impact]
+
+## 2. Core SEO KPI Scorecard
+| Metric Category        | Current Period | Previous Period | % Change | Health Status |
+| ---------------------- | -------------- | --------------- | -------- | ------------- |
+| Organic Sessions (GA4) |                |                 |          | Improving     |
+| Total Clicks (GSC)     |                |                 |          | Stable        |
+| Total Impressions      |                |                 |          | Improving     |
+| Average CTR            |                |                 |          | Needs Focus   |
+| Average Position       |                |                 |          | Improving     |
+| Organic Conversions    |                |                 |          | Improving     |
+
+## 3. Search Console Query Insights (Striking Distance Opportunities)
+| Search Query | Current Position | Monthly Impressions | Clicks | CTR | Action Plan |
+| ------------ | ---------------- | ------------------- | ------ | --- | ----------- |
+| ...          | 6.2              | High                | ...    | ... | Optimize H2 |
+
+## 4. Keyword Ranking Trajectory Summary
+- **Keywords in Top 3:** [Count] (Change: +/- X)
+- **Keywords in Top 10:** [Count] (Change: +/- X)
+- **Top Gaining Queries:** [List top 3 queries]
+- **Top Declining Queries:** [List queries needing attention]
+
+## 5. Indexing & Technical Stability
+- **Total Valid Indexed Pages:** [Count]
+- **Excluded / Not Indexed:** [Count]
+- **New Technical Errors:** [None / List errors]
+
+## 6. Actionable Optimization Plan for Next Reporting Period
+- [ ] Task 1 (High Impact): Optimize metadata for high-impression striking distance queries.
+- [ ] Task 2 (Conversion): Add clear calls-to-action on top 3 organic landing pages.
+- [ ] Task 3 (Technical): Resolve new 404 errors detected in Search Console.
+```
+
+---
+
+## 5. Production Quality & Safety Rules
+
+1. **Never Invent Traffic Numbers:** Use actual retrieved data from connected GA4/GSC properties. When accounts are unlinked, state: *"Requires Google Analytics 4 and Google Search Console account authentication."*
+2. **Honest Attribution:** Do not claim seasonality or market-wide traffic drops as technical failures without checking algorithm update dates and industry trends.
+3. **Save & Export:** Save report to `outputs/seo-monitoring-report.md` and export `SEO_MONITORING_RESULT`.

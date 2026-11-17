@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "workflow_id": "seo-workflow",
+  "name": "End-to-End Master SEO Automation Workflow",
+  "description": "Comprehensive 8-skill sequential SEO pipeline: technical baseline audit, engineering deep-dive, keyword research, on-page optimization, local SEO, off-page authority, content generation, monitoring setup, and code updates compilation.",
+  "version": "2.1.0",
+  "execution_mode": "STRICT_SEQUENTIAL",
+  "inputs": {
+    "website_url": {
+      "type": "string",
+      "description": "Target website URL (e.g., https://strawhatdevs.com)",
+      "required": true
+    },
+    "website_name": {
+      "type": "string",
+      "description": "Business or brand name",
+      "required": true
+    },
+    "frontend_tech_stack": {
+      "type": "string",
+      "description": "Frontend framework (e.g. Next.js App Router, React + Vite, Astro, Nuxt, WordPress, HTML/Tailwind)",
+      "default": "Next.js (App Router)"
+    },
+    "target_country": {
+      "type": "string",
+      "description": "Primary search geographic region",
+      "default": "India & Global"
+    },
+    "target_city": {
+      "type": "string",
+      "description": "Target city/metro region for local SEO",
+      "default": "Coimbatore"
+    },
+    "target_audience": {
+      "type": "string",
+      "description": "Primary customer demographic or industry persona",
+      "required": false
+    }
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "step_id": "seo_audit",
+      "skill_name": "seo-audit",
+      "skill_path": ".agents/skills/seo-audit/SKILL.md",
+      "description": "Perform baseline technical SEO audit, crawl accessible pages, and compile the Discovered Pages Catalog.",
+      "dependencies": [],
+      "output_file": "outputs/seo-audit-report.md",
+      "output_variable": "SEO_AUDIT_RESULT"
+    },
+    {
+      "step_number": 2,
+      "step_id": "technical_seo",
+      "skill_name": "technical-seo",
+      "skill_path": ".agents/skills/technical-seo/SKILL.md",
+      "description": "Execute engineering-level deep dive on server headers, HSTS, JS rendering, and Core Web Vitals fixes.",
+      "dependencies": ["seo_audit"],
+      "output_file": "outputs/technical-seo-report.md",
+      "output_variable": "TECHNICAL_SEO_RESULT"
+    },
+    {
+      "step_number": 3,
+      "step_id": "keyword_research",
+      "skill_name": "keyword-research",
+      "skill_path": ".agents/skills/keyword-research/SKILL.md",
+      "description": "Discover primary, secondary, long-tail, and local search queries, and map them to discovered URLs.",
+      "dependencies": ["seo_audit"],
+      "output_file": "outputs/keyword-research-report.md",
+      "output_variable": "KEYWORD_RESEARCH_RESULT"
+    },
+    {
+      "step_number": 4,
+      "step_id": "on_page_seo",
+      "skill_name": "on-page-seo",
+      "skill_path": ".agents/skills/on-page-seo/SKILL.md",
+      "description": "Formulate page-by-page metadata, H1-H3 headings, image alt text, internal links, and JSON-LD schema.",
+      "dependencies": ["seo_audit", "keyword_research"],
+      "output_file": "outputs/on-page-seo-report.md",
+      "output_variable": "ON_PAGE_SEO_RESULT"
+    },
+    {
+      "step_number": 5,
+      "step_id": "local_seo",
+      "skill_name": "local-seo",
+      "skill_path": ".agents/skills/local-seo/SKILL.md",
+      "description": "Audit Google Business Profile, local 3-pack signals, NAP directory citations, and LocalBusiness schema.",
+      "dependencies": ["seo_audit", "keyword_research"],
+      "output_file": "outputs/local-seo-report.md",
+      "output_variable": "LOCAL_SEO_RESULT"
+    },
+    {
+      "step_number": 6,
+      "step_id": "off_page_seo",
+      "skill_name": "off-page-seo",
+      "skill_path": ".agents/skills/off-page-seo/SKILL.md",
+      "description": "Audit backlink profile health, competitor link gaps, unlinked brand mentions, and white-hat digital PR.",
+      "dependencies": ["seo_audit", "keyword_research"],
+      "output_file": "outputs/off-page-seo-report.md",
+      "output_variable": "OFF_PAGE_SEO_RESULT"
+    },
+    {
+      "step_number": 7,
+      "step_id": "content_generation",
+      "skill_name": "content-generation",
+      "skill_path": ".agents/skills/content-generation/SKILL.md",
+      "description": "Produce publication-ready SEO content and landing page copy incorporating target keywords and schema.",
+      "dependencies": ["keyword_research", "on_page_seo"],
+      "output_file": "outputs/generated-content.md",
+      "output_variable": "GENERATED_CONTENT_RESULT"
+    },
+    {
+      "step_number": 8,
+      "step_id": "monitoring_and_reporting",
+      "skill_name": "monitoring-and-reporting",
+      "skill_path": ".agents/skills/monitoring-and-reporting/SKILL.md",
+      "description": "Establish GA4 and GSC performance baselines, striking distance query dashboard, and rank tracking framework.",
+      "dependencies": ["seo_audit", "keyword_research", "on_page_seo"],
+      "output_file": "outputs/seo-monitoring-report.md",
+      "output_variable": "SEO_MONITORING_RESULT"
+    },
+    {
+      "step_number": 9,
+      "step_id": "compile_seo_updates",
+      "skill_name": "master-orchestrator",
+      "skill_path": ".agents/skills/master-orchestrator/SKILL.md",
+      "description": "Synthesize all technical, metadata, heading, internal link, local, and schema updates into an actionable code package tailored to the frontend tech stack, embedding the developer apply prompt.",
+      "dependencies": [
+        "seo_audit",
+        "technical_seo",
+        "keyword_research",
+        "on_page_seo",
+        "local_seo",
+        "off_page_seo",
+        "content_generation",
+        "monitoring_and_reporting"
+      ],
+      "output_file": "outputs/seo-updates.md",
+      "output_variable": "SEO_UPDATES_RESULT"
+    }
+  ],
+  "final_outputs": [
+    "outputs/seo-audit-report.md",
+    "outputs/technical-seo-report.md",
+    "outputs/keyword-research-report.md",
+    "outputs/on-page-seo-report.md",
+    "outputs/local-seo-report.md",
+    "outputs/off-page-seo-report.md",
+    "outputs/generated-content.md",
+    "outputs/seo-monitoring-report.md",
+    "outputs/seo-updates.md"
+  ]
+}

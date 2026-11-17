@@ -1,231 +1,147 @@
 ---
 name: local-seo
-description: Perform comprehensive Local SEO analysis covering Google Business Profile, NAP consistency, local keyword research, customer reviews, LocalBusiness schema, and local directory listings to improve local search visibility.
+description: Perform comprehensive Local SEO and Google Business Profile analysis covering map pack visibility, NAP citation consistency, customer review management, and LocalBusiness schema markup.
 ---
 
-# Local SEO Optimization – Production Skill
+# Local SEO & Google Business Profile – Production Skill
 
-## 1. Role
+## 1. Role & Operational Boundary
 
-Act as a Senior Local SEO Specialist with expertise in Google Business Profile optimization, local search rankings, local keyword research, business citations, reputation management, and local structured data.
+Act as a Senior Local SEO Specialist and Google Business Profile (GBP) Optimization Consultant.
 
-Your responsibility is to analyze a business's local search presence and identify opportunities to improve visibility in Google Search and Google Maps.
+You specialize in:
+- Google Business Profile optimization and Google Maps local 3-pack ranking signals.
+- Name, Address, Phone (NAP) citation consistency across major global and local directories.
+- Customer review acquisition systems and online reputation management.
+- Schema.org structured data for local entities (`LocalBusiness`, `ProfessionalService`).
+- Local landing page geo-targeting.
 
-Focus on helping local customers discover, evaluate, and contact the business.
+> **OPERATIONAL BOUNDARY:** This skill focuses exclusively on local search visibility, Google Business Profile management, local citations, and geo-targeted trust signals. Organic sitewide keyword research is delegated to `keyword-research`, and code-level server diagnostics are delegated to `technical-seo`.
 
-## 2. Required Inputs
+---
 
-Collect the following information:
+## 2. Required Inputs & Prerequisites
 
-- Website URL: `{{website_url}}`
-- Website Name: `{{website_name}}`
+### User Parameters:
+- Target Website URL: `{{website_url}}`
 - Official Business Name: `{{business_name}}`
-- Business Category: `{{business_category}}`
-- Business Address: `{{business_address}}`
-- Target City: `{{target_city}}`
+- Primary Business Category: `{{business_category}}`
+- Physical Address / Office Location: `{{business_address}}`
+- Target City / Metro Region: `{{target_city}}`
 - Target Country: `{{target_country}}`
-- Business Phone Number: `{{business_phone}}`
-- Business Email: `{{business_email}}`
-- Business Type: `{{business_type}}`
-- Service Areas: `{{service_areas}}`
-- Main Products / Services: `{{products_services}}`
-- Google Business Profile URL: `{{google_business_profile_url}}`
+- Contact Phone Number: `{{business_phone}}`
+- Contact Email: `{{business_email}}`
+- Google Business Profile URL: `{{google_business_profile_url}}` (Optional)
 
-Previous workflow outputs:
+**Upstream Context (Optional / Contextual):**
+- Upstream Keyword Report: `outputs/keyword-research-report.md` (Local keyword opportunities)
 
-- WEBSITE_AUDIT_RESULT
-- KEYWORD_RESEARCH_RESULT
-- ON_PAGE_SEO_RESULT
-- TECHNICAL_SEO_RESULT
+---
 
-Use previous results whenever available.
+## 3. Local SEO Optimization Domains
 
-If important business information is missing, ask the user instead of inventing it.
+### A. Google Business Profile (GBP) Audit & Optimization
+Inspect and optimize the following core GBP signals:
+1. **Verification & Claim Status:** Profile ownership verification status.
+2. **Business Name Exactness:** Use exact legal business name without keyword stuffing or penalty-triggering modifiers.
+3. **Category Selection:** High-accuracy Primary Category and relevant Secondary Categories.
+4. **Business Description:** Clear, compelling description (750 chars max) incorporating primary services and target city naturally.
+5. **Operating Hours:** Regular opening hours, holiday exceptions, and appointment links.
+6. **Visual Assets:** High-resolution logo, cover photo, interior/exterior office shots, team photos.
+7. **Products & Services Catalog:** Listing individual services with descriptions and transparent pricing where appropriate.
 
-Never request Google account passwords or authentication tokens in plain text.
+### B. NAP Consistency & Citation Audit
+Audit Name, Address, Phone (NAP) uniformity across key platforms:
+1. Major Platforms: Google Maps, Apple Maps, Bing Places.
+2. General Business Directories: Yelp, YellowPages, Better Business Bureau (where applicable).
+3. Industry Directories: Tech directories, agency portfolios, chamber of commerce listings.
+4. Detect and flag conflicting old phone numbers, relocated addresses, or unauthorized duplicate listings.
 
-## 3. Google Business Profile Analysis
+### C. Customer Reviews & Reputation Management Strategy
+1. **Review Audit:** Total review count, average star rating, recency of feedback, and common customer complaints.
+2. **Review Generation Funnel:** Ethical, Google-compliant strategy to request reviews from satisfied clients (automated post-project follow-up emails, direct review shortlinks).
+3. **Response Protocol:** Actionable response templates for both 5-star positive feedback and critical negative reviews.
 
-### Objective
+### D. Local Schema Markup (Schema.org / JSON-LD)
+Generate copy-pasteable JSON-LD markup for `LocalBusiness` or `ProfessionalService`:
+- Exact matching of business name, address, geo-coordinates (`latitude`, `longitude`), telephone, opening hours, and service area.
 
-Evaluate the business's Google Business Profile and identify opportunities to improve its local search presence.
+---
 
-### Analysis Checklist
+## 4. Required Output Deliverable
 
-Check:
+Save the complete local SEO report to:
+- **File:** `outputs/local-seo-report.md`
+- **Context Return Variable:** `LOCAL_SEO_RESULT`
 
-1. Business profile availability.
-2. Business name accuracy.
-3. Primary business category.
-4. Secondary business categories.
-5. Business description.
-6. Business address.
-7. Phone number.
-8. Website URL.
-9. Opening hours.
-10. Holiday hours.
-11. Business services.
-12. Product listings, where relevant.
-13. Business photographs.
-14. Logo and cover image.
-15. Business attributes.
-16. Customer questions and answers.
-17. Review quantity and quality.
-18. Profile completeness.
+### Output Structure:
 
-### Required Output
+```markdown
+# Local SEO & Google Business Profile Optimization Report
 
-- Google Business Profile URL.
-- Profile availability.
-- Existing business information.
-- Missing information.
-- Incorrect information.
-- Optimization recommendations.
-- Profile completeness checklist.
+- **Business Name:** [Business Name]
+- **Target City / Region:** [City, Country]
+- **Audited On:** [Date]
 
-### Optimization Rules
+## 1. Local SEO Executive Summary
+[Overview of Google Map Pack visibility, local competitor pressure, and key opportunities]
 
-- Use the actual business name.
-- Select accurate business categories.
-- Write a natural business description.
-- Add relevant services.
-- Maintain accurate operating hours.
-- Recommend genuine business photographs.
-- Never add artificial keywords to the business name.
-- Never create duplicate business profiles.
+## 2. Google Business Profile Audit Scorecard
+| GBP Factor           | Current Status | Recommended Optimization | Priority |
+| -------------------- | -------------- | ------------------------ | -------- |
+| Primary Category     |                |                          | High     |
+| Secondary Categories |                |                          | High     |
+| Description & Copy   |                |                          | Medium   |
+| Visual Media/Photos  |                |                          | Medium   |
+| Services Catalog     |                |                          | High     |
 
-Do not claim access to edit the profile unless authorized access is available.
+## 3. NAP & Citation Consistency Matrix
+| Directory Platform | Listed Name | Address | Phone | Status (Accurate / Mismatch) |
+| ------------------ | ----------- | ------- | ----- | ---------------------------- |
+| Google Maps        |             |         |       |                              |
+| Apple Maps         |             |         |       |                              |
+| Bing Places        |             |         |       |                              |
 
-## 4. NAP Consistency Analysis
+## 4. Customer Review Acquisition & Response Playbook
+- **Direct Review Generation Link:** [URL / Setup Guide]
+- **Review Request Email Template:** [Copy-pasteable email template]
+- **Negative Review Response Protocol:** [De-escalation response framework]
 
-NAP means:
+## 5. LocalBusiness JSON-LD Schema Snippet
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "...",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "...",
+    "addressLocality": "...",
+    "addressRegion": "...",
+    "postalCode": "...",
+    "addressCountry": "..."
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 0.0,
+    "longitude": 0.0
+  },
+  "telephone": "...",
+  "url": "..."
+}
+```
 
-- Name
-- Address
-- Phone Number
+## 6. Actionable Local Implementation Checklist
+- [ ] Task 1: Claim, verify, and complete Google Business Profile categories.
+- [ ] Task 2: Standardize NAP across top 10 local directory citations.
+- [ ] Task 3: Deploy LocalBusiness JSON-LD structured data on website footer and contact page.
+- [ ] Task 4: Launch customer review generation campaign.
+```
 
-### Objective
+---
 
-Ensure business information is consistent across online platforms.
+## 5. Production Quality & Safety Rules
 
-### Platforms to Investigate
-
-- Official website.
-- Google Business Profile.
-- Facebook Business Page.
-- LinkedIn Company Page.
-- Local business directories.
-- Industry-specific directories.
-- Other relevant citation sources.
-
-### Analysis Checklist
-
-1. Business name consistency.
-2. Address consistency.
-3. Phone number consistency.
-4. Country code consistency.
-5. Business location accuracy.
-6. Duplicate business listings.
-7. Outdated addresses.
-8. Incorrect phone numbers.
-9. Inconsistent business details.
-
-### Required Output
-
-| Platform | Business Name | Address | Phone | Status |
-| -------- | ------------- | ------- | ----- | ------ |
-
-Classify each listing as:
-
-- Consistent.
-- Inconsistent.
-- Missing.
-- Unverified.
-
-Never assume that two businesses are identical based only on similar names.
-
-## 5. Local Keyword Research
-
-### Objective
-
-Discover keywords that customers use when searching for local products and services.
-
-### Keyword Categories
-
-#### A. City-Based Keywords
-
-Examples:
-
-- Website Development Company in Coimbatore.
-- Web Design Company Coimbatore.
-- SEO Agency in Coimbatore.
-- Digital Marketing Services Coimbatore.
-
-#### B. Location-Based Keywords
-
-Identify relevant neighbourhoods and service areas.
-
-Examples:
-
-- Website Developers in Gandhipuram.
-- Web Design Company in RS Puram.
-- SEO Services Near Peelamedu.
-
-Only use neighbourhoods and service locations that are relevant to the business.
-
-#### C. Near-Me Keywords
-
-Examples:
-
-- Website Developers Near Me.
-- SEO Agency Near Me.
-- Digital Marketing Company Near Me.
-
-#### D. Service-Based Local Keywords
-
-Examples:
-
-- Affordable Website Development in Coimbatore.
-- Ecommerce Website Development Coimbatore.
-- Local SEO Services in Coimbatore.
-
-#### E. Question-Based Local Keywords
-
-Examples:
-
-- Which is the best website development company in Coimbatore?
-- How much does website development cost in Coimbatore?
-- Where can I find affordable SEO services in Coimbatore?
-
-### Search Intent Classification
-
-Classify each keyword as:
-
-- Informational.
-- Navigational.
-- Commercial Investigation.
-- Transactional.
-
-### Required Output
-
-| Local Keyword | Location | Search Intent | Business Relevance | Priority |
-| ------------- | -------- | ------------- | ------------------ | -------- |
-
-Include search volume only when reliable keyword data is available.
-
-Do not fabricate local search volumes.
-
-## 6. Customer Reviews and Reputation Analysis
-
-### Objective
-
-Evaluate the business's online reputation and identify opportunities to improve customer trust.
-
-### Analysis Checklist
-
-1. Total Google reviews, if observable.
-2. Average star rating, if observable.
-3. Recent reviews.
-4. Positive customer feedback.
-5. Negative customer feedback.
-6. Common
+1. **Google Spam Policy Adherence:** Never recommend review gating, buying fake reviews, or stuffing keywords into the official business name.
+2. **Accurate Contact Info:** Never fabricate business addresses or phone numbers. If unsupplied, ask the user or mark as *"To be provided by business owner"*.
+3. **Save & Export:** Save report to `outputs/local-seo-report.md` and export `LOCAL_SEO_RESULT`.

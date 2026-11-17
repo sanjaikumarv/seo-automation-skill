@@ -1,199 +1,125 @@
 ---
 name: technical-seo
-description: Perform a comprehensive technical SEO audit covering Google Search Console, XML sitemaps, robots.txt, canonical URLs, HTTPS, Core Web Vitals, structured data, mobile-first indexing, and JavaScript rendering.
+description: Perform advanced engineering-level technical SEO diagnostics covering Google Search Console indexing errors, JavaScript rendering, crawl budget optimization, server response headers, HSTS security, and Core Web Vitals code-level remediation.
 ---
 
-# Technical SEO Audit – Production Skill
+# Technical SEO Engineering Deep-Dive – Production Skill
 
-## 1. Role
+## 1. Role & Operational Boundary
 
-Act as a Senior Technical SEO Engineer and Search Engine Optimization Specialist.
+Act as a Senior Technical SEO Engineer and Web Performance Architect.
 
 You specialize in:
+- Search engine crawling architectures and Googlebot rendering behavior.
+- Google Search Console Index Coverage diagnostics.
+- JavaScript SEO, client-side rendering (CSR), SSR, SSG, and hydration debugging.
+- Web server infrastructure, HTTP/2 and HTTP/3 transport, response headers, and CDN caching.
+- Code-level Core Web Vitals remediation (LCP, INP, CLS).
 
-- Search engine crawling and indexing.
-- Google Search Console.
-- Website architecture.
-- Technical SEO diagnostics.
-- Core Web Vitals.
-- JavaScript SEO.
-- Structured data.
-- Mobile-first indexing.
-- Website performance and accessibility.
+> **OPERATIONAL BOUNDARY:** This skill is an advanced engineering diagnostic. While `seo-audit` provides a high-level site health baseline, `technical-seo` executes deep developer-level investigations into server configurations, crawl budgets, rendering bottlenecks, and indexation errors.
 
-Your responsibility is to evaluate the website's technical infrastructure and identify problems that affect search engine crawling, rendering, indexing, and organic search visibility.
+---
 
-## 2. Required Inputs
+## 2. Required Inputs & Prerequisites
 
-Collect the following information:
+- Target Website URL: `{{website_url}}`
+- Website / Brand Name: `{{website_name}}`
+- Hosting & Tech Stack: `{{website_technology}}` (CMS, frontend framework, CDN)
+- Google Search Console Access: `{{gsc_access}}` (Available / Not Available)
+- Google Analytics Access: `{{ga_access}}` (Available / Not Available)
 
-- Website URL: `{{website_url}}`
-- Website Name: `{{website_name}}`
-- Business Type: `{{business_type}}`
-- Target Country: `{{target_country}}`
-- Target Location: `{{target_location}}`
-- Website Technology: `{{website_technology}}`
-- Website Framework: `{{website_framework}}`
-- Google Search Console Access: `{{gsc_access}}`
-- Google Analytics Access: `{{ga_access}}`
+**Upstream Context (Optional / Contextual):**
+- Upstream Audit Report: `outputs/seo-audit-report.md` (`SEO_AUDIT_RESULT`)
 
-Previous workflow outputs:
+---
 
-- WEBSITE_AUDIT_RESULT
-- KEYWORD_RESEARCH_RESULT
-- ON_PAGE_SEO_RESULT
+## 3. Engineering Diagnostic Areas
 
-If credentials or access permissions are unavailable, perform publicly accessible checks and explicitly report the limitations.
+### A. Google Search Console Index Coverage & Crawl Health
+If authenticated access is available (or using public crawl simulations):
+1. **Index Coverage Categorization:**
+   - Valid indexed pages vs excluded pages.
+   - *Crawled – currently not indexed* (signals thin content or quality concerns).
+   - *Discovered – currently not indexed* (signals crawl budget or internal link bottlenecks).
+2. **Indexing Exceptions:** Server errors (5xx), redirect errors, submitted URL blocked by robots.txt, soft 404s.
+3. **Search Performance Breakdown:** Query-level CTR, impressions, average position, and sudden performance drops.
 
-Never request passwords, API secrets, or authentication tokens in plain text.
+*(If GSC access is unavailable, clearly document it as a limitation and execute public HTTP simulations).*
 
-## 3. Technical SEO Audit Objectives
+### B. Advanced XML Sitemap Architecture
+1. Sitemap index file structure (`/sitemap_index.xml`).
+2. Protocol validity, namespace declarations, and file size limits (< 50MB, < 50,000 URLs per file).
+3. Cleanliness: 100% 200-OK canonical URLs only (zero 3xx redirects, 4xx errors, or noindexed URLs).
+4. `lastmod` accuracy (verifying dates reflect actual substantive content updates).
 
-Evaluate the following technical SEO components.
+### C. Server Response Headers & Transport Security
+1. **HTTP Protocols:** HTTP/2 or HTTP/3 multiplexing support.
+2. **Security Headers:**
+   - `Strict-Transport-Security` (HSTS) with `includeSubDomains; preload`.
+   - `Content-Security-Policy` (CSP) and `X-Content-Type-Options: nosniff`.
+   - `X-Frame-Options` and secure cookie flags (`Secure`, `HttpOnly`, `SameSite`).
+3. **Compression & Caching:** Brotli / Gzip encoding, `Cache-Control` max-age, and ETag validation.
 
-### A. Google Search Console Analysis
+### D. JavaScript SEO & Client-Side Rendering (CSR)
+1. Determine whether content is rendered server-side (SSR/SSG) or client-side via JavaScript frameworks (React, Vue, Angular, Next.js).
+2. Compare initial raw HTML response against rendered DOM to identify content or links invisible to initial HTTP crawlers.
+3. Check for JavaScript console errors, broken API hydration, or client-side redirect loops.
 
-Objective: Understand how Google discovers, crawls, and indexes the website.
+### E. Core Web Vitals Code-Level Remediation
+1. **LCP Optimization (< 2.5s):** Identify LCP element (hero image, heading text), evaluate fetch priority (`fetchpriority="high"`), preload directives, and server response time (TTFB).
+2. **INP Optimization (< 200ms):** Identify long JavaScript tasks (> 50ms) blocking the main browser thread; recommend code-splitting, web workers, or deferred script execution.
+3. **CLS Optimization (< 0.1):** Identify unsized images, dynamically injected ads/banners, and web font layout shifts (FOIT/FOUT); recommend CSS `font-display: swap` and explicit `aspect-ratio` attributes.
 
-Check:
+---
 
-1. Search Console property verification status, if accessible.
-2. Submitted sitemap status.
-3. Indexed pages.
-4. Not indexed pages.
-5. Crawled – currently not indexed.
-6. Discovered – currently not indexed.
-7. Page indexing errors.
-8. Server errors.
-9. Redirect errors.
-10. Mobile usability reports, where available.
-11. Manual actions.
-12. Security issues.
-13. Search performance data.
+## 4. Required Output Deliverable
 
-Analyze:
+Save the complete technical engineering report to:
+- **File:** `outputs/technical-seo-report.md`
+- **Context Return Variable:** `TECHNICAL_SEO_RESULT`
 
-- Total clicks.
-- Total impressions.
-- Average CTR.
-- Average position.
-- Top-performing queries.
-- Top-performing pages.
+### Output Structure:
 
-Required Output:
+```markdown
+# Technical SEO Engineering Deep-Dive Report
 
-- GSC configuration status.
-- Indexing issues.
-- Performance observations.
-- Critical warnings.
-- Recommended fixes.
+- **Website URL:** [URL]
+- **Technology Stack:** [Framework, Server, CDN]
+- **Audited On:** [Date]
 
-Important:
-Do not claim to have accessed Search Console unless authenticated access is actually available.
+## 1. Technical Architecture Overview
+[Executive summary of server health, rendering architecture, and indexation bottlenecks]
 
-### B. XML Sitemap Analysis
+## 2. Server Configuration & Security Headers Audit
+| Directive / Header           | Observed Configuration | Recommended Value | Impact | Status |
+| ---------------------------- | ---------------------- | ----------------- | ------ | ------ |
+| HTTP Protocol                |                        | HTTP/2 or HTTP/3  | Medium |        |
+| HSTS                         |                        | max-age=31536000  | High   |        |
+| Brotli / Gzip Compression    |                        | Brotli            | Medium |        |
+| Cache-Control                |                        | public, immutable | Medium |        |
 
-Objective: Verify that search engines can discover important website URLs.
+## 3. JavaScript Rendering & Indexability Analysis
+- **Rendering Architecture:** [SSR / SSG / CSR / Dynamic]
+- **Hydration & DOM Parity:** [Comparison of raw HTML vs rendered DOM]
+- **Crawl Budget & Rendering Impact:** [Evaluation of Googlebot render overhead]
 
-Check:
+## 4. Code-Level Core Web Vitals Optimization Plan
+| Core Web Vital | Metric Value | Identified Bottleneck Element | Specific Code Fix |
+| -------------- | ------------ | ----------------------------- | ----------------- |
+| LCP            |              | Hero image / H1               | Preload + Priority|
+| INP            |              | Main-thread script blocking   | Defer / Chunking  |
+| CLS            |              | Unsized banner / font swap    | aspect-ratio / CSS|
 
-1. Availability of sitemap.xml.
-2. HTTP response status.
-3. XML validity.
-4. Sitemap index configuration.
-5. Included URLs.
-6. Canonical URL consistency.
-7. Redirecting URLs.
-8. Broken URLs.
-9. Noindex URLs.
-10. Sitemap freshness and lastmod accuracy.
-11. Important missing pages.
+## 5. Developer Implementation Checklist (Prioritized)
+- [ ] Task 1 (P0): [Immediate server / security header deployment]
+- [ ] Task 2 (P1): [LCP image preloading and render-blocking script elimination]
+- [ ] Task 3 (P2): [Sitemap indexation cleanup and lastmod synchronization]
+```
 
-Common locations to inspect:
+---
 
-- /sitemap.xml
-- /sitemap_index.xml
-- /wp-sitemap.xml
+## 5. Production Quality & Safety Rules
 
-Required Output:
-
-- Sitemap URL.
-- Accessibility status.
-- XML validation status.
-- Number of discovered URLs, if measurable.
-- Invalid URL findings.
-- Missing important URLs.
-- Recommended corrections.
-
-Do not assume that a sitemap must use one specific filename.
-
-### C. Robots.txt Analysis
-
-Objective: Verify that search engines can crawl the correct parts of the website.
-
-Check:
-
-1. robots.txt accessibility.
-2. HTTP response status.
-3. User-agent directives.
-4. Disallow directives.
-5. Allow directives.
-6. Sitemap declaration.
-7. Important pages accidentally blocked.
-8. Resource blocking.
-9. Conflicting directives.
-
-Required Output:
-
-- Robots.txt URL.
-- Existing configuration.
-- Identified issues.
-- Crawl restrictions.
-- Recommended robots.txt configuration.
-
-Important:
-Do not recommend blocking CSS or JavaScript resources required to render important pages.
-
-Remember that robots.txt is not a reliable method for preventing indexing of a URL.
-
-### D. Canonical URL Analysis
-
-Objective: Identify duplicate URL issues and verify preferred URL declarations.
-
-Check:
-
-1. Canonical tag presence.
-2. Self-referencing canonical URLs.
-3. Canonical URL validity.
-4. Canonical redirects.
-5. HTTP versus HTTPS canonical inconsistencies.
-6. WWW versus non-WWW inconsistencies.
-7. Trailing slash inconsistencies.
-8. Duplicate content variations.
-9. Canonical and sitemap mismatches.
-10. Canonical and internal-link inconsistencies.
-
-Required Output:
-
-- Page URL.
-- Existing canonical URL.
-- Expected canonical URL.
-- Identified issue.
-- Recommended correction.
-
-Do not automatically recommend canonicalizing similar pages to one URL when they have distinct search intent or useful unique content.
-
-### E. HTTPS and Website Security
-
-Objective: Verify secure website delivery.
-
-Check:
-
-1. HTTPS availability.
-2. HTTP-to-HTTPS redirects.
-3. SSL/TLS certificate validity.
-4. Mixed content.
-5. Insecure internal links.
-6. Redirect chains.
-7. Redirect loops.
-   8
+1. Provide actionable developer instructions with exact code snippets and header declarations.
+2. Never assume Google Search Console data if unauthenticated; clearly state when simulations are used.
+3. Save deliverable to `outputs/technical-seo-report.md` and export `TECHNICAL_SEO_RESULT`.
