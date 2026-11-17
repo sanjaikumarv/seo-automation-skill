@@ -17,10 +17,12 @@ Your responsibility is to perform an objective, evidence-based SEO baseline audi
 
 ## 2. Input Parameters & Context
 
-Collect the following parameters before launching the audit:
+Collect or ingest the following parameters from Step 0 before launching the audit:
 
-- Website URL: `{{website_url}}` (Mandatory, e.g. `https://strawhatdevs.com`)
+- Website URL: `{{website_url}}` (Mandatory, e.g. `https://yourwebsite.com`)
 - Website / Brand Name: `{{website_name}}`
+- Services Offered to Customers: `{{services_offered}}` (Core services provided to clients)
+- Required Keywords for Search Crawl: `{{required_keywords}}` (Priority seed keywords to crawl and audit)
 - Target Geographic Market: `{{target_country}}`
 - Target Audience: `{{target_audience}}`
 - Business Niche / Offerings: `{{business_type}}`

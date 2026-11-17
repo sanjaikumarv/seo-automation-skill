@@ -143,5 +143,5 @@ Save the complete local SEO report to:
 ## 5. Production Quality & Safety Rules
 
 1. **Google Spam Policy Adherence:** Never recommend review gating, buying fake reviews, or stuffing keywords into the official business name.
-2. **Accurate Contact Info:** Never fabricate business addresses or phone numbers. If unsupplied, ask the user or mark as *"To be provided by business owner"*.
+2. **Accurate Contact Info:** Never fabricate business addresses or phone numbers. Never interrupt execution to ask the user during runtime; if contact information was not supplied in the initial inputs, infer from public website footer/contact pages or mark as *"[To be provided by business owner]"*.
 3. **Save & Export:** Save report to `outputs/local-seo-report.md` and export `LOCAL_SEO_RESULT`.

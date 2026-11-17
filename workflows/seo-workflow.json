@@ -8,7 +8,7 @@
   "inputs": {
     "website_url": {
       "type": "string",
-      "description": "Target website URL (e.g., https://strawhatdevs.com)",
+      "description": "Target website URL (e.g., https://yourwebsite.com)",
       "required": true
     },
     "website_name": {
@@ -21,15 +21,25 @@
       "description": "Frontend framework (e.g. Next.js App Router, React + Vite, Astro, Nuxt, WordPress, HTML/Tailwind)",
       "default": "Next.js (App Router)"
     },
+    "services_offered": {
+      "type": "string",
+      "description": "Core services, solutions, or products offered to customers",
+      "required": true
+    },
+    "required_keywords": {
+      "type": "string",
+      "description": "Priority seed search keywords for search crawl and keyword research",
+      "required": true
+    },
     "target_country": {
       "type": "string",
       "description": "Primary search geographic region",
-      "default": "India & Global"
+      "default": "Global"
     },
     "target_city": {
       "type": "string",
       "description": "Target city/metro region for local SEO",
-      "default": "Coimbatore"
+      "default": "Local"
     },
     "target_audience": {
       "type": "string",

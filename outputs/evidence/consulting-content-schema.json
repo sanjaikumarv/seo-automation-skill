@@ -1,0 +1,83 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.strawhatdevs.com/#organization",
+      "name": "Straw Hat Devs",
+      "url": "https://www.strawhatdevs.com/en"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.strawhatdevs.com/en/consulting#service",
+      "name": "Software consulting services",
+      "serviceType": "Software consulting and custom software development",
+      "url": "https://www.strawhatdevs.com/en/consulting",
+      "provider": {
+        "@id": "https://www.strawhatdevs.com/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "India"
+        },
+        "Worldwide"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.strawhatdevs.com/en"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Software consulting",
+          "item": "https://www.strawhatdevs.com/en/consulting"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.strawhatdevs.com/en/consulting#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What can we discuss in a software consulting engagement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We can discuss custom software, web and mobile applications, SaaS products, architecture reviews, integrations and workflow automation. The first step is to understand your business problem and agree on a useful scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we start by improving one existing workflow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A focused workflow is a practical starting point. We can review the tools, handoffs and constraints involved, then discuss a suitable first release before planning a broader system."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with businesses outside Coimbatore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We welcome project discussions with businesses in Coimbatore, across India and internationally. Delivery arrangements, communication and scope are agreed during project discovery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are project timelines and costs decided?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timelines and costs depend on requirements, integrations, data migration, testing and support needs. Share your goals through our project inquiry form so the scope can be discussed before a proposal is agreed."
+          }
+        }
+      ]
+    }
+  ]
+}

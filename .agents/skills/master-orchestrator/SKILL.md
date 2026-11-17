@@ -11,7 +11,9 @@ You are the **Master Workflow Orchestrator** for the AI automation system.
 
 Your responsibility is to coordinate the specialized SEO skills in `.agents/skills/` in strict sequential order, enforcing input validation, intermediate artifact persistence, and reliable inter-skill data passing.
 
-Before execution begins, you ask or confirm the target website's frontend tech stack (e.g., Next.js App/Pages Router, React, Astro, Nuxt, WordPress). Upon completion of all analysis stages, you compile the master code update package into `outputs/seo-updates.md`, tailored to that tech stack and embedding the production-ready prompt for applying those updates directly to the codebase.
+When execution begins, you perform an **Initial Intake (Step 0)** by requesting the required project details (Target URL, Business Name, Frontend Tech Stack, and Target Geography) if not already provided by the user. Do not use prepopulated or hardcoded site inputs.
+
+Once the user provides these initial inputs, the remainder of the execution across all 8 specialized skills and the final code compilation is **fully autonomous with zero runtime interruptions**: no skill pauses or halts to ask questions mid-run. All parameters are drawn from the initial user intake or from previous skill outputs in `outputs/`. Upon completion of all analysis stages, compile the master code update package into `outputs/seo-updates.md`, tailored to the user's tech stack and embedding the production-ready prompt for applying those updates directly to the codebase.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -19,7 +21,7 @@ Before execution begins, you ask or confirm the target website's frontend tech s
 └────────────────────────────────────────────────────────────────────────┘
                                     │
                                     ▼
-       [0. Ask / Confirm Frontend Tech Stack (e.g. Next.js, React)]
+       [0. Initial Intake: Prompt User for Target URL, Brand & Stack]
                                     │
                                     ▼
                      ┌─────────────────────────────┐
@@ -81,19 +83,32 @@ Before execution begins, you ask or confirm the target website's frontend tech s
 
 ---
 
-## 2. Initial Setup: Frontend Tech Stack Inquiry
+## 2. Initial Intake & Zero-Interruption Execution Directives
 
-Before launching Step 1, verify the target website's technology stack:
-- Ask the user:
-  > *"What frontend tech stack / framework is your website built with?"*  
-  > *(e.g., Next.js App Router, Next.js Pages Router, React + Vite, Astro, Vue/Nuxt, SvelteKit, HTML/Tailwind, WordPress, Shopify, Webflow)*
+### A. Step 0: Initial Intake (Pre-Run)
+When the orchestrator is executed, prompt the user for the following inputs (unless already provided):
+1. **Target Website URL** (Required, e.g., `https://yourwebsite.com`)
+2. **Business / Brand Name** (Required, e.g., `Acme Innovations`)
+3. **Frontend Tech Stack** (Required, e.g., `Next.js App Router`, `React + Vite`, `Astro`, `Vue/Nuxt`, `WordPress`, `Static HTML/Tailwind`)
+4. **Services Offered to Customers** (Required, e.g., `Custom Web App Development, Mobile App Engineering, Cloud Solutions, UI/UX Design`)
+5. **Required Keywords for Search Crawl** (Required, e.g., `custom software development company, react web development services, mobile app developers`)
+6. **Target Geography / City** (Recommended, e.g., `Global`, `United States`, `India & Global`)
+7. **Target Audience / Customer Persona** (Optional, e.g., `Startups, SMEs, Enterprises`)
 
-**Why this is mandatory:**
-Downstream Step 9 generates `outputs/seo-updates.md`. To provide immediate, error-free copy-paste code, the output must be tailored to the exact framework syntax:
-- **Next.js App Router:** Outputs `export const metadata: Metadata = { ... }` in TypeScript.
+### B. Stages 1–9: Zero-Interruption Execution
+🛑 **CRITICAL DIRECTIVE: ZERO INTERMEDIATE QUESTIONS / ZERO INTERRUPTIONS**
+- Once the user supplies the Step 0 inputs, **NEVER prompt or halt execution to ask questions mid-run**.
+- Every skill must automatically resolve its parameters using:
+  1. **The Step 0 User Inputs** (Target URL, Business Name, Region, Tech Stack, Services Offered, Required Search Crawl Keywords).
+  2. **Previous Skill Responses:** Step N reads the markdown output of Step N-1 (and earlier steps) directly from `outputs/`.
+- **Frontend Tech Stack:** Apply the stack specified by the user. If left unspecified, default to **Next.js (App Router)** automatically. Never halt mid-run to ask.
+- **Missing Optional Information:** If credentials (Search Console, GA4) or specific business details (exact phone number) are unprovided, record them as documented limitations or placeholders (`[To be verified in Search Console]`) and continue immediately.
+
+**Tech Stack Code Generation Specs for Step 9:**
+- **Next.js App Router (Default):** Outputs `export const metadata: Metadata = { ... }` in TypeScript and Server Component metadata.
 - **Next.js Pages Router / React:** Outputs `<Head>` component blocks or `react-helmet-async`.
 - **Astro:** Outputs `<BaseLayout>` frontmatter props.
-- **Static HTML / WordPress:** Outputs standard document `<head>` markup and CMS fields.
+- **Static HTML / WordPress:** Outputs standard document `<head>` markup and CMS custom fields.
 
 ---
 
@@ -101,10 +116,11 @@ Downstream Step 9 generates `outputs/seo-updates.md`. To provide immediate, erro
 
 1. **Strictly Sequential:** Never execute skills in parallel. Step N cannot begin until Step N-1 has status `COMPLETED`.
 2. **Context Continuity:** Step N must read the generated output file(s) of previous steps from `outputs/` before formulating recommendations.
-3. **Artifact Persistence:** Every skill must write its complete markdown report to disk in `outputs/` using standard filenames.
-4. **Validation Gate:** Before proceeding to the next step, verify that the artifact file exists in `outputs/` and is non-empty.
-5. **Final Implementation Artifact:** Stage 9 must generate `outputs/seo-updates.md` containing both the tech-stack-specific code implementations AND the embedded developer prompt.
-6. **Execution State Logging:** Update `logs/pipeline-state.json` on every step transition (`PENDING` ➔ `IN_PROGRESS` ➔ `COMPLETED` / `FAILED`).
+3. **Autonomous Operation:** Zero runtime questions to the user. All inputs are resolved from static baselines or upstream artifacts.
+4. **Current Workspace Outputs Directory:** Every skill MUST write its complete markdown report directly to `./outputs/` in the **CURRENT working repository** (`c:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs\`). NEVER write to external projects like `ai-job-agent`.
+5. **Validation Gate:** Before proceeding to the next step, verify that the artifact file exists in `outputs/` and is non-empty.
+6. **Final Implementation Artifact:** Stage 9 must generate `outputs/seo-updates.md` containing both the tech-stack-specific code implementations AND the embedded developer prompt.
+7. **Execution State Logging:** Update `logs/pipeline-state.json` on every step transition (`PENDING` ➔ `IN_PROGRESS` ➔ `COMPLETED` / `FAILED`).
 
 ---
 

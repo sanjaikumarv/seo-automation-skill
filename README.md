@@ -31,9 +31,7 @@ seo-orchestration-flow/
 │           └── SKILL.md             # Ongoing GA4/GSC tracking, striking distance & KPI reports
 │
 ├── workflows/
-│   ├── seo-workflow.json            # Complete 8-skill master automated execution pipeline
-│   ├── resume-workflow.json         # Resume ATS analysis & tailored rewrite pipeline
-│   └── content-workflow.json        # Keyword research to reader-first content pipeline
+│   └── seo-workflow.json            # Complete 8-skill master automated execution pipeline
 │
 ├── outputs/                         # Destination directory for all generated deliverables
 │   ├── .gitkeep
@@ -63,7 +61,7 @@ seo-orchestration-flow/
 
 ## 2. Complete 8-Skill Master Sequential Flowchart
 
-The master SEO workflow begins with confirming the website's frontend tech stack, then executes in strict chronological order across all 8 specialized skills, culminating in **`outputs/seo-updates.md`** (which houses the developer apply prompt and code snippets):
+The master SEO workflow initiates with an upfront user intake (gathering website URL, brand name, tech stack, and target geography), then executes in strict chronological order across all 8 specialized skills with **zero intermediate user interruptions**, culminating in **`outputs/seo-updates.md`** (which houses the developer apply prompt and code snippets):
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -71,7 +69,7 @@ The master SEO workflow begins with confirming the website's frontend tech stack
 └────────────────────────────────────────────────────────────────────────┘
                                     │
                                     ▼
-       [0. Confirm Frontend Tech Stack (e.g. Next.js, React, Astro)]
+       [0. Initial Intake: Gather Target URL, Business Name & Tech Stack]
                                     │
                                     ▼
        [1. seo-audit] ───────────────➔ outputs/seo-audit-report.md
@@ -110,8 +108,8 @@ The master SEO workflow begins with confirming the website's frontend tech stack
 
 | Step | Skill Name | Operational Domain | Upstream Prerequisite | Generated Deliverable |
 | :--- | :--- | :--- | :--- | :--- |
-| **00** | *Tech Stack Inquiry* | Asks user what frontend stack the site uses (Next.js, React, Astro, WordPress, HTML). | User Input | Context for Step 9 |
-| **01** | `seo-audit` | Baseline site crawl, health scorecard, broken links, mobile usability, and URL catalog. | Initial User Inputs | `outputs/seo-audit-report.md` |
+| **00** | *Initial Intake* | Prompts user for Website URL, Brand Name, Tech Stack, Services Offered, Required Keywords, and Geography. | User Input | Baseline for all steps |
+| **01** | `seo-audit` | Baseline site crawl, health scorecard, broken links, mobile usability, and URL catalog. | Step 0 User Inputs | `outputs/seo-audit-report.md` |
 | **02** | `technical-seo` | Server response headers, HSTS, JS rendering, GSC crawl errors, Core Web Vitals remediation. | `outputs/seo-audit-report.md` | `outputs/technical-seo-report.md` |
 | **03** | `keyword-research` | Primary/secondary/long-tail keyword discovery, search intent, and Keyword-to-Page mapping. | `outputs/seo-audit-report.md` | `outputs/keyword-research-report.md` |
 | **04** | `on-page-seo` | Title tags, meta descriptions, H1-H3 hierarchy, image alt text, internal links, JSON-LD schema. | `outputs/seo-audit-report.md` + `outputs/keyword-research-report.md` | `outputs/on-page-seo-report.md` |
@@ -140,7 +138,7 @@ Run orchestrator.md
 ```
 *(or type `@orchestrator.md execute`)*
 
-The agent will ask for your frontend tech stack (if not already specified), then automatically execute all 8 stages + compilation in sequential order without stopping.
+The agent immediately prompts you for your Target Website URL, Brand Name, Frontend Tech Stack, Services Offered, Required Search Crawl Keywords, and Target Location. Once provided, it executes all 8 stages + compilation in sequential order without stopping.
 
 ---
 
@@ -149,15 +147,20 @@ The agent will ask for your frontend tech stack (if not already specified), then
 $master-orchestrator
 
 Execute workflows/seo-workflow.json for:
-- Website URL: https://strawhatdevs.com
-- Business Name: Straw Hat Devs
+- Website URL: https://yourwebsite.com
+- Business Name: Your Business Name
 - Frontend Tech Stack: Next.js (App Router)
-- Target Country: India & Global Markets
+- Services Offered: Custom Web Apps, Mobile Development, Cloud Solutions
+- Required Search Keywords: custom software company, web development services
+- Target Country: Global / India / US
 ```
 
 ---
 
 ### Method C: Running in ChatGPT
 1. Copy or upload [orchestrator.md](file:///c:/Users/Sanjaikumar/Desktop/straw-hat-devs/seo-orchestration-flow/orchestrator.md) into ChatGPT.
-2. Prompt: *"Execute this `orchestrator.md` sequentially step by step. Ask for my frontend tech stack first."*
-3. ChatGPT will ask for your stack, run all 8 stages, and generate `outputs/seo-updates.md` with the embedded code prompt.
+2. Prompt:
+   ```markdown
+   Execute this orchestrator.md. Ask me for the required input fields first, then execute all steps sequentially to the end without stopping to ask intermediate questions.
+   ```
+3. Provide your site details in response to ChatGPT's prompt. ChatGPT will execute the complete 8-stage pipeline autonomously and generate `outputs/seo-updates.md`.

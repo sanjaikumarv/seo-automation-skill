@@ -20,6 +20,8 @@ Your responsibility is to discover high-value search queries that prospective cu
 ### User Parameters:
 - Target Website URL: `{{website_url}}`
 - Website / Brand Name: `{{website_name}}`
+- Services Offered to Customers: `{{services_offered}}` (Core services provided to clients to map keywords to)
+- Required Keywords for Search Crawl: `{{required_keywords}}` (Priority seed keywords to expand and analyze)
 - Primary Business Niche / Offerings: `{{business_type}}`
 - Target Geographic Market: `{{target_country}}`
 - Target City / Region (for local search): `{{target_location}}`

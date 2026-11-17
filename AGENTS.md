@@ -5,12 +5,14 @@
 ### 1. Workflow Execution & Orchestration
 All workflows must be coordinated using [.agents/skills/master-orchestrator/SKILL.md](file:///c:/Users/Sanjaikumar/Desktop/straw-hat-devs/seo-orchestration-flow/.agents/skills/master-orchestrator/SKILL.md) or triggered via [orchestrator.md](file:///c:/Users/Sanjaikumar/Desktop/straw-hat-devs/seo-orchestration-flow/orchestrator.md).
 
-#### Mandatory Initial Setup (Tech Stack Inquiry)
-Before executing Step 1, the AI agent MUST ask or confirm:
-> *"What frontend tech stack / framework is your website built with?"*  
-> *(Options: Next.js App Router, Next.js Pages Router, React + Vite, Astro, Vue/Nuxt, SvelteKit, Static HTML/PHP, WordPress, Shopify, Webflow)*
-
-*Purpose:* This enables Step 9 to tailor code blocks (e.g. Next.js `generateMetadata` / `export const metadata: Metadata` vs React Helmet vs HTML `<head>`) and embed an exact, framework-native developer implementation prompt inside `outputs/seo-updates.md`.
+#### Initial Intake & Autonomous Zero-Interruption Rule
+- **Step 0 Initial Intake:** When triggered via [orchestrator.md](file:///c:/Users/Sanjaikumar/Desktop/straw-hat-devs/seo-orchestration-flow/orchestrator.md) or the orchestrator skill, the AI agent **MUST prompt the user for the required input fields** (Target Website URL, Business Name, Frontend Tech Stack, Services Offered to Customers, Required Keywords for Search Crawl, and Target Geography) if not already provided in the opening prompt. **Do not assume or use hardcoded/prepopulated site values.**
+- **Zero Mid-Run Questions:** Once the user provides the initial intake parameters, execute Step 1 through Step 9 in strict sequential order without asking any intermediate questions.
+- **Input Ingestion Hierarchy:**
+  1. **User Intake Inputs (Step 0):** Used by Step 1 (`seo-audit` - URL, crawl verification for required keywords & services), Step 3 (`keyword-research` - seed queries & services mapping), Step 5 (`local-seo`), Step 6 (`off-page-seo`), and Step 9 (`seo-updates.md`).
+  2. **Previous Skill Responses:** Downstream skills must automatically read the output markdown files (`outputs/`) of upstream completed skills.
+  3. **Missing Optional Data:** Never interrupt execution to ask for missing credentials (GSC, GA4) or exact phone numbers. Record them as documented limitations or placeholders (e.g., `[To be verified in Search Console]`) and proceed immediately.
+- **Frontend Tech Stack Handling:** Apply the tech stack specified by the user in Step 0. If the user leaves it blank or unspecified, default to **Next.js (App Router) / React / Tailwind CSS** automatically. This ensures Step 9 generates framework-native code blocks and embeds the tailored developer prompt directly into `outputs/seo-updates.md`.
 
 #### Complete 8-Skill Master SEO Workflow (`workflows/seo-workflow.json` / `orchestrator.md`)
 Execute in strict chronological order:
@@ -40,8 +42,10 @@ Execute in strict chronological order:
 
 ---
 
-### 3. Artifact Persistence & State Logging
-- **Deterministic File Naming:** Save all reports to `outputs/` using exact predetermined filenames.
+### 3. Artifact Persistence & Current Workspace Directory Guardrail
+- **MANDATORY CURRENT DIRECTORY PATH:** All output markdown files MUST be written directly to the `outputs/` folder of the **CURRENT active workspace directory** (`./outputs/` or `c:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs\`).
+- **PROHIBITION:** NEVER write, redirect, or copy output files to external directories (such as `ai-job-agent` or any parent/sibling folders).
+- **Deterministic File Naming:** Save all reports to `./outputs/` using exact predetermined filenames.
 - **State Audit Trail:** Log state transitions (`PENDING` ➔ `IN_PROGRESS` ➔ `COMPLETED` / `FAILED`) in [logs/pipeline-state.json](file:///c:/Users/Sanjaikumar/Desktop/straw-hat-devs/seo-orchestration-flow/logs/pipeline-state.json).
 
 ---
