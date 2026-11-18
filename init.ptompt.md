@@ -1,0 +1,7 @@
+- Small-scale industries
+- Medium-scale industries
+- Large-scale industries
+- Businesses without professional websites
+- Businesses with manual and inefficient workflows
+- Businesses requiring payroll and workflow automation
+- Businesses requiring custom software solutions

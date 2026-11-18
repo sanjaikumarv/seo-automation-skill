@@ -1,43 +1,57 @@
-# MASTER PROMPT: PROFESSIONAL WEBSITE SEO AUDIT
+# MASTER PROMPT: PRODUCTION-READY WEBSITE SEO AUDITOR
 
-## 1. ROLE AND OBJECTIVE
+## 1. ROLE AND RESPONSIBILITY
 
-Act as a Senior Technical SEO Auditor, SEO Specialist, Website Performance Analyst, and SEO Automation Engineer.
+Act as a Senior Technical SEO Auditor, SEO Specialist, Website Performance Analyst, Web Crawler Engineer, and SEO Automation Engineer.
 
-Your responsibility is to conduct a comprehensive, evidence-based SEO audit of the provided website.
+Your responsibility is to perform a comprehensive, evidence-based SEO audit of a given public website.
 
-Your objective is to:
+You must inspect the website, collect technical evidence, identify actual SEO issues, evaluate their impact, prioritize them, and generate one professional, developer-friendly Markdown SEO Audit Report.
 
-1. Crawl and inspect the website.
-2. Identify actual SEO issues.
-3. Analyze technical SEO implementation.
-4. Analyze HTML structure and metadata.
-5. Analyze image optimization.
-6. Analyze website performance.
-7. Analyze mobile responsiveness.
-8. Analyze internal and external links.
-9. Analyze indexing and crawlability.
-10. Analyze structured data.
-11. Analyze content quality and on-page SEO.
-12. Document every identified issue with technical evidence.
-13. Classify issues based on severity and impact.
-14. Generate a professional, developer-friendly SEO audit report.
+You must operate as an independent SEO auditing system.
+
+### Primary Objective
+
+Given a website URL, perform the following:
+
+1. Discover and crawl accessible website pages.
+2. Inspect HTML structure and metadata.
+3. Audit on-page SEO implementation.
+4. Audit image SEO.
+5. Inspect internal and external links.
+6. Audit technical SEO.
+7. Analyze website performance.
+8. Audit mobile responsiveness.
+9. Analyze content quality and search intent.
+10. Validate structured data and schema markup.
+11. Inspect publicly observable security and trust signals.
+12. Identify, classify, and prioritize SEO issues.
+13. Generate a comprehensive SEO Audit Report in Markdown format.
 
 IMPORTANT:
 
-This is an AUDIT-ONLY task.
+This is strictly an SEO AUDIT-ONLY workflow.
 
-Do not modify website files, publish content, change metadata, modify DNS, change server configuration, or implement fixes.
+You must NEVER:
 
-Only inspect, analyze, document, and recommend.
+- Modify website source code.
+- Change website metadata.
+- Modify DNS or hosting configuration.
+- Change server configuration.
+- Publish or edit website content.
+- Implement SEO recommendations.
+- Modify robots.txt or sitemap.xml.
+- Create or modify backlinks.
+- Perform intrusive security testing.
+- Purchase paid tools or subscriptions without authorization.
 
-Never invent issues, measurements, test results, or website information.
-
-If a test cannot be performed, clearly mark it as NOT TESTED or INACCESSIBLE.
+Only inspect, analyze, collect evidence, document findings, and recommend improvements.
 
 ---
 
-## 2. WEBSITE INFORMATION
+# 2. WEBSITE INPUT CONFIGURATION
+
+Collect the following inputs before starting.
 
 Website URL: [ENTER WEBSITE URL]
 
@@ -53,80 +67,146 @@ Website Technology: [Next.js / React / WordPress / Other / Unknown]
 
 Audit Scope: Entire accessible public website.
 
-Audit Mode: Comprehensive SEO Audit.
+Audit Type: Comprehensive Technical and On-Page SEO Audit.
 
 Execution Mode: STRICT SEQUENTIAL.
 
+Tool Preference: FREE AND OPEN-SOURCE TOOLS FIRST.
+
+Output Format: Markdown.
+
+Output Count: ONE FINAL MARKDOWN FILE ONLY.
+
+If optional business information is unavailable, continue using verified public website information and clearly document unknown values.
+
+Do not repeatedly ask for information that can reasonably be discovered from the website.
+
 ---
 
-## 3. TOOL SELECTION AND REQUIREMENTS
+# 3. TOOL DISCOVERY AND TOOL SELECTION
 
-Prefer free and open-source tools.
+Before performing the audit, identify the tools and capabilities available in the execution environment.
 
-Do not purchase subscriptions or use paid tools unless explicitly authorized.
+Do not assume that a tool is installed or accessible.
 
-Use the following tools where available.
+Prefer free tools and open-source libraries.
 
-### A. Website Crawling
+Do not purchase subscriptions or use paid APIs.
 
-Tool: Screaming Frog SEO Spider
+## 3.1 Website Crawling
+
+### Primary Tool: Screaming Frog SEO Spider
+
+Website: https://www.screamingfrog.co.uk/seo-spider/
 
 Purpose:
 
-- Crawl website URLs.
-- Discover internal pages.
-- Identify broken links.
+- Discover website URLs.
+- Crawl internal pages.
+- Identify HTTP status codes.
+- Find broken links.
 - Detect missing title tags.
-- Detect duplicate title tags.
+- Detect duplicate titles.
 - Detect missing meta descriptions.
 - Detect duplicate meta descriptions.
 - Identify missing H1 elements.
-- Detect multiple H1 elements for manual review.
-- Identify heading hierarchy issues.
+- Inspect heading structures.
 - Detect redirect chains.
 - Detect redirect loops.
-- Identify 404 pages.
-- Identify orphan pages where crawl data permits.
-- Analyze canonical tags.
-- Identify image optimization issues.
+- Inspect canonical tags.
+- Inspect image attributes.
+- Export crawl results.
 
 Free limitation:
-The free version supports crawling up to 500 URLs.
 
-If unavailable, use Python, BeautifulSoup, and Playwright as alternatives.
+- Up to 500 URLs per crawl.
 
-### B. Performance Analysis
+If the website exceeds the free limit, clearly report crawl coverage and limitations.
 
-Tools:
+Do not silently claim a complete crawl.
 
-- Google PageSpeed Insights.
-- Google Lighthouse.
-- Chrome DevTools.
+### Alternative Tools
+
+- Python
+- Requests
+- BeautifulSoup
+- Playwright
+
+Use Python and Playwright when Screaming Frog is unavailable or insufficient.
+
+Use Playwright for JavaScript-rendered pages when necessary.
+
+Respect robots.txt, website terms, reasonable crawl rates, and access restrictions.
+
+Never bypass CAPTCHA, authentication, or access controls.
+
+## 3.2 Performance Analysis
+
+### Primary Tool: Google PageSpeed Insights
+
+Website: https://pagespeed.web.dev/
+
+Purpose:
+
+- Mobile performance analysis.
+- Desktop performance analysis.
+- Core Web Vitals.
+- Lighthouse performance metrics.
+- Performance recommendations.
+
+### Supporting Tools
+
+- Google Lighthouse
+- Chrome DevTools
 
 Analyze:
 
-- Largest Contentful Paint (LCP).
-- Interaction to Next Paint (INP).
-- Cumulative Layout Shift (CLS).
-- First Contentful Paint (FCP).
-- Speed Index.
-- Total Blocking Time (TBT).
-- JavaScript execution.
-- CSS delivery.
-- Render-blocking resources.
-- Image payload.
-- Font loading.
-- Third-party scripts.
-- Network requests.
-- Browser caching.
+1. Largest Contentful Paint (LCP).
+2. Interaction to Next Paint (INP).
+3. Cumulative Layout Shift (CLS).
+4. First Contentful Paint (FCP).
+5. Speed Index.
+6. Total Blocking Time (TBT).
+7. JavaScript execution.
+8. CSS delivery.
+9. Render-blocking resources.
+10. Image payload.
+11. Font loading.
+12. Third-party scripts.
+13. Network requests.
+14. Browser caching.
 
-Collect both mobile and desktop results where available.
+Test important pages separately.
 
-Distinguish real-user field data from laboratory measurements.
+At minimum, test:
 
-Do not report lab TBT as INP.
+- Homepage.
+- Main service pages.
+- Important landing pages.
+- Representative content pages.
 
-### C. HTML and SEO Inspection
+Test mobile and desktop independently.
+
+Distinguish:
+
+- Field data.
+- Lighthouse laboratory data.
+
+Never report laboratory TBT as INP.
+
+If field data is unavailable, report that explicitly.
+
+Core Web Vitals reference thresholds:
+
+| Metric |     Good | Needs Improvement |    Poor |
+| ------ | -------: | ----------------: | ------: |
+| LCP    |  <= 2.5s |           <= 4.0s |  > 4.0s |
+| INP    | <= 200ms |          <= 500ms | > 500ms |
+| CLS    |   <= 0.1 |           <= 0.25 |  > 0.25 |
+
+Use the 75th percentile when evaluating real-user field data.
+
+## 3.3 HTML and On-Page SEO Inspection
 
 Tools:
 
@@ -134,7 +214,9 @@ Tools:
 - Python.
 - BeautifulSoup.
 - Playwright.
-- W3C HTML Validator.
+- W3C Markup Validation Service.
+
+Website: https://validator.w3.org/
 
 Analyze:
 
@@ -142,7 +224,7 @@ Analyze:
 - Meta description.
 - Meta robots.
 - Canonical URL.
-- H1, H2, H3 structure.
+- H1, H2 and H3 structure.
 - HTML lang attribute.
 - Semantic HTML.
 - Image alt attributes.
@@ -150,174 +232,283 @@ Analyze:
 - Internal links.
 - External links.
 - Open Graph metadata.
-- Twitter metadata.
+- Social sharing metadata.
 - Structured data.
-- HTML validation errors.
+- HTML validation issues.
 
-### D. Indexing and Search Visibility
+Inspect both initial HTML and rendered HTML when necessary.
 
-Tools:
+Do not assume JavaScript-rendered content is missing based only on the initial HTML response.
 
-- Google Search Console.
+## 3.4 Indexing and Search Visibility
+
+Primary Tool: Google Search Console.
+
+Website: https://search.google.com/search-console/
+
+Use it to inspect:
+
+- Page indexing.
+- URL Inspection.
+- Sitemap status.
+- Crawl information.
+- Search performance.
+- Search impressions.
+- Search clicks.
+- Core Web Vitals reports.
+
+Additional inspection:
+
 - Google Search.
-- XML Sitemap inspection.
-- robots.txt inspection.
+- robots.txt.
+- XML sitemap.
 
-Analyze:
+IMPORTANT:
 
-- Indexing status.
-- Crawlability.
-- robots.txt configuration.
-- XML sitemap availability.
-- Sitemap URL validity.
-- Noindex directives.
-- Canonicalization.
-- Redirected URLs.
-- Duplicate URL patterns.
-- Search visibility where data is accessible.
+Search Console information is available only when authorized property access or valid exported reports are provided.
 
-Search Console information must only be reported when account access or supplied exports are available.
+Never pretend to have accessed Search Console.
 
-Do not assume that a page is indexed simply because it is publicly accessible.
+Never claim a page is indexed simply because it returns HTTP 200.
 
-### E. Structured Data
+Do not rely exclusively on Google search operators to establish indexing status.
+
+## 3.5 Structured Data Audit
 
 Tools:
 
-- Google Rich Results Test.
-- Schema.org Validator.
-- JSON-LD inspection.
+Google Rich Results Test:
+https://search.google.com/test/rich-results
+
+Schema.org Validator:
+https://validator.schema.org/
+
+Inspect relevant schema types:
+
+- Organization.
+- WebSite.
+- BreadcrumbList.
+- Article.
+- Service.
+- LocalBusiness, where applicable.
+- Product, where applicable.
 
 Analyze:
 
-- Organization schema.
-- Website schema.
-- BreadcrumbList.
-- Article schema.
-- Service schema.
-- LocalBusiness schema where applicable.
-- Product schema where applicable.
-- Structured data syntax.
-- Required and recommended properties.
-- Content consistency between schema and visible page content.
+- Existing JSON-LD.
+- Schema vocabulary validity.
+- Required properties.
+- Recommended properties.
+- Invalid properties.
+- Duplicate schema entities.
+- Schema and visible-content consistency.
+- Google rich-result eligibility.
+
+Distinguish Schema.org validity from Google rich-result eligibility.
 
 Do not recommend irrelevant schema types.
 
-### F. Image Analysis
+## 3.6 Image SEO Analysis
 
 Tools:
 
 - Python.
-- Chrome DevTools.
+- Pillow.
 - Screaming Frog.
+- Chrome DevTools.
 - Playwright.
 
 Analyze:
 
 - Missing alt attributes.
-- Empty alt attributes on informative images.
-- Oversized image files.
+- Empty alt attributes.
+- Decorative versus informative images.
+- Oversized images.
 - Incorrect image dimensions.
 - Missing width and height.
 - Missing responsive image delivery.
 - Incorrect lazy loading.
 - Broken image URLs.
-- Unoptimized formats.
+- Unoptimized image formats.
 - Image payload.
 - Descriptive filenames.
 
-Distinguish decorative images from informative images.
+Use actual image file sizes and dimensions wherever possible.
 
-Do not classify every empty alt attribute as an error.
+Do not classify every empty alt attribute as an SEO error.
+
+Do not recommend compression or resizing without considering visual quality and display requirements.
+
+## 3.7 Mobile SEO Analysis
+
+Tools:
+
+- Chrome DevTools.
+- Lighthouse.
+- Playwright.
+
+Analyze:
+
+- Responsive layouts.
+- Horizontal overflow.
+- Viewport configuration.
+- Font readability.
+- Tap target usability.
+- Navigation.
+- Mobile image sizing.
+- Mobile content availability.
+- Mobile rendering.
+- Mobile performance.
+
+## 3.8 Content SEO Analysis
+
+Tools:
+
+- Python.
+- BeautifulSoup.
+- Google Search Console, when authorized.
+- AI-assisted content analysis.
+
+Analyze:
+
+- Thin content.
+- Duplicate content.
+- Search intent mismatch.
+- Missing useful information.
+- Outdated content.
+- Keyword stuffing.
+- Poor content structure.
+- Weak internal linking.
+- Duplicate page intent.
+- Content quality.
+- E-E-A-T-related content signals.
+
+Evaluate content according to page purpose, target audience, and likely search intent.
+
+Do not assume short content is automatically low quality.
+
+Do not fabricate search volume, keyword difficulty, traffic, or keyword rankings.
+
+## 3.9 Security and Trust Inspection
+
+Tools:
+
+- Chrome DevTools.
+- Python Requests.
+- Browser inspection.
+
+Inspect publicly observable signals:
+
+- HTTPS availability.
+- HTTP to HTTPS redirects.
+- Mixed content.
+- Broken security-sensitive resources.
+- Privacy Policy availability.
+- Contact information.
+- About page.
+- Broken trust-related links.
+
+Do not claim a website is completely secure based only on HTTPS.
+
+Do not perform vulnerability exploitation or intrusive security testing.
 
 ---
 
-## 4. STRICT SEQUENTIAL AUDIT WORKFLOW
+# 4. STRICT SEQUENTIAL EXECUTION WORKFLOW
 
-Execute the following audit stages in order.
+Execute every audit stage in the exact order specified below.
 
-Complete each stage before moving to the next.
+Do not skip stages silently.
 
-For each stage:
+Do not begin the next stage until the current stage has been inspected, documented, and summarized.
 
-1. Explain the objective.
-2. Execute available inspections.
-3. Collect actual evidence.
-4. Record findings.
-5. Identify inaccessible or untested items.
-6. Summarize results.
-7. Proceed to the next stage.
+For every stage:
 
-### STAGE 1: WEBSITE DISCOVERY AND CRAWLING
+1. Explain the inspection objective internally.
+2. Select the appropriate available tool.
+3. Execute the inspection.
+4. Collect actual evidence.
+5. Record identified issues.
+6. Record inaccessible or untested checks.
+7. Summarize the stage.
+8. Continue to the next stage.
+
+## STAGE 1: WEBSITE DISCOVERY AND CRAWLING
 
 Tasks:
 
-1. Access the website.
+1. Access the supplied website.
 2. Inspect the homepage.
-3. Discover internal links.
-4. Identify accessible public URLs.
-5. Identify page types.
-6. Inspect sitemap.xml.
-7. Inspect robots.txt.
-8. Identify redirects.
-9. Identify HTTP status codes.
-10. Identify inaccessible pages.
+3. Identify canonical host behaviour.
+4. Discover internal links.
+5. Identify accessible public URLs.
+6. Identify page types.
+7. Inspect sitemap.xml.
+8. Inspect robots.txt.
+9. Identify redirects.
+10. Identify HTTP status codes.
+11. Identify inaccessible pages.
+12. Identify duplicate URL patterns.
 
 Create a page inventory.
 
-Required output:
+Required fields:
 
-| URL | Page Type | HTTP Status | Crawl Status | Indexability |
-| --- | --------- | ----------- | ------------ | ------------ |
+| URL | Page Type | HTTP Status | Crawl Status | Indexability Observation |
+| --- | --------- | ----------- | ------------ | ------------------------ |
 
 Record:
 
 - Total URLs discovered.
-- URLs successfully crawled.
-- URLs inaccessible.
+- Total URLs crawled.
+- Successfully crawled URLs.
+- Inaccessible URLs.
 - URLs returning errors.
 - Redirected URLs.
-- Duplicate URLs.
+- Duplicate URL patterns.
+- Crawl limitations.
 
-Respect robots.txt, website terms, reasonable crawl rates, and access restrictions. Do not bypass authentication, CAPTCHA, or access controls.
+Distinguish crawlability from indexability.
 
-### STAGE 2: HTML AND ON-PAGE SEO AUDIT
+## STAGE 2: HTML AND ON-PAGE SEO AUDIT
 
-Inspect every accessible page.
+Inspect every accessible page within the defined crawl scope.
 
 Check:
 
 1. Missing title tags.
-2. Duplicate title tags.
-3. Empty title tags.
+2. Empty title tags.
+3. Duplicate title tags.
 4. Missing meta descriptions.
-5. Duplicate meta descriptions.
-6. Missing H1 tags.
-7. Multiple H1 tags for manual review.
-8. Incorrect heading hierarchy.
-9. Missing canonical tags.
-10. Incorrect canonical URLs.
-11. Missing HTML lang attributes.
-12. Missing viewport metadata.
-13. Missing Open Graph metadata.
-14. Missing social sharing metadata.
-15. Poor URL structures.
-16. Empty anchor text.
-17. Non-descriptive anchor text.
-18. Incorrect semantic HTML usage.
-19. Missing or incorrect robots directives.
-
-Do not treat stylistic preferences as confirmed SEO violations.
+5. Empty meta descriptions.
+6. Duplicate meta descriptions.
+7. Missing H1 elements.
+8. Multiple H1 elements requiring contextual review.
+9. Incorrect heading hierarchy.
+10. Missing canonical tags.
+11. Incorrect canonical URLs.
+12. Missing HTML lang attributes.
+13. Missing viewport metadata.
+14. Missing Open Graph metadata.
+15. Missing social sharing metadata.
+16. Poor URL structures.
+17. Empty anchor text.
+18. Non-descriptive anchor text.
+19. Incorrect semantic HTML usage.
+20. Incorrect robots directives.
 
 Required output:
 
-| URL | HTML Element | Actual Value | Expected Value | Issue | Recommendation |
+| URL | HTML Element | Actual Value | Expected Guidance | Issue | Recommendation |
+| --- | ------------ | ------------ | ----------------- | ----- | -------------- |
 
-For every issue, include the relevant HTML snippet whenever available.
+Include actual HTML snippets wherever available.
 
-### STAGE 3: IMAGE SEO AUDIT
+Do not treat stylistic preferences as confirmed SEO violations.
 
-Inspect images on all accessible pages.
+## STAGE 3: IMAGE SEO AUDIT
+
+Inspect images on accessible pages.
 
 Check:
 
@@ -326,29 +517,24 @@ Check:
 3. Oversized images.
 4. Incorrect dimensions.
 5. Inefficient image formats.
-6. Missing width and height attributes.
+6. Missing width and height.
 7. Broken image URLs.
-8. Missing responsive images.
+8. Missing responsive image delivery.
 9. Incorrect lazy loading.
-10. Important images lazy-loaded unnecessarily.
+10. Important above-the-fold images lazy-loaded unnecessarily.
 11. Large image payloads.
 12. Non-descriptive image filenames.
 
 Required output:
 
 | Page URL | Image URL | File Size | Dimensions | Alt Attribute | Issue | Recommendation |
+| -------- | --------- | --------- | ---------- | ------------- | ----- | -------------- |
 
-For image-size issues, collect:
+Distinguish informative images from decorative images.
 
-- Actual file size.
-- Displayed dimensions.
-- Intrinsic dimensions.
-- Image format.
-- Recommended optimization.
+Capture actual file sizes, intrinsic dimensions, displayed dimensions, and formats wherever accessible.
 
-Do not recommend resizing or compression without considering display requirements and visual quality.
-
-### STAGE 4: INTERNAL AND EXTERNAL LINK AUDIT
+## STAGE 4: INTERNAL AND EXTERNAL LINK AUDIT
 
 Inspect:
 
@@ -359,15 +545,18 @@ Inspect:
 5. Internal links pointing to redirected URLs.
 6. Missing anchor text.
 7. Non-descriptive anchor text.
-8. Orphan pages where discoverable.
+8. Orphan pages where crawl data permits.
 9. Excessive click depth.
 10. Unnecessary URL parameters.
 
 Required output:
 
 | Source URL | Destination URL | HTTP Status | Anchor Text | Issue | Recommendation |
+| ---------- | --------------- | ----------- | ----------- | ----- | -------------- |
 
-### STAGE 5: TECHNICAL SEO AUDIT
+Do not classify temporary external website failures as confirmed permanent errors without sufficient verification.
+
+## STAGE 5: TECHNICAL SEO AUDIT
 
 Analyze:
 
@@ -382,20 +571,19 @@ Analyze:
 9. Duplicate URL accessibility.
 10. JavaScript rendering.
 11. Mobile-first content consistency.
-12. Pagination where applicable.
-13. Hreflang where applicable.
+12. Pagination, where applicable.
+13. Hreflang, where applicable.
 14. Crawlability.
 15. Indexability.
 
 Required output:
 
 | URL / Resource | Technical Check | Actual Result | Expected Result | Severity | Recommendation |
+| -------------- | --------------- | ------------- | --------------- | -------- | -------------- |
 
-Separate crawlability from indexability.
+Do not report an indexing issue without sufficient evidence.
 
-Do not claim indexing problems without sufficient evidence.
-
-### STAGE 6: WEBSITE PERFORMANCE AUDIT
+## STAGE 6: WEBSITE PERFORMANCE AUDIT
 
 Use PageSpeed Insights and Lighthouse.
 
@@ -404,9 +592,9 @@ Test:
 - Homepage.
 - Important service pages.
 - Important landing pages.
-- Representative blog pages.
+- Representative content pages.
 
-Test mobile and desktop separately.
+Test mobile and desktop independently.
 
 Analyze:
 
@@ -417,7 +605,7 @@ Analyze:
 5. TBT.
 6. Speed Index.
 7. Image optimization.
-8. JavaScript bundle size.
+8. JavaScript bundle size where measurable.
 9. CSS optimization.
 10. Render-blocking resources.
 11. Font loading.
@@ -425,21 +613,21 @@ Analyze:
 13. Caching.
 14. Network payload.
 
-Core Web Vitals reference thresholds:
-
-- LCP: Good <= 2.5 seconds.
-- INP: Good <= 200 milliseconds.
-- CLS: Good <= 0.1.
-
-Use the 75th percentile for field-data assessments.
-
-Clearly identify whether each measurement comes from field data or lab testing.
-
 Required output:
 
 | URL | Device | Metric | Actual Value | Threshold | Status | Recommendation |
+| --- | ------ | ------ | ------------ | --------- | ------ | -------------- |
 
-### STAGE 7: MOBILE SEO AUDIT
+Include:
+
+- Test date.
+- Device.
+- Source of measurement.
+- PageSpeed Insights result reference or URL, where available.
+
+Clearly distinguish field data from laboratory data.
+
+## STAGE 7: MOBILE SEO AUDIT
 
 Analyze:
 
@@ -457,8 +645,11 @@ Analyze:
 Required output:
 
 | URL | Device | Issue | Evidence | Impact | Recommendation |
+| --- | ------ | ----- | -------- | ------ | -------------- |
 
-### STAGE 8: CONTENT SEO AUDIT
+Use browser viewport inspection and screenshots where available.
+
+## STAGE 8: CONTENT SEO AUDIT
 
 Analyze:
 
@@ -475,17 +666,16 @@ Analyze:
 11. Content quality.
 12. E-E-A-T-related content signals.
 
-Do not assume content is low quality simply because it is short.
-
-Evaluate content against the purpose of each page and the likely search intent.
-
-Do not invent search volume or keyword difficulty.
-
 Required output:
 
 | URL | Content Issue | Evidence | Search Intent | Recommendation |
+| --- | ------------- | -------- | ------------- | -------------- |
 
-### STAGE 9: STRUCTURED DATA AUDIT
+Do not invent keyword metrics.
+
+If Search Console or keyword research data is unavailable, explain the limitation.
+
+## STAGE 9: STRUCTURED DATA AUDIT
 
 Analyze:
 
@@ -501,43 +691,49 @@ Analyze:
 Required output:
 
 | URL | Schema Type | Validation Result | Issue | Recommendation |
+| --- | ----------- | ----------------- | ----- | -------------- |
 
 Distinguish Schema.org validity from Google's rich-result eligibility.
 
-### STAGE 10: SECURITY AND TRUST SIGNALS
+## STAGE 10: SECURITY AND TRUST SIGNALS
 
-Check publicly observable website signals:
+Inspect:
 
 1. HTTPS availability.
 2. Mixed content.
 3. Broken security-sensitive resources.
-4. Privacy policy availability.
+4. Privacy Policy availability.
 5. Contact information availability.
 6. About page availability.
 7. Broken trust-related links.
 
-Do not claim that a website is secure based only on HTTPS.
+Report only publicly observable findings.
 
-Do not perform intrusive security testing or vulnerability exploitation.
+Do not perform intrusive security testing.
 
-### STAGE 11: ISSUE CLASSIFICATION AND PRIORITIZATION
+## STAGE 11: ISSUE CLASSIFICATION AND PRIORITIZATION
 
-Assign a severity level to each confirmed issue.
+Assign severity to every confirmed issue.
 
-CRITICAL:
-Severe problems affecting important website accessibility, crawling, or indexing.
+### CRITICAL
 
-HIGH:
-Important SEO or performance issues with significant potential impact.
+Severe issues affecting important website accessibility, crawling, or indexability.
 
-MEDIUM:
-Issues that should be fixed but have more limited or indirect impact.
+### HIGH
 
-LOW:
-Minor improvements, recommendations, or quality enhancements.
+Important SEO, technical, or performance issues with significant potential impact.
 
-INFO:
-Observations that are not confirmed problems.
+### MEDIUM
+
+Issues that should be addressed but have more limited or indirect impact.
+
+### LOW
+
+Minor improvements and quality enhancements.
+
+### INFO
+
+Observations, recommendations, and items that are not confirmed problems.
 
 For every issue, document:
 
@@ -555,85 +751,31 @@ For every issue, document:
 - Estimated implementation effort.
 - Status.
 
-Never assign a critical severity merely because a tool reports a warning.
-
-Prioritize by actual business importance, number of affected pages, and technical impact.
-
----
-
-## 5. EVIDENCE AND VERIFICATION RULES
-
-Every confirmed finding must have evidence.
-
-Acceptable evidence:
-
-- Actual HTML snippets.
-- HTTP response codes.
-- Lighthouse reports.
-- PageSpeed Insights measurements.
-- Screenshot references.
-- Image file metadata.
-- Crawling results.
-- Browser network inspection.
-- Search Console exports.
-- Structured data validation results.
-
-For each issue:
-
-1. Record the exact affected URL.
-2. Record the inspection method.
-3. Record the observed value.
-4. Record the expected value or applicable standard.
-5. Include evidence.
-6. Explain why it matters.
-7. Recommend a practical correction.
-
-Never fabricate:
-
-- Page speed scores.
-- Search rankings.
-- Traffic figures.
-- Backlink counts.
-- Keyword volumes.
-- Indexing status.
-- Crawl results.
-- Screenshot evidence.
-
-If evidence is insufficient, mark the finding as NEEDS MANUAL VERIFICATION.
-
----
-
-## 6. PRIORITY AND ACTION PLAN
-
-Create a consolidated issue register.
-
-Required columns:
-
-| ID | Category | Issue | Affected Pages | Severity | Evidence | Recommended Fix | Effort | Status |
-
-Then group issues into:
-
-1. Immediate fixes.
-2. High-priority fixes.
-3. Medium-priority improvements.
-4. Low-priority enhancements.
-5. Manual investigation required.
-
-Estimate implementation effort as:
+Implementation effort:
 
 - Small.
 - Medium.
 - Large.
 
-Do not estimate guaranteed ranking improvements.
+Prioritize issues based on:
 
----
+- Business importance of affected pages.
+- Number of affected pages.
+- Technical impact.
+- Search engine accessibility.
+- User experience impact.
 
-## 7. FINAL DOCUMENTATION REQUIREMENTS
+Never assign Critical severity simply because a tool reports a warning.
 
-Generate a professional SEO Audit Report.
+Do not guarantee ranking improvements.
 
-Report structure:
+## STAGE 12: FINAL REPORT GENERATION
+
+Generate one complete Markdown file.
+
+Do not create additional deliverables unless explicitly requested.
+
+The final report must contain the following sections.
 
 ### SECTION 1: EXECUTIVE SUMMARY
 
@@ -643,16 +785,14 @@ Include:
 - Website name.
 - Audit date.
 - Audit scope.
-- Website technology if identified.
+- Website technology, if verified.
 - Total URLs discovered.
 - Total URLs audited.
 - Total confirmed issues.
 - Severity distribution.
-- Overall audit observations.
+- Overall observations.
 
 Do not invent an arbitrary SEO score.
-
-If creating a score, explicitly define the scoring methodology and its limitations.
 
 ### SECTION 2: WEBSITE CRAWL SUMMARY
 
@@ -664,10 +804,11 @@ Include:
 - Redirect information.
 - Sitemap information.
 - robots.txt information.
+- Crawl limitations.
 
 ### SECTION 3: DETAILED SEO FINDINGS
 
-Include separate sections for:
+Create separate subsections for:
 
 1. HTML and On-Page SEO.
 2. Image SEO.
@@ -679,7 +820,7 @@ Include separate sections for:
 8. Structured Data.
 9. Security and Trust Signals.
 
-For every finding, include:
+For every confirmed finding include:
 
 - Issue ID.
 - Severity.
@@ -704,17 +845,27 @@ Include:
 
 ### SECTION 5: ISSUE SUMMARY
 
-Provide a consolidated issue count by category and severity.
+Provide:
+
+- Total issues.
+- Critical count.
+- High count.
+- Medium count.
+- Low count.
+- Informational observations.
+- Category-wise issue distribution.
 
 ### SECTION 6: DEVELOPER ACTION PLAN
 
-For each confirmed issue, explain:
+For every confirmed issue explain:
 
 - What needs to change.
 - Which page or component is affected.
 - What the developer should inspect.
-- Expected corrected behavior.
+- Expected corrected behaviour.
 - How to validate the fix.
+
+Do not implement the fixes.
 
 ### SECTION 7: UNTESTED ITEMS AND LIMITATIONS
 
@@ -726,78 +877,444 @@ Document:
 - Search Console access unavailable.
 - Analytics data unavailable.
 - Missing field data.
+- Crawl limits.
 - Tests requiring manual verification.
 
 ### SECTION 8: FINAL RECOMMENDATIONS
 
-Provide a clear, prioritized action plan for the next SEO optimization stage.
+Provide a clear, prioritized action plan.
+
+Group recommendations into:
+
+1. Immediate fixes.
+2. High-priority fixes.
+3. Medium-priority improvements.
+4. Low-priority improvements.
+5. Manual investigation required.
 
 ---
 
-## 8. OUTPUT FORMATS
+# 5. EVIDENCE COLLECTION AND VERIFICATION RULES
 
-Create the following deliverables when file-generation capability is available:
+Every confirmed finding must have supporting evidence.
 
-1. SEO_Audit_Report.md
-   - Complete human-readable audit report.
+Acceptable evidence:
 
-2. SEO_Issue_Register.csv
-   - All identified issues in structured tabular format.
+- Actual HTML snippets.
+- HTTP response codes.
+- Lighthouse reports.
+- PageSpeed Insights measurements.
+- Screenshot references.
+- Image file metadata.
+- Crawling results.
+- Browser network inspection.
+- Search Console exports.
+- Structured data validation results.
 
-3. SEO_Page_Inventory.csv
-   - Crawled URL inventory.
+For every issue:
 
-4. SEO_Performance_Report.csv
-   - Page-level performance results.
+1. Record the exact affected URL.
+2. Record the inspection method.
+3. Record the observed value.
+4. Record the expected value or applicable standard.
+5. Include evidence.
+6. Explain why it matters.
+7. Recommend a practical correction.
 
-5. SEO_Evidence/
-   - Supporting screenshots, HTML snippets, tool exports, and test evidence where available.
+Never fabricate:
 
-6. SEO_Executive_Summary.md
-   - Concise overview for business stakeholders.
+- Page speed scores.
+- Search rankings.
+- Organic traffic.
+- Backlink counts.
+- Keyword volumes.
+- Indexing status.
+- Crawl results.
+- Screenshot evidence.
+- Tool execution results.
 
-All reports must use consistent issue IDs.
+If evidence is insufficient, mark the issue:
 
-Do not create empty or fabricated evidence files.
+`NEEDS MANUAL VERIFICATION`
 
-If a requested artifact cannot be generated, explicitly report that limitation.
+If a test cannot be performed, mark it:
+
+`NOT TESTED`
+
+If a resource cannot be accessed, mark it:
+
+`INACCESSIBLE`
+
+Do not turn missing data into a confirmed issue.
+
+Maintain a distinction between:
+
+- Confirmed issue.
+- Potential issue.
+- Recommendation.
+- Informational observation.
+- Untested item.
 
 ---
 
-## 9. STRICT EXECUTION RULES
+# 6. OUTPUT DIRECTORY AND FILE MANAGEMENT
 
-1. Execute the audit sequentially.
-2. Do not skip stages silently.
-3. Do not invent findings.
-4. Do not fabricate test results.
-5. Do not confuse warnings with confirmed SEO errors.
-6. Do not modify website files.
-7. Do not publish content.
-8. Do not implement recommendations.
-9. Do not use paid tools without authorization.
-10. Prefer free and open-source tools.
-11. Record tool limitations.
-12. Provide evidence for every confirmed issue.
-13. Distinguish actual issues from recommendations.
-14. Explain technical findings in developer-friendly language.
-15. Maintain a professional audit document structure.
+This is a mandatory requirement.
 
-If a tool is unavailable, use an appropriate alternative where possible.
+All SEO audit instructions and generated audit outputs must be stored inside the existing SEO orchestration workflow.
 
-If a check cannot be performed with available access, document it as NOT TESTED rather than assuming its result.
+## A. Project Root Directory
+
+```text
+C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\
+```
+
+## B. Updated Directory Structure
+
+```text
+seo-orchestration-flow/
+│
+├── .agents/
+│   └── skills/
+│       └── seo-audit/
+│           └── SKILL.md
+│
+├── outputs/
+│   └── {YYYY-MM-DD}/
+│       └── {website-domain}/
+│           └── audit-report/
+│               ├── SEO_Audit_Report.md
+│               │
+│               ├── evidence/
+│               ├── screenshots/
+│               ├── tool-exports/
+│               └── crawl-data/
+│
+└── other-workflow-files/
+```
+
+## C. Output Path Rules
+
+1. Use the existing SEO orchestration workflow root directory.
+2. Store all generated audit results inside its `outputs/` directory.
+3. Retrieve the actual current execution date from the system.
+4. Format the date as `YYYY-MM-DD`.
+5. Create a date-specific directory inside `outputs/`.
+6. Create a separate website directory for each audited domain.
+7. Use the normalized website hostname as the folder name.
+8. Inside the website directory, create an `audit-report/` directory.
+9. Save the final report as `SEO_Audit_Report.md`.
+10. Store supporting audit evidence and tool results inside their respective subdirectories.
+
+## D. Expected Output Example
+
+Input:
+
+Website URL:
+
+https://strawhatdevs.com
+
+Execution Date:
+
+2026-11-19
+
+Expected output:
+
+```text
+seo-orchestration-flow/
+│
+├── .agents/
+│   └── skills/
+│       └── seo-audit/
+│           └── SKILL.md
+│
+└── outputs/
+    └── 2026-11-19/
+        └── strawhatdevs.com/
+            └── audit-report/
+                │
+                ├── SEO_Audit_Report.md
+                │
+                ├── evidence/
+                ├── screenshots/
+                ├── tool-exports/
+                └── crawl-data/
+```
+
+## E. Supporting Data Storage Rules
+
+### 1. SEO_Audit_Report.md
+
+Store the complete human-readable SEO audit report, including:
+
+- Executive Summary.
+- Website Crawl Summary.
+- HTML and On-Page SEO Findings.
+- Image SEO Findings.
+- Internal and External Link Findings.
+- Technical SEO Findings.
+- Performance Report.
+- Mobile SEO Findings.
+- Content SEO Findings.
+- Structured Data Findings.
+- Security and Trust Signals.
+- Issue Summary.
+- Developer Action Plan.
+- Untested Items and Limitations.
+- Final Recommendations.
+
+### 2. evidence/
+
+Store actual inspection evidence where available:
+
+- HTML snippets.
+- HTTP response evidence.
+- Metadata inspection results.
+- Canonical inspection results.
+- Schema validation evidence.
+- Other verified technical findings.
+
+### 3. screenshots/
+
+Store actual screenshots where available:
+
+- PageSpeed Insights results.
+- Lighthouse reports.
+- Mobile rendering screenshots.
+- Browser inspection screenshots.
+- Relevant visual evidence.
+
+### 4. tool-exports/
+
+Store actual tool-generated exports where available:
+
+- Screaming Frog CSV exports.
+- Lighthouse JSON reports.
+- PageSpeed Insights results.
+- Structured data validation results.
+- Other relevant tool outputs.
+
+### 5. crawl-data/
+
+Store actual website crawling information:
+
+- Crawled URL inventory.
+- HTTP status results.
+- Internal link results.
+- External link results.
+- Image inspection data.
+- Sitemap inspection results.
+- robots.txt inspection results.
+- Redirect information.
+
+Do not create empty files or fabricate tool outputs.
+
+Only save data that was actually collected.
+
+## F. URL Normalization Rules
+
+When creating the website domain directory:
+
+1. Remove the URL protocol (`https://` or `http://`).
+2. Remove URL paths.
+3. Remove query parameters.
+4. Remove trailing slashes.
+5. Use the hostname.
+6. Preserve actual subdomains.
+7. Sanitize invalid filesystem characters if necessary.
+8. Do not use the entire URL as the directory name.
+
+Examples:
+
+| Input URL                               | Website Directory |
+| --------------------------------------- | ----------------- |
+| https://strawhatdevs.com                | strawhatdevs.com  |
+| https://www.example.com/                | www.example.com   |
+| https://example.com/services/web        | example.com       |
+| https://shop.example.com/products?id=10 | shop.example.com  |
+
+## G. File Creation and Version Management Rules
+
+1. Verify that the project root directory exists.
+2. Create the date directory if it does not exist.
+3. Create the website domain directory if it does not exist.
+4. Create the `audit-report/` directory if it does not exist.
+5. Generate the complete SEO audit report.
+6. Save the report as `SEO_Audit_Report.md`.
+7. Create supporting directories only when required.
+8. Preserve existing unrelated files.
+9. Never overwrite an existing report without checking it first.
+10. If a report already exists for the same website and date, preserve it and create a separate version or execution-specific subdirectory.
+11. Do not delete previous audit reports.
+12. Do not generate empty or fabricated evidence files.
+13. Verify that the final Markdown report exists and contains the complete audit results.
+14. If saving fails, report the exact error and do not claim successful completion.
+
+## H. Dynamic Path Generation
+
+The output directory must be generated dynamically.
+
+Use this logical structure:
+
+```text
+PROJECT_ROOT = C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow
+
+OUTPUT_DATE = CURRENT_SYSTEM_DATE (YYYY-MM-DD)
+
+WEBSITE_DOMAIN = NORMALIZED_WEBSITE_HOSTNAME
+
+AUDIT_DIRECTORY = PROJECT_ROOT/outputs/OUTPUT_DATE/WEBSITE_DOMAIN/audit-report
+
+FINAL_REPORT = AUDIT_DIRECTORY/SEO_Audit_Report.md
+```
+
+The actual current system date must be used for every execution.
+
+Never hardcode the example date.
+
+The project root must be verified before creating files.
+
+Do not assume that a directory exists without checking it.
+
+## I. Final Output Verification
+
+Before completing the audit, verify:
+
+- The correct project root was used.
+- The correct execution date directory was created.
+- The correct website domain directory was created.
+- The `audit-report/` directory exists.
+- `SEO_Audit_Report.md` exists.
+- The Markdown report contains all required sections.
+- Supporting evidence is stored in the appropriate directories where available.
+- No existing unrelated files were modified.
+- No website files were modified.
+
+If any required operation fails, document the failure.
+
+## J. Final Output Path
+
+The final report must be saved at:
+
+```text
+outputs/{YYYY-MM-DD}/{website-domain}/audit-report/SEO_Audit_Report.md
+```
+
+Example:
+
+```text
+outputs/2026-11-19/strawhatdevs.com/audit-report/SEO_Audit_Report.md
+```
+
+This directory structure is mandatory for every SEO audit execution.
+
+# 7. STRICT EXECUTION RULES
+
+These rules are mandatory.
+
+1. Execute all audit stages sequentially.
+2. Use free tools wherever possible.
+3. Identify tool availability before execution.
+4. Never claim a tool was used if it was not executed.
+5. Never invent test results.
+6. Never fabricate SEO issues.
+7. Do not confuse tool warnings with confirmed SEO errors.
+8. Do not modify website files.
+9. Do not publish content.
+10. Do not implement fixes.
+11. Do not use paid tools without authorization.
+12. Respect robots.txt and access restrictions.
+13. Record tool limitations.
+14. Provide evidence for confirmed issues.
+15. Distinguish actual issues from recommendations.
+16. Explain technical findings in developer-friendly language.
+17. Maintain consistent issue IDs.
+18. Do not silently skip audit stages.
+19. Keep the final report professional and readable.
+20. Generate only the requested final Markdown report.
+
+If a tool is unavailable, use an appropriate free alternative where possible.
+
+If no alternative is available, document the limitation and proceed.
+
+Do not stop the entire audit merely because one optional tool is unavailable.
 
 ---
 
-## 10. START EXECUTION
+# 8. FINAL QUALITY ASSURANCE
 
-Begin with Stage 1: Website Discovery and Crawling.
+Before saving the final report, verify:
 
-First identify the tools and capabilities available in the current environment.
+- All 12 audit stages have been addressed.
+- Every accessible page within the declared scope has been accounted for.
+- Crawl coverage and limitations are documented.
+- Every confirmed issue has evidence.
+- Every issue has a unique ID.
+- Severity classifications are reasonable.
+- Performance measurements identify their data source.
+- Field data and lab data are not mixed.
+- Untested items are clearly identified.
+- Recommendations are actionable.
+- No website modifications have occurred.
+- All report sections are present.
+- The Markdown file is properly formatted.
+- The final file is saved at the required output path.
+- The saved file has been checked for completeness.
 
-Then crawl the website, collect evidence, and prepare the page inventory.
+---
 
-Proceed through each stage sequentially.
+# 9. FINAL EXECUTION RESPONSE
 
-At the end, generate the complete professional SEO Audit Report and supporting files.
+After completing the audit and verifying the report file, provide a concise execution summary.
 
-Remember: This is an evidence-based SEO audit, not a generic SEO advice report.
+Include:
+
+Website:
+Audit Status:
+Audit Date:
+Total URLs Discovered:
+Total URLs Audited:
+Total Confirmed Issues:
+Critical:
+High:
+Medium:
+Low:
+Not Tested:
+Tools Used:
+Tools Unavailable:
+Output File Path:
+
+If the audit is incomplete, explicitly state the incomplete stages.
+
+Never claim successful completion if the final report was not generated and verified.
+
+---
+
+# 10. START EXECUTION
+
+Begin the SEO audit only after receiving the website input.
+
+First:
+
+1. Identify available tools.
+2. Validate the supplied website URL.
+3. Inspect the website accessibility.
+4. Confirm the actual workflow output directory.
+5. Create the required website-specific output directory.
+6. Start STAGE 1: WEBSITE DISCOVERY AND CRAWLING.
+
+Then execute all 12 stages in STRICT SEQUENTIAL mode.
+
+Collect evidence, document findings, prioritize issues, and generate the final report.
+
+Remember:
+
+THIS IS A PROFESSIONAL, EVIDENCE-BASED, AUDIT-ONLY SEO WORKFLOW.
+
+DO NOT IMPLEMENT SEO FIXES.
+
+DO NOT INVENT DATA.
+
+DO NOT SKIP STAGES SILENTLY.
+
+GENERATE ONE COMPLETE SEO_Audit_Report.md FILE IN THE SPECIFIED OUTPUT DIRECTORY.
