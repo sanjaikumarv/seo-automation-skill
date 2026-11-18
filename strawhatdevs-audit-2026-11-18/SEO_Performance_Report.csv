@@ -1,0 +1,131 @@
+﻿URL,Device,Metric,Actual Value,Unit,Threshold,Status,Recommendation,Source,Evidence
+https://www.strawhatdevs.com/en,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,LCP,8086.8,ms,Good <= 2500,Poor,"Review LCP element, discovery and transfer",Lighthouse lab,SEO_Evidence/lighthouse/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,CLS,0,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,FCP,3306.7,ms,Good <= 1800,Poor,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,Speed Index,6424.9,ms,Good <= 3400,Poor,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,TBT,256.5,ms,Good <= 200,Needs improvement,Profile startup scripts and long tasks,Lighthouse lab,SEO_Evidence/lighthouse/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,Network transfer,1598608,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/home-mobile.json
+https://www.strawhatdevs.com/en,mobile,Performance score,58,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/home-mobile.json
+https://www.strawhatdevs.com/en,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,LCP,1803.4,ms,Good <= 2500,Good,,Lighthouse lab,SEO_Evidence/lighthouse/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,CLS,0,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,FCP,521.0,ms,Good <= 1800,Good,,Lighthouse lab,SEO_Evidence/lighthouse/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,Speed Index,1188.5,ms,Good <= 1310,Good,,Lighthouse lab,SEO_Evidence/lighthouse/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,TBT,69,ms,Good <= 150,Good,,Lighthouse lab,SEO_Evidence/lighthouse/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,Network transfer,1709322,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/home-desktop.json
+https://www.strawhatdevs.com/en,desktop,Performance score,92,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/home-desktop.json
+https://www.strawhatdevs.com/en/consulting,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,LCP,1344.9,ms,Good <= 2500,Good,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,CLS,0,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,FCP,1344.9,ms,Good <= 1800,Good,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,Speed Index,2763.0,ms,Good <= 3400,Good,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,TBT,693.5,ms,Good <= 200,Poor,Profile startup scripts and long tasks,Lighthouse lab,SEO_Evidence/lighthouse/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,Network transfer,540739,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,mobile,Performance score,82,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-mobile.json
+https://www.strawhatdevs.com/en/consulting,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,LCP,307.1,ms,Good <= 2500,Good,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,CLS,0,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,FCP,307.1,ms,Good <= 1800,Good,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,Speed Index,1281.5,ms,Good <= 1310,Good,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,TBT,327.0,ms,Good <= 150,Needs improvement,Profile startup scripts and long tasks,Lighthouse lab,SEO_Evidence/lighthouse/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,Network transfer,678628,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/consulting-desktop.json
+https://www.strawhatdevs.com/en/consulting,desktop,Performance score,85,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/consulting-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,LCP,1193.7,ms,Good <= 2500,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,CLS,0,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,FCP,1193.7,ms,Good <= 1800,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,Speed Index,2341.0,ms,Good <= 3400,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,TBT,598.0,ms,Good <= 200,Needs improvement,Profile startup scripts and long tasks,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,Network transfer,3472707,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,mobile,Performance score,85,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-mobile.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,LCP,357.0,ms,Good <= 2500,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,CLS,0,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,FCP,357.0,ms,Good <= 1800,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,Speed Index,985.7,ms,Good <= 1310,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,TBT,30.5,ms,Good <= 150,Good,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,Network transfer,3594584,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/solutions/manufacturing-software,desktop,Performance score,100,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/manufacturing-desktop.json
+https://www.strawhatdevs.com/en/schedule,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,LCP,1962.0,ms,Good <= 2500,Good,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,CLS,0.067,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,FCP,1962.0,ms,Good <= 1800,Needs improvement,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,Speed Index,3012.1,ms,Good <= 3400,Good,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,TBT,551,ms,Good <= 200,Needs improvement,Profile startup scripts and long tasks,Lighthouse lab,SEO_Evidence/lighthouse/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,Network transfer,2246786,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,mobile,Performance score,82,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-mobile.json
+https://www.strawhatdevs.com/en/schedule,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,LCP,391.5,ms,Good <= 2500,Good,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,CLS,0.069,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,FCP,391.5,ms,Good <= 1800,Good,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,Speed Index,1256.4,ms,Good <= 1310,Good,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,TBT,19.5,ms,Good <= 150,Good,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,Network transfer,2338453,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/schedule-desktop.json
+https://www.strawhatdevs.com/en/schedule,desktop,Performance score,98,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/schedule-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,LCP,11689.8,ms,Good <= 2500,Poor,"Review LCP element, discovery and transfer",Lighthouse lab,SEO_Evidence/lighthouse/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,CLS,0,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,FCP,1037.1,ms,Good <= 1800,Good,,Lighthouse lab,SEO_Evidence/lighthouse/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,Speed Index,2715.6,ms,Good <= 3400,Good,,Lighthouse lab,SEO_Evidence/lighthouse/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,TBT,492,ms,Good <= 200,Needs improvement,Profile startup scripts and long tasks,Lighthouse lab,SEO_Evidence/lighthouse/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,Network transfer,2108169,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,mobile,Performance score,62,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/blog-mobile.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Page p75,SEO_Evidence/pagespeed/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,LCP,,ms,Good <= 2500,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,INP,,ms,Good <= 200,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,CLS,,unitless,Good <= 0.1,NOT TESTED,Retrieve CrUX field data when accessible,PageSpeed Insights / CrUX Origin p75,SEO_Evidence/pagespeed/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,LCP,2359.0,ms,Good <= 2500,Good,,Lighthouse lab,SEO_Evidence/lighthouse/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,CLS,0,unitless,Good <= 0.1,Good,,Lighthouse lab,SEO_Evidence/lighthouse/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,FCP,565.3,ms,Good <= 1800,Good,,Lighthouse lab,SEO_Evidence/lighthouse/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,Speed Index,1171.5,ms,Good <= 1310,Good,,Lighthouse lab,SEO_Evidence/lighthouse/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,TBT,0,ms,Good <= 150,Good,,Lighthouse lab,SEO_Evidence/lighthouse/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,Network transfer,2109060,bytes,,Measured,Review the network resource breakdown,Lighthouse lab,SEO_Evidence/lighthouse/blog-desktop.json
+https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app,desktop,Performance score,87,points / 100,,Measured,,Lighthouse lab,SEO_Evidence/lighthouse/blog-desktop.json

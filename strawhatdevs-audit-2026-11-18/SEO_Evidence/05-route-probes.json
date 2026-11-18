@@ -1,0 +1,338 @@
+{
+  "https://www.strawhatdevs.com/en/": {
+    "url": "https://www.strawhatdevs.com/en/",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/",
+        "status": 308,
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-type": "text/plain",
+          "date": "Wed, 18 Nov 2026 12:28:21 GMT",
+          "location": "/en",
+          "refresh": "0;url=/en",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-id": "bom1::95ntl-1795004901852-ca72ede7b09f",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "url": "https://www.strawhatdevs.com/en",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:28:22 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::pmbfp-1795004902445-f988c011127a",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T17:58:20.576954+05:30",
+    "final": "https://www.strawhatdevs.com/en",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:28:22 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::pmbfp-1795004902445-f988c011127a",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 95679,
+    "body": "responses/52884b4f6895b085bf30.html"
+  },
+  "https://www.strawhatdevs.com/ta/": {
+    "url": "https://www.strawhatdevs.com/ta/",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/ta/",
+        "status": 308,
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-type": "text/plain",
+          "date": "Wed, 18 Nov 2026 12:28:24 GMT",
+          "location": "/ta",
+          "refresh": "0;url=/ta",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-id": "bom1::9nzvz-1795004904055-d33c73e6f7e0",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "url": "https://www.strawhatdevs.com/ta",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:28:24 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::xcgvz-1795004904654-6c9b93d0ecd9",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T17:58:22.841192+05:30",
+    "final": "https://www.strawhatdevs.com/ta",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:28:24 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::xcgvz-1795004904654-6c9b93d0ecd9",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 126030,
+    "body": "responses/48b7310d57668169a5a9.html"
+  },
+  "https://www.strawhatdevs.com/en/seo-audit-public-not-found": {
+    "url": "https://www.strawhatdevs.com/en/seo-audit-public-not-found",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/seo-audit-public-not-found",
+        "status": 404,
+        "headers": {
+          "access-control-allow-origin": "*",
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline; filename=\"404\"",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:28:26 GMT",
+          "etag": "W/\"057b7790d072b709ec3f8b20ca763997\"",
+          "last-modified": "Wed, 18 Nov 2026 12:28:26 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-matched-path": "/404",
+          "x-next-error-status": "404",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::nprvz-1795004906244-afd5b66b5d99",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T17:58:24.985413+05:30",
+    "final": "https://www.strawhatdevs.com/en/seo-audit-public-not-found",
+    "status": 404,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"404\"",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:28:26 GMT",
+      "etag": "W/\"057b7790d072b709ec3f8b20ca763997\"",
+      "last-modified": "Wed, 18 Nov 2026 12:28:26 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-matched-path": "/404",
+      "x-next-error-status": "404",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::nprvz-1795004906244-afd5b66b5d99",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 6581,
+    "body": "responses/a581b713c9b0c089de57.html"
+  },
+  "https://www.strawhatdevs.com/seo-audit-public-not-found": {
+    "url": "https://www.strawhatdevs.com/seo-audit-public-not-found",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/seo-audit-public-not-found",
+        "status": 307,
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-type": "text/plain",
+          "date": "Wed, 18 Nov 2026 12:28:27 GMT",
+          "location": "/en/seo-audit-public-not-found",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-id": "bom1::8lh95-1795004907842-8c36f607e335",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "url": "https://www.strawhatdevs.com/en/seo-audit-public-not-found",
+        "status": 404,
+        "headers": {
+          "access-control-allow-origin": "*",
+          "age": "2",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline; filename=\"404\"",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:28:28 GMT",
+          "etag": "W/\"057b7790d072b709ec3f8b20ca763997\"",
+          "last-modified": "Wed, 18 Nov 2026 12:28:26 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-matched-path": "/404",
+          "x-next-error-status": "404",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "bom1::d96z8-1795004908535-162d291a5e65",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T17:58:26.314044+05:30",
+    "final": "https://www.strawhatdevs.com/en/seo-audit-public-not-found",
+    "status": 404,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "2",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"404\"",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:28:28 GMT",
+      "etag": "W/\"057b7790d072b709ec3f8b20ca763997\"",
+      "last-modified": "Wed, 18 Nov 2026 12:28:26 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-matched-path": "/404",
+      "x-next-error-status": "404",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::d96z8-1795004908535-162d291a5e65",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 6581,
+    "body": "responses/a581b713c9b0c089de57.html"
+  },
+  "https://www.strawhatdevs.com/en/privacy": {
+    "url": "https://www.strawhatdevs.com/en/privacy",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/privacy",
+        "status": 404,
+        "headers": {
+          "access-control-allow-origin": "*",
+          "age": "3",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline; filename=\"404\"",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:28:29 GMT",
+          "etag": "W/\"057b7790d072b709ec3f8b20ca763997\"",
+          "last-modified": "Wed, 18 Nov 2026 12:28:26 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-matched-path": "/404",
+          "x-next-error-status": "404",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "bom1::947lk-1795004909730-493b81f389e4",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T17:58:28.464983+05:30",
+    "final": "https://www.strawhatdevs.com/en/privacy",
+    "status": 404,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "3",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"404\"",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:28:29 GMT",
+      "etag": "W/\"057b7790d072b709ec3f8b20ca763997\"",
+      "last-modified": "Wed, 18 Nov 2026 12:28:26 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-matched-path": "/404",
+      "x-next-error-status": "404",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::947lk-1795004909730-493b81f389e4",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 6581,
+    "body": "responses/a581b713c9b0c089de57.html"
+  },
+  "https://www.strawhatdevs.com/en/privacy-policy": {
+    "url": "https://www.strawhatdevs.com/en/privacy-policy",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/privacy-policy",
+        "status": 404,
+        "headers": {
+          "access-control-allow-origin": "*",
+          "age": "4",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline; filename=\"404\"",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:28:30 GMT",
+          "etag": "W/\"057b7790d072b709ec3f8b20ca763997\"",
+          "last-modified": "Wed, 18 Nov 2026 12:28:26 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-matched-path": "/404",
+          "x-next-error-status": "404",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "bom1::2csqc-1795004910776-b2d041c88d4f",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T17:58:29.567519+05:30",
+    "final": "https://www.strawhatdevs.com/en/privacy-policy",
+    "status": 404,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "4",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"404\"",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:28:30 GMT",
+      "etag": "W/\"057b7790d072b709ec3f8b20ca763997\"",
+      "last-modified": "Wed, 18 Nov 2026 12:28:26 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-matched-path": "/404",
+      "x-next-error-status": "404",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::2csqc-1795004910776-b2d041c88d4f",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 6581,
+    "body": "responses/a581b713c9b0c089de57.html"
+  }
+}

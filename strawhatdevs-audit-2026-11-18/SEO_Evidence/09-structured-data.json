@@ -1,0 +1,346 @@
+{
+  "https://www.strawhatdevs.com/en": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/insights": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/insights/manufacturing-order-workflow": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/insights/healthcare-front-desk-workflows": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/insights/retail-mart-inventory-visibility": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/insights/shopping-mall-iot-pilot": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/insights/saas-first-useful-release": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/blogs": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/tools": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/consulting": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/solutions/manufacturing-software": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/solutions/dealer-order-management": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/solutions/workflow-automation": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/about": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/work": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/insights": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/insights/manufacturing-order-workflow": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/insights/healthcare-front-desk-workflows": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/insights/retail-mart-inventory-visibility": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/insights/shopping-mall-iot-pilot": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/insights/saas-first-useful-release": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/blogs": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/tools": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/consulting": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/solutions/manufacturing-software": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/solutions/dealer-order-management": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/solutions/workflow-automation": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/about": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/work": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/vr": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/schedule": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/auth/sign-in": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/auth/sign-up": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact?service=Custom%20software": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact?service=Web%20applications": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact?service=Mobile%20applications": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact?service=SaaS%20products": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact?service=Cloud%20%26%20DevOps": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact?service=AI%20%26%20automation": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact?service=APIs%20%26%20integrations": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/contact?service=Modernization%20%26%20consulting": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/nextjs-cartcraft": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/sql": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/docker": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/terms": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/blogs/learn-programming-in-tamil-without-getting-stuck": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/blogs/clean-code-habits-junior-developers": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/vr": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/schedule": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/auth/sign-in": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/auth/sign-up": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/terms": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact?service=Custom%20software": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact?service=Web%20applications": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact?service=Mobile%20applications": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact?service=SaaS%20products": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact?service=Cloud%20%26%20DevOps": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact?service=AI%20%26%20automation": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact?service=APIs%20%26%20integrations": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/contact?service=Modernization%20%26%20consulting": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/nextjs-cartcraft": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/sql": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/docker": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/blogs/learn-programming-in-tamil-without-getting-stuck": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/blogs/system-design-basics-scaling-simple-app": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/blogs/clean-code-habits-junior-developers": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/auth/forgot-password": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/auth/forgot-password": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/engineering-fundamentals": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/git": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/go": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/nextjs-pages": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/nodejs-rest": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/en/courses/react17": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/engineering-fundamentals": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/git": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/go": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/nextjs-pages": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/nodejs-rest": {
+    "blocks": [],
+    "other_schema_markers": 0
+  },
+  "https://www.strawhatdevs.com/ta/courses/react17": {
+    "blocks": [],
+    "other_schema_markers": 0
+  }
+}

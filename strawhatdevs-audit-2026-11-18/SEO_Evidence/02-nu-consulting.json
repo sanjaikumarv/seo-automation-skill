@@ -1,0 +1,503 @@
+{
+  "url": "https://www.strawhatdevs.com/en/consulting",
+  "endpoint": "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.strawhatdevs.com%2Fen%2Fconsulting&out=json",
+  "http_status": 200,
+  "observed": "2026-11-18T18:09:38.603078+05:30",
+  "response": {
+    "url": "https://www.strawhatdevs.com/en/consulting",
+    "version": "26.11.17",
+    "messages": [
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 122,
+        "firstColumn": 100,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "37\"><head><meta charSet=\"utf-8\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 23
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 191,
+        "firstColumn": 123,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 69
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 284,
+        "firstColumn": 192,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/62b828d2bdad835f.css\" data-precedence=\"next\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 93
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 377,
+        "firstColumn": 285,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "e=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/css/7a4e0ae13ed34dc6.css\" data-precedence=\"next\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 93
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 486,
+        "firstColumn": 378,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "e=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-cab5955b19b1d7ab.js\"/><scrip",
+        "hiliteStart": 10,
+        "hiliteLength": 109
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2046,
+        "firstColumn": 1951,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "></script><link rel=\"preload\" href=\"https://www.googletagmanager.com/gtm.js?id=GTM-WP5FMF64\" as=\"script\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 96
+      },
+      {
+        "type": "error",
+        "lastLine": 1,
+        "lastColumn": 2077,
+        "firstColumn": 2047,
+        "message": "Element “meta” is missing one or more of the following attributes: “content”, “property”.",
+        "extract": "\"script\"/><meta name=\"next-size-adjust\"/><title",
+        "hiliteStart": 10,
+        "hiliteLength": 31
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2077,
+        "firstColumn": 2047,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "\"script\"/><meta name=\"next-size-adjust\"/><title",
+        "hiliteStart": 10,
+        "hiliteLength": 31
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2318,
+        "firstColumn": 2147,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "vs</title><meta name=\"description\" content=\"Expert guidance to help you build scalable and efficient software solutions. Architecture design, code review, team training, and more.\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 172
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2374,
+        "firstColumn": 2319,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "d more.\"/><meta name=\"application-name\" content=\"Straw Hat Devs\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 56
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2420,
+        "firstColumn": 2375,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "at Devs\"/><meta name=\"author\" content=\"Straw Hat Devs\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 46
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2471,
+        "firstColumn": 2421,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "at Devs\"/><link rel=\"manifest\" href=\"/manifest.webmanifest\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 51
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2513,
+        "firstColumn": 2472,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "anifest\"/><meta name=\"generator\" content=\"Next.js\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 42
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2649,
+        "firstColumn": 2514,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "Next.js\"/><meta name=\"keywords\" content=\"software engineering,cloud engineering,applied AI,Tamil programming,coding courses,software consulting\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 136
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2696,
+        "firstColumn": 2650,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "sulting\"/><meta name=\"creator\" content=\"Straw Hat Devs\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 47
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2745,
+        "firstColumn": 2697,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "at Devs\"/><meta name=\"publisher\" content=\"Straw Hat Devs\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 49
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2790,
+        "firstColumn": 2746,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "at Devs\"/><meta name=\"robots\" content=\"index, follow\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 45
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2901,
+        "firstColumn": 2791,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": " follow\"/><meta name=\"googlebot\" content=\"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 111
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2944,
+        "firstColumn": 2902,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "ppet:-1\"/><meta name=\"category\" content=\"education\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 43
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 2999,
+        "firstColumn": 2945,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "ucation\"/><link rel=\"canonical\" href=\"https://strawhatdevs.com\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 55
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3074,
+        "firstColumn": 3000,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "evs.com\"/><link rel=\"alternate\" hrefLang=\"en-US\" href=\"https://strawhatdevs.com/en\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 75
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3149,
+        "firstColumn": 3075,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": ".com/en\"/><link rel=\"alternate\" hrefLang=\"ta-IN\" href=\"https://strawhatdevs.com/ta\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 75
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3225,
+        "firstColumn": 3150,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": ".com/ta\"/><meta name=\"format-detection\" content=\"telephone=no, address=no, email=no\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 76
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3318,
+        "firstColumn": 3226,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "mail=no\"/><meta name=\"google-site-verification\" content=\"7GZZzEdM9RbjVZGFdKJvhp22PtJoyj1qF9xZ1u5jQOY\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 93
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3387,
+        "firstColumn": 3319,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "1u5jQOY\"/><meta name=\"yandex-verification\" content=\"yandex-verification-code\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 69
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3479,
+        "firstColumn": 3388,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "on-code\"/><meta property=\"og:title\" content=\"Software Consulting Services in Tamil | Straw Hat Devs\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 92
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3658,
+        "firstColumn": 3480,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "at Devs\"/><meta property=\"og:description\" content=\"Expert guidance to help you build scalable and efficient software solutions. Architecture design, code review, team training, and more.\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 179
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3744,
+        "firstColumn": 3659,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "d more.\"/><meta property=\"og:image\" content=\"https://strawhatdevs.com/brand/social-banner.png\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 86
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3811,
+        "firstColumn": 3745,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "ner.png\"/><meta property=\"og:image:alt\" content=\"Straw Hat Devs consulting\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 67
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3868,
+        "firstColumn": 3812,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "sulting\"/><meta name=\"twitter:card\" content=\"summary_large_image\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 57
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 3960,
+        "firstColumn": 3869,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "e_image\"/><meta name=\"twitter:title\" content=\"Straw Hat Devs | Software Engineering, Cloud &amp; AI\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 92
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 4108,
+        "firstColumn": 3961,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "amp; AI\"/><meta name=\"twitter:description\" content=\"Practical software engineering, cloud, and AI education with Tamil-first courses and expert consulting.\"/><meta ",
+        "hiliteStart": 10,
+        "hiliteLength": 148
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 4195,
+        "firstColumn": 4109,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "ulting.\"/><meta name=\"twitter:image\" content=\"https://strawhatdevs.com/brand/social-banner.png\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 87
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 4251,
+        "firstColumn": 4196,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "ner.png\"/><link rel=\"shortcut icon\" href=\"/brand/favicon-64.png\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 56
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 4329,
+        "firstColumn": 4252,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "-64.png\"/><link rel=\"icon\" href=\"/brand/favicon-64.png\" sizes=\"64x64\" type=\"image/png\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 78
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 4410,
+        "firstColumn": 4330,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "age/png\"/><link rel=\"icon\" href=\"/brand/favicon-192.png\" sizes=\"192x192\" type=\"image/png\"/><link ",
+        "hiliteStart": 10,
+        "hiliteLength": 81
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 4470,
+        "firstColumn": 4411,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "age/png\"/><link rel=\"apple-touch-icon\" href=\"/brand/favicon-192.png\"/><scrip",
+        "hiliteStart": 10,
+        "hiliteLength": 60
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 5720,
+        "firstColumn": 5525,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "ref=\"/en\"><img alt=\"Straw Hat Devs logo\" width=\"220\" height=\"62\" decoding=\"async\" data-nimg=\"1\" class=\"h-auto object-contain hidden w-[188px] sm:block\" style=\"color:transparent\" src=\"/brand/logo-dark.svg\"/><img a",
+        "hiliteStart": 10,
+        "hiliteLength": 196
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 5916,
+        "firstColumn": 5721,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "ark.svg\"/><img alt=\"Straw Hat Devs logo\" width=\"64\" height=\"64\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-square object-contain h-11 w-11 sm:hidden\" style=\"color:transparent\" src=\"/brand/icon-flat.svg\"/></a><n",
+        "hiliteStart": 10,
+        "hiliteLength": 196
+      },
+      {
+        "type": "error",
+        "lastLine": 1,
+        "lastColumn": 10924,
+        "firstColumn": 10325,
+        "message": "The element “button” must not appear as a descendant of the “a” element.",
+        "extract": "=\"/en/vr\"><button class=\"inline-flex cursor-pointer items-center justify-center whitespace-nowrap text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border hover:border-primary/45 hover:text-foreground rounded-lg px-3 h-11 gap-2 border-primary/30 bg-primary/5 text-primary hover:bg-primary/10\"><svg x",
+        "hiliteStart": 10,
+        "hiliteLength": 600
+      },
+      {
+        "type": "error",
+        "lastLine": 1,
+        "lastColumn": 12033,
+        "firstColumn": 11493,
+        "message": "The element “button” must not appear as a descendant of the “a” element.",
+        "extract": "/sign-in\"><button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold ring-offset-background duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background/80 hover:border-primary/45 hover:text-foreground h-10 rounded-lg px-3 transition-all hover:bg-primary/10\">Sign I",
+        "hiliteStart": 10,
+        "hiliteLength": 541
+      },
+      {
+        "type": "error",
+        "lastLine": 1,
+        "lastColumn": 12599,
+        "firstColumn": 12081,
+        "message": "The element “button” must not appear as a descendant of the “a” element.",
+        "extract": "/sign-up\"><button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold ring-offset-background duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 rounded-lg px-3 shadow-sm transition-all hover:shadow-md\">Sign U",
+        "hiliteStart": 10,
+        "hiliteLength": 519
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 35909,
+        "firstColumn": 35710,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "card p-5\"><img alt=\"\" loading=\"lazy\" width=\"900\" height=\"600\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-[3/2] w-full rounded-xl object-cover\" style=\"color:transparent\" src=\"/images/delivery/discovery.webp\"/><p cla",
+        "hiliteStart": 10,
+        "hiliteLength": 200
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 36206,
+        "firstColumn": 36002,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "card p-5\"><img alt=\"\" loading=\"lazy\" width=\"900\" height=\"600\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-[3/2] w-full rounded-xl object-cover\" style=\"color:transparent\" src=\"/images/delivery/scope-proposal.webp\"/><p cla",
+        "hiliteStart": 10,
+        "hiliteLength": 205
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 36506,
+        "firstColumn": 36310,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "card p-5\"><img alt=\"\" loading=\"lazy\" width=\"900\" height=\"600\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-[3/2] w-full rounded-xl object-cover\" style=\"color:transparent\" src=\"/images/delivery/design.webp\"/><p cla",
+        "hiliteStart": 10,
+        "hiliteLength": 197
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 36801,
+        "firstColumn": 36596,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "card p-5\"><img alt=\"\" loading=\"lazy\" width=\"900\" height=\"600\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-[3/2] w-full rounded-xl object-cover\" style=\"color:transparent\" src=\"/images/delivery/milestone-build.webp\"/><p cla",
+        "hiliteStart": 10,
+        "hiliteLength": 206
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 37110,
+        "firstColumn": 36906,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "card p-5\"><img alt=\"\" loading=\"lazy\" width=\"900\" height=\"600\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-[3/2] w-full rounded-xl object-cover\" style=\"color:transparent\" src=\"/images/delivery/testing-launch.webp\"/><p cla",
+        "hiliteStart": 10,
+        "hiliteLength": 205
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 37411,
+        "firstColumn": 37214,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "card p-5\"><img alt=\"\" loading=\"lazy\" width=\"900\" height=\"600\" decoding=\"async\" data-nimg=\"1\" class=\"aspect-[3/2] w-full rounded-xl object-cover\" style=\"color:transparent\" src=\"/images/delivery/support.webp\"/><p cla",
+        "hiliteStart": 10,
+        "hiliteLength": 198
+      },
+      {
+        "type": "info",
+        "lastLine": 1,
+        "lastColumn": 39910,
+        "firstColumn": 39716,
+        "message": "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.",
+        "extract": "ref=\"/en\"><img alt=\"Straw Hat Devs logo\" loading=\"lazy\" width=\"220\" height=\"62\" decoding=\"async\" data-nimg=\"1\" class=\"h-auto object-contain w-[220px]\" style=\"color:transparent\" src=\"/brand/logo-dark.svg\"/></a><p",
+        "hiliteStart": 10,
+        "hiliteLength": 195
+      }
+    ],
+    "language": "en"
+  }
+}

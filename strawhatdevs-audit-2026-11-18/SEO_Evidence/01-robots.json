@@ -1,0 +1,113 @@
+{
+  "strawhatdevs.com": {
+    "url": "https://strawhatdevs.com/robots.txt",
+    "hops": [
+      {
+        "url": "https://strawhatdevs.com/robots.txt",
+        "status": 308,
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-type": "text/plain",
+          "date": "Wed, 18 Nov 2026 12:24:47 GMT",
+          "location": "https://www.strawhatdevs.com/robots.txt",
+          "refresh": "0;url=https://www.strawhatdevs.com/robots.txt",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-id": "bom1::5v29g-1795004687634-a7ef5ca07aa5",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "url": "https://www.strawhatdevs.com/robots.txt",
+        "status": 200,
+        "headers": {
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "age": "1543",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline",
+          "content-length": "108",
+          "content-type": "text/plain",
+          "date": "Wed, 18 Nov 2026 12:24:49 GMT",
+          "etag": "\"085ff7c06b6943128c91a97e56844ca5\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/robots.txt",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "bom1::6bfcg-1795004689615-b01ce389eeae"
+        }
+      }
+    ],
+    "observed": "2026-11-18T17:54:45.702046+05:30",
+    "final": "https://www.strawhatdevs.com/robots.txt",
+    "status": 200,
+    "headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "1543",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline",
+      "content-length": "108",
+      "content-type": "text/plain",
+      "date": "Wed, 18 Nov 2026 12:24:49 GMT",
+      "etag": "\"085ff7c06b6943128c91a97e56844ca5\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/robots.txt",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::6bfcg-1795004689615-b01ce389eeae"
+    },
+    "bytes": 108,
+    "body": "responses/9171786c803d109dfd74.txt"
+  },
+  "www.strawhatdevs.com": {
+    "url": "https://www.strawhatdevs.com/robots.txt",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/robots.txt",
+        "status": 200,
+        "headers": {
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "age": "1545",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline",
+          "content-length": "108",
+          "content-type": "text/plain",
+          "date": "Wed, 18 Nov 2026 12:24:50 GMT",
+          "etag": "\"085ff7c06b6943128c91a97e56844ca5\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/robots.txt",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "bom1::lk5dh-1795004690955-f033389de67f"
+        }
+      }
+    ],
+    "observed": "2026-11-18T17:54:49.044619+05:30",
+    "final": "https://www.strawhatdevs.com/robots.txt",
+    "status": 200,
+    "headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "1545",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline",
+      "content-length": "108",
+      "content-type": "text/plain",
+      "date": "Wed, 18 Nov 2026 12:24:50 GMT",
+      "etag": "\"085ff7c06b6943128c91a97e56844ca5\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/robots.txt",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::lk5dh-1795004690955-f033389de67f"
+    },
+    "bytes": 108,
+    "body": "responses/9171786c803d109dfd74.txt"
+  }
+}

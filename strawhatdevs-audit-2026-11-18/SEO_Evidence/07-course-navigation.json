@@ -1,0 +1,236 @@
+[
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 1,
+    "card_position": 1,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/nextjs-cartcraft",
+    "rendered_h1": "CartCraft: Build an E-commerce App with React and Next.js",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 1,
+    "card_position": 2,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/sql",
+    "rendered_h1": "SQL & PostgreSQL Database Modeling Crash Course",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 1,
+    "card_position": 3,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/docker",
+    "rendered_h1": "Docker Crash Course: Beginner to Builder",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 1,
+    "card_position": 4,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/git",
+    "rendered_h1": "Git Essentials: Version Control Made Simple",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 1,
+    "card_position": 5,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/go",
+    "rendered_h1": "Go Deep Dive: Concurrency, Interfaces, and More",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 1,
+    "card_position": 6,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/nodejs-rest",
+    "rendered_h1": "Build a REST API with Node.js - Complete Beginner Guide",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 2,
+    "card_position": 1,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/react17",
+    "rendered_h1": "React 17 Concepts, Hooks, and Project",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 2,
+    "card_position": 2,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/nextjs-pages",
+    "rendered_h1": "Next.js Crash Course (Pages Router)",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/en/courses",
+    "listing_page": 2,
+    "card_position": 3,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/en/courses/engineering-fundamentals",
+    "rendered_h1": "Engineering Fundamentals: Understand the Code You Ship",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 1,
+    "card_position": 1,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/nextjs-cartcraft",
+    "rendered_h1": "CartCraft: Build an E-commerce App with React and Next.js",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 1,
+    "card_position": 2,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/sql",
+    "rendered_h1": "SQL & PostgreSQL Database Modeling Crash Course",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 1,
+    "card_position": 3,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/docker",
+    "rendered_h1": "Docker Crash Course: Beginner to Builder",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 1,
+    "card_position": 4,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/git",
+    "rendered_h1": "Git Essentials: Version Control Made Simple",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 1,
+    "card_position": 5,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/go",
+    "rendered_h1": "Go Deep Dive: Concurrency, Interfaces, and More",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 1,
+    "card_position": 6,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/nodejs-rest",
+    "rendered_h1": "Build a REST API with Node.js - Complete Beginner Guide",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 2,
+    "card_position": 1,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/react17",
+    "rendered_h1": "React 17 Concepts, Hooks, and Project",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 2,
+    "card_position": 2,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/nextjs-pages",
+    "rendered_h1": "Next.js Crash Course (Pages Router)",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  },
+  {
+    "source": "https://www.strawhatdevs.com/ta/courses",
+    "listing_page": 2,
+    "card_position": 3,
+    "button": "View Course",
+    "button_html": "<button class=\"inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-[background-color,color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-4 py-2 w-full\">View Course</button>",
+    "destination": "https://www.strawhatdevs.com/ta/courses/engineering-fundamentals",
+    "rendered_h1": "Engineering Fundamentals: Understand the Code You Ship",
+    "rendered_hrefs": [
+      "https://discord.com/invite/DX4R5Kw5q8",
+      "mailto:courses@softwareschooltamil.us"
+    ]
+  }
+]

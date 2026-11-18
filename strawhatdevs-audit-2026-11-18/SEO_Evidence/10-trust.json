@@ -1,0 +1,906 @@
+{
+  "routes": [
+    "https://www.strawhatdevs.com/en/about",
+    "https://www.strawhatdevs.com/en/contact",
+    "https://www.strawhatdevs.com/en/terms",
+    "https://www.strawhatdevs.com/en/work",
+    "https://www.strawhatdevs.com/ta/about",
+    "https://www.strawhatdevs.com/ta/contact",
+    "https://www.strawhatdevs.com/ta/terms",
+    "https://www.strawhatdevs.com/ta/work"
+  ],
+  "anchor_evidence": {
+    "https://www.strawhatdevs.com/en": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/insights": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Discuss your project →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/insights/manufacturing-order-workflow": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/insights/healthcare-front-desk-workflows": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/insights/retail-mart-inventory-visibility": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/insights/shopping-mall-iot-pilot": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/insights/saas-first-useful-release": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/blogs": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/tools": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/consulting": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Send a project inquiry"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Custom business software Web and mobile applications, SaaS platforms, customer portals and internal tools. Learn more"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Architecture & code reviews Get a second opinion on system design, performance, reliability and maintainability. Learn more"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/solutions/manufacturing-software": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/solutions/dealer-order-management": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/solutions/workflow-automation": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/about": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/about",
+        "text": "Skip to main content"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/work": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/work",
+        "text": "Skip to main content"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/contact": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Skip to main content"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/insights": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Discuss your project →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/insights/manufacturing-order-workflow": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/insights/healthcare-front-desk-workflows": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/insights/retail-mart-inventory-visibility": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/insights/shopping-mall-iot-pilot": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/insights/saas-first-useful-release": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Discuss a similar workflow →"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/blogs": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/tools": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/consulting": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Send a project inquiry"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Custom business software Web and mobile applications, SaaS platforms, customer portals and internal tools. Learn more"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Architecture & code reviews Get a second opinion on system design, performance, reliability and maintainability. Learn more"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/solutions/manufacturing-software": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/solutions/dealer-order-management": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/solutions/workflow-automation": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/about": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/about",
+        "text": "Skip to main content"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/work": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/work",
+        "text": "Skip to main content"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "Skip to main content"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/vr": [],
+    "https://www.strawhatdevs.com/en/schedule": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/auth/sign-in": [],
+    "https://www.strawhatdevs.com/en/auth/sign-up": [],
+    "https://www.strawhatdevs.com/en/contact?service=Custom%20software": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/contact?service=Web%20applications": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/contact?service=Mobile%20applications": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/contact?service=SaaS%20products": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/contact?service=Cloud%20%26%20DevOps": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/contact?service=AI%20%26%20automation": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/contact?service=APIs%20%26%20integrations": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/contact?service=Modernization%20%26%20consulting": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses/nextjs-cartcraft": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses/sql": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses/docker": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/terms": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Skip to main content"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/blogs/learn-programming-in-tamil-without-getting-stuck": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/blogs/system-design-basics-scaling-simple-app": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/blogs/clean-code-habits-junior-developers": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/vr": [],
+    "https://www.strawhatdevs.com/ta/schedule": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/auth/sign-in": [],
+    "https://www.strawhatdevs.com/ta/auth/sign-up": [],
+    "https://www.strawhatdevs.com/ta/terms": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "Skip to main content"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact?service=Custom%20software": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact?service=Web%20applications": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact?service=Mobile%20applications": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact?service=SaaS%20products": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact?service=Cloud%20%26%20DevOps": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact?service=AI%20%26%20automation": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact?service=APIs%20%26%20integrations": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/contact?service=Modernization%20%26%20consulting": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/nextjs-cartcraft": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/sql": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/docker": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/blogs/learn-programming-in-tamil-without-getting-stuck": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/blogs/system-design-basics-scaling-simple-app": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/blogs/clean-code-habits-junior-developers": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/auth/forgot-password": [],
+    "https://www.strawhatdevs.com/ta/auth/forgot-password": [],
+    "https://www.strawhatdevs.com/en/courses/engineering-fundamentals": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses/git": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses/go": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses/nextjs-pages": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses/nodejs-rest": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/en/courses/react17": [
+      {
+        "destination": "https://www.strawhatdevs.com/en/contact",
+        "text": "Contact"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/en/terms",
+        "text": "Terms of Service"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/engineering-fundamentals": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/git": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/go": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/nextjs-pages": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/nodejs-rest": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ],
+    "https://www.strawhatdevs.com/ta/courses/react17": [
+      {
+        "destination": "https://www.strawhatdevs.com/ta/contact",
+        "text": "தொடர்பு"
+      },
+      {
+        "destination": "https://www.strawhatdevs.com/ta/terms",
+        "text": "சேவை விதிமுறைகள்"
+      }
+    ]
+  }
+}

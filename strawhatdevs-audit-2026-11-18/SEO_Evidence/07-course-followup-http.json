@@ -1,0 +1,590 @@
+[
+  {
+    "url": "https://www.strawhatdevs.com/en/courses/engineering-fundamentals",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/courses/engineering-fundamentals",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:35 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::nprvz-1795005274975-dddc8e34821b",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:33.921145+05:30",
+    "final": "https://www.strawhatdevs.com/en/courses/engineering-fundamentals",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:35 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::nprvz-1795005274975-dddc8e34821b",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 120696,
+    "body": "responses/e1d42498ad96db820505.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/en/courses (course catalog page 2)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/en/courses/git",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/courses/git",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:36 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::r2rdn-1795005276545-61eec9139514",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:35.555541+05:30",
+    "final": "https://www.strawhatdevs.com/en/courses/git",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:36 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::r2rdn-1795005276545-61eec9139514",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 71209,
+    "body": "responses/d8d3b3ce48907e18c300.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/en/courses (course catalog page 1)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/en/courses/go",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/courses/go",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:37 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::hpgmg-1795005277714-c9feffda37a3",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:36.707966+05:30",
+    "final": "https://www.strawhatdevs.com/en/courses/go",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:37 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::hpgmg-1795005277714-c9feffda37a3",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 70448,
+    "body": "responses/e54dfef1080206eafd36.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/en/courses (course catalog page 1)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/en/courses/nextjs-pages",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/courses/nextjs-pages",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:39 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::pvxhx-1795005278855-6cc4f2933423",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:37.872605+05:30",
+    "final": "https://www.strawhatdevs.com/en/courses/nextjs-pages",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:39 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::pvxhx-1795005278855-6cc4f2933423",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 68838,
+    "body": "responses/007cc03088af46cea205.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/en/courses (course catalog page 2)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/en/courses/nodejs-rest",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/courses/nodejs-rest",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:40 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::66cqn-1795005280390-79e178bbb426",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:39.228310+05:30",
+    "final": "https://www.strawhatdevs.com/en/courses/nodejs-rest",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:40 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::66cqn-1795005280390-79e178bbb426",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 69455,
+    "body": "responses/602a391ac846329712cb.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/en/courses (course catalog page 1)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/en/courses/react17",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/en/courses/react17",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:41 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::66cqn-1795005281835-df499c8857e4",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:40.567844+05:30",
+    "final": "https://www.strawhatdevs.com/en/courses/react17",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:41 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::66cqn-1795005281835-df499c8857e4",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 72946,
+    "body": "responses/1d974ee917a28d338392.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/en/courses (course catalog page 2)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/ta/courses/engineering-fundamentals",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/ta/courses/engineering-fundamentals",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:43 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::5v29g-1795005283294-f77dd31c2f84",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:42.225048+05:30",
+    "final": "https://www.strawhatdevs.com/ta/courses/engineering-fundamentals",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:43 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::5v29g-1795005283294-f77dd31c2f84",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 149551,
+    "body": "responses/7a905d1a85eb290756a3.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/ta/courses (course catalog page 2)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/ta/courses/git",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/ta/courses/git",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:45 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::86d45-1795005285375-2929f13eea5c",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:43.911609+05:30",
+    "final": "https://www.strawhatdevs.com/ta/courses/git",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:45 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::86d45-1795005285375-2929f13eea5c",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 100064,
+    "body": "responses/d13cecf658169274936c.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/ta/courses (course catalog page 1)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/ta/courses/go",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/ta/courses/go",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:46 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::4rqsf-1795005286819-ee6a6b16cf01",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:45.751799+05:30",
+    "final": "https://www.strawhatdevs.com/ta/courses/go",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:46 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::4rqsf-1795005286819-ee6a6b16cf01",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 99303,
+    "body": "responses/efe0730f5eab22978def.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/ta/courses (course catalog page 1)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/ta/courses/nextjs-pages",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/ta/courses/nextjs-pages",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:48 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::mn2s8-1795005288280-3955e776780d",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:47.182835+05:30",
+    "final": "https://www.strawhatdevs.com/ta/courses/nextjs-pages",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:48 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::mn2s8-1795005288280-3955e776780d",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 97693,
+    "body": "responses/2ed7b257e5798f6bdaed.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/ta/courses (course catalog page 2)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/ta/courses/nodejs-rest",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/ta/courses/nodejs-rest",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:50 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::nprvz-1795005289839-6de12ff601c1",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:48.698674+05:30",
+    "final": "https://www.strawhatdevs.com/ta/courses/nodejs-rest",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:50 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::nprvz-1795005289839-6de12ff601c1",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 98310,
+    "body": "responses/861075b322b96ba8fddf.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/ta/courses (course catalog page 1)"
+    ]
+  },
+  {
+    "url": "https://www.strawhatdevs.com/ta/courses/react17",
+    "hops": [
+      {
+        "url": "https://www.strawhatdevs.com/ta/courses/react17",
+        "status": 200,
+        "headers": {
+          "age": "0",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Wed, 18 Nov 2026 12:34:51 GMT",
+          "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+          "x-matched-path": "/[lang]/courses/[courseId]",
+          "x-powered-by": "Next.js",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::sbr5g-1795005291295-0a4dc6d2a707",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "observed": "2026-11-18T18:04:50.225175+05:30",
+    "final": "https://www.strawhatdevs.com/ta/courses/react17",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Wed, 18 Nov 2026 12:34:51 GMT",
+      "link": "</_next/static/media/36966cca54120369-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/bb3ef058b751a6ad-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/62b828d2bdad835f.css>; rel=preload; as=\"style\", </_next/static/css/7a4e0ae13ed34dc6.css>; rel=preload; as=\"style\"",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+      "x-matched-path": "/[lang]/courses/[courseId]",
+      "x-powered-by": "Next.js",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::sbr5g-1795005291295-0a4dc6d2a707",
+      "transfer-encoding": "chunked"
+    },
+    "bytes": 101801,
+    "body": "responses/4427a462f4f7efd9981a.html",
+    "discovery": [
+      "https://www.strawhatdevs.com/ta/courses (course catalog page 2)"
+    ]
+  }
+]
