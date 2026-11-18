@@ -1,5 +1,0 @@
-# robots.txt
-User-agent: *
-Allow: /files/cgnmnbqj/
-Disallow: /*.pdf
-Disallow: /*.PDF
