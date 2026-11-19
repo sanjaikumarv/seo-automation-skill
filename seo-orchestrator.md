@@ -9,10 +9,10 @@ description: Collect and validate the full SEO intake, then run all nine SEO sta
 
 A comprehensive master workflow orchestrator that coordinates the full multi-stage SEO automation workflow across specialized skills:
 
-- **What this skill does:** Collects initial intake parameters, dynamically discovers and verifies all SEO skills, enforces strict sequential execution, manages inter-skill context passing, validates stage deliverables, logs execution progress, and verifies final reports.
+- **What this skill does:** Collects initial intake parameters, sets up the output directory root (`OUT_PUT_ROOT_FOLDER`), dynamically discovers and verifies all SEO skills, enforces strict sequential execution, manages inter-skill context passing, validates stage deliverables (mandating both `<skill>-overall-report.md` and `<skill>-website-changes.md` per stage), logs execution progress, and verifies final reports.
 - **Its primary objective:** Coordinate the end-to-end SEO automation process autonomously without mid-run interruptions, ensuring zero data fabrication, strict Google Search Essentials compliance, and canonical artifact persistence.
 - **When it should be used:** When initiating an SEO campaign for any website, domain, or business entity from scratch or when re-running the full SEO pipeline.
-- **What output or result it produces:** Manages execution state, outputs `Execution_Tracker.md`, `Execution_Log.md`, and `Orchestration_Summary.md` in `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-orchestration/`, and ensures the compilation of final reports.
+- **What output or result it produces:** Manages execution state, outputs `orchestration-summary.md`, `execution-tracker.md`, and `execution-log.md` in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/00-orchestration/`, and ensures the compilation of all downstream reports.
 
 ## Shared Resources
 
@@ -204,18 +204,19 @@ Use this section as the intake contract for all nine stages. Where a shared refe
 
 ## 4.1 Required user inputs
 
-| Field                     | Variable          | What the user supplies or confirms                                                                                                                                 |
-| ------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Target website URL        | `WEBSITE_URL`     | The complete public HTTP or HTTPS URL for the website in scope.                                                                                                    |
-| Domain name               | `DOMAIN_NAME`     | The website hostname or domain. The user may explicitly ask you to use the domain from the supplied URL. Confirm any mismatch that changes which site is in scope. |
-| Website name              | `WEBSITE_NAME`    | The public-facing name of the website.                                                                                                                             |
-| Brand name                | `BRAND_NAME`      | The business or brand represented by the site. The user may specify “same as website name” when both names match.                                                  |
-| Target country            | `TARGET_COUNTRY`  | The primary country for this SEO campaign. Accept “Global” or “No single primary country” when the user explicitly chooses that scope.                             |
-| Target audience           | `TARGET_AUDIENCE` | The main buyer, user, industry or other audience the campaign should reach.                                                                                        |
-| Business type             | `BUSINESS_TYPE`   | The business model or category, such as a software consultancy, training provider, SaaS company or retailer.                                                       |
-| Services or offerings     | `SERVICES`        | The primary services, products or solutions in scope. A non-service business can provide its product or offering categories.                                       |
-| Seed keywords             | `SEED_KEYWORDS`   | At least one starting search query. User-supplied queries or an explicitly approved list both qualify.                                                             |
-| Frontend technology stack | `FRONTEND_STACK`  | The known framework or an explicit “Unknown” or “Discover during the audit.” Verify the stack after intake when evidence is available.                             |
+| Field                     | Variable               | What the user supplies or confirms                                                                                                                                 |
+| ------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Target website URL        | `WEBSITE_URL`          | The complete public HTTP or HTTPS URL for the website in scope.                                                                                                    |
+| Domain name               | `DOMAIN_NAME`          | The website hostname or domain. The user may explicitly ask you to use the domain from the supplied URL. Confirm any mismatch that changes which site is in scope. |
+| Output root folder        | `OUT_PUT_ROOT_FOLDER`  | The canonical directory for all run deliverables. Defaults to `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`.                          |
+| Website name              | `WEBSITE_NAME`         | The public-facing name of the website.                                                                                                                             |
+| Brand name                | `BRAND_NAME`           | The business or brand represented by the site. The user may specify “same as website name” when both names match.                                                  |
+| Target country            | `TARGET_COUNTRY`       | The primary country for this SEO campaign. Accept “Global” or “No single primary country” when the user explicitly chooses that scope.                             |
+| Target audience           | `TARGET_AUDIENCE`      | The main buyer, user, industry or other audience the campaign should reach.                                                                                        |
+| Business type             | `BUSINESS_TYPE`        | The business model or category, such as a software consultancy, training provider, SaaS company or retailer.                                                       |
+| Services or offerings     | `SERVICES`             | The primary services, products or solutions in scope. A non-service business can provide its product or offering categories.                                       |
+| Seed keywords             | `SEED_KEYWORDS`        | At least one starting search query. User-supplied queries or an explicitly approved list both qualify.                                                             |
+| Frontend technology stack | `FRONTEND_STACK`       | The known framework or an explicit “Unknown” or “Discover during the audit.” Verify the stack after intake when evidence is available.                             |
 
 Required fields must be explicit and usable. Blank entries, template examples, placeholder variables and vague answers that leave the target or scope undefined remain unresolved. A URL or domain plus seed keywords alone is insufficient. A website footer, previous report or earlier campaign can help suggest a value. Use a value from that context only after the user explicitly adopts it for this run.
 
@@ -1072,10 +1073,11 @@ The skill has finished execution.
 
 The orchestrator is:
 
-- Checking generated outputs.
-- Verifying files.
-- Checking required deliverables.
-- Identifying errors.
+- Checking generated outputs in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/{{STAGE_FOLDER}}/`.
+- Verifying files and ensuring zero fabrication.
+- Checking mandatory deliverables: verifying both `<skill-name>-overall-report.md` (strategic analysis) and `<skill-name>-website-changes.md` (concrete website modifications register) exist and are non-empty.
+- Verifying supporting structured CSV datasets and evidence references.
+- Identifying errors or data access limitations.
 - Validating execution.
 
 No other SEO stage may execute during this state.
@@ -1121,7 +1123,7 @@ For every stage:
 8. Execute the current skill.
 9. WAIT for complete execution.
 10. Confirm the skill has stopped running.
-11. Validate the generated outputs.
+11. Validate the generated outputs (confirm both <skill-name>-overall-report.md and <skill-name>-website-changes.md exist).
 12. Record the execution date.
 13. Record the output locations.
 14. Record the validation result.
@@ -1229,23 +1231,23 @@ If the skill does not exist:
 
 Create:
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-orchestration/Execution_Tracker.md`
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/00-orchestration/execution-tracker.md` (and legacy mirror `Execution_Tracker.md`)
 
 Maintain the tracker throughout the entire workflow.
 
 The tracker must contain:
 
-| Stage | Skill               | Skill File  | Command        | Status | Start Time | End Time    | Output Location | Validation |
-| ----- | ------------------- | ----------- | -------------- | ------ | ---------- | ----------- | --------------- | ---------- |
-| 1     | SEO Audit           | Actual path | Actual command | Status | Time       | Actual path | Result          |
-| 2     | Keyword Research    | Actual path | Actual command | Status | Time       | Actual path | Result          |
-| 3     | Competitor Analysis | Actual path | Actual command | Status | Time       | Actual path | Result          |
-| 4     | On-Page SEO         | Actual path | Actual command | Status | Time       | Actual path | Result          |
-| 5     | Content Strategy    | Actual path | Actual command | Status | Time       | Actual path | Result          |
-| 6     | Technical SEO       | Actual path | Actual command | Status | Time       | Actual path | Result          |
-| 7     | Off-Page SEO        | Actual path | Actual command | Status | Time       | Actual path | Result          |
-| 8     | SEO Monitoring      | Actual path | Actual command | Status | Time       | Actual path | Result          |
-| 9     | Final SEO Report    | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| Stage | Skill Name | Stage Directory | Overall Strategic Report | Website Changes Register | Status | Start Time | End Time | Validation |
+|---|---|---|---|---|---|---|---|---|
+| **01** | `seo-audit` | `01-website-audit/` | `website-audit-overall-report.md` | `website-audit-website-changes.md` | Status | Time | Time | Result |
+| **02** | `seo-keyword-research` | `02-keyword-research/` | `keyword-research-overall-report.md` | `keyword-research-website-changes.md` | Status | Time | Time | Result |
+| **03** | `seo-competitor-analysis` | `03-competitor-analysis/` | `competitor-analysis-overall-report.md` | `competitor-analysis-website-changes.md` | Status | Time | Time | Result |
+| **04** | `seo-on-page` | `04-on-page-seo/` | `on-page-seo-overall-report.md` | `on-page-seo-website-changes.md` | Status | Time | Time | Result |
+| **05** | `seo-content-strategy` | `05-content-strategy/` | `content-strategy-overall-report.md` | `content-strategy-website-changes.md` | Status | Time | Time | Result |
+| **06** | `technical-seo` | `06-technical-seo/` | `technical-seo-overall-report.md` | `technical-seo-website-changes.md` | Status | Time | Time | Result |
+| **07** | `off-page-seo` | `07-off-page-seo/` | `off-page-seo-overall-report.md` | `off-page-seo-website-changes.md` | Status | Time | Time | Result |
+| **08** | `seo-monitoring` | `08-seo-monitoring/` | `seo-monitoring-overall-report.md` | `seo-monitoring-website-changes.md` | Status | Time | Time | Result |
+| **09** | `seo-final-report` | `09-final-seo-report/` | `final-seo-overall-report.md` | `final-seo-website-changes.md` | Status | Time | Time | Result |
 
 Possible statuses:
 
@@ -1267,12 +1269,13 @@ Do not mark a stage COMPLETED before validation.
 
 Create:
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-orchestration/Execution_Log.md`
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/00-orchestration/execution-log.md` (and legacy mirror `Execution_Log.md`)
 
 Record:
 
 - Workflow execution ID
 - Website URL, domain name, website name and brand name
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER`
 - Target country, target audience and target geography
 - Business type, services, seed keywords and frontend technology stack
 - Competitors, SEO objective, brand voice, project ID and available data when provided
@@ -1374,21 +1377,21 @@ If required information is unavailable and the skill cannot execute:
 
 # 19. WORKSPACE AND FILE MANAGEMENT
 
-All orchestration tracking files must be stored within the current SEO workflow project's outputs directory.
+All orchestration tracking files must be stored within the canonical output directory:
 
-Use:
+`OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
 
-`./outputs/`
+Run hierarchy: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/{{STAGE_FOLDER}}/`
 
 Do not redirect outputs to unrelated projects.
 
-Do not save orchestration files outside the current SEO workflow project unless explicitly authorized.
+Do not save orchestration files outside the canonical outputs directory.
 
 Do not overwrite previous execution reports.
 
 Use the current execution date for orchestration tracking.
 
-The individual SEO skills must determine their own output directories according to their respective instructions.
+The individual SEO skills must store their deliverables into their designated numbered stage subdirectories (`01-website-audit/` through `09-final-seo-report/`).
 
 ---
 
@@ -1396,13 +1399,14 @@ The individual SEO skills must determine their own output directories according 
 
 After the complete pipeline has finished, generate:
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-orchestration/Orchestration_Summary.md`
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/00-orchestration/orchestration-summary.md` (and legacy mirror `Orchestration_Summary.md`)
 
 Include:
 
 ## 1. Website Information
 
 - Website URL, website name, brand name and domain
+- Output directory root: `OUT_PUT_ROOT_FOLDER`
 - Business type, technology stack, services and seed keywords
 - Target country, target audience and target geography
 - SEO objective and project ID when supplied
@@ -1519,10 +1523,12 @@ Before declaring the workflow complete, verify:
 
 ## Final Deliverables
 
-- Final SEO Report exists.
-- Master SEO Developer Prompt exists.
-- Both files are non-empty.
-- Required sections exist.
+- `final-seo-overall-report.md` exists and is non-empty.
+- `final-seo-website-changes.md` exists and is non-empty.
+- `Master_Developer_Implementation_Prompt.md` exists and is non-empty.
+- `seo-implementation-roadmap.md` exists and is non-empty.
+- `seo-priority-matrix.csv` exists and is non-empty.
+- All 7 CSV implementation plans exist (`keyword-implementation-plan.csv`, `metadata-implementation-plan.csv`, `heading-implementation-plan.csv`, `content-implementation-plan.csv`, `technical-implementation-plan.csv`, `internal-linking-implementation-plan.csv`, `new-page-implementation-plan.csv`).
 - Final report validation completed.
 
 ## Orchestration Files
@@ -1549,11 +1555,11 @@ Include:
 - Blocked stages
 - Confirmation that execution was strictly sequential
 - Major SEO findings
-- Final SEO Report path
-- Master SEO Developer Prompt path
-- Execution Tracker path
-- Execution Log path
-- Orchestration Summary path
+- Final Master Report paths (`final-seo-overall-report.md` & `final-seo-website-changes.md`)
+- Master Developer Implementation Prompt path (`Master_Developer_Implementation_Prompt.md`)
+- Execution Tracker path (`execution-tracker.md`)
+- Execution Log path (`execution-log.md`)
+- Orchestration Summary path (`orchestration-summary.md`)
 - Validation status
 - Limitations
 - Recommended next action

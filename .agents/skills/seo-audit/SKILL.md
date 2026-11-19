@@ -9,9 +9,9 @@ description: Perform comprehensive, evidence-based SEO audits covering crawling,
 
 An exhaustive, evidence-based technical and on-page SEO auditing skill:
 - **What this skill does:** Crawls public website pages, inspects metadata and DOM structure, evaluates Core Web Vitals and performance, audits mobile responsiveness, tests structured data/schema, verifies status codes, captures technical evidence, and prioritizes remediation tasks.
-- **Its primary objective:** Produce an actionable, developer-ready SEO Audit Report and evidence catalog identifying critical technical blockers and optimization opportunities without fabricating data.
+- **Its primary objective:** Produce an overall strategic analysis report and an exact page-by-page website changes report identifying critical technical blockers and concrete optimization opportunities without fabricating data.
 - **When it should be used:** Stage 1 of the SEO automation pipeline, or standalone when performing an audit of any public website.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/SEO_Audit_Report.md` and supporting evidence in `evidence/`.
+- **What output or result it produces:** Generates `website-audit-overall-report.md`, `website-audit-website-changes.md`, `SEO_Audit_Report.md`, and supporting datasets in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/`.
 
 ## Shared Resources
 
@@ -28,7 +28,9 @@ Act as a Senior Technical SEO Auditor, SEO Specialist, Website Performance Analy
 
 Your responsibility is to perform a comprehensive, evidence-based SEO audit of a given public website.
 
-You must inspect the website, collect technical evidence, identify actual SEO issues, evaluate their impact, prioritize them, and generate one professional, developer-friendly Markdown SEO Audit Report.
+You must inspect the website, collect technical evidence, identify actual SEO issues, evaluate their impact, prioritize them, and generate two primary deliverables:
+1. `website-audit-overall-report.md`: High-level strategic report (Executive Summary, Data Sources, Free Tools Used, Methodology, Findings, Opportunities, Risks, Priority, Limitations).
+2. `website-audit-website-changes.md`: Concrete, page-by-page register of exact website changes needed (Page URL, Category, Current Implementation, Suggested Optimized Implementation, Reason, Priority P0–P3, Implementation Steps, Validation).
 
 You must operate as an independent SEO auditing system.
 
@@ -48,7 +50,7 @@ Given a website URL, perform the following:
 10. Validate structured data and schema markup.
 11. Inspect publicly observable security and trust signals.
 12. Identify, classify, and prioritize SEO issues.
-13. Generate a comprehensive SEO Audit Report in Markdown format.
+13. Generate the overall audit report, concrete website changes register, and supporting datasets.
 
 IMPORTANT:
 
@@ -73,8 +75,10 @@ Only inspect, analyze, collect evidence, document findings, and recommend improv
 
 # 2. WEBSITE INPUT CONFIGURATION
 
-Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
+In accordance with `../shared/INPUT_VARIABLES.md`, ingest and resolve dynamic variables:
 
+- Project root: `./` (current active workspace root)
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
 - Website URL: `{{WEBSITE_URL}}`
 - Website Domain: `{{DOMAIN_NAME}}`
 - Website Name: `{{WEBSITE_NAME}}`
@@ -83,7 +87,8 @@ Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md
 - Target Audience: `{{TARGET_AUDIENCE}}`
 - Services Offered: `{{SERVICES}}`
 - Seed Keywords: `{{SEED_KEYWORDS}}`
-- Execution Date: `{{CURRENT_DATE}}`
+- Execution Date: `{{CURRENT_DATE}}` (YYYY-MM-DD)
+- Canonical Output Directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/`
 - Website Technology: [Next.js / React / WordPress / Other / Detected via DOM headers]
 
 Audit Scope: Entire accessible public website.
@@ -94,9 +99,7 @@ Execution Mode: STRICT SEQUENTIAL.
 
 Tool Preference: FREE AND OPEN-SOURCE TOOLS FIRST (see `../shared/TOOLS.md`).
 
-Output Format: Markdown.
-
-Output Count: ONE FINAL MARKDOWN FILE ONLY.
+Output Format: Markdown and CSV.
 
 If optional business information is unavailable, continue using verified public website information and clearly document unknown values.
 
@@ -982,81 +985,85 @@ Maintain a distinction between:
 
 This is a mandatory requirement.
 
-All SEO audit instructions and generated audit outputs must be stored inside the existing SEO orchestration workflow.
+All SEO audit instructions and generated audit outputs must be stored inside `{OUT_PUT_ROOT_FOLDER}/`:
 
-## A. Project Root Directory
-
-```text
-C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\
-```
-
-## B. Updated Directory Structure
+## A. Project Root & Canonical Output Directory
 
 ```text
-seo-orchestration-flow/
-│
-├── .agents/
-│   └── skills/
-│       └── seo-audit/
-│           └── SKILL.md
-│
-├── outputs/
-│   └── {YYYY-MM-DD}/
-│       └── {website-domain}/
-│           └── audit-report/
-│               ├── SEO_Audit_Report.md
-│               │
-│               ├── evidence/
-│               ├── screenshots/
-│               ├── tool-exports/
-│               └── crawl-data/
-│
-└── other-workflow-files/
+{OUT_PUT_ROOT_FOLDER}/
+└── {{CURRENT_DATE}}/
+    └── {{DOMAIN_NAME}}/
+        └── 01-website-audit/
+            ├── website-audit-overall-report.md       # High-level strategic audit report
+            ├── website-audit-website-changes.md      # Concrete register of exact website changes needed
+            ├── SEO_Audit_Report.md                   # Detailed technical audit report (legacy mirror)
+            ├── url-inventory.csv                     # Discovered URLs and status
+            ├── technical-issues.csv                  # Prioritized technical issues
+            ├── on-page-issues.csv                    # Page-level on-page issues
+            ├── crawl-report.csv                      # Raw crawl data
+            ├── image-issues.csv                      # Image alt and optimization issues
+            ├── schema-inventory.csv                  # Existing schema markup inventory
+            │
+            ├── evidence/
+            ├── screenshots/
+            ├── tool-exports/
+            └── crawl-data/
 ```
 
-## C. Output Path Rules
+- **`OUT_PUT_ROOT_FOLDER`:** Defaults to `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`.
+- **Date Format:** Strict `YYYY-MM-DD`.
+- **Domain Normalization:** Hostname without protocol or query string.
 
-1. Use the existing SEO orchestration workflow root directory.
-2. Store all generated audit results inside its `outputs/` directory.
-3. Retrieve the actual current execution date from the system.
-4. Format the date as `YYYY-MM-DD`.
-5. Create a date-specific directory inside `outputs/`.
-6. Create a separate website directory for each audited domain.
-7. Use the normalized website hostname as the folder name.
-8. Inside the website directory, create an `audit-report/` directory.
-9. Save the final report as `SEO_Audit_Report.md`.
-10. Store supporting audit evidence and tool results inside their respective subdirectories.
+---
 
-## D. Expected Output Structure
+## B. Mandatory Deliverables Specification
 
-Input Variables:
+This skill MUST produce two core markdown deliverables plus supporting structured CSV datasets in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/`:
 
-- Website URL: `{{WEBSITE_URL}}`
-- Website Domain: `{{DOMAIN_NAME}}`
-- Execution Date: `{{CURRENT_DATE}}`
+### 1. High-Level Strategy Report: `website-audit-overall-report.md`
+*(Note: Maintain `SEO_Audit_Report.md` as an identical mirror/alias if legacy consumers exist)*
 
-Canonical Output Directory Structure:
+Must contain:
+1. Executive Summary & Site SEO Health Score
+2. Scope & Crawl Boundaries (Discovered URLs vs. Audited URLs)
+3. Free Tools Used & Data Reliability Notice (`[Public observational search data; requires Google Search Console verification]`)
+4. Core Web Vitals & Web Performance Diagnostics
+5. Crawlability & Indexability Assessment (Robots.txt, Sitemaps, Status Codes)
+6. HTML Tag & Metadata Architecture Evaluation
+7. Structured Data & Schema Implementation Status
+8. Mobile Responsiveness & Security Diagnostics
+9. Prioritized Findings Matrix (P0 Critical, P1 High, P2 Medium, P3 Low)
+10. Limitations & Verification Next Steps
 
-```text
-seo-orchestration-flow/
-│
-├── .agents/
-│   └── skills/
-│       └── seo-audit/
-│           └── SKILL.md
-│
-└── outputs/
-    └── {{CURRENT_DATE}}/
-        └── {{DOMAIN_NAME}}/
-            └── audit-report/
-                │
-                ├── SEO_Audit_Report.md
-                │
-                ├── evidence/
-                ├── screenshots/
-                ├── tool-exports/
-                └── crawl-data/
-```
+---
+
+### 2. Concrete Website Changes Register: `website-audit-website-changes.md`
+
+A standalone, page-by-page register providing copy-paste ready changes for developers, content editors, and SEO managers. Must contain exact tables with the following strict schemas:
+
+#### A. Page-by-Page Audit Remediation Table
+| Page URL | Category (Metadata / Heading / Content / Technical / Schema) | Current Implementation | Suggested Optimized Implementation | Reason / Evidence | Priority (P0-P3) | Implementation Steps | Validation Criteria |
+|---|---|---|---|---|---|---|---|
+| `https://.../` | Metadata | Missing meta description | Add: "Enterprise software development and AI engineering solutions tailored to scale..." | Search snippet is empty; CTR opportunity | P1 | Inject `<meta name="description">` in layout | Length 140–160 chars |
+| `https://.../services` | Heading | Multiple H1 tags (`<h1>Services</h1>` and `<h1>Custom Dev</h1>`) | Convert `<h1>Services</h1>` to `<h1>Custom Software Development Services</h1>`; demote second to `<h2>` | Single H1 semantic requirement violated | P0 | Update hero component JSX | Single H1 on page |
+| Global | Technical | Missing sitemap reference in `/robots.txt` | Append `Sitemap: https://.../sitemap.xml` | Search engines lack canonical discovery route | P0 | Edit `/public/robots.txt` | 200 OK on robots.txt |
+
+---
+
+## C. Supporting Structured Datasets (CSVs)
+- `url-inventory.csv`: `url, status_code, content_type, indexable, depth`
+- `technical-issues.csv`: `issue_id, url, issue_type, severity, evidence, recommendation`
+- `on-page-issues.csv`: `url, title, title_length, meta_desc, meta_length, h1_count, h1_text, status`
+- `crawl-report.csv`: Complete raw crawl inventory.
+
+---
+
+## D. Output Path Rules
+
+1. Use `OUT_PUT_ROOT_FOLDER` (default `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`).
+2. Store all generated audit results inside `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/`.
+3. Save `website-audit-overall-report.md`, `website-audit-website-changes.md`, and `SEO_Audit_Report.md`.
+4. Store supporting audit evidence and tool results inside their respective subdirectories.
 
 ## E. Supporting Data Storage Rules
 
@@ -1211,10 +1218,12 @@ If any required operation fails, document the failure.
 
 ## J. Final Output Path
 
-The final report must be saved at:
+The final deliverables must be saved at:
 
 ```text
-outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/SEO_Audit_Report.md
+{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/website-audit-overall-report.md
+{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/website-audit-website-changes.md
+{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/SEO_Audit_Report.md
 ```
 
 This canonical directory structure is mandatory for every SEO audit execution (see `../shared/OUTPUT_STANDARDS.md`).
@@ -1242,7 +1251,7 @@ These rules are mandatory.
 17. Maintain consistent issue IDs.
 18. Do not silently skip audit stages.
 19. Keep the final report professional and readable.
-20. Generate only the requested final Markdown report.
+20. Generate both mandatory reports (`website-audit-overall-report.md` and `website-audit-website-changes.md`) along with supporting CSV datasets.
 
 If a tool is unavailable, use an appropriate free alternative where possible.
 
@@ -1267,10 +1276,9 @@ Before saving the final report, verify:
 - Untested items are clearly identified.
 - Recommendations are actionable.
 - No website modifications have occurred.
-- All report sections are present.
-- The Markdown file is properly formatted.
-- The final file is saved at the required output path.
-- The saved file has been checked for completeness.
+- Both `website-audit-overall-report.md` and `website-audit-website-changes.md` exist and are non-empty.
+- The final files are saved at the required output path.
+- The saved files have been checked for completeness.
 
 ---
 
@@ -1297,7 +1305,7 @@ Output File Path:
 
 If the audit is incomplete, explicitly state the incomplete stages.
 
-Never claim successful completion if the final report was not generated and verified.
+Never claim successful completion if the final reports were not generated and verified.
 
 ---
 
@@ -1310,13 +1318,13 @@ First:
 1. Identify available tools.
 2. Validate the supplied website URL.
 3. Inspect the website accessibility.
-4. Confirm the actual workflow output directory.
+4. Confirm the actual workflow output directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/`.
 5. Create the required website-specific output directory.
 6. Start STAGE 1: WEBSITE DISCOVERY AND CRAWLING.
 
 Then execute all 12 stages in STRICT SEQUENTIAL mode.
 
-Collect evidence, document findings, prioritize issues, and generate the final report.
+Collect evidence, document findings, prioritize issues, and generate the final reports.
 
 Remember:
 
@@ -1328,4 +1336,4 @@ DO NOT INVENT DATA.
 
 DO NOT SKIP STAGES SILENTLY.
 
-GENERATE ONE COMPLETE SEO_Audit_Report.md FILE IN THE SPECIFIED OUTPUT DIRECTORY.
+GENERATE BOTH website-audit-overall-report.md AND website-audit-website-changes.md IN THE SPECIFIED OUTPUT DIRECTORY.

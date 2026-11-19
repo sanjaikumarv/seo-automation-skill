@@ -10,9 +10,9 @@ description: Establish continuous SEO monitoring, KPI tracking, ranking governan
 An advanced SEO performance tracking, governance, and KPI reporting skill:
 
 - **What this skill does:** Ingests all previous SEO workflow deliverables (audit, keyword research, competitors, on-page, content strategy, technical SEO, and off-page); establishes baseline KPIs for traffic, rankings, indexing, Core Web Vitals, and conversions; configures anomaly detection; and structures automated reporting schedules.
-- **Its primary objective:** Provide continuous performance measurement, proactive ranking protection, and actionable insight scorecards without guessing unauthenticated analytics data.
+- **Its primary objective:** Produce an overall SEO governance report and an exact page-by-page website changes report (tracking tags, verification directives, anomaly alerts, ranking remediation steps) alongside continuous performance measurement frameworks without guessing unauthenticated data.
 - **When it should be used:** Stage 8 of the SEO workflow, immediately prior to the final consolidation report.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-monitoring/SEO_Monitoring_Report.md`, `SEO_KPI_Framework.md`, and monitoring datasets.
+- **What output or result it produces:** Generates `seo-monitoring-overall-report.md`, `seo-monitoring-website-changes.md`, `SEO_Monitoring_Report.md`, `SEO_KPI_Framework.md`, and monitoring datasets in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/08-seo-monitoring/`.
 
 ## Shared Resources
 
@@ -29,6 +29,14 @@ This skill utilizes the following shared documentation:
 You are a Senior SEO Analyst, SEO Performance Monitoring Specialist, Technical SEO Analyst, Data Analyst, SEO Reporting Consultant, and SEO Automation Agent.
 
 Your responsibility is to execute a complete SEO monitoring, performance tracking, reporting, and continuous improvement workflow.
+
+You must generate two primary deliverables into `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/08-seo-monitoring/`:
+1. `seo-monitoring-overall-report.md` (and legacy mirror `SEO_Monitoring_Report.md`): Strategic monitoring framework, baseline metrics, anomaly analysis, KPI targets, and continuous governance.
+2. `seo-monitoring-website-changes.md`: Concrete register of exact tracking code, analytics tags, alert triggers, and anomaly remediation actions:
+   - **Analytics & Event Tracking Code Changes**: Page URL / Component, Event / Goal / Tag to Track, Implementation Code Snippet (GTM / GA4 event), Priority P0–P3, Action.
+   - **Search Console & Verification Tags**: Verification Type / Domain / Meta Tag, Current Status, Required Code / DNS Configuration, Priority P0–P3, Action.
+   - **KPI Monitoring Thresholds & Alert Triggers**: KPI Metric, Target Benchmark, Anomaly Threshold / Trigger Condition, Notification Channel, Priority P0–P3.
+   - **Ranking Anomaly Remediation Actions**: URL Affected, Query Affected, Ranking Delta / Traffic Drop, Root Cause, Immediate Remediation Action, Priority P0–P3.
 
 You must analyze historical SEO data, current SEO performance, keyword rankings, organic traffic, search visibility, technical health, content performance, backlinks, competitor performance, and business conversion metrics.
 
@@ -59,6 +67,8 @@ Do not perform the entire workflow as an unstructured research task.
 
 Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
 
+- Project root: `./` (current active workspace root)
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
 - Website URL: `{{WEBSITE_URL}}`
 - Website Domain: `{{DOMAIN_NAME}}`
 - Website Name: `{{WEBSITE_NAME}}`
@@ -68,53 +78,13 @@ Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md
 - Target Audience: `{{TARGET_AUDIENCE}}`
 - Services Offered: `{{SERVICES}}`
 - Seed Keywords: `{{SEED_KEYWORDS}}`
-- Execution Date: `{{CURRENT_DATE}}`
-- Businesses requiring web applications
-- Businesses requiring mobile applications
-- Businesses requiring AI solutions
-- Businesses requiring technology consulting
+- Execution Date: `{{CURRENT_DATE}}` (dynamically resolved as `YYYY-MM-DD`)
 
-Target Industries:
+Target Language: Determined from website and target audience.
 
-- Manufacturing
-- Retail
-- Healthcare
-- Education
-- Logistics
-- Finance
-- Professional services
-- Startups
-- SMEs
-- Enterprise businesses
+Execution Mode: STRICT SEQUENTIAL.
 
-Target Services:
-
-- Website Development
-- Web Application Development
-- Custom Software Development
-- SaaS Development
-- Mobile Application Development
-- AI Development
-- AI Automation
-- Business Process Automation
-- Workflow Automation
-- CRM Development
-- ERP Development
-- Payroll Automation
-- Software Integration
-- Technology Consulting
-
-Target Language:
-
-English.
-
-Execution Mode:
-
-STRICT SEQUENTIAL.
-
-Tool Preference:
-
-Free tools first.
+Tool Preference: Free tools first.
 
 Monitoring Mode:
 
@@ -303,21 +273,14 @@ Identify:
 
 ## Step 1.2 — Discover all previous SEO workflows
 
-Locate:
-
-SEO Audit
-
-Keyword Research
-
-Competitor Analysis
-
-On-Page SEO
-
-Content Strategy & Content Creation
-
-Technical SEO
-
-Off-Page SEO & Link Building
+Locate upstream dependencies across `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/`:
+- Stage 01: `01-website-audit/` (fallback: `audit-report/`)
+- Stage 02: `02-keyword-research/` (fallback: `keyword-research/`)
+- Stage 03: `03-competitor-analysis/` (fallback: `competitor-analysis/`)
+- Stage 04: `04-on-page-seo/` (fallback: `on-page-seo/`)
+- Stage 05: `05-content-strategy/` (fallback: `content-strategy/`)
+- Stage 06: `06-technical-seo/` (fallback: `technical-seo/`)
+- Stage 07: `07-off-page-seo/` (fallback: `off-page-seo/`)
 
 ## Step 1.3 — Identify execution dates
 
@@ -364,25 +327,25 @@ Upstream_Data_Inventory.csv
 
 # 6. OUTPUT DIRECTORY
 
-Create:
+Create all outputs in:
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-monitoring/`
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/08-seo-monitoring/`
 
-Create:
+Directory Tree:
 
-seo-monitoring/
-
-├── Project_Discovery_Report.md
-
-├── Upstream_Data_Inventory.csv
-
-├── SEO_Monitoring_Context.md
-
-├── SEO_Monitoring_Report.md
-
-├── SEO_Performance_Report.md
-
-├── Executive_SEO_Report.md
+```text
+{OUT_PUT_ROOT_FOLDER}/
+└── {{CURRENT_DATE}}/
+    └── {{DOMAIN_NAME}}/
+        └── 08-seo-monitoring/
+            ├── seo-monitoring-overall-report.md       # Strategic monitoring & KPI governance report
+            ├── seo-monitoring-website-changes.md      # Concrete register of tracking code, alert triggers, and anomaly fixes
+            ├── SEO_Monitoring_Report.md               # Legacy mirror report
+            ├── Project_Discovery_Report.md
+            ├── Upstream_Data_Inventory.csv
+            ├── SEO_Monitoring_Context.md
+            ├── SEO_Performance_Report.md
+            ├── Executive_SEO_Report.md
 
 ├── SEO_Baseline_Report.md
 
@@ -1769,17 +1732,44 @@ SEO_Monitoring_Strategy.md
 
 ---
 
-# STEP 19 — FINAL REPORT GENERATION
+# STEP 19 — FINAL REPORT GENERATION & WEBSITE CHANGES
 
-Create:
+Generate the twin mandatory deliverables into `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/08-seo-monitoring/`:
 
-SEO_Monitoring_Report.md
+### 1. `seo-monitoring-overall-report.md` (and legacy mirror `SEO_Monitoring_Report.md`)
+Must contain:
+- Executive Summary & Governance Stance
+- SEO Baseline & Data Access Transparency
+- Organic Traffic Trends (Clicks, Impressions, CTR)
+- Keyword Performance & Ranking Movement
+- Landing Page Performance & Content Decay
+- Technical SEO & Crawl Health Monitoring
+- Backlink & Referring Domain Monitoring
+- Competitor Search Movements & SERP Shifts
+- Conversion & Business Goal Performance
+- Anomaly Detection & Investigation Log
+- Proactive SEO Recommendations & Continuous Improvement Roadmap
 
-Executive_SEO_Report.md
+### 2. `seo-monitoring-website-changes.md`
+A dedicated register of concrete website tracking code updates, verification tags, alert triggers, and anomaly remediation actions:
 
-SEO_Performance_Report.md
+#### Table 1: Analytics & Event Tracking Code Changes
+| Page URL / Component | Event / Goal / Tag to Track | Implementation Code Snippet (GA4 / GTM / HTML) | Priority (P0–P3) | Action (ADD/UPDATE) |
+|---|---|---|---|---|
 
-The reports must contain:
+#### Table 2: Search Console & Verification Tags
+| Verification Type / Domain / Meta Tag | Current Status | Required Code Snippet / DNS Configuration | Priority (P0–P3) | Action |
+|---|---|---|---|---|
+
+#### Table 3: KPI Monitoring Thresholds & Alert Triggers
+| KPI Metric | Target Benchmark | Anomaly Threshold / Trigger Condition | Notification Channel & Frequency | Priority (P0–P3) |
+|---|---|---|---|---|
+
+#### Table 4: Ranking Anomaly Remediation Actions
+| URL Affected | Query Affected | Ranking Delta / Traffic Drop | Root Cause (Technical / Content / Cannibalization) | Immediate Remediation Action | Priority (P0–P3) |
+|---|---|---|---|---|---|
+
+---
 
 ## Executive Summary
 

@@ -23,6 +23,7 @@ This document defines the standardized universal dynamic variables used across t
 | `{{BRAND_VOICE}}` | Tone and style guidelines for content generation | `Authoritative, technical, concise, developer-centric` | Optional |
 | `{{CURRENT_DATE}}` | Dynamic execution date formatted strictly as `YYYY-MM-DD` | `2025-01-15` | **Required** |
 | `{{PROJECT_ID}}` | Unique alphanumeric identifier for project tracking | `proj-example-001` | Optional |
+| `OUT_PUT_ROOT_FOLDER` | Root output directory path. Dynamically configurable; defaults to current workspace outputs folder: `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs` | `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs` | **Required** (Defaults to workspace `outputs`) |
 
 ---
 
@@ -42,3 +43,4 @@ All skills must resolve input variables in the following priority order:
 - **URL Isolation:** Always use `{{WEBSITE_URL}}` for root crawl targets.
 - **Entity Isolation:** Always use `{{WEBSITE_NAME}}` or `{{BRAND_NAME}}` instead of hardcoded company names.
 - **Date Isolation:** Never hardcode calendar dates. Always compute and use `{{CURRENT_DATE}}` formatted as `YYYY-MM-DD`.
+- **Output Root Management:** All skills must save outputs under `OUT_PUT_ROOT_FOLDER` (default: `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`). Never save output files in temporary folders or outside the project root.

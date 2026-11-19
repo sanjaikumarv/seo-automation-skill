@@ -9,9 +9,9 @@ description: Perform comprehensive, audit-driven organic keyword research, inten
 
 An in-depth, audit-grounded keyword research and search intent optimization skill:
 - **What this skill does:** Discovers high-intent commercial, transactional, and informational search queries; analyzes SERP features; identifies competitor keyword gaps; groups keywords into semantic clusters; and produces an exhaustive keyword-to-page URL targeting map.
-- **Its primary objective:** Establish a data-backed organic query foundation directly mapped to discovered website pages and service offerings without inventing search metrics.
+- **Its primary objective:** Produce an overall strategic analysis report and an exact page-by-page website changes report establishing a data-backed organic query foundation directly mapped to discovered website pages and service offerings without inventing search metrics.
 - **When it should be used:** Stage 2 of the SEO workflow, immediately following the completion of `seo-audit`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/Keyword_Research_Report.md`, `Keyword_Mapping.csv`, and supporting keyword datasets.
+- **What output or result it produces:** Generates `keyword-research-overall-report.md`, `keyword-research-website-changes.md`, `Keyword_Research_Report.md`, `Keyword_Mapping.csv`, and supporting keyword datasets in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/02-keyword-research/`.
 
 ## Shared Resources
 
@@ -26,9 +26,13 @@ This skill utilizes the following shared documentation:
 
 You are a Senior SEO Keyword Research Specialist, Technical SEO Analyst, Search Intent Analyst, Competitor Research Analyst, Content Strategist, and SEO Automation Engineer.
 
-Your responsibility is to execute complete, evidence-based, end-to-end SEO Keyword Research for the provided website.
+Your responsibility is to execute complete, evidence-based, end-to-end SEO Keyword Research for the target website.
 
-You MUST use the previously completed SEO Audit Report and its supporting output files as the foundation for Keyword Research.
+You MUST generate two primary deliverables:
+1. `keyword-research-overall-report.md`: High-level strategic report (Executive Summary, Data Sources, Free Tools Used, Methodology, Findings, Opportunities, Risks, Priority, Limitations).
+2. `keyword-research-website-changes.md`: Concrete, page-by-page register of exact keyword assignments and updates (Page URL, Current Primary Keyword, Suggested SEO-Optimized Keyword, Search Volume, KD, Search Intent, Target Secondary Keywords, Implementation Action, Priority P0–P3).
+
+You MUST use the previously completed SEO Audit Report (`01-website-audit/`) and its supporting output files as the foundation for Keyword Research.
 
 Your goal is to identify:
 
@@ -38,14 +42,10 @@ Your goal is to identify:
 - Industry-specific keywords.
 - Service and product-related keywords.
 - Competitor keyword opportunities.
-- Keyword gaps.
-- Content opportunities.
-- Existing page keyword targeting opportunities.
-- New landing page opportunities.
+- Search intent classification.
+- Keyword difficulty and search volume from verified sources.
 - Keyword cannibalization risks.
-- Keyword-to-URL mapping opportunities.
-
-The final deliverable must be a complete Keyword Research Report and supporting CSV datasets that can be directly used by the next On-Page SEO Optimization workflow.
+- Keyword-to-URL mappings for existing and new pages.
 
 **Execution Mode: STRICT SEQUENTIAL**
 
@@ -55,84 +55,71 @@ Complete each stage in order. Do not skip stages. Do not fabricate data. Maintai
 
 # 2. INPUT CONFIGURATION
 
-Use the following configuration:
+In accordance with `../shared/INPUT_VARIABLES.md`, ingest and resolve dynamic variables:
 
-- Website URL: {{WEBSITE_URL}}
-- Website Name: {{WEBSITE_NAME}}
-- Business Type: {{BUSINESS_TYPE}}
-- Target Country: {{TARGET_COUNTRY}}
-- Target Audience: {{TARGET_AUDIENCE}}
-- Website Technology: {{WEBSITE_TECHNOLOGY}}
-- Competitor Websites: {{COMPETITOR_WEBSITES}}
-- Target Language: {{TARGET_LANGUAGE}}
-- Keyword Research Scope: Complete Website
-- Execution Mode: STRICT SEQUENTIAL
-- Research Approach: Audit-Driven + External Keyword Research
-- Tool Preference: Free SEO Tools First
+- Project root: `./` (current active workspace root)
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
+- Website URL: `{{WEBSITE_URL}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Website Name: `{{WEBSITE_NAME}}`
+- Business Type: `{{BUSINESS_TYPE}}`
+- Target Country / Geography: `{{TARGET_COUNTRY}}` / `{{TARGET_GEOGRAPHY}}`
+- Target Audience: `{{TARGET_AUDIENCE}}`
+- Services Offered: `{{SERVICES}}`
+- Seed Keywords: `{{SEED_KEYWORDS}}`
+- Website Technology: Ingested or detected during audit.
+- Target Language: Determined from website and target audience.
+- Keyword Research Scope: Complete Website + Discovered Opportunities.
+- Execution Date: `{{CURRENT_DATE}}` (YYYY-MM-DD)
+- Canonical Output Directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/02-keyword-research/`
+- Research Approach: Audit-Driven + External Keyword Research.
+- Tool Preference: Free SEO Tools First (Google Search, search operators, Google Trends, free APIs).
 
 If competitor URLs are not provided, discover relevant competitors using search engines.
-
 If some inputs are unavailable, use verified information from the website and SEO Audit Report. Clearly document assumptions.
 
 ---
 
 # 3. PROJECT DIRECTORY STRUCTURE
 
-Project root: Active workspace root (`./`)
-
-Skill location:
-
-`.agents/skills/seo-keyword-research/SKILL.md`
-
-Canonical output hierarchy (see `../shared/OUTPUT_STANDARDS.md`):
+### Canonical Output Hierarchy:
 
 ```text
-seo-orchestration-flow/
-│
-├── .agents/
-│   └── skills/
-│       └── seo-keyword-research/
-│           └── SKILL.md
-│
-├── outputs/
-│   └── {{CURRENT_DATE}}/
-│       └── {{DOMAIN_NAME}}/
-│           │
-│           ├── audit-report/
-│           │   ├── SEO_Audit_Report.md
-│           │   ├── evidence/
-│           │   ├── screenshots/
-│           │   ├── tool-exports/
-│           │   └── crawl-data/
-│           │
-│           └── keyword-research/
-│               ├── Keyword_Research_Report.md
-│               ├── Keyword_Research_Data.csv
-│               ├── Seed_Keywords.csv
-│               ├── Keyword_Clusters.csv
-│               ├── Keyword_Mapping.csv
-│               ├── Keyword_Gap_Analysis.csv
-│               ├── Competitor_Keyword_Analysis.csv
-│               ├── Keyword_Prioritization.csv
-│               └── evidence/
-│                   ├── keyword-tool-exports/
-│                   ├── serp-evidence/
-│                   ├── competitor-evidence/
-│                   └── source-references/
-│
-└── other-workflow-files/
+{OUT_PUT_ROOT_FOLDER}/
+└── {{CURRENT_DATE}}/
+    └── {{DOMAIN_NAME}}/
+        ├── 01-website-audit/
+        │   ├── website-audit-overall-report.md
+        │   ├── website-audit-website-changes.md
+        │   ├── SEO_Audit_Report.md
+        │   └── url-inventory.csv
+        │
+        └── 02-keyword-research/
+            ├── keyword-research-overall-report.md       # High-level strategy & cluster analysis
+            ├── keyword-research-website-changes.md      # Concrete page-by-page keyword mapping register
+            ├── Keyword_Research_Report.md               # Detailed technical report (legacy mirror)
+            ├── Keyword_Research_Data.csv                # Full master keyword dataset
+            ├── Seed_Keywords.csv                        # Processed seed queries
+            ├── Keyword_Clusters.csv                     # Semantic topic clusters
+            ├── Keyword_Mapping.csv                      # URL-to-keyword assignments
+            ├── Keyword_Gap_Analysis.csv                 # Discovered gaps against competitors
+            ├── Competitor_Keyword_Analysis.csv          # Competitor keyword benchmarks
+            ├── Keyword_Prioritization.csv               # Prioritized keyword targets
+            └── evidence/
+                ├── keyword-tool-exports/
+                ├── serp-evidence/
+                ├── competitor-evidence/
+                └── source-references/
 ```
-
 ### Directory Rules
 
-1. Use the current execution date in `YYYY-MM-DD` format.
-2. Normalize the website URL into its hostname for the domain folder.
-3. Do not modify or overwrite the SEO Audit Report.
-4. Do not recreate the SEO Audit workflow.
-5. Store all Keyword Research outputs inside the `keyword-research` directory.
+1. Use `OUT_PUT_ROOT_FOLDER` (default `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`).
+2. Use the current execution date in `YYYY-MM-DD` format.
+3. Normalize the website URL into its hostname for the domain folder.
+4. Do not modify or overwrite the Stage 01 SEO Audit outputs.
+5. Store all Keyword Research outputs inside the `02-keyword-research/` directory.
 6. Preserve previous execution outputs.
-7. If the output directory already contains files, create a versioned or execution-specific folder rather than silently overwriting them.
-8. Verify that all output files have been successfully generated.
+7. Verify that all output files have been successfully generated.
 
 ---
 
@@ -140,16 +127,22 @@ seo-orchestration-flow/
 
 **This is a mandatory stage. Do not begin external Keyword Research before completing it.**
 
-The SEO Audit workflow has already generated a final report and supporting evidence files.
-
-You MUST locate and reuse these outputs.
+The SEO Audit workflow has already generated its outputs in Stage 01. You MUST locate and reuse these outputs.
 
 ## 4.1 Primary SEO Audit Report Location
 
 Locate and read:
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/website-audit-overall-report.md`
+*(Fallback: `01-website-audit/SEO_Audit_Report.md` or legacy `{OUT_PUT_ROOT_FOLDER}/*/{{DOMAIN_NAME}}/audit-report/SEO_Audit_Report.md`)*
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/SEO_Audit_Report.md`
-*(Or dynamically discover the latest completed audit report under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)*
+Do not assume the audit date is always the current date. Discover the latest completed run if executed on a prior date.
+
+### Report Discovery Instructions
+
+1. Search `{OUT_PUT_ROOT_FOLDER}/*/{{DOMAIN_NAME}}/01-website-audit/`.
+2. Find `website-audit-overall-report.md` (or `SEO_Audit_Report.md`) and `url-inventory.csv`.
+3. Extract discovered page URLs, existing title tags, H1s, and identified services.
+4. If missing, mark Stage 02 as BLOCKED until Stage 01 audit is available.
 
 Do not assume the audit date is always the current date.
 
@@ -1070,37 +1063,57 @@ Do not store unnecessary screenshots or duplicate exports.
 
 ---
 
-# 10. FINAL VALIDATION CHECKLIST
+# 10. FINAL VALIDATION & MANDATORY DELIVERABLES
+
+This skill MUST generate the following deliverables in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/02-keyword-research/`:
+
+### 10.1 High-Level Strategy Report: `keyword-research-overall-report.md`
+*(Note: Maintain `Keyword_Research_Report.md` as an identical mirror/alias if legacy consumers exist)*
+
+Comprehensive strategic report covering:
+1. Executive Summary & Organic Keyword Coverage Health
+2. Upstream Stage 01 Audit Findings Reviewed (`01-website-audit/`)
+3. Seed Keyword Generation & Semantic Keyword Expansion Methodology
+4. Search Intent Architecture (Commercial, Transactional, Informational, Navigational)
+5. Topic Cluster Architecture & Pillar-to-Cluster Taxonomy
+6. Competitor Keyword Gap Analysis & SERP Opportunities
+7. Keyword Cannibalization Risk Assessment & Resolution
+8. Prioritization Matrix (P0 Critical Quick-Wins to P3 Long-Tail)
+9. Data Sources Used, Public Observational Data Labels, and Tool Limitations
+
+---
+
+### 10.2 Concrete Website Changes Register: `keyword-research-website-changes.md`
+
+A standalone, page-by-page register providing copy-paste ready keyword mapping changes for copywriters, on-page SEO specialists, and developers. Must contain exact tables with the following strict schemas:
+
+#### A. Page-by-Page Keyword Optimization Table
+| Page URL | Current Assigned Primary Keyword | Suggested SEO-Optimized Primary Keyword | Search Volume | Keyword Difficulty (KD) | Search Intent | Target Secondary Keywords | Priority (P0-P3) | Implementation Action (RETAIN/UPDATE/ADD) |
+|---|---|---|---|---|---|---|---|---|
+| `https://.../` | "Home" / Unspecified | `[Brand Name] software engineering firm` | 2,400 | 45 | Navigational / Commercial | custom software, enterprise engineering | P0 | UPDATE |
+| `https://.../services` | "our services" | `custom software development services` | 5,400 | 58 | Commercial / Transactional | web application development, software firm | P0 | UPDATE |
+| `/services/cloud-migration` (New) | None (New Page) | `enterprise cloud migration services` | 1,600 | 38 | Commercial / High-Intent | AWS migration, legacy system modernization | P1 | ADD |
+
+---
+
+### 10.3 Final Validation Checklist
 
 Before completing the workflow, validate:
 
-- [ ] Correct SEO Audit Report located.
-- [ ] Complete SEO Audit Report read.
-- [ ] Relevant supporting audit files inspected.
-- [ ] Audit source paths documented.
-- [ ] Existing URL inventory extracted.
-- [ ] Page titles and headings extracted.
-- [ ] Page content and service topics extracted.
-- [ ] Internal anchor text extracted.
-- [ ] Image keyword signals extracted.
-- [ ] Search Console data used only if available and authorized.
-- [ ] Technical indexability constraints considered.
-- [ ] Seed keywords generated.
-- [ ] Keyword discovery completed.
-- [ ] Search intent classified.
-- [ ] Available keyword metrics collected.
-- [ ] Competitors researched.
-- [ ] Keyword dataset cleaned.
-- [ ] Keyword clusters generated.
-- [ ] Keyword mapping completed.
-- [ ] Keyword gap analysis completed.
-- [ ] Cannibalization risks reviewed.
-- [ ] Keyword prioritization completed.
-- [ ] Final report generated.
-- [ ] All CSV files generated.
-- [ ] Evidence saved.
-- [ ] Output directory verified.
-- [ ] Existing audit files preserved.
+- [ ] Correct SEO Audit Report located in `01-website-audit/`.
+- [ ] Complete SEO Audit Report read and url inventory extracted.
+- [ ] `keyword-research-overall-report.md` generated and non-empty.
+- [ ] `keyword-research-website-changes.md` generated with page-by-page mapping table.
+- [ ] All supporting CSV datasets generated:
+  - `Keyword_Research_Data.csv`
+  - `Seed_Keywords.csv`
+  - `Keyword_Clusters.csv`
+  - `Keyword_Mapping.csv`
+  - `Keyword_Gap_Analysis.csv`
+  - `Competitor_Keyword_Analysis.csv`
+  - `Keyword_Prioritization.csv`
+- [ ] Evidence saved in `evidence/`.
+- [ ] Output directory verified under `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/02-keyword-research/`.
 
 If any stage cannot be completed, record:
 

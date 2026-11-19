@@ -10,9 +10,9 @@ description: Execute comprehensive, page-level on-page SEO optimization, metadat
 A comprehensive on-page SEO optimization and developer task generator skill:
 
 - **What this skill does:** Ingests upstream audit, keyword research, and competitor analysis reports; analyzes page inventories and content; crafts optimized title tags, meta descriptions, and semantic heading structures; designs internal linking meshes; formulates image and schema blueprints; and compiles a production-ready developer implementation prompt.
-- **Its primary objective:** Produce actionable, page-level optimization matrices and developer code update prompts grounded in verified queries and architecture.
+- **Its primary objective:** Produce an overall strategic analysis report and an exact page-by-page website changes report (metadata, headings, body content snippets, image alts, internal links) alongside actionable developer code update prompts.
 - **When it should be used:** Stage 4 of the SEO workflow, following `seo-competitor-analysis`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/On_Page_SEO_Report.md`, `Title_Meta_Optimization.csv`, `Developer_Prompt.md`, and supporting optimization datasets.
+- **What output or result it produces:** Generates `on-page-seo-overall-report.md`, `on-page-seo-website-changes.md`, `On_Page_SEO_Report.md`, `Developer_Prompt.md`, and supporting optimization datasets in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/04-on-page-seo/`.
 
 ## Shared Resources
 
@@ -41,17 +41,21 @@ Act as a team of specialized professionals:
 
 Your responsibility is to execute a complete On-Page SEO optimization workflow using previous SEO workflow reports, current website analysis, keyword research, and competitor intelligence.
 
-You must generate two major deliverable categories:
+You must generate two mandatory report categories in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/04-on-page-seo/`:
 
-**Category A: SEO Analysis & Optimization Recommendations**
+**1. `on-page-seo-overall-report.md` (and legacy mirror `On_Page_SEO_Report.md`)**
+Strategic, high-level analysis covering page inventories, intent alignment, keyword clustering, content architecture, internal linking mesh strategy, priority rankings, risk analysis, and methodology.
 
-Analyze the website and identify what needs to be improved, added, updated, removed, or reviewed from an On-Page SEO perspective.
+**2. `on-page-seo-website-changes.md`**
+A granular, page-by-page register of exact on-page modifications with explicit before-and-after tables:
+- **Metadata Updates**: Page URL, Existing title/meta, Suggested title/meta, Target primary/secondary keywords, Priority P0–P3, Action.
+- **Heading Updates**: Page URL, Section, Existing HTML tag with text, Suggested HTML tag with text, Target keyword, Priority P0–P3, Action.
+- **Body Content Updates**: Page URL, Section, Existing content snippet, Suggested optimized copy, Target keywords, Word count delta, Priority P0–P3, Action.
+- **Image Alt Updates**: Page URL, Image asset path/URL, Existing alt text, Suggested descriptive SEO alt text, Priority P0–P3.
+- **Internal Linking Updates**: Source URL, Target URL, Existing anchor text, Suggested anchor text, Link context sentence, Priority P0–P3, Action.
 
-**Category B: Developer Implementation Instructions**
-
-Convert the approved SEO recommendations into a production-ready developer prompt that clearly explains which website pages, components, source files, metadata, content, images, links, and structured data need to be modified.
-
-Both categories must be generated as part of the same workflow.
+**Developer Implementation Instructions:**
+- `Developer_Prompt.md` & `prompt.txt`: Production-ready code prompts mapping every approved change to specific repository components, routes, and layout templates.
 
 Default execution mode is recommendation-only. Generating developer instructions does not authorize automatic production code modifications.
 
@@ -63,9 +67,9 @@ Execute a complete On-Page SEO Optimization workflow for the target website.
 
 The workflow MUST use these three previously completed SEO workflows as mandatory upstream inputs:
 
-1. SEO Audit
-2. Keyword Research & Keyword Mapping
-3. Competitor Analysis
+1. Stage 01 SEO Audit (`01-website-audit/`)
+2. Stage 02 Keyword Research & Keyword Mapping (`02-keyword-research/`)
+3. Stage 03 Competitor Analysis (`03-competitor-analysis/`)
 
 The workflow must correlate relevant findings from all three upstream reports and generate page-level optimization recommendations.
 
@@ -94,9 +98,10 @@ The On-Page SEO workflow must cover:
 
 **SEO deliverables:**
 
-- Complete On-Page SEO report
-- Page-level recommendations
-- Optimization CSV files
+- `on-page-seo-overall-report.md`
+- `on-page-seo-website-changes.md`
+- `On_Page_SEO_Report.md` (legacy mirror)
+- Page-level recommendations CSV files
 - Validation report
 - Execution log
 - Execution summary
@@ -118,6 +123,7 @@ The developer prompt must contain precise, actionable instructions for implement
 Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
 
 - Project root: `./` (current active workspace root)
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
 - Website URL: `{{WEBSITE_URL}}`
 - Website Domain: `{{DOMAIN_NAME}}`
 - Website Name: `{{WEBSITE_NAME}}`
@@ -169,68 +175,49 @@ Use updated execution-time configuration when the user supplies different values
 Maintain the following project structure:
 
 ```text
-seo-orchestration-flow/
-│
-├── .agents/
-│   └── skills/
-│       ├── seo-audit/
-│       │   └── SKILL.md
-│       │
-│       ├── seo-keyword-research/
-│       │   └── SKILL.md
-│       │
-│       ├── seo-competitor-analysis/
-│       │   └── SKILL.md
-│       │
-│       └── seo-on-page/
-│           └── SKILL.md
-│
-└── outputs/
-    └── {{CURRENT_DATE}}/
-        └── {{DOMAIN_NAME}}/
+{OUT_PUT_ROOT_FOLDER}/
+└── {{CURRENT_DATE}}/
+    └── {{DOMAIN_NAME}}/
+        ├── 01-website-audit/
+        ├── 02-keyword-research/
+        ├── 03-competitor-analysis/
+        └── 04-on-page-seo/
+            ├── on-page-seo-overall-report.md           # High-level strategy & on-page architecture report
+            ├── on-page-seo-website-changes.md          # Concrete register of exact page changes (meta, headings, content, images, links)
+            ├── On_Page_SEO_Report.md                   # Legacy mirror report
+            ├── On_Page_Validation_Report.md
+            ├── Execution_Log.md
+            ├── Execution_Summary.md
             │
-            ├── audit-report/
+            ├── Developer_Prompt.md
+            ├── prompt.txt
             │
-            ├── keyword-research/
+            ├── On_Page_SEO_Recommendations.csv
+            ├── URL_Optimization.csv
+            ├── Title_Meta_Optimization.csv
+            ├── Heading_Optimization.csv
+            ├── Content_Optimization.csv
+            ├── Semantic_Keyword_Optimization.csv
+            ├── Image_SEO_Recommendations.csv
+            ├── Internal_Link_Recommendations.csv
+            ├── External_Link_Recommendations.csv
+            ├── Schema_Recommendations.csv
             │
-            ├── competitor-analysis/
-            │
-            └── on-page-seo/
+            └── evidence/
                 │
-                ├── On_Page_SEO_Report.md
-                ├── On_Page_Validation_Report.md
-                ├── Execution_Log.md
-                ├── Execution_Summary.md
+                ├── source-references/
+                │   ├── On_Page_Source_References.csv
+                │   └── Upstream_Data_Inventory.csv
                 │
-                ├── Developer_Prompt.md
-                ├── prompt.txt
-                │
-                ├── On_Page_SEO_Recommendations.csv
-                ├── URL_Optimization.csv
-                ├── Title_Meta_Optimization.csv
-                ├── Heading_Optimization.csv
-                ├── Content_Optimization.csv
-                ├── Semantic_Keyword_Optimization.csv
-                ├── Image_SEO_Recommendations.csv
-                ├── Internal_Link_Recommendations.csv
-                ├── External_Link_Recommendations.csv
-                ├── Schema_Recommendations.csv
-                │
-                └── evidence/
-                    │
-                    ├── source-references/
-                    │   ├── On_Page_Source_References.csv
-                    │   └── Upstream_Data_Inventory.csv
-                    │
-                    ├── page-analysis/
-                    ├── serp-evidence/
-                    ├── content-evidence/
-                    ├── image-evidence/
-                    ├── internal-link-evidence/
-                    ├── schema-evidence/
-                    ├── validation-evidence/
-                    ├── screenshots/
-                    └── tool-exports/
+                ├── page-analysis/
+                ├── serp-evidence/
+                ├── content-evidence/
+                ├── image-evidence/
+                ├── internal-link-evidence/
+                ├── schema-evidence/
+                ├── validation-evidence/
+                ├── screenshots/
+                └── tool-exports/
 ```
 
 ### 4.2 Canonical Path Configuration
@@ -239,7 +226,7 @@ Resolve variables according to `../shared/INPUT_VARIABLES.md` and `../shared/OUT
 
 - `CURRENT_DATE`: Current execution date formatted as `YYYY-MM-DD`.
 - `DOMAIN_NAME`: Normalized website hostname.
-- Canonical Output Directory: `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
+- Canonical Output Directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/04-on-page-seo/`
 
 Normalize the website URL:
 
@@ -255,12 +242,7 @@ If the configured project root is unavailable, do not guess another path. Report
 
 - Preserve previous reports and evidence.
 - Never silently overwrite existing deliverables.
-- If the output directory already contains files for the same execution date, create a unique execution directory:
-
-`{OUTPUT_ROOT}\executions\{execution-id}\`
-
-- Use the execution-specific directory as the actual output root.
-- Preserve all previous executions.
+- Keep all On-Page SEO outputs inside `04-on-page-seo/`.
 - Verify every generated file.
 
 ---
@@ -269,33 +251,22 @@ If the configured project root is unavailable, do not guess another path. Report
 
 All three upstream workflows MUST be discovered and reviewed before beginning On-Page SEO optimization.
 
-Each workflow may have a different execution date.
+### 5.1 Stage 01 SEO Audit
 
-### 5.1 SEO Audit
+Input directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/` (fallback: `audit-report/`)
 
-Input directory:
-
-`{PROJECT_ROOT}\outputs\{AUDIT_DATE}\{WEBSITE_DOMAIN}\audit-report\`
-
-Mandatory report:
-
-`SEO_Audit_Report.md`
+Mandatory reports: `website-audit-overall-report.md`, `SEO_Audit_Report.md`, `url-inventory.csv`.
 
 Inspect available supporting directories:
-
 - `evidence/`
-- `screenshots/`
-- `tool-exports/`
 - `crawl-data/`
 
-### 5.2 Keyword Research & Keyword Mapping
+### 5.2 Stage 02 Keyword Research & Keyword Mapping
 
-Input directory:
-
-`{PROJECT_ROOT}\outputs\{KEYWORD_RESEARCH_DATE}\{WEBSITE_DOMAIN}\keyword-research\`
+Input directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/02-keyword-research/` (fallback: `keyword-research/`)
 
 Mandatory files:
-
+- `keyword-research-overall-report.md`
 - `Keyword_Research_Report.md`
 - `Keyword_Research_Data.csv`
 - `Seed_Keywords.csv`
@@ -307,18 +278,13 @@ Mandatory files:
 
 Inspect all available supporting evidence.
 
-### 5.3 Competitor Analysis
+### 5.3 Stage 03 Competitor Analysis
 
-Input directory:
+Input directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/03-competitor-analysis/` (fallback: `competitor-analysis/`)
 
-`{PROJECT_ROOT}\outputs\{COMPETITOR_ANALYSIS_DATE}\{WEBSITE_DOMAIN}\competitor-analysis\`
-
-Mandatory report:
-
-`Competitor_Analysis_Report.md`
-
-Inspect available supporting files:
-
+Mandatory files:
+- `competitor-analysis-overall-report.md`
+- `Competitor_Analysis_Report.md`
 - `Competitor_List.csv`
 - `Competitor_Page_Analysis.csv`
 - `Competitor_Keyword_Analysis.csv`
@@ -1426,33 +1392,51 @@ Allowed statuses:
 
 ## 11. FINAL REPORT STRUCTURE
 
-`On_Page_SEO_Report.md` must contain:
+Generate the twin mandatory deliverables in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/04-on-page-seo/`:
 
-1. Executive Summary
+### 11.1 `on-page-seo-overall-report.md` (and legacy mirror `On_Page_SEO_Report.md`)
+Must contain:
+1. Executive Summary & Page Optimization Health Overview
 2. Website and Business Overview
-3. Upstream Reports Reviewed
-4. Source Data and Evidence Summary
-5. Website URL and Page Inventory
-6. Page-Level SEO Findings
-7. Title Tag Recommendations
-8. Meta Description Recommendations
-9. Heading Structure Recommendations
-10. Content Optimization Recommendations
-11. Semantic Keyword Optimization
-12. Image SEO Recommendations
-13. Internal Linking Recommendations
-14. External Linking Recommendations
-15. Structured Data Recommendations
-16. URL and Page Structure Recommendations
-17. Competitor-Based Optimization Opportunities
-18. Priority Matrix
-19. Implementation Effort and Risk
-20. Validation Findings
-21. Limitations and Missing Evidence
-22. Recommended Next Actions
+3. Upstream Reports Reviewed (Stage 01, 02, 03 source files & extracted data)
+4. Source Data, Tools & Evidence Summary
+5. Website URL and Page Inventory Analysis
+6. Page-Level SEO Strategy & Search Intent Alignment
+7. Keyword-to-URL Mapping Blueprint
+8. Semantic Content Strategy & Content Depth Standards
+9. Internal Linking Mesh & Architecture Strategy
+10. Image SEO, Alt Text & Media Architecture
+11. Structured Data / Schema Recommendations
+12. Priority Matrix & Impact-to-Effort Analysis
+13. Implementation Effort, Dependencies and Risks
+14. Validation Findings, Incomplete Data & Limitations
+15. Recommended Next Actions
 
-`Developer_Prompt.md` must contain the implementation requirements defined in Step 17.
+### 11.2 `on-page-seo-website-changes.md`
+A dedicated, page-by-page register of exact on-page modifications with explicit before-and-after tables:
 
+#### Table 1: Metadata Updates
+| Page URL | Existing Title / Meta Description | Suggested Optimized Title / Meta Description | Target Primary & Secondary Keywords | Priority (P0–P3) | Action (ADD/UPDATE/REMOVE) |
+|---|---|---|---|---|---|
+
+#### Table 2: Heading Structure Updates
+| Page URL | Section / Block | Existing HTML Tag & Text | Suggested HTML Tag & Text | Target Keyword | Priority (P0–P3) | Action |
+|---|---|---|---|---|---|
+
+#### Table 3: Body Content Updates
+| Page URL | Section / Component | Existing Content Snippet | Suggested Optimized Copy | Target Keywords | Word Count Delta | Priority (P0–P3) | Action |
+|---|---|---|---|---|---|---|
+
+#### Table 4: Image Alt Text Updates
+| Page URL | Image Asset Path / URL | Existing Alt Text | Suggested Descriptive SEO Alt Text | Priority (P0–P3) | Action |
+|---|---|---|---|---|---|
+
+#### Table 5: Internal Linking Mesh Updates
+| Source URL | Target URL | Existing Anchor Text (if any) | Suggested Anchor Text | Link Placement Context Sentence | Priority (P0–P3) | Action |
+|---|---|---|---|---|---|
+
+### 11.3 Developer Implementation Prompts
+`Developer_Prompt.md` must contain the framework-native implementation requirements defined in Step 17.
 `prompt.txt` must contain the complete plain-text equivalent of `Developer_Prompt.md`.
 
 ---
@@ -1547,7 +1531,7 @@ Then execute in this exact order:
 5. Correlate relevant findings across all three workflows.
 6. Create the upstream data inventory and source references.
 7. Execute the 17 On-Page SEO workflow steps sequentially.
-8. Generate the On-Page SEO report.
+8. Generate the twin deliverables: `on-page-seo-overall-report.md` (and legacy mirror `On_Page_SEO_Report.md`) and `on-page-seo-website-changes.md`.
 9. Generate all recommendation CSV files.
 10. Generate the validation report.
 11. Generate the production-ready Developer Prompt.

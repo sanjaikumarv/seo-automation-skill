@@ -8,14 +8,16 @@ description: Execute ethical, evidence-based off-page SEO, backlink gap analysis
 ## Skill Description
 
 An ethical, white-hat off-page SEO and digital PR strategy skill:
+
 - **What this skill does:** Ingests upstream audit, keyword research, competitor analysis, on-page, content, and technical reports; analyzes competitor backlink profiles and authority gaps from public observational search data; designs target page link acquisition strategies; crafts ethical outreach templates; and formulates digital PR tactics.
-- **Its primary objective:** Build organic domain authority and earned media visibility strictly complying with Google Search Essentials without PBNs, automated spam, or unverified link counts.
+- **Its primary objective:** Produce an overall strategic analysis report and an exact register of website linkable asset enhancements and outreach specifications strictly complying with Google Search Essentials without PBNs, automated spam, or unverified link counts.
 - **When it should be used:** Stage 7 of the SEO workflow, following `technical-seo`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/Off_Page_SEO_Report.md`, `Outreach_Strategy.md`, and link prospect matrices.
+- **What output or result it produces:** Generates `off-page-seo-overall-report.md`, `off-page-seo-website-changes.md`, `Off_Page_SEO_Report.md`, `Outreach_Strategy.md`, and link prospect matrices in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/07-off-page-seo/`.
 
 ## Shared Resources
 
 This skill utilizes the following shared documentation:
+
 - Universal Input Variables: `../shared/INPUT_VARIABLES.md`
 - Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
 - Shared SEO Tools: `../shared/TOOLS.md`
@@ -28,9 +30,12 @@ You are a Senior SEO Specialist, Off-Page SEO Strategist, Link Building Analyst,
 
 You are responsible for executing a complete, evidence-based Off-Page SEO workflow for the target website.
 
-You must execute the workflow sequentially, step by step.
+You must generate two major deliverable categories:
 
-For every step, you must:
+1. `off-page-seo-overall-report.md`: Strategic overview of domain authority, referring domains, backlink gap analysis, digital PR angles, ethical outreach playbook, and risks.
+2. `off-page-seo-website-changes.md`: Concrete register of website and content changes needed to support off-page authority and earn links (linkable asset hooks, author E-E-A-T enhancements, unlinked mention targets, and outreach prospect mapping).
+
+You must execute the workflow sequentially, step by step:
 
 1. Explain the objective.
 2. Identify the required input files.
@@ -50,8 +55,10 @@ Do not execute this workflow as a single unstructured research task.
 
 # 2. PROJECT CONFIGURATION
 
-Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
+In accordance with `../shared/INPUT_VARIABLES.md`, ingest and resolve dynamic variables:
 
+- Project root: `./` (current active workspace root)
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
 - Website URL: `{{WEBSITE_URL}}`
 - Website Domain: `{{DOMAIN_NAME}}`
 - Website Name: `{{WEBSITE_NAME}}`
@@ -61,78 +68,37 @@ Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md
 - Target Audience: `{{TARGET_AUDIENCE}}`
 - Services Offered: `{{SERVICES}}`
 - Seed Keywords: `{{SEED_KEYWORDS}}`
-- Execution Date: `{{CURRENT_DATE}}`
-- Businesses requiring AI solutions
-- Businesses requiring technology consulting
-
-Target Industries:
-
-- Manufacturing
-- Retail
-- Healthcare
-- Education
-- Logistics
-- Finance
-- Professional services
-- Startups
-- SMEs
-- Enterprise businesses
-
-Target Services:
-
-- Website Development
-- Web Application Development
-- Custom Software Development
-- SaaS Development
-- Mobile Application Development
-- AI Development
-- AI Automation
-- Business Process Automation
-- Workflow Automation
-- CRM Development
-- ERP Development
-- Payroll Automation
-- Software Integration
-- Technology Consulting
+- Execution Date: `{{CURRENT_DATE}}` (YYYY-MM-DD)
+- Canonical Output Directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/07-off-page-seo/`
 
 Target Language:
-
 English.
 
 Execution Mode:
-
 STRICT SEQUENTIAL.
 
 Tool Preference:
-
 Free tools first.
 
 Research Authorization:
-
 AUTHORIZED.
 
 Website Modification:
-
-NOT AUTHORIZED.
+NOT AUTHORIZED (Recommendations only).
 
 Publishing:
-
 NOT AUTHORIZED.
 
 Outreach:
-
-NOT AUTHORIZED.
+NOT AUTHORIZED (Templates and target registers only).
 
 External Link Acquisition:
-
-NOT AUTHORIZED.
+NOT AUTHORIZED (Strategy and gap analysis only; no paid link schemes).
 
 Payments:
-
 NOT AUTHORIZED.
 
 Account Creation:
-
 NOT AUTHORIZED.
 
 ---
@@ -289,42 +255,37 @@ Never assume that SEO Audit, Keyword Research, Competitor Analysis, On-Page SEO,
 
 ---
 
-# 5. PROJECT DIRECTORY DISCOVERY
+# 5. PROJECT DIRECTORY DISCOVERY & UPSTREAM DEPENDENCIES
 
-## Step 1.1 — Discover project root
+## Step 1.1 — Discover project root & output root
 
 Identify:
 
-- Project root
-- SEO workflow directory
-- Skills directory
-- Output directory
-- Previous execution folders
-- Website domain
-
-Do not assume the project directory structure.
+- Project root: `./`
+- Output root: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
+- Target website domain: `{{DOMAIN_NAME}}`
+- Target canonical output directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/07-off-page-seo/`
 
 ## Step 1.2 — Discover previous workflow execution folders
 
-Search for:
+Search `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/` (or latest completed runs):
 
-SEO Audit
-
-Keyword Research
-
-Competitor Analysis
-
-On-Page SEO
-
-Content Strategy & Content Creation
-
-Technical SEO
+1. Stage 01 SEO Audit: `01-website-audit/` (fallback `audit-report/`)
+   - `website-audit-overall-report.md`, `url-inventory.csv`
+2. Stage 02 Keyword Research: `02-keyword-research/` (fallback `keyword-research/`)
+   - `keyword-research-overall-report.md`, `keyword-mapping.csv`
+3. Stage 03 Competitor Analysis: `03-competitor-analysis/` (fallback `competitor-analysis/`)
+   - `competitor-analysis-overall-report.md`, `Competitor_List.csv`, `Competitor_Page_Analysis.csv`
+4. Stage 04 On-Page SEO: `04-on-page-seo/` (fallback `on-page-seo/`)
+   - `on-page-seo-overall-report.md`, `on-page-seo-website-changes.md`
+5. Stage 05 Content Strategy: `05-content-strategy/` (fallback `content-strategy/`)
+   - `content-strategy-overall-report.md`, `content-strategy-website-changes.md`, `Topic_Cluster_Mapping.csv`
+6. Stage 06 Technical SEO: `06-technical-seo/` (fallback `technical-seo/`)
+   - `technical-seo-overall-report.md`, `technical-seo-website-changes.md`, `Sitemap_Analysis.csv`
 
 ## Step 1.3 — Identify execution dates
 
-For every previous workflow:
-
-Record:
+For every previous workflow record:
 
 - Workflow name
 - Execution date
@@ -338,34 +299,21 @@ Record:
 
 Generate:
 
-Upstream_Data_Inventory.csv
-
-Columns:
-
-workflow_name
-execution_date
-output_directory
-file_name
-file_path
-file_type
-file_exists
-file_readable
-data_relevance
-dependency_level
-missing_data
-notes
-
-Generate:
-
-Project_Discovery_Report.md
+- `Upstream_Data_Inventory.csv`
+- `Project_Discovery_Report.md`
 
 ---
 
 # 6. OUTPUT DIRECTORY
 
-Create:
+Create all outputs in:
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/`
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/07-off-page-seo/`
+
+Where `OUT_PUT_ROOT_FOLDER` defaults to `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`.
+
+If the directory already contains previous files for the current date, preserve them by creating a versioned execution subfolder:
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/07-off-page-seo/executions/{execution-id}/`
 
 The date must represent the actual execution date.
 
@@ -500,7 +448,7 @@ Locate and understand previous SEO workflow outputs before beginning Off-Page SE
 Expected directory:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)*
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/audit-report/`)\*
 
 Required files may include:
 
@@ -525,7 +473,7 @@ Evidence
 Expected directory:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/keyword-research/`)*
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/keyword-research/`)\*
 
 Required files may include:
 
@@ -548,7 +496,7 @@ Keyword_Prioritization.csv
 Expected directory:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/competitor-analysis/`)*
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/competitor-analysis/`)\*
 
 Required files may include:
 
@@ -569,7 +517,7 @@ Competitor_Opportunity_Analysis.csv
 Expected directory:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/on-page-seo/`)*
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/on-page-seo/`)\*
 
 Required files may include:
 
@@ -588,7 +536,7 @@ Internal_Link_Recommendations.csv
 Expected directory:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/content-strategy/`)*
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/content-strategy/`)\*
 
 Required files may include:
 
@@ -621,7 +569,7 @@ content-drafts/
 Expected directory:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/technical-seo/`)*
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/technical-seo/`)\*
 
 Required files may include:
 
@@ -1963,111 +1911,75 @@ Confirm:
 
 ## Output
 
-Off_Page_SEO_Validation_Report.md
+All outputs must be written to `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/07-off-page-seo/`.
 
-Off_Page_SEO_Quality_Checklist.csv
-
-Off_Page_SEO_Report.md
-
-Execution_Summary.md
-
-Execution_Log.md
+- `off-page-seo-overall-report.md` (High-level strategy & backlink audit report)
+- `off-page-seo-website-changes.md` (Concrete register of website linkable asset enhancements and outreach targets)
+- `Off_Page_SEO_Report.md` (Legacy mirror)
+- `Off_Page_SEO_Validation_Report.md`
+- `Off_Page_SEO_Quality_Checklist.csv`
+- `Execution_Summary.md`
+- `Execution_Log.md`
 
 ---
 
-# 7. FINAL REPORT STRUCTURE
+# 7. FINAL REPORT STRUCTURE & MANDATORY DELIVERABLES
 
-Off_Page_SEO_Report.md
+### 7.1 High-Level Strategy Report: `off-page-seo-overall-report.md`
 
-## Executive Summary
+_(Note: Maintain `Off_Page_SEO_Report.md` as a mirror/alias if legacy consumers exist)_
 
-- Website
-- Business
-- Execution date
-- Workflow status
-- Major findings
-- Opportunities
-- Risks
-- Recommendations
+Must contain:
 
-## 1. Upstream Context
+1. Executive Summary (Domain authority overview, referring domain profile, backlink gap analysis, digital PR angles, and major risks)
+2. Upstream Context (`01-website-audit/` through `06-technical-seo/`)
+3. Current Backlink Profile & Observational Public Search Analysis
+4. Backlink Quality & Toxicity Risk Assessment
+5. Competitor Backlink Benchmark & Acquisition Patterns
+6. Backlink Gap Analysis (Intersection of competitor referring domains vs target pages)
+7. Link-Worthy Content Strategy & Inbound Magnet Conceptualization
+8. Ethical Outreach Strategy & White-Hat Playbooks (Digital PR, resource pages, broken link reclamation)
+9. Prioritized 30/60/90-Day Authority Building Roadmap
+10. Link Acquisition KPI & Governance Framework
+11. Search Essentials Compliance & Algorithmic Risk Assessment
+12. Tool Limitations, Unverified Metrics, and Verification Steps
 
-- Previous workflow dates
-- Relevant recommendations
-- Target pages
-- Target keywords
-- Competitors
-- Link-worthy content
+---
 
-## 2. Current Backlink Profile
+### 7.2 Concrete Website Changes Register: `off-page-seo-website-changes.md`
 
-- Data availability
-- Backlink profile
-- Referring domains
-- Anchor text
-- Link types
-- Limitations
+A standalone register identifying the on-site content enhancements and external link targets needed to drive authoritative referral traffic and earned media. Must contain exact tables with the following strict schemas:
 
-## 3. Backlink Quality
+#### A. Linkable Asset & Content Hub Modifications Table
 
-- Quality distribution
-- Relevant backlinks
-- Weak backlinks
-- Suspicious backlinks
-- Manual review requirements
+| Page URL                               | Current Content State     | Suggested Linkable Hook / Interactive Asset / Original Research / Infographic to Add                      | Target Publications / Referring Domain Archetypes           | Priority (P0-P3) | Action (ADD/EXPAND) |
+| -------------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------- | ------------------- |
+| `https://.../services/custom-software` | Standard promotional copy | Embed an interactive "Custom Software Cost & Tech Stack Calculator" with downloadable industry benchmarks | Engineering blogs, SaaS newsletters, TechCrunch, HackerNews | P1               | ADD                 |
 
-## 4. Competitor Backlink Analysis
+#### B. Unlinked Brand Mention Claiming & On-Site Target Table
 
-- Competitors
-- Strong backlink sources
-- Link acquisition patterns
-- Competitor advantages
+| Mention Source URL / Publication        | Brand Mention Context               | Target Website Page to Link | Suggested Anchor Text                  | Outreach Angle / Pitch Summary                                                  | Priority (P0-P3) | Action |
+| --------------------------------------- | ----------------------------------- | --------------------------- | -------------------------------------- | ------------------------------------------------------------------------------- | ---------------- | ------ |
+| `https://medium.com/@author/tech-firms` | Mentions brand as notable developer | `https://.../services`      | Brand Name / Software Engineering Firm | Polite thank-you note requesting attribution link to our official services page | P1               | CLAIM  |
 
-## 5. Link Gap Analysis
+#### C. Competitor Backlink Gap Target Table
 
-- Link gaps
-- High-priority opportunities
-- Acquisition strategies
+| Target Competitor Domain | Referring Domain / Authority Source        | Intersecting Keyword / Topic    | Target Landing Page on Our Site               | Required Content Parity / Unique Differentiator                       | Priority (P0-P3) |
+| ------------------------ | ------------------------------------------ | ------------------------------- | --------------------------------------------- | --------------------------------------------------------------------- | ---------------- |
+| `competitor.com`         | `https://industry-directory.org/top-firms` | Enterprise software development | `https://.../services/enterprise-development` | Submit our enterprise case study with verified client outcome metrics | P1               |
 
-## 6. Link Building Opportunities
+#### D. Author / Contributor Bio & E-E-A-T Optimization Table
 
-- Directories
-- Guest contributions
-- Resource pages
-- Broken links
-- Brand mentions
-- Partnerships
-- Digital PR
+| Page URL                          | Current Author / Byline Info | Suggested E-E-A-T Enhancements / External Profile Links / Schema                                                 | Target Verified Profiles (LinkedIn / GitHub / Scholar) | Priority (P0-P3) | Action |
+| --------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------------- | ------ |
+| `https://.../blog/cloud-security` | "Admin"                      | Replace with "By [Senior Architect Name], AWS Certified Solutions Architect" + link to verified external profile | `https://linkedin.com/in/...`                          | P0               | UPDATE |
 
-## 7. Link-Worthy Content Strategy
+#### E. Partnership & Resource Page Outreach Targets Table
 
-- Existing content assets
-- Content improvements
-- New content opportunities
+| Target Resource / Directory URL             | Relevant Category / Section | Suggested Listing Title & Blurb                   | Target Our URL | Anchor Text Recommendation | Priority (P0-P3) |
+| ------------------------------------------- | --------------------------- | ------------------------------------------------- | -------------- | -------------------------- | ---------------- |
+| `https://resources.techhub.io/dev-agencies` | Full Stack Development      | Our Brand - Cloud-Native Engineering & Automation | `https://.../` | Brand Name                 | P2               |
 
-## 8. Outreach Strategy
-
-- Campaign types
-- Target audience
-- Messaging
-- Priorities
-
-## 9. Prioritized Roadmap
-
-- 30-day plan
-- 60-day plan
-- 90-day plan
-
-## 10. KPI Framework
-
-- Baseline
-- KPIs
-- Measurement
-- Reporting cadence
-
-## 11. Risks
-
-- Link spam
 - Manipulative strategies
 - Reputation risks
 - Data limitations

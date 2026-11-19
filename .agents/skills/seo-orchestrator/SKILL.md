@@ -1,46 +1,114 @@
 ---
 name: seo-orchestrator
-description: Run the full nine-stage SEO workflow for a website, from intake and audit through a consolidated report and master developer implementation prompt. Use for a complete SEO campaign or rerun.
+description: Run the full nine-stage SEO workflow for a website, from intake and audit through a consolidated report, granular website changes, and master developer implementation prompt.
 ---
 
-# SEO Orchestrator
+# SEO Master Workflow Orchestrator
 
-## Step 0 · Intake
+## Skill Description
 
-1. Resolve the website URL, business or brand name, services or products, seed queries, and target geography from the current request. Ask once for any missing required inputs before starting. Validate the HTTP(S) URL and derive the domain for file paths.
-2. Use the frontend stack supplied by the user. If absent, check the available project source or public site evidence. If the stack remains unconfirmed, use Next.js (App Router), React, and Tailwind CSS as a developer handoff assumption and require verification against the repository before implementation.
-3. Carry forward any available audience, SEO objectives, brand voice, known competitors, and authorized data sources such as Google Search Console, GA4, and crawl exports. Record missing optional data and continue without mid-run questions.
-4. Identify the active project workspace or the writable ChatGPT working directory used for downloadable artifacts. Read the shared input, output, tool, SEO, and research standards from the repository's sibling `shared/` directory or the package's `references/shared/` directory. Set the run date and a run ID. Use `outputs/<date>/<domain>/` as the run root. If it already has results from another run, use `outputs/<date>/<domain>/runs/<run-id>/`. Keep the same run root across all stages.
-5. Initialize all nine stages as PENDING. Create `seo-orchestration/Execution_Tracker.md` and `seo-orchestration/Execution_Log.md` in the run root. Record state transitions under the run ID in `logs/pipeline-state.json` relative to the active workspace, preserving earlier entries.
+A comprehensive master workflow orchestrator that coordinates the full multi-stage SEO automation workflow across specialized skills:
+- **What this skill does:** Collects initial intake parameters, sets up the output directory root (`OUT_PUT_ROOT_FOLDER`), dynamically discovers and verifies all SEO skills, enforces strict sequential execution, manages inter-skill context passing, validates stage deliverables (mandating both `<skill>-overall-report.md` and `<skill>-website-changes.md` per stage), logs execution progress, and verifies final reports.
+- **Its primary objective:** Coordinate the end-to-end SEO automation process autonomously without mid-run interruptions, ensuring zero data fabrication, strict Google Search Essentials compliance, and canonical artifact persistence.
+- **When it should be used:** When initiating an SEO campaign for any website, domain, or business entity from scratch or when re-running the full SEO pipeline.
+- **What output or result it produces:** Manages execution state, outputs `orchestration-summary.md`, `execution-tracker.md`, and `execution-log.md` in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/00-orchestration/`, and ensures the compilation of all downstream reports.
 
-## Steps 1–9 · Execute in order
+## Shared Resources
 
-| Step | Skill name | Stage | Minimum upstream stages to read |
-| --- | --- | --- | --- |
-| 1 | `seo-audit` | SEO audit | Intake |
-| 2 | `seo-keyword-research` | Keyword research and URL mapping | 1 |
-| 3 | `seo-competitor-analysis` | Competitor analysis | 1–2 |
-| 4 | `seo-on-page` | On-page SEO | 1–3 |
-| 5 | `seo-content-strategy` | Content strategy and creation | 1–4 |
-| 6 | `technical-seo` | Technical SEO | 1–5 |
-| 7 | `off-page-seo` | Off-page SEO and link building | 1–6 |
-| 8 | `seo-monitoring` | Monitoring and performance tracking | 1–7 |
-| 9 | `seo-final-report` | Consolidated analysis and master developer prompt | 1–8 |
+This skill utilizes the following shared documentation:
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
 
-Use these exact skill names. The source Markdown's `seo-technical` and `seo-off-page` refer to `technical-seo` and `off-page-seo`.
+---
 
-For each stage, complete this loop before advancing:
+## Step 0 · Intake & Environment Setup
 
-1. Confirm intake or the preceding stage is complete. Mark the stage INITIALIZING and acquire the logical execution lock. Only one stage may initialize, run, validate, or update completion records at a time.
-2. Load the matching skill from the registered skill list or the repository's sibling `<skill>/SKILL.md`. If the host cannot load sibling skills, read the full bundled workflow at `references/stages/<skill>.md`. Follow those instructions in the current session when the host has no separate skill invocation action. A `$skill-name` mention is a way to select a skill in Codex, not a shell command. Record the actual skill source and invocation method.
-3. Pass the intake, run root, and required upstream files to the current stage. Read the relevant artifacts from the recorded paths for this run, including their evidence, timestamps, and limitations. The active run's recorded paths take precedence over examples and latest-run discovery in a stage skill.
-4. Mark the stage RUNNING. Execute its full methodology and write its deliverables using its canonical filenames. Follow Google Search Essentials. Cite verifiable evidence and use “Public observational search data; requires Google Search Console verification.” where authenticated search or analytics data is unavailable. Record optional data or tool limitations explicitly.
-5. Mark the stage VALIDATING. Check required files are present, non-empty, readable, under the run root, and contain the required sections and resolved project values. Check any format-specific artifacts using the stage instructions. Record the actual files, timestamps, evidence limitations, and validation result. Mark COMPLETED and release the lock only after validation and record updates.
+1. **Intake Collection:** Resolve the required project inputs before beginning execution:
+   - Target Website URL (`{{WEBSITE_URL}}`)
+   - Business / Website Name (`{{WEBSITE_NAME}}`)
+   - Services or Products Offered (`{{SERVICES}}`)
+   - Initial Seed Keywords (`{{SEED_KEYWORDS}}`)
+   - Target Country / Geography (`{{TARGET_COUNTRY}}` / `{{TARGET_GEOGRAPHY}}`)
+   - Target Audience & Business Type (`{{TARGET_AUDIENCE}}` / `{{BUSINESS_TYPE}}`)
+   - Frontend Tech Stack (e.g. Next.js App Router / React / Tailwind CSS; verify against repository)
+   - **Output Root Directory (`OUT_PUT_ROOT_FOLDER`):** Default to `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`. If the user specifies an alternative directory, use that path.
 
-Maintain the tracker with stage, skill, instruction source, invocation method, status, start and finish times, output paths, and validation result. Keep a chronological execution log with the intake, stage transitions, limitations, failures, and retries. For a known, recoverable failure, make a safe bounded retry in the same run. If it persists, mark the stage FAILED or BLOCKED, record the cause and artifacts, and stop dependent stages. A missing required skill, input, or upstream artifact blocks the stage.
+2. **Output Hierarchy Initialization:**
+   Set the run root:
+   ```text
+   {OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/
+   ```
+   (Default: `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs\{{CURRENT_DATE}}/{{DOMAIN_NAME}}/`)
 
-## Final validation
+   Initialize the standardized stage directories:
+   - `00-orchestration/`
+   - `01-website-audit/`
+   - `02-keyword-research/`
+   - `03-competitor-analysis/`
+   - `04-on-page-seo/`
+   - `05-content-strategy/`
+   - `06-technical-seo/`
+   - `07-off-page-seo/`
+   - `08-seo-monitoring/`
+   - `09-final-seo-report/`
 
-1. Read back `SEO_Consolidated_Final_Report.md` and `Master_Developer_Implementation_Prompt.md` from the recorded final-stage directory. Verify the report synthesizes all completed upstream findings and the prompt includes repository verification, prioritized changes, and acceptance checks for the frontend stack. The prompt is a handoff for future implementation.
-2. Write `seo-orchestration/Orchestration_Summary.md` with the project and run details, stages and validation outcomes, evidence-backed findings and opportunities, limitations, and links to the deliverables. If the run stopped early, record the failure and the remaining stages in the summary.
-3. Verify the tracker, log, summary, and completed deliverables. Report the site, date, run status, stage results, key findings, limitations, and verified artifact links. In a file sandbox, expose the report and implementation prompt as downloads.
+3. **Tracking Initialization:**
+   Create `execution-tracker.md` and `execution-log.md` in `00-orchestration/`. Initialize all stages as `PENDING`.
+
+---
+
+## Steps 1–9 · Strict Sequential Execution Matrix
+
+| Step | Skill Name | Stage Directory | Primary Strategic Report | Mandatory Website Changes Report | Upstream Dependencies |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| **01** | `seo-audit` | `01-website-audit/` | `website-audit-overall-report.md` | `website-audit-website-changes.md` | Step 0 Intake |
+| **02** | `seo-keyword-research` | `02-keyword-research/` | `keyword-research-overall-report.md` | `keyword-research-website-changes.md` | Stage 01 |
+| **03** | `seo-competitor-analysis` | `03-competitor-analysis/` | `competitor-analysis-overall-report.md` | `competitor-analysis-website-changes.md` | Stages 01, 02 |
+| **04** | `seo-on-page` | `04-on-page-seo/` | `on-page-seo-overall-report.md` | `on-page-seo-website-changes.md` | Stages 01, 02, 03 |
+| **05** | `seo-content-strategy` | `05-content-strategy/` | `content-strategy-overall-report.md` | `content-strategy-website-changes.md` | Stages 01, 02, 03, 04 |
+| **06** | `technical-seo` | `06-technical-seo/` | `technical-seo-overall-report.md` | `technical-seo-website-changes.md` | Stages 01, 02, 03, 04, 05 |
+| **07** | `off-page-seo` | `07-off-page-seo/` | `off-page-seo-overall-report.md` | `off-page-seo-website-changes.md` | Stages 01 through 06 |
+| **08** | `seo-monitoring` | `08-seo-monitoring/` | `seo-monitoring-overall-report.md` | `seo-monitoring-website-changes.md` | Stages 01 through 07 |
+| **09** | `seo-final-report` | `09-final-seo-report/` | `final-seo-overall-report.md` | `final-seo-website-changes.md` | Stages 01 through 08 |
+
+---
+
+## Stage Execution & Validation Protocol
+
+For each stage in numerical order:
+
+1. **Lock & Initialize:** Verify that the previous stage has fully completed and validated. Mark the current stage `INITIALIZING`.
+2. **Context Passing:** Pass the project intake, `OUT_PUT_ROOT_FOLDER`, run root, and exact upstream artifact file paths to the current skill.
+3. **Run Stage:** Mark stage `RUNNING`. Execute the skill's complete methodology using free tools first (see `../shared/TOOLS.md`).
+4. **Mandatory Deliverables Check:** Mark stage `VALIDATING`.
+   - Verify that `<skill-name>-overall-report.md` exists and is non-empty.
+   - Verify that `<skill-name>-website-changes.md` exists and is non-empty.
+   - Verify that required supporting datasets (CSVs, briefs, schemas) exist in the stage directory.
+   - Verify that all findings cite evidence and unknown analytics are labeled `[Public observational search data; requires Google Search Console verification]`.
+5. **Stage Completion:** Update `execution-tracker.md` to `COMPLETED` and proceed to the next stage. Never run multiple stages in parallel.
+
+---
+
+## Final Verification & Deliverable Publishing
+
+Upon completion of Stage 09:
+
+1. **Verify Master Deliverables:**
+   - `09-final-seo-report/final-seo-overall-report.md`
+   - `09-final-seo-report/final-seo-website-changes.md` (consolidating all website updates)
+   - `09-final-seo-report/seo-implementation-roadmap.md`
+   - `09-final-seo-report/seo-priority-matrix.csv`
+   - Granular implementation plans:
+     - `keyword-implementation-plan.csv`
+     - `metadata-implementation-plan.csv`
+     - `heading-implementation-plan.csv`
+     - `content-implementation-plan.csv`
+     - `technical-implementation-plan.csv`
+     - `internal-linking-implementation-plan.csv`
+     - `new-page-implementation-plan.csv`
+   - `09-final-seo-report/Master_Developer_Implementation_Prompt.md`
+2. **Publish Orchestration Summary:**
+   Compile `00-orchestration/orchestration-summary.md` detailing all execution times, deliverable paths, executive takeaways, and direct links to artifacts.

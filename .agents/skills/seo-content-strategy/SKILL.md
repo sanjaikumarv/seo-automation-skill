@@ -10,9 +10,9 @@ description: Formulate data-backed SEO content strategies, topic clusters, conte
 An end-to-end strategic content planning, clustering, and copywriting skill:
 
 - **What this skill does:** Synthesizes insights from the SEO Audit, Keyword Research, Competitor Analysis, and On-Page SEO stages to identify content gaps; designs semantic topic clusters and pillar pages; produces editorial calendars; drafts comprehensive content briefs; and generates search-optimized content copy.
-- **Its primary objective:** Build topical authority and capture high-intent commercial and informational organic search traffic without unedited low-effort regurgitation.
+- **Its primary objective:** Produce an overall strategic analysis report and an exact page-by-page website changes report (new content assets, rewrites, refreshes, consolidations) alongside complete briefs and draft copy.
 - **When it should be used:** Stage 5 of the SEO workflow, following `seo-on-page`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/Content_Strategy_Report.md`, `Content_Calendar.csv`, content briefs, and draft copy.
+- **What output or result it produces:** Generates `content-strategy-overall-report.md`, `content-strategy-website-changes.md`, `Content_Strategy_Report.md`, `Content_Calendar.csv`, content briefs, and draft copy in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/05-content-strategy/`.
 
 ## Shared Resources
 
@@ -30,12 +30,19 @@ You are a Senior SEO Content Strategist, Content Marketing Specialist, Search In
 
 Your responsibility is to execute a complete, evidence-based, end-to-end SEO Content Strategy and Content Creation workflow for the provided website.
 
-You MUST use the previously completed SEO workflows as mandatory upstream dependencies:
+You must generate two primary deliverables into `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/05-content-strategy/`:
+1. `content-strategy-overall-report.md` (and legacy mirror `Content_Strategy_Report.md`): Strategic topic clusters, audience personas, content gap findings, search intent alignment, and editorial roadmaps.
+2. `content-strategy-website-changes.md`: A concrete register of exact content website modifications:
+   - **New Content Assets to Create**: URL slug, Content type, Topic cluster, Primary/secondary keywords, Target intent, Target word count, Call-to-action, Priority P0–P3.
+   - **Existing Content Rewrites & Expansions**: Page URL, Section, Content deficit, Expansion copy & new sections, Target keywords, Word count delta, Priority P0–P3.
+   - **Content Refresh & Keyword Injection**: Page URL, Section, Existing snippet, Refreshed copy with keywords & E-E-A-T, Target keywords, Priority P0–P3.
+   - **Content Consolidation & 301 Redirects**: Source URL(s) to consolidate, Destination master URL, Cannibalization query, Action, Priority P0–P3.
 
-1. SEO Audit
-2. SEO Keyword Research & Keyword Mapping
-3. Competitor Analysis
-4. On-Page SEO Optimization
+You MUST use the previously completed SEO workflows as mandatory upstream dependencies:
+1. Stage 01 SEO Audit (`01-website-audit/`)
+2. Stage 02 SEO Keyword Research & Keyword Mapping (`02-keyword-research/`)
+3. Stage 03 Competitor Analysis (`03-competitor-analysis/`)
+4. Stage 04 On-Page SEO Optimization (`04-on-page-seo/`)
 
 Your objective is to transform the outputs from these workflows into a structured, actionable, prioritized, and evidence-based Content Strategy.
 
@@ -100,29 +107,33 @@ Do not fabricate facts, statistics, customer testimonials, case studies, search 
 
 ## 2. PROJECT CONFIGURATION
 
-Use the following configuration.
+In accordance with `../shared/INPUT_VARIABLES.md`, ingest and resolve dynamic variables:
 
-- Website URL: [Enter web site url]
-- Website Name: [Enter company url]
-- Business Type: [Enter business type]
-- Target Countries: [Enter targeted countries]
-- Target Audience: [Enter targeted audience]
-
-- Website Technology: [Enter Website Technology].
-- Target Language: [Enter language].
+- Project root: `./` (current active workspace root)
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
+- Website URL: `{{WEBSITE_URL}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Website Name: `{{WEBSITE_NAME}}`
+- Business Type: `{{BUSINESS_TYPE}}`
+- Target Countries / Geography: `{{TARGET_COUNTRY}}` / `{{TARGET_GEOGRAPHY}}`
+- Target Audience: `{{TARGET_AUDIENCE}}`
+- Services Offered: `{{SERVICES}}`
+- Seed Keywords: `{{SEED_KEYWORDS}}`
+- Competitors: `{{COMPETITORS}}`
+- Website Technology: Inferred from codebase or Stage 01 audit.
+- Target Language: Inferred from website content and audience.
 - Content Scope: Entire accessible public website + validated new content opportunities.
-- Execution Date: {{CURRENT_DATE}}
+- Execution Date: `{{CURRENT_DATE}}` (dynamically resolved as `YYYY-MM-DD`)
 - Execution Mode: STRICT SEQUENTIAL.
 - Workflow Type: SEO CONTENT STRATEGY & CONTENT CREATION.
 - Research Approach: Audit-Driven + Keyword-Driven + Competitor-Driven + Search-Intent-Driven.
-- Tool Preference: Free SEO Tools First.
-- Implementation Permission: NOT AUTHORIZED.
-- Publishing Permission: NOT AUTHORIZED.
+- Tool Preference: Free and open-source tools first.
+- Implementation Permission: Recommendation-only.
 
 If any configuration information is unavailable:
 
 1. Inspect the existing website.
-2. Review the SEO Audit Report.
+2. Review the Stage 01 SEO Audit Report.
 3. Review previous research outputs.
 4. Use only verified information.
 5. Document assumptions.
@@ -132,49 +143,20 @@ If any configuration information is unavailable:
 
 ## 3. PROJECT DIRECTORY STRUCTURE
 
-### Project Root
+### Directory Tree
 
 ```text
-C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\
-```
-
-### Skills Directory
-
-```text
-.agents/
-└── skills/
-    ├── seo-audit/
-    │   └── SKILL.md
-    ├── seo-keyword-research/
-    │   └── SKILL.md
-    ├── seo-competitor-analysis/
-    │   └── SKILL.md
-    ├── seo-on-page/
-    │   └── SKILL.md
-    └── seo-content-strategy/
-        └── SKILL.md
-```
-
-### Existing Output Directory
-
-```text
-outputs/
+{OUT_PUT_ROOT_FOLDER}/
 └── {{CURRENT_DATE}}/
     └── {{DOMAIN_NAME}}/
-        ├── audit-report/
-        ├── keyword-research/
-        ├── competitor-analysis/
-        └── on-page-seo/
-```
-
-### New Content Strategy Output Directory
-
-```text
-outputs/
-└── {{CURRENT_DATE}}/
-    └── {{DOMAIN_NAME}}/
-        └── content-strategy/
-            ├── Content_Strategy_Report.md
+        ├── 01-website-audit/
+        ├── 02-keyword-research/
+        ├── 03-competitor-analysis/
+        ├── 04-on-page-seo/
+        └── 05-content-strategy/
+            ├── content-strategy-overall-report.md          # High-level strategy, topic clusters, audience personas, editorial roadmap
+            ├── content-strategy-website-changes.md         # Exact website changes: new pages, rewrites, refreshes, consolidations
+            ├── Content_Strategy_Report.md                  # Legacy mirror report
             ├── Content_Audit_Report.md
             ├── Content_Gap_Analysis.csv
             ├── Content_Opportunity_Analysis.csv
@@ -233,133 +215,35 @@ outputs/
 
 ### Directory Rules
 
-1. Use the current execution date in `YYYY-MM-DD` format.
-2. Use the normalized website domain as the folder name.
-3. Preserve all previous workflow outputs.
-4. Never overwrite previous reports or generated content.
-5. If the current date/domain/content-strategy directory already contains previous execution outputs, create a versioned execution directory:
+1. Use `OUT_PUT_ROOT_FOLDER` (default `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`).
+2. Use the current execution date in `YYYY-MM-DD` format.
+3. Use the normalized website domain as the folder name.
+4. Preserve all previous workflow outputs. Never overwrite previous reports or generated content.
+5. Save every generated file in its designated location inside `05-content-strategy/`.
+6. Maintain source evidence and provenance for every research-based recommendation.
+7. Verify all generated files exist and contain valid data.
 
-```text
-content-strategy/
-└── executions/
-    └── execution-{timestamp}/
-        ├── Content_Strategy_Report.md
-        ├── Content_Audit_Report.md
-        └── ...
-```
-
-6. Save every generated file in its designated location.
-7. Maintain source evidence and provenance for every research-based recommendation.
-8. Do not create empty files or placeholder files.
-9. Do not claim a file was created unless it exists and has been verified.
-10. Keep generated content drafts separated by content type.
-11. Use `.md` only for Markdown documents and `.csv` only for structured tabular datasets.
-12. Ensure all Markdown files use the `.md` extension consistently.
-13. Ensure all directory paths are valid and properly nested.
-14. Verify the final directory structure after execution.
-15. Maintain execution logs documenting created files, skipped files, errors, and validation results.
+---
 
 ## 4. MANDATORY PREVIOUS WORKFLOW INPUTS
 
-The following workflows are mandatory dependencies.
+The following workflows are mandatory dependencies:
 
-### A. SEO Audit Report
+### A. Stage 01 SEO Audit
+Location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/` (fallback: `audit-report/`)
+Mandatory files: `website-audit-overall-report.md`, `SEO_Audit_Report.md`, `url-inventory.csv`.
 
-Expected location:
+### B. Stage 02 Keyword Research & Keyword Mapping
+Location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/02-keyword-research/` (fallback: `keyword-research/`)
+Mandatory files: `keyword-research-overall-report.md`, `Keyword_Research_Report.md`, `Keyword_Research_Data.csv`, `Keyword_Clusters.csv`, `Keyword_Mapping.csv`.
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
-_(Or dynamically discover latest completed audit folder under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)_
+### C. Stage 03 Competitor Analysis
+Location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/03-competitor-analysis/` (fallback: `competitor-analysis/`)
+Mandatory files: `competitor-analysis-overall-report.md`, `Competitor_Analysis_Report.md`, `Competitor_Keyword_Gap.csv`, `Competitor_Content_Analysis.csv`.
 
-Primary file:
-
-SEO_Audit_Report.md
-
-Relevant supporting files may include:
-
-- Crawl exports.
-- URL inventory.
-- Page metadata exports.
-- Content analysis.
-- Technical SEO findings.
-- Indexability data.
-- Internal linking reports.
-- Image SEO findings.
-- Schema findings.
-- Performance evidence.
-- Screenshots.
-- Audit recommendations.
-
-### B. Keyword Research & Keyword Mapping
-
-Expected location:
-
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
-_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/keyword-research/`)_
-
-Mandatory files where available:
-
-- Keyword_Research_Report.md
-- Keyword_Research_Data.csv
-- Seed_Keywords.csv
-- Keyword_Clusters.csv
-- Keyword_Mapping.csv
-- Keyword_Gap_Analysis.csv
-- Competitor_Keyword_Analysis.csv
-- Keyword_Prioritization.csv
-- Developer_Prompt.md
-- prompt.txt
-
-Relevant evidence:
-
-- SERP evidence.
-- Keyword tool exports.
-- Competitor keyword evidence.
-- Source references.
-- Search intent classification.
-- Keyword prioritization data.
-
-### C. Competitor Analysis
-
-Expected location:
-
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
-_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/competitor-analysis/`)_
-
-Primary report:
-
-Competitor_Analysis_Report.md
-
-Relevant datasets:
-
-- Competitor_List.csv
-- Competitor_Page_Analysis.csv
-- Competitor_Keyword_Analysis.csv
-- Competitor_Keyword_Gap.csv
-- Competitor_Content_Analysis.csv
-- Competitor_Backlink_Analysis.csv
-- Competitor_Technical_Comparison.csv
-- Competitor_Performance_Comparison.csv
-- Competitor_Schema_Analysis.csv
-- Competitor_Opportunity_Analysis.csv
-- Competitor_Prioritization.csv
-
-Relevant evidence:
-
-- Competitor page screenshots.
-- Competitor content evidence.
-- Competitor SERP evidence.
-- Competitor source references.
-- Backlink evidence.
-- Content structure evidence.
-
-### D. On-Page SEO Optimization
-
-Expected location:
-
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
-_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/on-page-seo/`)_
-
-Mandatory files:
+### D. Stage 04 On-Page SEO Optimization
+Location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/04-on-page-seo/` (fallback: `on-page-seo/`)
+Mandatory files: `on-page-seo-overall-report.md`, `on-page-seo-website-changes.md`, `On_Page_SEO_Report.md`, `Content_Optimization.csv`.
 
 - On_Page_SEO_Report.md
 - On_Page_Validation_Report.md
@@ -2058,46 +1942,50 @@ It does not authorize code modifications.
 
 ---
 
-### STAGE 19: FINAL REPORT GENERATION
+### STAGE 19: FINAL REPORT GENERATION & WEBSITE CHANGES
 
 Objective:
 
-Generate a complete Content Strategy Report.
+Generate the twin mandatory deliverables into `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/05-content-strategy/`:
 
-Content_Strategy_Report.md must include:
+#### 1. `content-strategy-overall-report.md` (and legacy mirror `Content_Strategy_Report.md`)
+Must include:
+1. Executive Summary & Content Stance.
+2. Website & Business Overview.
+3. Target Audience & Search Personas.
+4. Existing Content Inventory & Audit Summary.
+5. Upstream SEO Findings Relevant to Content (Audit, Keywords, Competitors, On-Page).
+6. Search Intent & Audience Pain Points.
+7. Content Gap Analysis.
+8. Topic Cluster & Pillar Page Strategy.
+9. Keyword-to-Content Mapping.
+10. Content Prioritization Matrix.
+11. Editorial Content Calendar.
+12. Content Refresh & Consolidation Strategy.
+13. Content-Level Internal Linking Strategy.
+14. Content Briefs & Drafts Summary.
+15. Content Quality & E-E-A-T Compliance Framework.
+16. Content Performance KPI Framework.
+17. Risks, Data Limitations & Source References.
 
-1. Executive Summary.
-2. Website Overview.
-3. Business Overview.
-4. Target Audience.
-5. Existing Content Inventory.
-6. Existing Content Audit Summary.
-7. SEO Audit Findings Relevant to Content.
-8. Keyword Research Summary.
-9. Competitor Content Summary.
-10. On-Page SEO Findings Relevant to Content.
-11. Search Intent Analysis.
-12. Audience Pain Points.
-13. Content Gap Analysis.
-14. Content Opportunities.
-15. Topic Cluster Strategy.
-16. Pillar Page Strategy.
-17. Keyword-to-Content Mapping.
-18. Content Prioritization.
-19. Content Calendar.
-20. Content Refresh Strategy.
-21. Content Consolidation Strategy.
-22. Internal Linking Strategy.
-23. Content Brief Summary.
-24. Content Creation Summary.
-25. Content Quality and E-E-A-T Strategy.
-26. Content Performance KPI Framework.
-27. Risks and Limitations.
-28. Data Availability.
-29. Human Review Requirements.
-30. Recommended Next Steps.
-31. Source References.
-32. Execution Summary.
+#### 2. `content-strategy-website-changes.md`
+A dedicated, page-by-page register of concrete content modifications:
+
+##### Table 1: New Content Assets to Create
+| Target URL Slug | Content Type (Landing/Pillar/Cluster/Blog) | Topic Cluster | Primary Keyword | Secondary Keywords | Target Audience & Search Intent | Target Word Count | Call-to-Action (CTA) | Priority (P0–P3) | Action (CREATE) |
+|---|---|---|---|---|---|---|---|---|---|
+
+##### Table 2: Existing Content Rewrites & Expansions
+| Page URL | Current Section / Topic | Content Deficit / Thin Content Issue | Recommended Expansion Copy & New Sections | Target Keywords | Word Count Delta | Priority (P0–P3) | Action (EXPAND/REWRITE) |
+|---|---|---|---|---|---|---|---|
+
+##### Table 3: Content Refresh & Keyword Injection
+| Page URL | Section / Block | Existing Snippet | Refreshed Copy with Keywords & E-E-A-T Proof | Target Keywords | Priority (P0–P3) | Action (REFRESH) |
+|---|---|---|---|---|---|---|
+
+##### Table 4: Content Consolidation & 301 Redirects
+| Source URL(s) to Consolidate | Destination Master URL | Cannibalization Query / Overlap Reason | Consolidation Action & Content Merge Strategy | Priority (P0–P3) | Action (CONSOLIDATE) |
+|---|---|---|---|---|---|
 
 ---
 
@@ -2165,15 +2053,17 @@ All datasets must:
 
 ## 9. OUTPUT FILES
 
-### 1. Content_Strategy_Report.md
+### 1. content-strategy-overall-report.md (and legacy mirror Content_Strategy_Report.md)
+Complete strategic report covering clusters, personas, E-E-A-T, and editorial roadmaps.
 
-Complete strategic report.
+### 2. content-strategy-website-changes.md
+Actionable page-by-page change register: new content creation, rewrites, keyword refreshes, and consolidations.
 
-### 2. Content_Audit_Report.md
+### 3. Content_Audit_Report.md
 
 Detailed analysis of existing website content.
 
-### 3. Content_Gap_Analysis.csv
+### 4. Content_Gap_Analysis.csv
 
 Content gaps.
 

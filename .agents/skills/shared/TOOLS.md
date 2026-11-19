@@ -68,3 +68,35 @@ This document centralizes tool references, analytical capabilities, usage guidel
 - **Purpose:** User engagement, conversion tracking, bounce/engagement rate, session duration, landing page conversion paths.
 - **Limitations:** Requires authenticated property access. Mark unauthenticated metrics with verified disclaimer.
 - **Appropriate Use Cases:** `seo-monitoring`, `seo-final-report`.
+
+---
+
+## 6. Free Tools First Command Reference
+
+When executing skills without paid subscriptions, use these free command-line and API patterns:
+
+### 6.1 HTTP & Header Inspection (Curl)
+```bash
+# Check status code, redirect destination, and response headers
+curl -ILs -o /dev/null -w "%{http_code} %{url_effective} %{time_total}\n" "https://example.com"
+
+# Capture robots.txt
+curl -s "https://example.com/robots.txt"
+
+# Capture XML sitemap index
+curl -s "https://example.com/sitemap.xml"
+```
+
+### 6.2 Core Web Vitals & Performance (Public PageSpeed Insights API)
+```bash
+# Query Google PageSpeed Insights public REST API (no auth required for low volume)
+curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://example.com&strategy=mobile"
+```
+
+### 6.3 Google Search Operators (SERP Analysis)
+- `site:example.com`: Indexation estimation and indexed URL discovery.
+- `site:example.com inurl:service`: Discover service landing pages.
+- `site:example.com "keyword"`: Check existing content coverage for a target query.
+- `related:example.com`: Identify algorithmic competitor entities.
+- `intitle:"keyword" "keyword"`: Check SERP competitor saturation.
+

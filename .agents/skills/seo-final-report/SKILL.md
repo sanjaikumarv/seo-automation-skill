@@ -8,10 +8,10 @@ description: Synthesize all upstream SEO findings into a consolidated master rep
 ## Skill Description
 
 The capstone consolidation and developer handoff skill of the SEO automation suite:
-- **What this skill does:** Audits and ingests deliverables from all 8 upstream SEO stages; synthesizes comprehensive strategic findings; resolves technical, on-page, and schema priorities; and compiles two primary deliverables: an executive consolidated SEO report and a production-ready Master Developer Implementation Prompt tailored to the website's tech stack.
+- **What this skill does:** Audits and ingests deliverables from all 8 upstream SEO stages (`01-website-audit/` through `08-seo-monitoring/`); synthesizes comprehensive strategic findings; resolves technical, on-page, and schema priorities; and compiles the final master deliverables: an executive consolidated SEO report, a master website changes register, dedicated CSV implementation plans, and a production-ready Master Developer Implementation Prompt tailored to the website's tech stack.
 - **Its primary objective:** Translate all analytical SEO research into actionable, high-ROI developer instructions and an executive scorecard without ungrounded speculation or fabricated metrics.
 - **When it should be used:** Stage 9 (final stage) of the SEO automation workflow, after all preceding stages are completed.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/final-seo-report/SEO_Consolidated_Final_Report.md` and `Master_Developer_Implementation_Prompt.md`.
+- **What output or result it produces:** Generates `final-seo-overall-report.md`, `final-seo-website-changes.md`, `Master_Developer_Implementation_Prompt.md`, `seo-implementation-roadmap.md`, `seo-priority-matrix.csv`, and 7 dedicated CSV implementation plans in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/09-final-seo-report/`.
 
 ## Shared Resources
 
@@ -26,19 +26,24 @@ This skill utilizes the following shared documentation:
 
 You are a Senior SEO Strategist, Technical SEO Engineer, Website Optimization Architect, and AI Developer Prompt Engineer.
 
-Your responsibility is to analyze all completed SEO workflow stages, consolidate their findings, and generate two primary deliverables:
+Your responsibility is to analyze all completed SEO workflow stages (Stages 01 through 08), consolidate their findings, and generate the final suite of production-ready deliverables:
 
-1. A comprehensive SEO Consolidated Final Report.
-2. A production-ready Master Developer Implementation Prompt that can be given directly to an AI coding tool or software developer to implement the approved SEO improvements in the website codebase.
+1. `final-seo-overall-report.md` (and legacy mirror `SEO_Consolidated_Final_Report.md`): High-level executive synthesis of all 8 upstream stages.
+2. `final-seo-website-changes.md`: The single, definitive master register containing every exact code, content, metadata, heading, schema, and internal linking change required for the website.
+3. `Master_Developer_Implementation_Prompt.md`: A framework-native, production-ready prompt that can be given directly to an AI coding agent or software engineering team to execute the changes in the codebase.
+4. `seo-implementation-roadmap.md` & `seo-priority-matrix.csv`: Phased execution roadmap organized by sprint priority (P0 to P3).
+5. Dedicated Implementation CSV Datasets: Granular machine-readable files for developers and content managers (`keyword-implementation-plan.csv`, `metadata-implementation-plan.csv`, `heading-implementation-plan.csv`, `content-implementation-plan.csv`, `technical-implementation-plan.csv`, `internal-linking-implementation-plan.csv`, `new-page-implementation-plan.csv`).
 
-Do not stop after generating SEO recommendations. Convert the validated recommendations into an actionable developer execution specification.
+Do not stop after generating SEO recommendations. Convert all validated recommendations into an actionable developer execution specification.
 
 ---
 
 ## 2. Project Configuration
 
-Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
+In accordance with `../shared/INPUT_VARIABLES.md`, ingest and resolve dynamic variables:
 
+- Project root: `./` (current active workspace root)
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
 - Website URL: `{{WEBSITE_URL}}`
 - Website Domain: `{{DOMAIN_NAME}}`
 - Website Name: `{{WEBSITE_NAME}}`
@@ -48,7 +53,8 @@ Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md
 - Target Audience: `{{TARGET_AUDIENCE}}`
 - Services Offered: `{{SERVICES}}`
 - Seed Keywords: `{{SEED_KEYWORDS}}`
-- Execution Date: `{{CURRENT_DATE}}`
+- Execution Date: `{{CURRENT_DATE}}` (YYYY-MM-DD)
+- Canonical Output Directory: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/09-final-seo-report/`
 - Primary Language: English
 - Execution Mode: Strict Sequential Analysis
 - Tool Preference: Free tools first, wherever suitable.
@@ -59,20 +65,18 @@ All recommendations must be relevant to the actual website, business model, targ
 
 ## 3. Upstream SEO Workflow Outputs
 
-Discover the completed outputs from the following workflow stages.
+Discover the completed outputs from the following workflow stages under `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/` (or dynamically locate latest completed runs under `{OUT_PUT_ROOT_FOLDER}/*/{{DOMAIN_NAME}}/`):
 
-Do not assume all stages were executed on the same date. Discover their actual output directories independently under `outputs/*/{{DOMAIN_NAME}}/`.
-
-| Stage                       | Output Folder                                                        |
-| --------------------------- | -------------------------------------------------------------------- |
-| SEO Audit                   | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`             |
-| Keyword Research            | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`          |
-| Competitor Analysis         | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`       |
-| On-Page SEO                 | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`              |
-| Content Strategy & Creation | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/`         |
-| Technical SEO               | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/`            |
-| Off-Page SEO                | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/`             |
-| SEO Monitoring              | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-monitoring/`            |
+| Stage | Canonical Folder | Legacy Fallback | Mandatory Inputs to Ingest |
+|---|---|---|---|
+| Stage 01 SEO Audit | `01-website-audit/` | `audit-report/` | `website-audit-overall-report.md`, `website-audit-website-changes.md`, `url-inventory.csv`, `technical-issues.csv` |
+| Stage 02 Keyword Research | `02-keyword-research/` | `keyword-research/` | `keyword-research-overall-report.md`, `keyword-research-website-changes.md`, `Keyword_Mapping.csv`, `Keyword_Clusters.csv` |
+| Stage 03 Competitor Analysis | `03-competitor-analysis/` | `competitor-analysis/` | `competitor-analysis-overall-report.md`, `competitor-analysis-website-changes.md`, `Competitor_Keyword_Gap.csv` |
+| Stage 04 On-Page SEO | `04-on-page-seo/` | `on-page-seo/` | `on-page-seo-overall-report.md`, `on-page-seo-website-changes.md`, `Title_Meta_Optimization.csv`, `Heading_Optimization.csv` |
+| Stage 05 Content Strategy | `05-content-strategy/` | `content-strategy/` | `content-strategy-overall-report.md`, `content-strategy-website-changes.md`, `Content_Calendar.csv`, `Topic_Cluster_Mapping.csv` |
+| Stage 06 Technical SEO | `06-technical-seo/` | `technical-seo/` | `technical-seo-overall-report.md`, `technical-seo-website-changes.md`, `Technical_SEO_Implementation_Plan.csv` |
+| Stage 07 Off-Page SEO | `07-off-page-seo/` | `off-page-seo/` | `off-page-seo-overall-report.md`, `off-page-seo-website-changes.md`, `Outreach_Strategy.md` |
+| Stage 08 SEO Monitoring | `08-seo-monitoring/` | `seo-monitoring/` | `seo-monitoring-overall-report.md`, `seo-monitoring-website-changes.md`, `SEO_KPI_Framework.md` |
 
 ### Discovery requirements
 
@@ -313,50 +317,78 @@ Do not assign expected ranking improvements, traffic increases, or revenue gains
 
 ---
 
-# 12. PRIMARY DELIVERABLE 1: SEO Consolidated Final Report
+# 12. MANDATORY MASTER DELIVERABLES
 
-Create a comprehensive report containing:
+This skill must compile and physically generate the following core deliverables in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/09-final-seo-report/`:
 
-1. Executive Summary.
-2. Analysis Scope.
-3. Upstream SEO Workflow Coverage.
-4. Overall SEO Health.
-5. Critical SEO Issues.
-6. Website Page Improvement Report.
-7. Content Improvement Report.
-8. New Page Recommendations.
-9. Image Optimization Report.
-10. Technical SEO Report.
-11. Keyword Strategy.
-12. Internal Linking Report.
-13. Competitor Opportunities.
-14. Off-Page SEO Findings.
-15. SEO Monitoring Findings.
-16. Master Prioritized Action Plan.
-17. Implementation Roadmap.
-18. Validation Plan.
-19. Limitations and Unverified Findings.
-20. Final Recommendations.
+### 12.1 Master Deliverable 1: Consolidated Strategic Report (`final-seo-overall-report.md`)
+*(Note: Maintain `SEO_Consolidated_Final_Report.md` as an identical mirror/alias if legacy consumers exist)*
 
-The report must clearly explain what needs to change on the website and why.
+A comprehensive executive-level master report synthesizing findings from all 8 upstream stages:
+1. Executive Summary & SEO Maturity Scorecard
+2. Analysis Scope & Upstream Workflow Audit Coverage (`01-website-audit/` through `08-seo-monitoring/`)
+3. Overall SEO Health & Search Visibility Assessment
+4. Critical P0 Vulnerabilities & Immediate Indexing Risks
+5. Keyword Research & Search Intent Architecture Synthesis
+6. Competitor Benchmarking & Organic Market Share Gaps
+7. On-Page SEO Blueprint Summary (Metadata, Headings, Semantic Content)
+8. Content Strategy & Topical Authority Roadmap (Clusters, Pillars, New Pages)
+9. Technical SEO Infrastructure & Core Web Vitals Remediation Summary
+10. Off-Page SEO, Digital PR & Authority Building Playbook
+11. Continuous SEO Monitoring, KPI Framework & Governance
+12. Consolidated Risk Assessment & Trade-off Analysis
+13. Limitations, Unverified Assumptions & Verification Steps
+14. Strategic Recommendations & Expected ROI Impact
 
 ---
 
-# 13. PRIMARY DELIVERABLE 2: Master Developer Implementation Prompt
+### 12.2 Master Deliverable 2: Consolidated Website Changes Register (`final-seo-website-changes.md`)
+
+The single, definitive, page-by-page master register consolidating EVERY website modification required across all stages. Must contain complete, copy-paste ready tables with the following schemas:
+
+#### Table 1: Master Metadata Implementation Table
+| Page URL | Existing Title Tag | Suggested Optimized Title Tag | Existing Meta Description | Suggested Optimized Meta Description | Target Primary Keyword | Target Secondary Keywords | Priority (P0-P3) | Action (UPDATE/ADD) |
+|---|---|---|---|---|---|---|---|---|
+
+#### Table 2: Master HTML Heading Updates Table
+| Page URL | Section / Component Location | Existing Heading Tag & Text | Suggested Heading Tag & Text | Target Keyword | Hierarchy Context | Priority (P0-P3) | Action |
+|---|---|---|---|---|---|---|---|
+
+#### Table 3: Master Body Content Updates Table
+| Page URL | Section / Component Location | Existing Content Snippet | Suggested Optimized Content / Copy | Target Keywords Incorporated | Word Count Delta | Priority (P0-P3) | Action |
+|---|---|---|---|---|---|---|---|
+
+#### Table 4: Master Technical Code & Configuration Fixes Table
+| Issue ID | File / Component Path | Category (Robots/Sitemap/CWV/Routing/Headers) | Current Code / Directive | Suggested Code Fix / Production Directive | Technical Justification | Priority (P0-P3) | Action |
+|---|---|---|---|---|---|---|---|
+
+#### Table 5: Master Internal Linking Implementation Table
+| Source Page URL | Target Page URL | Existing Anchor Text / Status | Suggested Anchor Text | Exact In-Content Link Sentence / Placement | Priority (P0-P3) | Action |
+|---|---|---|---|---|---|---|
+
+#### Table 6: Master JSON-LD Schema Engineering Table
+| Target Page URL | Schema Type | Current Schema State | Complete Validated JSON-LD Code Block | Validation Method | Priority (P0-P3) |
+|---|---|---|---|---|---|
+
+#### Table 7: Master New Pages to Create Table
+| Proposed URL / Slug | Page Type (Landing/Service/Pillar/Blog) | Topic Cluster | Primary & Secondary Keywords | Target Word Count | Outline & Section Hierarchy | Primary CTA & Destination | Priority (P0-P3) |
+|---|---|---|---|---|---|---|---|
+
+---
+
+# 13. MASTER DELIVERABLE 3: Master Developer Implementation Prompt (`Master_Developer_Implementation_Prompt.md`)
 
 This is a mandatory deliverable.
 
-Generate a separate file named:
-
-`Master_Developer_Implementation_Prompt.md`
+Generate:
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/09-final-seo-report/Master_Developer_Implementation_Prompt.md`
+*(and plain-text copy `prompt.txt`)*
 
 This file must contain a complete, production-oriented prompt that can be copied and given directly to an AI coding tool or software developer.
 
 The prompt must instruct the developer AI to inspect the actual website repository, understand its existing architecture, and implement the validated SEO recommendations.
 
-Do not merely copy the SEO report into this file.
-
-Convert the report findings into specific developer instructions.
+Do not merely copy the SEO report into this file. Convert the report findings into specific developer instructions.
 
 ## 13.1 Developer Prompt: Role and Objective
 
@@ -658,49 +690,62 @@ Where information is unavailable, instruct the developer AI to investigate rathe
 
 ---
 
-# 14. Supporting Output Files
+# 14. Dedicated Implementation Plans & Supporting Datasets
 
-Create only useful supporting files based on the actual available findings.
+In addition to the primary markdown reports, this skill MUST compile dedicated, machine-readable implementation plans:
 
-Potential files:
+### 14.1 Phased Implementation Roadmap & Priority Matrix
+- `seo-implementation-roadmap.md`: Step-by-step phased execution sprints:
+  - Sprint 1 (Days 1–15, P0 Critical): Crawl blockers, indexing errors, robots.txt, 404s, mobile CWV bottlenecks.
+  - Sprint 2 (Days 16–30, P1 High): Core service page metadata, H1/H2 hierarchy, primary keywords, essential JSON-LD schemas.
+  - Sprint 3 (Days 31–60, P1–P2 Medium): Content expansions, internal linking mesh, priority topic cluster pages.
+  - Sprint 4 (Days 61–90, P2–P3 Ongoing): Long-tail blogs, digital PR linkable assets, secondary schema enhancements.
+- `seo-priority-matrix.csv`: Consolidated prioritization dataset scoring every single recommendation by Impact (1–5), Effort (1–5), Technical Risk, and Priority Tier (P0–P3).
 
+### 14.2 Dedicated Granular Implementation Plans (CSVs)
+1. `keyword-implementation-plan.csv`:
+   - Columns: `page_url`, `page_title`, `target_primary_keyword`, `search_volume`, `keyword_difficulty`, `search_intent`, `target_secondary_keywords`, `keyword_cluster`, `action_required`, `priority`
+2. `metadata-implementation-plan.csv`:
+   - Columns: `page_url`, `current_title`, `suggested_title`, `current_meta_description`, `suggested_meta_description`, `primary_keyword`, `title_character_count`, `meta_character_count`, `priority`, `action`
+3. `heading-implementation-plan.csv`:
+   - Columns: `page_url`, `section_component`, `existing_heading_tag`, `existing_heading_text`, `suggested_heading_tag`, `suggested_heading_text`, `target_keyword`, `heading_level`, `priority`, `action`
+4. `content-implementation-plan.csv`:
+   - Columns: `page_url`, `content_section`, `existing_content_summary`, `suggested_optimized_copy`, `target_keywords`, `current_word_count`, `target_word_count`, `change_type`, `priority`
+5. `technical-implementation-plan.csv`:
+   - Columns: `issue_id`, `affected_url_or_file`, `category`, `current_issue_evidence`, `suggested_code_or_config_fix`, `technical_justification`, `risk_level`, `verification_method`, `priority`
+6. `internal-linking-implementation-plan.csv`:
+   - Columns: `source_url`, `target_url`, `existing_anchor_text`, `suggested_anchor_text`, `link_context_sentence`, `placement_section`, `priority`, `action`
+7. `new-page-implementation-plan.csv`:
+   - Columns: `target_url_slug`, `page_type`, `topic_cluster`, `primary_keyword`, `secondary_keywords`, `target_word_count`, `outline_summary`, `target_cta`, `priority`
+
+### 14.3 Supporting Governance and Audit Logs
 - `Project_Discovery_Report.md`
 - `Consolidated_SEO_Findings.md`
-- `Website_Page_Improvement_Analysis.csv`
-- `Content_Modification_Plan.csv`
-- `New_Page_Recommendations.csv`
-- `Image_Optimization_Plan.csv`
-- `Technical_Implementation_Plan.csv`
-- `Internal_Link_Improvement_Plan.csv`
-- `Final_Keyword_Page_Mapping.csv`
-- `SEO_Improvement_Prioritization.csv`
-- `Master_Website_Improvement_Plan.csv`
-- `Website_SEO_Implementation_Roadmap.md`
+- `Final_Report_Validation.md`
 - `Execution_Summary.md`
 - `Execution_Log.md`
-- `Final_Report_Validation.md`
-
-Do not create empty files or unnecessary artifacts.
-
-The two primary deliverables are mandatory even if some supporting files are not applicable.
+- `prompt.txt` (Plain text copy of `Master_Developer_Implementation_Prompt.md`)
 
 ---
 
 # 15. Mandatory Output Location
 
-Use the current execution date in YYYY-MM-DD format.
+Resolve variables according to `../shared/INPUT_VARIABLES.md` and `../shared/OUTPUT_STANDARDS.md`:
 
-Create the output directory:
+- `OUT_PUT_ROOT_FOLDER`: Root directory for all generated outputs. **Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`.
+- `CURRENT_DATE`: Current execution date formatted as `YYYY-MM-DD`.
+- `DOMAIN_NAME`: Normalized website hostname.
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/final-seo-report/`
+Canonical Output Directory:
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/09-final-seo-report/`
 
-Save the primary SEO report at:
+Save primary deliverables at:
+- Master Report: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/09-final-seo-report/final-seo-overall-report.md` (and mirror `SEO_Consolidated_Final_Report.md`)
+- Master Changes: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/09-final-seo-report/final-seo-website-changes.md`
+- Developer Prompt: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/09-final-seo-report/Master_Developer_Implementation_Prompt.md`
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/final-seo-report/SEO_Consolidated_Final_Report.md`
-
-Save the developer implementation prompt at:
-
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/final-seo-report/Master_Developer_Implementation_Prompt.md`
+All implementation CSVs and supporting files must reside directly in the same directory.
+If files already exist for the current date, preserve them by creating a versioned execution directory (`executions/{execution-id}/`).
 
 All supporting deliverables must be saved in the same final report directory unless a clearly justified subdirectory structure is necessary.
 

@@ -9,9 +9,9 @@ description: Execute comprehensive, evidence-based technical SEO audits and reme
 
 An advanced technical SEO engineering, site architecture, and implementation planning skill:
 - **What this skill does:** Audits website crawlability, robots.txt, XML sitemaps, status code routing, canonical integrity, mobile usability, Core Web Vitals performance, security headers, and structured data schemas; ingests content strategy technical dependencies; and creates developer implementation tasks.
-- **Its primary objective:** Remediate technical crawl and rendering blockers, optimize search engine rendering efficiency, and generate production-ready code fixes without fabricating metrics.
+- **Its primary objective:** Produce an overall technical architecture report and an exact page-by-page website changes report (robots/sitemap directives, canonical/redirect maps, CWV code optimizations, schema blueprints, HTTP headers) alongside framework-native developer prompts without fabricating metrics.
 - **When it should be used:** Stage 6 of the SEO workflow, immediately following `seo-content-strategy`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/Technical_SEO_Report.md`, `Technical_SEO_Implementation_Plan.csv`, and validated JSON-LD schema blueprints.
+- **What output or result it produces:** Generates `technical-seo-overall-report.md`, `technical-seo-website-changes.md`, `Technical_SEO_Report.md`, `Technical_SEO_Implementation_Plan.csv`, and validated JSON-LD schema blueprints in `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/06-technical-seo/`.
 
 ## Shared Resources
 
@@ -32,31 +32,32 @@ You must work as an evidence-driven SEO engineering agent.
 
 Your responsibilities include:
 
-- Discovering previous SEO workflow outputs
-- Reading and analyzing mandatory upstream reports
-- Understanding the website's existing SEO strategy
-- Understanding the content strategy and planned URLs
-- Crawling and inspecting the website
-- Validating technical SEO conditions
-- Identifying technical SEO issues
-- Collecting evidence
-- Consolidating findings
-- Prioritizing issues
-- Creating implementation plans
-- Generating developer handoff prompts
-- Validating generated artifacts
-- Creating execution reports
+- Generating two primary deliverables into `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/06-technical-seo/`:
+  1. `technical-seo-overall-report.md` (and legacy mirror `Technical_SEO_Report.md`): High-level technical infrastructure, crawl health, CWV benchmarks, schema hierarchy, and prioritization.
+  2. `technical-seo-website-changes.md`: Concrete register of exact technical code, server, and architecture fixes:
+     - **Robots.txt & Server Directives**: Directive/Setting, Current value, Recommended code/directive, Justification, Priority P0–P3, Action.
+     - **XML Sitemaps**: Sitemap URL/Type, Issue/Missing URLs, Recommended config/inclusion list, Priority P0–P3, Action.
+     - **Canonical & Redirect Route Map**: Source URL, Target canonical/redirect destination URL, HTTP Status (301/308), Route rule, Priority P0–P3, Action.
+     - **Core Web Vitals & Performance Code Changes**: Component/File path, CWV Metric (LCP/CLS/INP), Current snippet, Recommended optimized code, Priority P0–P3, Action.
+     - **Structured Data / JSON-LD Schema Blueprints**: Target Page URL, Schema type, Current state, Complete validated JSON-LD code block, Priority P0–P3, Action.
+     - **Security & HTTP Response Headers**: Header Name, Current state, Recommended header value, Priority P0–P3, Action.
+- Reading and analyzing mandatory upstream reports from Stage 01 through Stage 05.
+- Understanding the website's existing SEO strategy and planned content cluster URLs.
+- Crawling and inspecting the website with open-source/free tools.
+- Validating technical SEO conditions and Core Web Vitals without fabricating unverified metrics.
+- Prioritizing issues (P0 Critical, P1 High, P2 Medium, P3 Low).
+- Generating production-ready, framework-native developer handoff prompts (`Developer_Prompt.md` and `prompt.txt`).
 
-You must not merely provide recommendations based on general SEO knowledge.
-
-You must inspect available sources, website resources, tools, datasets, and repository files wherever access is available.
+You must not merely provide recommendations based on general SEO knowledge. Inspect available sources, website resources, tools, datasets, and repository files wherever access is available.
 
 ---
 
 # 2. PROJECT CONFIGURATION
 
-Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
+In accordance with `../shared/INPUT_VARIABLES.md`, ingest and resolve dynamic variables:
 
+- Project root: `./` (current active workspace root)
+- Output Root Folder: `OUT_PUT_ROOT_FOLDER` (**Default:** `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`)
 - Website URL: `{{WEBSITE_URL}}`
 - Website Name: `{{WEBSITE_NAME}}`
 - Website Domain: `{{DOMAIN_NAME}}`
@@ -65,7 +66,7 @@ Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md
 - Target Audience: `{{TARGET_AUDIENCE}}`
 - Services Offered: `{{SERVICES}}`
 - Seed Keywords: `{{SEED_KEYWORDS}}`
-- Execution Date: `{{CURRENT_DATE}}`
+- Execution Date: `{{CURRENT_DATE}}` (dynamically resolved as `YYYY-MM-DD`)
 
 Primary Business Objectives:
 
@@ -253,178 +254,27 @@ This workflow produces analysis, recommendations, plans, and developer handoff a
 
 The following workflows are mandatory upstream dependencies.
 
-## Dependency 1: SEO Audit
+## Dependency 1: Stage 01 SEO Audit
+Expected location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/01-website-audit/` (fallback: `audit-report/`)
+Mandatory files: `website-audit-overall-report.md`, `SEO_Audit_Report.md`, `url-inventory.csv`, `technical-issues.csv`.
 
-Discover the actual output directory.
+## Dependency 2: Stage 02 Keyword Research & Keyword Mapping
+Expected location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/02-keyword-research/` (fallback: `keyword-research/`)
+Mandatory files: `keyword-research-overall-report.md`, `Keyword_Research_Report.md`, `Keyword_Research_Data.csv`, `Keyword_Clusters.csv`, `Keyword_Mapping.csv`.
 
-Expected pattern:
+Use this data to identify important URLs that must remain crawlable and indexable.
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)*
+## Dependency 3: Stage 03 Competitor Analysis
+Expected location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/03-competitor-analysis/` (fallback: `competitor-analysis/`)
+Mandatory files: `competitor-analysis-overall-report.md`, `Competitor_Analysis_Report.md`, `Competitor_Technical_Comparison.csv`, `Competitor_Performance_Comparison.csv`, `Competitor_Schema_Analysis.csv`.
 
-Potential files:
+## Dependency 4: Stage 04 On-Page SEO Optimization
+Expected location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/04-on-page-seo/` (fallback: `on-page-seo/`)
+Mandatory files: `on-page-seo-overall-report.md`, `on-page-seo-website-changes.md`, `On_Page_SEO_Report.md`, `Schema_Recommendations.csv`.
 
-- SEO_Audit_Report.md
-- Technical_SEO_Audit.csv
-- Website_Crawl.csv
-- URL_Inventory.csv
-- Metadata_Analysis.csv
-- Heading_Analysis.csv
-- Internal_Link_Analysis.csv
-- Image_SEO_Analysis.csv
-- Schema_Analysis.csv
-- Performance_Analysis.csv
-- Crawlability_Analysis.csv
-- Indexability_Analysis.csv
-- Broken_Link_Analysis.csv
-- Redirect_Analysis.csv
-- Robots_Analysis.csv
-- Sitemap_Analysis.csv
-- evidence/
-- screenshots/
-- tool-exports/
-
-Use actual discovered files.
-
-Do not assume every file exists.
-
-## Dependency 2: Keyword Research & Keyword Mapping
-
-Discover the actual output directory.
-
-Expected pattern:
-
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/keyword-research/`)*
-
-Potential files:
-
-- Keyword_Research_Report.md
-- Keyword_Research_Data.csv
-- Seed_Keywords.csv
-- Keyword_Clusters.csv
-- Keyword_Mapping.csv
-- Keyword_Gap_Analysis.csv
-- Competitor_Keyword_Analysis.csv
-- Keyword_Prioritization.csv
-- SERP evidence
-- Keyword source references
-
-Use this data to identify:
-
-- Important target URLs
-- Priority landing pages
-- Search intent
-- Target keywords
-- Keyword clusters
-- Commercial pages
-- Important URLs that must remain crawlable and indexable
-
-Do not repeat the complete keyword research process.
-
-## Dependency 3: Competitor Analysis
-
-Discover the actual output directory.
-
-Expected pattern:
-
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/competitor-analysis/`)*
-
-Potential files:
-
-- Competitor_Analysis_Report.md
-- Competitor_List.csv
-- Competitor_Page_Analysis.csv
-- Competitor_Keyword_Analysis.csv
-- Competitor_Keyword_Gap.csv
-- Competitor_Content_Analysis.csv
-- Competitor_Technical_Comparison.csv
-- Competitor_Performance_Comparison.csv
-- Competitor_Schema_Analysis.csv
-- Competitor_Opportunity_Analysis.csv
-- Competitor_Prioritization.csv
-- evidence/
-
-Use competitor information for:
-
-- Website architecture comparisons
-- Technical SEO patterns
-- Navigation structures
-- Schema opportunities
-- Page discoverability
-- Performance opportunities
-- Content architecture
-
-Do not copy competitor implementations without validating their relevance.
-
-## Dependency 4: On-Page SEO Optimization
-
-Discover the actual output directory.
-
-Expected pattern:
-
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/on-page-seo/`)*
-
-Potential files:
-
-- On_Page_SEO_Report.md
-- On_Page_Validation_Report.md
-- Execution_Summary.md
-- On_Page_SEO_Recommendations.csv
-- URL_Optimization.csv
-- Title_Meta_Optimization.csv
-- Heading_Optimization.csv
-- Content_Optimization.csv
-- Semantic_Keyword_Optimization.csv
-- Image_SEO_Recommendations.csv
-- Internal_Link_Recommendations.csv
-- External_Link_Recommendations.csv
-- Schema_Recommendations.csv
-- evidence/
-
-Use this data to validate:
-
-- URL structure
-- Metadata
-- Heading hierarchy
-- Internal links
-- Schema
-- Content structure
-- Image SEO
-
-## Dependency 5: Content Strategy & Content Creation
-
-Discover the actual output directory.
-
-Expected pattern:
-
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/`
-*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/content-strategy/`)*
-
-Mandatory files to discover where available:
-
-- Content_Strategy_Report.md
-- Content_Audit_Report.md
-- Content_Gap_Analysis.csv
-- Content_Opportunity_Analysis.csv
-- Content_Keyword_Mapping.csv
-- Topic_Cluster_Mapping.csv
-- Content_Prioritization.csv
-- Content_Calendar.csv
-- Content_Brief_Dataset.csv
-- Content_Refresh_Recommendations.csv
-- Content_Consolidation_Recommendations.csv
-- Internal_Link_Content_Recommendations.csv
-- Content_Performance_KPI_Framework.csv
-- Developer_Prompt.md
-- prompt.txt
-- content-briefs/
-- content-drafts/
-- evidence/
-- validation/
-- execution/
+## Dependency 5: Stage 05 Content Strategy & Content Creation
+Expected location: `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/05-content-strategy/` (fallback: `content-strategy/`)
+Mandatory files: `content-strategy-overall-report.md`, `content-strategy-website-changes.md`, `Content_Strategy_Report.md`, `Topic_Cluster_Mapping.csv`.
 
 This workflow must use Content Strategy outputs to identify technical requirements for planned content.
 
@@ -434,20 +284,14 @@ This workflow must use Content Strategy outputs to identify technical requiremen
 
 Create all workflow outputs in:
 
-`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/`
+`{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/06-technical-seo/`
 
-Use the current execution date.
+Where `OUT_PUT_ROOT_FOLDER` defaults to `C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`.
 
-Do not assume the upstream workflows used the same date.
-
-If the output directory already exists:
-
-- Preserve previous outputs.
-- Do not overwrite files without creating a backup or version.
-- Record execution timestamp.
-- Record workflow run ID.
-- Record upstream workflow dates.
-- Record source directories.
+Rules:
+1. Always preserve previous outputs; do not overwrite historical runs.
+2. Keep all Stage 06 outputs inside `06-technical-seo/`.
+3. Verify every generated file.
 
 ---
 
@@ -1998,51 +1842,59 @@ validation/Technical_SEO_Quality_Checklist.csv
 
 ---
 
-# PHASE 27 — FINAL REPORT
+# PHASE 27 — FINAL REPORTS & WEBSITE CHANGES
 
-Create:
+Generate the twin mandatory deliverables into `{OUT_PUT_ROOT_FOLDER}/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/06-technical-seo/`:
 
-Technical_SEO_Report.md
-
+### 1. `technical-seo-overall-report.md` (and legacy mirror `Technical_SEO_Report.md`)
 Required sections:
+1. Executive Summary & Technical Infrastructure Overview
+2. Project Configuration & Dynamic Variables
+3. Upstream Workflow Dependencies (Stages 01–05 data reviewed)
+4. Technical Baseline & Host Environment
+5. Crawlability & Robots.txt Architecture
+6. Indexability & Status Code Analysis
+7. XML Sitemaps Health & Coverage
+8. Canonical Tags & Redirect Route Integrity
+9. JavaScript SEO, Dynamic Rendering & Hydration
+10. Core Web Vitals & Real-User Performance (LCP, CLS, INP)
+11. Mobile SEO & Viewport Architecture
+12. Structured Data / Schema Engineering
+13. URL Architecture & Technical Internal Linking Mesh
+14. Image Technical SEO & Next-Gen Media
+15. HTTPS, TLS & Security Headers
+16. Content Strategy Technical Dependencies
+17. Technical SEO Issue Inventory (P0 Critical to P3 Low)
+18. Implementation Prioritization & Roadmap
+19. Developer Implementation Instructions Summary
+20. Validation, Evidence & Data Limitations
 
-1. Executive Summary
-2. Project Configuration
-3. Workflow Dependencies
-4. Upstream Report Analysis
-5. Technical Baseline
-6. Crawlability
-7. Indexability
-8. Robots.txt
-9. Sitemap
-10. Canonical
-11. Redirects
-12. HTTP Status
-13. JavaScript SEO
-14. Rendering
-15. Core Web Vitals
-16. Performance
-17. Mobile SEO
-18. Schema
-19. URL Architecture
-20. Internal Linking
-21. Image SEO
-22. HTTPS
-23. Security
-24. Content Strategy Technical Dependencies
-25. Technical SEO Issue Inventory
-26. Critical Issues
-27. High-Priority Issues
-28. Medium-Priority Issues
-29. Low-Priority Issues
-30. Prioritization
-31. Implementation Plan
-32. Roadmap
-33. Developer Handoff
-34. Validation
-35. Limitations
-36. Evidence and Sources
-37. Next Steps
+### 2. `technical-seo-website-changes.md`
+A dedicated, page-by-page register of concrete technical code, server, and architecture fixes:
+
+#### Table 1: Robots.txt & Server Directives
+| Directive / Setting | Current Value | Recommended Code / Directive | Justification | Priority (P0–P3) | Action (ADD/UPDATE/REMOVE) |
+|---|---|---|---|---|---|
+
+#### Table 2: XML Sitemaps
+| Sitemap URL / Type | Issue / Missing URLs | Recommended Configuration / Inclusion List | Priority (P0–P3) | Action |
+|---|---|---|---|---|
+
+#### Table 3: Canonical & Redirect Route Map
+| Source URL | Target Canonical / Redirect Destination URL | HTTP Status Code (301/308) | Reason / Route Rule | Priority (P0–P3) | Action |
+|---|---|---|---|---|---|
+
+#### Table 4: Core Web Vitals & Performance Code Changes
+| Component / File Path | CWV Metric (LCP/CLS/INP) | Current Implementation Snippet | Recommended Optimized Code / Directive | Priority (P0–P3) | Action |
+|---|---|---|---|---|---|
+
+#### Table 5: Structured Data / JSON-LD Schema Blueprints
+| Target Page URL | Schema Type | Current Schema State | Complete Validated JSON-LD Code Block | Priority (P0–P3) | Action |
+|---|---|---|---|---|
+
+#### Table 6: Security & HTTP Response Headers
+| Header Name | Current State | Recommended Header Value | Priority (P0–P3) | Action |
+|---|---|---|---|---|
 
 ---
 
@@ -2113,19 +1965,22 @@ Record:
 
 # 9. REQUIRED OUTPUT STRUCTURE
 
-outputs/
+```text
+{OUT_PUT_ROOT_FOLDER}/
 └── {{CURRENT_DATE}}/
     └── {{DOMAIN_NAME}}/
-        └── technical-seo/
-├── Project_Discovery_Report.md
-├── Technical_SEO_Context.md
-├── Technical_SEO_Report.md
-├── Technical_SEO_Issue_Inventory.csv
-├── Technical_SEO_Prioritization.csv
-├── Technical_SEO_Implementation_Plan.csv
-├── Technical_SEO_Roadmap.md
-├── Upstream_Data_Inventory.csv
-├── Upstream_Recommendations_Consolidated.csv
+        └── 06-technical-seo/
+            ├── technical-seo-overall-report.md       # High-level technical infrastructure & CWV report
+            ├── technical-seo-website-changes.md      # Concrete register of technical fixes (robots, sitemap, routing, CWV, schemas)
+            ├── Technical_SEO_Report.md               # Legacy mirror report
+            ├── Project_Discovery_Report.md
+            ├── Technical_SEO_Context.md
+            ├── Technical_SEO_Issue_Inventory.csv
+            ├── Technical_SEO_Prioritization.csv
+            ├── Technical_SEO_Implementation_Plan.csv
+            ├── Technical_SEO_Roadmap.md
+            ├── Upstream_Data_Inventory.csv
+            ├── Upstream_Recommendations_Consolidated.csv
 ├── Technical_Baseline.csv
 ├── Crawlability_Analysis.csv
 ├── Indexability_Analysis.csv
