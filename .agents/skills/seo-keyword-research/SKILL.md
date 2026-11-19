@@ -1,4 +1,26 @@
-# MASTER PROMPT: END-TO-END SEO KEYWORD RESEARCH & KEYWORD MAPPING
+---
+name: seo-keyword-research
+description: Perform comprehensive, audit-driven organic keyword research, intent mapping, competitor keyword gap analysis, and keyword-to-URL clustering.
+---
+
+# Strategic SEO Keyword Research & Mapping
+
+## Skill Description
+
+An in-depth, audit-grounded keyword research and search intent optimization skill:
+- **What this skill does:** Discovers high-intent commercial, transactional, and informational search queries; analyzes SERP features; identifies competitor keyword gaps; groups keywords into semantic clusters; and produces an exhaustive keyword-to-page URL targeting map.
+- **Its primary objective:** Establish a data-backed organic query foundation directly mapped to discovered website pages and service offerings without inventing search metrics.
+- **When it should be used:** Stage 2 of the SEO workflow, immediately following the completion of `seo-audit`.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/Keyword_Research_Report.md`, `Keyword_Mapping_Master.md`, and supporting keyword datasets.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
 
 ## 1. ROLE
 
@@ -56,15 +78,13 @@ If some inputs are unavailable, use verified information from the website and SE
 
 # 3. PROJECT DIRECTORY STRUCTURE
 
-Project root:
-
-`C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\`
+Project root: Active workspace root (`./`)
 
 Skill location:
 
 `.agents/skills/seo-keyword-research/SKILL.md`
 
-Expected output:
+Canonical output hierarchy (see `../shared/OUTPUT_STANDARDS.md`):
 
 ```text
 seo-orchestration-flow/
@@ -75,8 +95,8 @@ seo-orchestration-flow/
 │           └── SKILL.md
 │
 ├── outputs/
-│   └── {YYYY-MM-DD}/
-│       └── {website-domain}/
+│   └── {{CURRENT_DATE}}/
+│       └── {{DOMAIN_NAME}}/
 │           │
 │           ├── audit-report/
 │           │   ├── SEO_Audit_Report.md
@@ -126,13 +146,10 @@ You MUST locate and reuse these outputs.
 
 ## 4.1 Primary SEO Audit Report Location
 
-Search for:
+Locate and read:
 
-`outputs/{AUDIT_DATE}/{website-domain}/audit-report/SEO_Audit_Report.md`
-
-Example:
-
-`outputs/2026-11-19/strawhatdevs.com/audit-report/SEO_Audit_Report.md`
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/SEO_Audit_Report.md`
+*(Or dynamically discover the latest completed audit report under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)*
 
 Do not assume the audit date is always the current date.
 

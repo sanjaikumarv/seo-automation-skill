@@ -1,4 +1,26 @@
-# MASTER PROMPT: PRODUCTION-READY WEBSITE SEO AUDITOR
+---
+name: seo-audit
+description: Perform comprehensive, evidence-based SEO audits covering crawling, indexability, on-page, performance, Core Web Vitals, and technical health.
+---
+
+# Comprehensive Website SEO Auditor
+
+## Skill Description
+
+An exhaustive, evidence-based technical and on-page SEO auditing skill:
+- **What this skill does:** Crawls public website pages, inspects metadata and DOM structure, evaluates Core Web Vitals and performance, audits mobile responsiveness, tests structured data/schema, verifies status codes, captures technical evidence, and prioritizes remediation tasks.
+- **Its primary objective:** Produce an actionable, developer-ready SEO Audit Report and evidence catalog identifying critical technical blockers and optimization opportunities without fabricating data.
+- **When it should be used:** Stage 1 of the SEO automation pipeline, or standalone when performing an audit of any public website.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/SEO_Audit_Report.md` and supporting evidence in `evidence/`.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
 
 ## 1. ROLE AND RESPONSIBILITY
 
@@ -51,19 +73,18 @@ Only inspect, analyze, collect evidence, document findings, and recommend improv
 
 # 2. WEBSITE INPUT CONFIGURATION
 
-Collect the following inputs before starting.
+Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
 
-Website URL: [ENTER WEBSITE URL]
-
-Website Name: [ENTER WEBSITE NAME]
-
-Business Type: [ENTER BUSINESS TYPE]
-
-Target Country: [ENTER TARGET COUNTRY]
-
-Target Audience: [ENTER TARGET AUDIENCE]
-
-Website Technology: [Next.js / React / WordPress / Other / Unknown]
+- Website URL: `{{WEBSITE_URL}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Website Name: `{{WEBSITE_NAME}}`
+- Business Type: `{{BUSINESS_TYPE}}`
+- Target Country: `{{TARGET_COUNTRY}}`
+- Target Audience: `{{TARGET_AUDIENCE}}`
+- Services Offered: `{{SERVICES}}`
+- Seed Keywords: `{{SEED_KEYWORDS}}`
+- Execution Date: `{{CURRENT_DATE}}`
+- Website Technology: [Next.js / React / WordPress / Other / Detected via DOM headers]
 
 Audit Scope: Entire accessible public website.
 
@@ -71,7 +92,7 @@ Audit Type: Comprehensive Technical and On-Page SEO Audit.
 
 Execution Mode: STRICT SEQUENTIAL.
 
-Tool Preference: FREE AND OPEN-SOURCE TOOLS FIRST.
+Tool Preference: FREE AND OPEN-SOURCE TOOLS FIRST (see `../shared/TOOLS.md`).
 
 Output Format: Markdown.
 
@@ -1006,19 +1027,15 @@ seo-orchestration-flow/
 9. Save the final report as `SEO_Audit_Report.md`.
 10. Store supporting audit evidence and tool results inside their respective subdirectories.
 
-## D. Expected Output Example
+## D. Expected Output Structure
 
-Input:
+Input Variables:
 
-Website URL:
+- Website URL: `{{WEBSITE_URL}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Execution Date: `{{CURRENT_DATE}}`
 
-https://strawhatdevs.com
-
-Execution Date:
-
-2026-11-19
-
-Expected output:
+Canonical Output Directory Structure:
 
 ```text
 seo-orchestration-flow/
@@ -1029,8 +1046,8 @@ seo-orchestration-flow/
 │           └── SKILL.md
 │
 └── outputs/
-    └── 2026-11-19/
-        └── strawhatdevs.com/
+    └── {{CURRENT_DATE}}/
+        └── {{DOMAIN_NAME}}/
             └── audit-report/
                 │
                 ├── SEO_Audit_Report.md
@@ -1128,7 +1145,7 @@ Examples:
 
 | Input URL                               | Website Directory |
 | --------------------------------------- | ----------------- |
-| https://strawhatdevs.com                | strawhatdevs.com  |
+| https://company.org                     | company.org       |
 | https://www.example.com/                | www.example.com   |
 | https://example.com/services/web        | example.com       |
 | https://shop.example.com/products?id=10 | shop.example.com  |
@@ -1197,16 +1214,10 @@ If any required operation fails, document the failure.
 The final report must be saved at:
 
 ```text
-outputs/{YYYY-MM-DD}/{website-domain}/audit-report/SEO_Audit_Report.md
+outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/SEO_Audit_Report.md
 ```
 
-Example:
-
-```text
-outputs/2026-11-19/strawhatdevs.com/audit-report/SEO_Audit_Report.md
-```
-
-This directory structure is mandatory for every SEO audit execution.
+This canonical directory structure is mandatory for every SEO audit execution (see `../shared/OUTPUT_STANDARDS.md`).
 
 # 7. STRICT EXECUTION RULES
 

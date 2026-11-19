@@ -1,4 +1,28 @@
-# MASTER PROMPT: PRODUCTION-READY SEO CONTENT STRATEGY & CONTENT CREATION ORCHESTRATOR
+---
+name: seo-content-strategy
+description: Formulate data-backed SEO content strategies, topic clusters, content calendars, comprehensive content briefs, and production-ready copy drafts.
+---
+
+# SEO Content Strategy & Content Creation
+
+## Skill Description
+
+An end-to-end strategic content planning, clustering, and copywriting skill:
+
+- **What this skill does:** Synthesizes insights from the SEO Audit, Keyword Research, Competitor Analysis, and On-Page SEO stages to identify content gaps; designs semantic topic clusters and pillar pages; produces editorial calendars; drafts comprehensive content briefs; and generates search-optimized content copy.
+- **Its primary objective:** Build topical authority and capture high-intent commercial and informational organic search traffic without unedited low-effort regurgitation.
+- **When it should be used:** Stage 5 of the SEO workflow, following `seo-on-page`.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/Content_Strategy_Report.md`, `Content_Calendar.md`, content briefs, and draft copy.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
 
 ## 1. ROLE AND RESPONSIBILITY
 
@@ -125,7 +149,7 @@ C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\
     │   └── SKILL.md
     ├── seo-competitor-analysis/
     │   └── SKILL.md
-    ├── seo-on-page-optimization/
+    ├── seo-on-page/
     │   └── SKILL.md
     └── seo-content-strategy/
         └── SKILL.md
@@ -135,8 +159,8 @@ C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\
 
 ```text
 outputs/
-└── {CURRENT_DATE}/
-    └── {website-domain}/
+└── {{CURRENT_DATE}}/
+    └── {{DOMAIN_NAME}}/
         ├── audit-report/
         ├── keyword-research/
         ├── competitor-analysis/
@@ -147,8 +171,8 @@ outputs/
 
 ```text
 outputs/
-└── {CURRENT_DATE}/
-    └── {website-domain}/
+└── {{CURRENT_DATE}}/
+    └── {{DOMAIN_NAME}}/
         └── content-strategy/
             ├── Content_Strategy_Report.md
             ├── Content_Audit_Report.md
@@ -243,7 +267,8 @@ The following workflows are mandatory dependencies.
 
 Expected location:
 
-outputs/{AUDIT_DATE}/{website-domain}/audit-report/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
+_(Or dynamically discover latest completed audit folder under `outputs/_/{{DOMAIN_NAME}}/audit-report/`)\*
 
 Primary file:
 
@@ -268,7 +293,8 @@ Relevant supporting files may include:
 
 Expected location:
 
-outputs/{KEYWORD_RESEARCH_DATE}/{website-domain}/keyword-research/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/keyword-research/`)\*
 
 Mandatory files where available:
 
@@ -296,7 +322,8 @@ Relevant evidence:
 
 Expected location:
 
-outputs/{COMPETITOR_ANALYSIS_DATE}/{website-domain}/competitor-analysis/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/competitor-analysis/`)\*
 
 Primary report:
 
@@ -329,7 +356,8 @@ Relevant evidence:
 
 Expected location:
 
-outputs/{ON_PAGE_SEO_DATE}/{website-domain}/on-page-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/on-page-seo/`)\*
 
 Mandatory files:
 

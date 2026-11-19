@@ -1,4 +1,28 @@
-# MASTER PROMPT: PRODUCTION-READY ON-PAGE SEO OPTIMIZATION & DEVELOPER IMPLEMENTATION ORCHESTRATOR
+---
+name: seo-on-page
+description: Execute comprehensive, page-level on-page SEO optimization, metadata blueprints, heading structures, internal linking, and developer implementation prompt generation.
+---
+
+# On-Page SEO Optimization & Developer Implementation
+
+## Skill Description
+
+A comprehensive on-page SEO optimization and developer task generator skill:
+
+- **What this skill does:** Ingests upstream audit, keyword research, and competitor analysis reports; analyzes page inventories and content; crafts optimized title tags, meta descriptions, and semantic heading structures; designs internal linking meshes; formulates image and schema blueprints; and compiles a production-ready developer implementation prompt.
+- **Its primary objective:** Produce actionable, page-level optimization matrices and developer code update prompts grounded in verified queries and architecture.
+- **When it should be used:** Stage 4 of the SEO workflow, following `seo-competitor-analysis`.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/On_Page_SEO_Report.md`, `Metadata_Matrix.md`, `Developer_Prompt.md`, and supporting optimization datasets.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
 
 ## 1. ROLE & EXPERTISE
 
@@ -89,35 +113,20 @@ The developer prompt must contain precise, actionable instructions for implement
 
 ## 3. PROJECT CONFIGURATION
 
-### 3.1 Project information
+### 3.1 Universal Project Information
 
-Project root:
+Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
 
-`C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\`
-
-Website URL:
-
-`https://strawhatdevs.com`
-
-Website Name:
-
-`Straw hat devs`
-
-Target Country:
-
-India and international markets.
-
-Target Audience:
-
-- Small-scale industries
-- Medium-scale industries
-- Large-scale industries
-- Businesses without professional websites
-- Businesses with manual and inefficient workflows
-- Businesses requiring payroll automation
-- Businesses requiring repetitive workflow automation
-- Businesses requiring custom software solutions
-- Businesses looking for software development and digital transformation services
+- Project root: `./` (current active workspace root)
+- Website URL: `{{WEBSITE_URL}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Website Name: `{{WEBSITE_NAME}}`
+- Target Country: `{{TARGET_COUNTRY}}`
+- Target Geography: `{{TARGET_GEOGRAPHY}}`
+- Target Audience: `{{TARGET_AUDIENCE}}`
+- Services Offered: `{{SERVICES}}`
+- Seed Keywords: `{{SEED_KEYWORDS}}`
+- Execution Date: `{{CURRENT_DATE}}`
 
 Target Language:
 
@@ -173,12 +182,12 @@ seo-orchestration-flow/
 │       ├── seo-competitor-analysis/
 │       │   └── SKILL.md
 │       │
-│       └── seo-on-page-optimization/
+│       └── seo-on-page/
 │           └── SKILL.md
 │
 └── outputs/
-    └── {YYYY-MM-DD}/
-        └── {website-domain}/
+    └── {{CURRENT_DATE}}/
+        └── {{DOMAIN_NAME}}/
             │
             ├── audit-report/
             │
@@ -224,27 +233,18 @@ seo-orchestration-flow/
                     └── tool-exports/
 ```
 
-### 4.2 Project path configuration
+### 4.2 Canonical Path Configuration
 
-Resolve these variables before execution:
+Resolve variables according to `../shared/INPUT_VARIABLES.md` and `../shared/OUTPUT_STANDARDS.md`:
 
-- `PROJECT_ROOT`: Actual verified project root.
-- `CURRENT_DATE`: Current execution date.
-- `WEBSITE_DOMAIN`: Normalized website hostname.
-- `OUTPUT_BASE`: `{PROJECT_ROOT}\outputs\{CURRENT_DATE}\{WEBSITE_DOMAIN}`
-- `OUTPUT_ROOT`: `{OUTPUT_BASE}\on-page-seo`
-
-Example:
-
-`C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs\2026-11-19\strawhatdevs.com\on-page-seo\`
+- `CURRENT_DATE`: Current execution date formatted as `YYYY-MM-DD`.
+- `DOMAIN_NAME`: Normalized website hostname.
+- Canonical Output Directory: `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
 
 Normalize the website URL:
 
-- Remove protocol.
-- Remove path.
-- Remove query parameters.
-- Remove fragments.
-- Remove trailing slash.
+- Remove protocol (`https://`, `http://`).
+- Remove path, query parameters, fragments, and trailing slashes.
 - Preserve meaningful subdomains.
 
 Verify the actual project root exists.
@@ -1085,7 +1085,7 @@ Example:
 
 Target URL:
 
-`https://strawhatdevs.com/custom-software-development`
+`{{WEBSITE_URL}}/custom-software-development`
 
 Potential implementation mapping:
 

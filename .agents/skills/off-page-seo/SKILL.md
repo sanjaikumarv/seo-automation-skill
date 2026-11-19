@@ -1,10 +1,28 @@
-# SEO OFF-PAGE OPTIMIZATION & LINK BUILDING
-
-## Production-Ready Sequential Execution Skill
-
+---
+name: off-page-seo
+description: Execute ethical, evidence-based off-page SEO, backlink gap analysis, digital PR strategy, and white-hat outreach playbook formulation.
 ---
 
-# 1. ROLE
+# Off-Page SEO Optimization & Authority Building
+
+## Skill Description
+
+An ethical, white-hat off-page SEO and digital PR strategy skill:
+- **What this skill does:** Ingests upstream audit, keyword research, competitor analysis, on-page, content, and technical reports; analyzes competitor backlink profiles and authority gaps from public observational search data; designs target page link acquisition strategies; crafts ethical outreach templates; and formulates digital PR tactics.
+- **Its primary objective:** Build organic domain authority and earned media visibility strictly complying with Google Search Essentials without PBNs, automated spam, or unverified link counts.
+- **When it should be used:** Stage 7 of the SEO workflow, following `technical-seo`.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/Off_Page_SEO_Report.md`, `Outreach_Playbook.md`, and link prospect matrices.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
+
+## 1. ROLE
 
 You are a Senior SEO Specialist, Off-Page SEO Strategist, Link Building Analyst, Digital PR Strategist, Backlink Researcher, SEO Data Analyst, and SEO Automation Agent.
 
@@ -32,34 +50,18 @@ Do not execute this workflow as a single unstructured research task.
 
 # 2. PROJECT CONFIGURATION
 
-Website URL:
+Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
 
-https://strawhatdevs.com
-
-Website Name:
-
-Straw Hat Devs
-
-Business Type:
-
-Software Development and Technology Services
-
-Target Countries:
-
-India and worldwide.
-
-Target Audience:
-
-- Small businesses
-- Medium-sized businesses
-- Large enterprises
-- Businesses without professional websites
-- Businesses requiring custom software
-- Businesses requiring workflow automation
-- Businesses requiring payroll automation
-- Businesses requiring operational automation
-- Businesses requiring web applications
-- Businesses requiring mobile applications
+- Website URL: `{{WEBSITE_URL}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Website Name: `{{WEBSITE_NAME}}`
+- Brand Name: `{{BRAND_NAME}}`
+- Business Type: `{{BUSINESS_TYPE}}`
+- Target Countries / Geography: `{{TARGET_COUNTRY}}` / `{{TARGET_GEOGRAPHY}}`
+- Target Audience: `{{TARGET_AUDIENCE}}`
+- Services Offered: `{{SERVICES}}`
+- Seed Keywords: `{{SEED_KEYWORDS}}`
+- Execution Date: `{{CURRENT_DATE}}`
 - Businesses requiring AI solutions
 - Businesses requiring technology consulting
 
@@ -363,11 +365,7 @@ Project_Discovery_Report.md
 
 Create:
 
-outputs/{CURRENT_DATE}/{website-domain}/off-page-seo/
-
-Example:
-
-outputs/2026-11-19/strawhatdevs.com/off-page-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/`
 
 The date must represent the actual execution date.
 
@@ -501,7 +499,8 @@ Locate and understand previous SEO workflow outputs before beginning Off-Page SE
 
 Expected directory:
 
-outputs/{AUDIT_DATE}/{website-domain}/audit-report/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)*
 
 Required files may include:
 
@@ -525,7 +524,8 @@ Evidence
 
 Expected directory:
 
-outputs/{KEYWORD_DATE}/{website-domain}/keyword-research/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/keyword-research/`)*
 
 Required files may include:
 
@@ -547,7 +547,8 @@ Keyword_Prioritization.csv
 
 Expected directory:
 
-outputs/{COMPETITOR_DATE}/{website-domain}/competitor-analysis/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/competitor-analysis/`)*
 
 Required files may include:
 
@@ -567,7 +568,8 @@ Competitor_Opportunity_Analysis.csv
 
 Expected directory:
 
-outputs/{ON_PAGE_DATE}/{website-domain}/on-page-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/on-page-seo/`)*
 
 Required files may include:
 
@@ -585,7 +587,8 @@ Internal_Link_Recommendations.csv
 
 Expected directory:
 
-outputs/{CONTENT_DATE}/{website-domain}/content-strategy/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/content-strategy/`)*
 
 Required files may include:
 
@@ -617,7 +620,8 @@ content-drafts/
 
 Expected directory:
 
-outputs/{TECHNICAL_DATE}/{website-domain}/technical-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/technical-seo/`)*
 
 Required files may include:
 
@@ -726,7 +730,7 @@ Do not proceed using assumptions about unavailable tools.
 
 ## Objective
 
-Establish the current backlink profile of Straw Hat Devs.
+Establish the current backlink profile of {{WEBSITE_NAME}}.
 
 ## Previous Files Required
 
@@ -962,7 +966,7 @@ Do not claim competitors have backlinks unless verified.
 
 ## Objective
 
-Find websites linking to competitors but not Straw Hat Devs.
+Find websites linking to competitors but not {{WEBSITE_NAME}}.
 
 ## Input
 
@@ -993,7 +997,7 @@ Identify:
 - Link context
 - Why the competitor received the link
 - Opportunity type
-- Potential Straw Hat Devs target page
+- Potential {{WEBSITE_NAME}} target page
 - Relevant content asset
 - Acquisition method
 - Estimated difficulty
@@ -1184,7 +1188,7 @@ Do not classify a website as accepting guest posts unless evidence exists.
 
 ## Objective
 
-Identify relevant resource pages where Straw Hat Devs content could genuinely add value.
+Identify relevant resource pages where {{WEBSITE_NAME}} content could genuinely add value.
 
 ## Input
 
@@ -1238,7 +1242,7 @@ Ensure the proposed resource is genuinely useful to the target page audience.
 
 ## Objective
 
-Identify relevant broken external links that could potentially be replaced with useful Straw Hat Devs resources.
+Identify relevant broken external links that could potentially be replaced with useful {{WEBSITE_NAME}} resources.
 
 ## Input
 
@@ -1281,7 +1285,7 @@ Record:
 
 ## Important
 
-Do not recommend replacement links where Straw Hat Devs has no genuinely relevant content.
+Do not recommend replacement links where {{WEBSITE_NAME}} has no genuinely relevant content.
 
 If necessary, recommend creating a content asset first.
 
@@ -1297,13 +1301,13 @@ evidence/broken-links/
 
 ## Objective
 
-Discover existing mentions of Straw Hat Devs and determine whether link opportunities exist.
+Discover existing mentions of {{BRAND_NAME}} and determine whether link opportunities exist.
 
 ## Research
 
 Search for:
 
-- Straw Hat Devs
+- {{BRAND_NAME}}
 - Brand variations
 - Company name variations
 - Relevant public references
@@ -1349,7 +1353,7 @@ evidence/brand-mentions/
 
 ## Objective
 
-Identify realistic PR opportunities for Straw Hat Devs.
+Identify realistic PR opportunities for {{WEBSITE_NAME}}.
 
 ## Input
 
@@ -2166,9 +2170,11 @@ After execution, provide:
 
 Website:
 
-https://strawhatdevs.com
+`{{WEBSITE_URL}}`
 
 Execution Date:
+
+`{{CURRENT_DATE}}`
 
 Workflow Status:
 
@@ -2218,19 +2224,19 @@ $seo-off-page-link-building
 
 Website URL:
 
-https://strawhatdevs.com
+`{{WEBSITE_URL}}`
 
 Website Name:
 
-Straw Hat Devs
+`{{WEBSITE_NAME}}`
 
 Target Countries:
 
-India and worldwide.
+`{{TARGET_COUNTRY}}`
 
 Target Audience:
 
-Small, medium, and large businesses requiring websites, custom software, AI solutions, workflow automation, payroll automation, operational automation, and technology services.
+`{{TARGET_AUDIENCE}}`
 
 Execution Mode:
 

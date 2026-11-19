@@ -1,4 +1,26 @@
-# MASTER PROMPT: PRODUCTION-READY SEO COMPETITOR ANALYSIS & COMPETITIVE INTELLIGENCE ORCHESTRATOR
+---
+name: seo-competitor-analysis
+description: Conduct comprehensive, evidence-based SEO competitor analysis, reverse-engineering competitor page architecture, keyword gaps, and backlink opportunities.
+---
+
+# SEO Competitor Analysis & Competitive Intelligence
+
+## Skill Description
+
+An advanced SEO competitive intelligence and market benchmarking skill:
+- **What this skill does:** Identifies direct business and SERP competitors, reverse-engineers competitor website architecture and landing pages, analyzes keyword overlaps and content gaps, audits competitor technical and schema implementation, evaluates backlink profiles from public observational data, and prioritizes actionable opportunities.
+- **Its primary objective:** Pinpoint competitive advantages and market gaps to outperform domain competitors in search visibility without fabricating unverified metrics.
+- **When it should be used:** Stage 3 of the SEO workflow, immediately following the completion of `seo-keyword-research`.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/Competitor_Analysis_Report.md` and supporting gap datasets.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
 
 ## 1. ROLE & RESPONSIBILITY
 
@@ -88,8 +110,8 @@ seo-orchestration-flow/
 │           └── SKILL.md
 │
 ├── outputs/
-│   └── {YYYY-MM-DD}/
-│       └── {website-domain}/
+│   └── {{CURRENT_DATE}}/
+│       └── {{DOMAIN_NAME}}/
 │           │
 │           ├── audit-report/
 │           │   ├── SEO_Audit_Report.md
@@ -161,7 +183,8 @@ Before competitor discovery, locate and read the latest completed SEO Audit Repo
 
 Primary report:
 
-`outputs/{AUDIT_DATE}/{website-domain}/audit-report/SEO_Audit_Report.md`
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/SEO_Audit_Report.md`
+*(Or discover latest completed audit folder under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)*
 
 Supporting directories:
 
@@ -399,7 +422,8 @@ Search Console data belongs to the verified target website property. Do not use 
 
 Locate and read:
 
-`outputs/{KEYWORD_RESEARCH_DATE}/{website-domain}/keyword-research/Keyword_Research_Report.md`
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/Keyword_Research_Report.md`
+*(Or discover latest completed keyword research folder under `outputs/*/{{DOMAIN_NAME}}/keyword-research/`)*
 
 Inspect the following files:
 

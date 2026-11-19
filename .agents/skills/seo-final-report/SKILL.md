@@ -1,4 +1,26 @@
-# SEO Final Report & Master Developer Implementation Prompt
+---
+name: seo-final-report
+description: Synthesize all upstream SEO findings into a consolidated master report and compile a production-ready, framework-native developer implementation prompt.
+---
+
+# SEO Consolidated Final Report & Master Developer Implementation Prompt
+
+## Skill Description
+
+The capstone consolidation and developer handoff skill of the SEO automation suite:
+- **What this skill does:** Audits and ingests deliverables from all 8 upstream SEO stages; synthesizes comprehensive strategic findings; resolves technical, on-page, and schema priorities; and compiles two primary deliverables: an executive consolidated SEO report and a production-ready Master Developer Implementation Prompt tailored to the website's tech stack.
+- **Its primary objective:** Translate all analytical SEO research into actionable, high-ROI developer instructions and an executive scorecard without ungrounded speculation or fabricated metrics.
+- **When it should be used:** Stage 9 (final stage) of the SEO automation workflow, after all preceding stages are completed.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/final-seo-report/SEO_Consolidated_Final_Report.md` and `Master_Developer_Implementation_Prompt.md`.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
 
 ## 1. Role
 
@@ -15,18 +37,18 @@ Do not stop after generating SEO recommendations. Convert the validated recommen
 
 ## 2. Project Configuration
 
-- Website URL: https://strawhatdevs.com
-- Website Domain: strawhatdevs.com
-- Website Name: Straw Hat Devs
-- Business Type: Software Development and Technology Services
-- Target Markets: India and Worldwide
-- Target Audience:
-  - Small, medium, and large-scale businesses.
-  - Businesses requiring website development.
-  - Businesses requiring custom software solutions.
-  - Businesses looking for AI-powered solutions.
-  - Businesses seeking workflow, payroll, and operational automation.
-  - Businesses requiring web applications, mobile applications, and technology consulting.
+Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
+
+- Website URL: `{{WEBSITE_URL}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Website Name: `{{WEBSITE_NAME}}`
+- Brand Name: `{{BRAND_NAME}}`
+- Business Type: `{{BUSINESS_TYPE}}`
+- Target Markets: `{{TARGET_COUNTRY}}` / `{{TARGET_GEOGRAPHY}}`
+- Target Audience: `{{TARGET_AUDIENCE}}`
+- Services Offered: `{{SERVICES}}`
+- Seed Keywords: `{{SEED_KEYWORDS}}`
+- Execution Date: `{{CURRENT_DATE}}`
 - Primary Language: English
 - Execution Mode: Strict Sequential Analysis
 - Tool Preference: Free tools first, wherever suitable.
@@ -39,18 +61,18 @@ All recommendations must be relevant to the actual website, business model, targ
 
 Discover the completed outputs from the following workflow stages.
 
-Do not assume all stages were executed on the same date. Discover their actual output directories independently.
+Do not assume all stages were executed on the same date. Discover their actual output directories independently under `outputs/*/{{DOMAIN_NAME}}/`.
 
 | Stage                       | Output Folder                                                        |
 | --------------------------- | -------------------------------------------------------------------- |
-| SEO Audit                   | `outputs/{AUDIT_DATE}/strawhatdevs.com/audit-report/`                |
-| Keyword Research            | `outputs/{KEYWORD_RESEARCH_DATE}/strawhatdevs.com/keyword-research/` |
-| Competitor Analysis         | `outputs/{COMPETITOR_DATE}/strawhatdevs.com/competitor-analysis/`    |
-| On-Page SEO                 | `outputs/{ON_PAGE_DATE}/strawhatdevs.com/on-page-seo/`               |
-| Content Strategy & Creation | `outputs/{CONTENT_DATE}/strawhatdevs.com/content-strategy/`          |
-| Technical SEO               | `outputs/{TECHNICAL_DATE}/strawhatdevs.com/technical-seo/`           |
-| Off-Page SEO                | `outputs/{OFF_PAGE_DATE}/strawhatdevs.com/off-page-seo/`             |
-| SEO Monitoring              | `outputs/{MONITORING_DATE}/strawhatdevs.com/seo-monitoring/`         |
+| SEO Audit                   | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`             |
+| Keyword Research            | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`          |
+| Competitor Analysis         | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`       |
+| On-Page SEO                 | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`              |
+| Content Strategy & Creation | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/`         |
+| Technical SEO               | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/`            |
+| Off-Page SEO                | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/`             |
+| SEO Monitoring              | `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-monitoring/`            |
 
 ### Discovery requirements
 
@@ -670,15 +692,15 @@ Use the current execution date in YYYY-MM-DD format.
 
 Create the output directory:
 
-`outputs/{CURRENT_DATE}/strawhatdevs.com/final-seo-report/`
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/final-seo-report/`
 
 Save the primary SEO report at:
 
-`outputs/{CURRENT_DATE}/strawhatdevs.com/final-seo-report/SEO_Consolidated_Final_Report.md`
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/final-seo-report/SEO_Consolidated_Final_Report.md`
 
 Save the developer implementation prompt at:
 
-`outputs/{CURRENT_DATE}/strawhatdevs.com/final-seo-report/Master_Developer_Implementation_Prompt.md`
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/final-seo-report/Master_Developer_Implementation_Prompt.md`
 
 All supporting deliverables must be saved in the same final report directory unless a clearly justified subdirectory structure is necessary.
 

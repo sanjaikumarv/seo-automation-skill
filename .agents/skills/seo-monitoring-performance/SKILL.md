@@ -1,10 +1,30 @@
-# SEO MONITORING, PERFORMANCE TRACKING & REPORTING
-
-## Production-Ready Sequential Execution Skill
-
+---
+name: seo-monitoring
+description: Establish continuous SEO monitoring, KPI tracking, ranking governance, performance anomaly detection, and automated reporting.
 ---
 
-# 1. ROLE
+# SEO Monitoring, Performance Tracking & Governance
+
+## Skill Description
+
+An advanced SEO performance tracking, governance, and KPI reporting skill:
+
+- **What this skill does:** Ingests all previous SEO workflow deliverables (audit, keyword research, competitors, on-page, content strategy, technical SEO, and off-page); establishes baseline KPIs for traffic, rankings, indexing, Core Web Vitals, and conversions; configures anomaly detection; and structures automated reporting schedules.
+- **Its primary objective:** Provide continuous performance measurement, proactive ranking protection, and actionable insight scorecards without guessing unauthenticated analytics data.
+- **When it should be used:** Stage 8 of the SEO workflow, immediately prior to the final consolidation report.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-monitoring/SEO_Monitoring_Report.md`, `KPI_Scorecard.md`, and monitoring datasets.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
+
+## 1. ROLE
 
 You are a Senior SEO Analyst, SEO Performance Monitoring Specialist, Technical SEO Analyst, Data Analyst, SEO Reporting Consultant, and SEO Automation Agent.
 
@@ -37,32 +57,18 @@ Do not perform the entire workflow as an unstructured research task.
 
 # 2. PROJECT CONFIGURATION
 
-Website URL:
+Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
 
-https://strawhatdevs.com
-
-Website Name:
-
-Straw Hat Devs
-
-Business Type:
-
-Software Development and Technology Services
-
-Target Countries:
-
-India and worldwide.
-
-Target Audience:
-
-- Small businesses
-- Medium-sized businesses
-- Large enterprises
-- Businesses without professional websites
-- Businesses requiring custom software
-- Businesses requiring workflow automation
-- Businesses requiring payroll automation
-- Businesses requiring operational automation
+- Website URL: `{{WEBSITE_URL}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Website Name: `{{WEBSITE_NAME}}`
+- Brand Name: `{{BRAND_NAME}}`
+- Business Type: `{{BUSINESS_TYPE}}`
+- Target Countries / Geography: `{{TARGET_COUNTRY}}` / `{{TARGET_GEOGRAPHY}}`
+- Target Audience: `{{TARGET_AUDIENCE}}`
+- Services Offered: `{{SERVICES}}`
+- Seed Keywords: `{{SEED_KEYWORDS}}`
+- Execution Date: `{{CURRENT_DATE}}`
 - Businesses requiring web applications
 - Businesses requiring mobile applications
 - Businesses requiring AI solutions
@@ -360,11 +366,7 @@ Upstream_Data_Inventory.csv
 
 Create:
 
-outputs/{CURRENT_DATE}/{website-domain}/seo-monitoring/
-
-Example:
-
-outputs/2026-11-19/strawhatdevs.com/seo-monitoring/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-monitoring/`
 
 Create:
 
@@ -500,7 +502,8 @@ Locate and analyze all previous SEO workflow outputs.
 
 Expected:
 
-outputs/{AUDIT_DATE}/{website-domain}/audit-report/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/audit-report/`)\*
 
 Required:
 
@@ -522,7 +525,8 @@ Evidence
 
 Expected:
 
-outputs/{KEYWORD_DATE}/{website-domain}/keyword-research/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/keyword-research/`)\*
 
 Required:
 
@@ -542,7 +546,8 @@ Keyword_Prioritization.csv
 
 Expected:
 
-outputs/{COMPETITOR_DATE}/{website-domain}/competitor-analysis/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/competitor-analysis/`)\*
 
 Required:
 
@@ -564,7 +569,8 @@ Competitor_Opportunity_Analysis.csv
 
 Expected:
 
-outputs/{ON_PAGE_DATE}/{website-domain}/on-page-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/on-page-seo/`)\*
 
 Required:
 
@@ -588,7 +594,8 @@ Schema_Recommendations.csv
 
 Expected:
 
-outputs/{CONTENT_DATE}/{website-domain}/content-strategy/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/content-strategy/`)\*
 
 Required:
 
@@ -624,7 +631,8 @@ content-drafts/
 
 Expected:
 
-outputs/{TECHNICAL_DATE}/{website-domain}/technical-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/technical-seo/`)\*
 
 Required:
 
@@ -646,7 +654,8 @@ Technical_SEO_Quality_Checklist.csv
 
 Expected:
 
-outputs/{OFF_PAGE_DATE}/{website-domain}/off-page-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/`
+_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/off-page-seo/`)\*
 
 Required:
 
@@ -2005,11 +2014,13 @@ After execution, provide:
 
 Website:
 
-https://strawhatdevs.com
+`{{WEBSITE_URL}}`
 
 Reporting Period:
 
 Execution Date:
+
+`{{CURRENT_DATE}}`
 
 Workflow Status:
 
@@ -2059,23 +2070,23 @@ Identify the next execution cycle.
 
 Execute:
 
-$seo-monitoring-performance
+$seo-monitoring
 
 Website URL:
 
-https://strawhatdevs.com
+`{{WEBSITE_URL}}`
 
 Website Name:
 
-Straw Hat Devs
+`{{WEBSITE_NAME}}`
 
 Target Countries:
 
-India and worldwide.
+`{{TARGET_COUNTRY}}`
 
 Target Audience:
 
-Small, medium, and large businesses requiring websites, custom software, AI solutions, workflow automation, payroll automation, operational automation, and technology services.
+`{{TARGET_AUDIENCE}}`
 
 Execution Mode:
 

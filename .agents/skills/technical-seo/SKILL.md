@@ -1,9 +1,26 @@
 ---
-name: seo-technical-implementation
-description: Execute an evidence-based, strictly sequential Technical SEO workflow by analyzing the website, consuming all previous SEO workflow outputs, identifying and validating technical SEO issues, evaluating content strategy technical dependencies, prioritizing remediation, producing implementation-ready recommendations, generating developer prompts, and validating all artifacts. Use when executing Technical SEO for a website.
+name: technical-seo
+description: Execute comprehensive, evidence-based technical SEO audits and remediation planning, including Core Web Vitals, indexability, crawlability, and schema engineering.
 ---
 
-# SEO Technical Implementation — Production Execution Skill
+# Technical SEO Implementation & Infrastructure
+
+## Skill Description
+
+An advanced technical SEO engineering, site architecture, and implementation planning skill:
+- **What this skill does:** Audits website crawlability, robots.txt, XML sitemaps, status code routing, canonical integrity, mobile usability, Core Web Vitals performance, security headers, and structured data schemas; ingests content strategy technical dependencies; and creates developer implementation tasks.
+- **Its primary objective:** Remediate technical crawl and rendering blockers, optimize search engine rendering efficiency, and generate production-ready code fixes without fabricating metrics.
+- **When it should be used:** Stage 6 of the SEO workflow, immediately following `seo-content-strategy`.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/Technical_SEO_Report.md`, `Developer_Technical_Tasks.md`, and validated JSON-LD schema blueprints.
+
+## Shared Resources
+
+This skill utilizes the following shared documentation:
+- Universal Input Variables: `../shared/INPUT_VARIABLES.md`
+- Canonical Output Standards: `../shared/OUTPUT_STANDARDS.md`
+- Shared SEO Tools: `../shared/TOOLS.md`
+- SEO Quality Standards: `../shared/SEO_STANDARDS.md`
+- Research Guidelines: `../shared/RESEARCH_GUIDELINES.md`
 
 ## 1. ROLE
 
@@ -38,19 +55,17 @@ You must inspect available sources, website resources, tools, datasets, and repo
 
 # 2. PROJECT CONFIGURATION
 
-Use the following configuration.
+Ingest and resolve dynamic variables as defined in `../shared/INPUT_VARIABLES.md`:
 
-Website URL: [Enter website name]
-
-Website Name:[Enter website name]
-
-Website Domain:[Enter website domain]
-
-Business Type:[Enter business type]
-
-Target Countries:[Enter targeted countries]
-
-Target Audience:[Enter targeted audience]
+- Website URL: `{{WEBSITE_URL}}`
+- Website Name: `{{WEBSITE_NAME}}`
+- Website Domain: `{{DOMAIN_NAME}}`
+- Business Type: `{{BUSINESS_TYPE}}`
+- Target Countries / Geography: `{{TARGET_COUNTRY}}` / `{{TARGET_GEOGRAPHY}}`
+- Target Audience: `{{TARGET_AUDIENCE}}`
+- Services Offered: `{{SERVICES}}`
+- Seed Keywords: `{{SEED_KEYWORDS}}`
+- Execution Date: `{{CURRENT_DATE}}`
 
 Primary Business Objectives:
 
@@ -244,7 +259,8 @@ Discover the actual output directory.
 
 Expected pattern:
 
-outputs/{AUDIT_DATE}/{website-domain}/audit-report/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)*
 
 Potential files:
 
@@ -278,7 +294,8 @@ Discover the actual output directory.
 
 Expected pattern:
 
-outputs/{KEYWORD_RESEARCH_DATE}/{website-domain}/keyword-research/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/keyword-research/`)*
 
 Potential files:
 
@@ -311,7 +328,8 @@ Discover the actual output directory.
 
 Expected pattern:
 
-outputs/{COMPETITOR_DATE}/{website-domain}/competitor-analysis/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/competitor-analysis/`)*
 
 Potential files:
 
@@ -346,7 +364,8 @@ Discover the actual output directory.
 
 Expected pattern:
 
-outputs/{ON_PAGE_DATE}/{website-domain}/on-page-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/on-page-seo/`)*
 
 Potential files:
 
@@ -381,7 +400,8 @@ Discover the actual output directory.
 
 Expected pattern:
 
-outputs/{CONTENT_STRATEGY_DATE}/{website-domain}/content-strategy/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/`
+*(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/content-strategy/`)*
 
 Mandatory files to discover where available:
 
@@ -414,7 +434,7 @@ This workflow must use Content Strategy outputs to identify technical requiremen
 
 Create all workflow outputs in:
 
-outputs/{CURRENT_DATE}/{website-domain}/technical-seo/
+`outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/`
 
 Use the current execution date.
 
@@ -989,7 +1009,7 @@ Columns:
 
 Check:
 
-https://strawhatdevs.com/robots.txt
+`{{WEBSITE_URL}}/robots.txt`
 
 Validate:
 
@@ -2094,9 +2114,9 @@ Record:
 # 9. REQUIRED OUTPUT STRUCTURE
 
 outputs/
-└── {CURRENT_DATE}/
-└── {website-domain}/
-└── technical-seo/
+└── {{CURRENT_DATE}}/
+    └── {{DOMAIN_NAME}}/
+        └── technical-seo/
 ├── Project_Discovery_Report.md
 ├── Technical_SEO_Context.md
 ├── Technical_SEO_Report.md
@@ -2299,15 +2319,15 @@ Execute the complete Technical SEO Implementation workflow for:
 
 Website URL:
 
-https://strawhatdevs.com
+`{{WEBSITE_URL}}`
 
 Website Name:
 
-Straw Hat Devs
+`{{WEBSITE_NAME}}`
 
 Target Country:
 
-India and Worldwide
+`{{TARGET_COUNTRY}}`
 
 Execution Mode:
 
