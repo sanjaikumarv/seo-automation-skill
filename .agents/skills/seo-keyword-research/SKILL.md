@@ -11,7 +11,7 @@ An in-depth, audit-grounded keyword research and search intent optimization skil
 - **What this skill does:** Discovers high-intent commercial, transactional, and informational search queries; analyzes SERP features; identifies competitor keyword gaps; groups keywords into semantic clusters; and produces an exhaustive keyword-to-page URL targeting map.
 - **Its primary objective:** Establish a data-backed organic query foundation directly mapped to discovered website pages and service offerings without inventing search metrics.
 - **When it should be used:** Stage 2 of the SEO workflow, immediately following the completion of `seo-audit`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/Keyword_Research_Report.md`, `Keyword_Mapping_Master.md`, and supporting keyword datasets.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/Keyword_Research_Report.md`, `Keyword_Mapping.csv`, and supporting keyword datasets.
 
 ## Shared Resources
 

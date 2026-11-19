@@ -12,7 +12,7 @@ An advanced SEO performance tracking, governance, and KPI reporting skill:
 - **What this skill does:** Ingests all previous SEO workflow deliverables (audit, keyword research, competitors, on-page, content strategy, technical SEO, and off-page); establishes baseline KPIs for traffic, rankings, indexing, Core Web Vitals, and conversions; configures anomaly detection; and structures automated reporting schedules.
 - **Its primary objective:** Provide continuous performance measurement, proactive ranking protection, and actionable insight scorecards without guessing unauthenticated analytics data.
 - **When it should be used:** Stage 8 of the SEO workflow, immediately prior to the final consolidation report.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-monitoring/SEO_Monitoring_Report.md`, `KPI_Scorecard.md`, and monitoring datasets.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/seo-monitoring/SEO_Monitoring_Report.md`, `SEO_KPI_Framework.md`, and monitoring datasets.
 
 ## Shared Resources
 
@@ -503,7 +503,7 @@ Locate and analyze all previous SEO workflow outputs.
 Expected:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/audit-report/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)_
 
 Required:
 
@@ -526,7 +526,7 @@ Evidence
 Expected:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/keyword-research/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/keyword-research/`)_
 
 Required:
 
@@ -547,7 +547,7 @@ Keyword_Prioritization.csv
 Expected:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/competitor-analysis/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/competitor-analysis/`)_
 
 Required:
 
@@ -570,7 +570,7 @@ Competitor_Opportunity_Analysis.csv
 Expected:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/on-page-seo/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/on-page-seo/`)_
 
 Required:
 
@@ -595,7 +595,7 @@ Schema_Recommendations.csv
 Expected:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/content-strategy/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/content-strategy/`)_
 
 Required:
 
@@ -632,7 +632,7 @@ content-drafts/
 Expected:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/technical-seo/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/technical-seo/`)_
 
 Required:
 
@@ -655,7 +655,7 @@ Technical_SEO_Quality_Checklist.csv
 Expected:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/off-page-seo/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/off-page-seo/`)_
 
 Required:
 

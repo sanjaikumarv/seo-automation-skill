@@ -11,7 +11,7 @@ An advanced technical SEO engineering, site architecture, and implementation pla
 - **What this skill does:** Audits website crawlability, robots.txt, XML sitemaps, status code routing, canonical integrity, mobile usability, Core Web Vitals performance, security headers, and structured data schemas; ingests content strategy technical dependencies; and creates developer implementation tasks.
 - **Its primary objective:** Remediate technical crawl and rendering blockers, optimize search engine rendering efficiency, and generate production-ready code fixes without fabricating metrics.
 - **When it should be used:** Stage 6 of the SEO workflow, immediately following `seo-content-strategy`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/Technical_SEO_Report.md`, `Developer_Technical_Tasks.md`, and validated JSON-LD schema blueprints.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/technical-seo/Technical_SEO_Report.md`, `Technical_SEO_Implementation_Plan.csv`, and validated JSON-LD schema blueprints.
 
 ## Shared Resources
 

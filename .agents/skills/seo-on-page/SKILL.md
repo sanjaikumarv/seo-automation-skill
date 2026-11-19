@@ -12,7 +12,7 @@ A comprehensive on-page SEO optimization and developer task generator skill:
 - **What this skill does:** Ingests upstream audit, keyword research, and competitor analysis reports; analyzes page inventories and content; crafts optimized title tags, meta descriptions, and semantic heading structures; designs internal linking meshes; formulates image and schema blueprints; and compiles a production-ready developer implementation prompt.
 - **Its primary objective:** Produce actionable, page-level optimization matrices and developer code update prompts grounded in verified queries and architecture.
 - **When it should be used:** Stage 4 of the SEO workflow, following `seo-competitor-analysis`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/On_Page_SEO_Report.md`, `Metadata_Matrix.md`, `Developer_Prompt.md`, and supporting optimization datasets.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/On_Page_SEO_Report.md`, `Title_Meta_Optimization.csv`, `Developer_Prompt.md`, and supporting optimization datasets.
 
 ## Shared Resources
 

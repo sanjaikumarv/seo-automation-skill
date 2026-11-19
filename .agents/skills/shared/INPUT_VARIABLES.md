@@ -30,7 +30,7 @@ This document defines the standardized universal dynamic variables used across t
 
 All skills must resolve input variables in the following priority order:
 
-1. **Step 0 Intake / Orchestrator Context:** Variables passed directly from `master-orchestrator` or user initial intake prompt.
+1. **Step 0 Intake / Orchestrator Context:** Variables passed directly from `seo-orchestrator` or the user's initial intake prompt.
 2. **Upstream Skill Deliverables:** Upstream completed markdown reports (e.g. `SEO_Audit_Report.md`, `Keyword_Research_Report.md`).
 3. **Canonical Placeholders:** If an optional variable is absent, fall back to safe defaults or record a placeholder (e.g., `[Not Specified; defaults to Global]`). **Never halt autonomous execution or fabricate unverified values.**
 

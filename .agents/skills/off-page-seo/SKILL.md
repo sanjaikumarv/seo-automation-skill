@@ -11,7 +11,7 @@ An ethical, white-hat off-page SEO and digital PR strategy skill:
 - **What this skill does:** Ingests upstream audit, keyword research, competitor analysis, on-page, content, and technical reports; analyzes competitor backlink profiles and authority gaps from public observational search data; designs target page link acquisition strategies; crafts ethical outreach templates; and formulates digital PR tactics.
 - **Its primary objective:** Build organic domain authority and earned media visibility strictly complying with Google Search Essentials without PBNs, automated spam, or unverified link counts.
 - **When it should be used:** Stage 7 of the SEO workflow, following `technical-seo`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/Off_Page_SEO_Report.md`, `Outreach_Playbook.md`, and link prospect matrices.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/off-page-seo/Off_Page_SEO_Report.md`, `Outreach_Strategy.md`, and link prospect matrices.
 
 ## Shared Resources
 
@@ -2220,7 +2220,7 @@ Identify the next workflow stage.
 
 Execute:
 
-$seo-off-page-link-building
+$off-page-seo
 
 Website URL:
 

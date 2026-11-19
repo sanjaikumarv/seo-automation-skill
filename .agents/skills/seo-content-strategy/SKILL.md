@@ -12,7 +12,7 @@ An end-to-end strategic content planning, clustering, and copywriting skill:
 - **What this skill does:** Synthesizes insights from the SEO Audit, Keyword Research, Competitor Analysis, and On-Page SEO stages to identify content gaps; designs semantic topic clusters and pillar pages; produces editorial calendars; drafts comprehensive content briefs; and generates search-optimized content copy.
 - **Its primary objective:** Build topical authority and capture high-intent commercial and informational organic search traffic without unedited low-effort regurgitation.
 - **When it should be used:** Stage 5 of the SEO workflow, following `seo-on-page`.
-- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/Content_Strategy_Report.md`, `Content_Calendar.md`, content briefs, and draft copy.
+- **What output or result it produces:** Generates `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/content-strategy/Content_Strategy_Report.md`, `Content_Calendar.csv`, content briefs, and draft copy.
 
 ## Shared Resources
 
@@ -268,7 +268,7 @@ The following workflows are mandatory dependencies.
 Expected location:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/audit-report/`
-_(Or dynamically discover latest completed audit folder under `outputs/_/{{DOMAIN_NAME}}/audit-report/`)\*
+_(Or dynamically discover latest completed audit folder under `outputs/*/{{DOMAIN_NAME}}/audit-report/`)_
 
 Primary file:
 
@@ -294,7 +294,7 @@ Relevant supporting files may include:
 Expected location:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/keyword-research/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/keyword-research/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/keyword-research/`)_
 
 Mandatory files where available:
 
@@ -323,7 +323,7 @@ Relevant evidence:
 Expected location:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/competitor-analysis/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/competitor-analysis/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/competitor-analysis/`)_
 
 Primary report:
 
@@ -357,7 +357,7 @@ Relevant evidence:
 Expected location:
 
 `outputs/{{CURRENT_DATE}}/{{DOMAIN_NAME}}/on-page-seo/`
-_(Or dynamically discover latest completed folder under `outputs/_/{{DOMAIN_NAME}}/on-page-seo/`)\*
+_(Or dynamically discover latest completed folder under `outputs/*/{{DOMAIN_NAME}}/on-page-seo/`)_
 
 Mandatory files:
 
