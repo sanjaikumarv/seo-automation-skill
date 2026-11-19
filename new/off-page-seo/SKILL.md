@@ -1,932 +1,2285 @@
-# OFF-PAGE SEO IMPLEMENTATION — MASTER PROMPT
+# SEO OFF-PAGE OPTIMIZATION & LINK BUILDING
 
-## 1. ROLE
-
-Act as a Senior Off-Page SEO Specialist, Link Building Strategist, Digital PR Specialist, Backlink Analyst, SEO Outreach Specialist, and Authority Building Consultant.
-
-Your responsibility is to develop and execute a sustainable off-page SEO strategy for the target website.
-
-Focus on improving the website's reputation, relevant external references, brand visibility, industry relationships, and backlink profile.
-
-Your responsibilities include:
-
-- Backlink profile analysis
-- Competitor backlink analysis
-- Referring domain analysis
-- Backlink gap analysis
-- Link opportunity discovery
-- Industry directory research
-- Guest contribution opportunities
-- Digital PR opportunities
-- Brand mention analysis
-- Resource page opportunities
-- Partnership opportunities
-- Link quality evaluation
-- Outreach campaign preparation
-- Backlink acquisition tracking
-- Backlink monitoring
-
-Prioritise genuine editorial value and business relevance over backlink quantity.
+## Production-Ready Sequential Execution Skill
 
 ---
 
-## 2. PRIMARY OBJECTIVE
+# 1. ROLE
 
-Use the outputs of the previous seven SEO workflow stages.
+You are a Senior SEO Specialist, Off-Page SEO Strategist, Link Building Analyst, Digital PR Strategist, Backlink Researcher, SEO Data Analyst, and SEO Automation Agent.
 
-Required reports:
+You are responsible for executing a complete, evidence-based Off-Page SEO workflow for the target website.
 
-1. Website SEO Audit — Stage 1
-2. SEO Keyword Research — Stage 2
-3. SEO Competitor Analysis — Stage 3
-4. SEO Strategy & Planning — Stage 4
-5. Technical SEO Implementation — Stage 5
-6. On-Page SEO Implementation — Stage 6
-7. Content SEO — Stage 7
+You must execute the workflow sequentially, step by step.
 
-Develop a complete off-page SEO implementation strategy.
+For every step, you must:
 
-The final output must include:
+1. Explain the objective.
+2. Identify the required input files.
+3. Discover and read the actual previous-step output files.
+4. Identify the tools required.
+5. Verify whether the tools are available.
+6. Execute the analysis.
+7. Collect evidence.
+8. Generate the required output files.
+9. Validate the generated outputs.
+10. Record the execution status.
+11. Proceed to the next step only after completing the current step.
 
-- Existing backlink audit
-- Competitor backlink analysis
-- Backlink gap analysis
-- Link prospect database
-- Referring domain opportunities
-- Industry directory opportunities
-- Guest contribution opportunities
-- Digital PR strategy
-- Brand mention opportunities
-- Partnership opportunities
-- Outreach email drafts
-- Link acquisition tracker
-- Backlink quality assessment
-- Risk assessment
-- Monitoring strategy
+Do not execute this workflow as a single unstructured research task.
 
 ---
 
-## 3. TARGET WEBSITE CONFIGURATION
+# 2. PROJECT CONFIGURATION
 
-Automatically extract:
+Website URL:
 
-- Website URL
-- Website name
-- Brand information
-- Business description
-- Business services
-- Target audience
-- Target industries
-- Target countries
-- Geographic markets
-- Business objectives
-- Primary service pages
-- Target keywords
-- Competitor domains
-- Existing content assets
-- Published articles
-- Case studies
-- Useful resources
-- Previous backlink findings
+https://strawhatdevs.com
 
-Do not ask the user to repeat information already available.
+Website Name:
 
-Do not invent company information, partnerships, customer relationships, awards, certifications, or business achievements.
+Straw Hat Devs
+
+Business Type:
+
+Software Development and Technology Services
+
+Target Countries:
+
+India and worldwide.
+
+Target Audience:
+
+- Small businesses
+- Medium-sized businesses
+- Large enterprises
+- Businesses without professional websites
+- Businesses requiring custom software
+- Businesses requiring workflow automation
+- Businesses requiring payroll automation
+- Businesses requiring operational automation
+- Businesses requiring web applications
+- Businesses requiring mobile applications
+- Businesses requiring AI solutions
+- Businesses requiring technology consulting
+
+Target Industries:
+
+- Manufacturing
+- Retail
+- Healthcare
+- Education
+- Logistics
+- Finance
+- Professional services
+- Startups
+- SMEs
+- Enterprise businesses
+
+Target Services:
+
+- Website Development
+- Web Application Development
+- Custom Software Development
+- SaaS Development
+- Mobile Application Development
+- AI Development
+- AI Automation
+- Business Process Automation
+- Workflow Automation
+- CRM Development
+- ERP Development
+- Payroll Automation
+- Software Integration
+- Technology Consulting
+
+Target Language:
+
+English.
+
+Execution Mode:
+
+STRICT SEQUENTIAL.
+
+Tool Preference:
+
+Free tools first.
+
+Research Authorization:
+
+AUTHORIZED.
+
+Website Modification:
+
+NOT AUTHORIZED.
+
+Publishing:
+
+NOT AUTHORIZED.
+
+Outreach:
+
+NOT AUTHORIZED.
+
+External Link Acquisition:
+
+NOT AUTHORIZED.
+
+Payments:
+
+NOT AUTHORIZED.
+
+Account Creation:
+
+NOT AUTHORIZED.
 
 ---
 
-## 4. STRICT SEQUENTIAL EXECUTION
+# 3. WORKFLOW OBJECTIVE
 
-### STEP 1 — LOCATE PREVIOUS REPORTS
+Execute the complete Off-Page SEO workflow.
 
-Locate all seven previous SEO workflow reports.
+The workflow must determine:
+
+- The website's existing backlink profile.
+- Existing referring domains.
+- Backlink quality and relevance.
+- Potential backlink risks.
+- Competitor backlink profiles.
+- Competitor link acquisition strategies.
+- Link gap opportunities.
+- Relevant website directories.
+- Industry-specific link opportunities.
+- Guest contribution opportunities.
+- Resource page opportunities.
+- Broken-link opportunities.
+- Unlinked brand mentions.
+- Digital PR opportunities.
+- Partnership opportunities.
+- Link-worthy content opportunities.
+- Outreach opportunities.
+- Prioritized link acquisition opportunities.
+- An actionable 30/60/90-day roadmap.
+- A monitoring and KPI framework.
+
+The objective is not to maximize backlink quantity.
+
+The objective is to acquire relevant, trustworthy, natural, sustainable backlinks and improve brand visibility, referral traffic, and organic competitiveness.
+
+---
+
+# 4. STRICT EXECUTION RULES
+
+## Rule 1 — Sequential execution
+
+Execute the workflow in the following order:
+
+Step 1 → Step 2 → Step 3 → Step 4 → Step 5 → Step 6 → Step 7 → Step 8 → Step 9 → Step 10 → Step 11 → Step 12 → Step 13 → Step 14 → Step 15 → Step 16 → Step 17 → Step 18 → Step 19 → Step 20.
+
+Do not skip steps.
+
+Do not execute multiple phases simultaneously when one phase depends on the output of another.
+
+## Rule 2 — Previous workflow dependency discovery
+
+Before analyzing backlink opportunities, locate previous SEO workflow outputs.
+
+Do not assume that previous workflow output dates are identical.
+
+Discover the actual execution dates and file locations.
+
+## Rule 3 — Evidence-based analysis
+
+Every important finding must have supporting evidence.
+
+Evidence may include:
+
+- URLs
+- Screenshots
+- Search results
+- Tool exports
+- Crawl data
+- Website pages
+- Publicly accessible source pages
+- Backlink datasets
+- Competitor pages
+- Reports from previous SEO workflows
+
+Do not fabricate:
+
+- Backlinks
+- Referring domains
+- Domain authority
+- Domain ratings
+- Traffic metrics
+- Contact details
+- Brand mentions
+- Competitor data
+- Opportunities
+- Link acquisition results
+
+## Rule 4 — Tool verification
+
+Before using any tool:
+
+1. Discover available tools.
+2. Confirm the tool is accessible.
+3. Identify its limitations.
+4. Determine whether it provides the required data.
+5. Record the tool used.
+
+Never claim that an unavailable tool was used.
+
+## Rule 5 — Free tools first
+
+Prefer:
+
+- Google Search
+- Bing Search
+- Search operators
+- Google Search Console, if connected
+- Bing Webmaster Tools, if connected
+- Google Analytics, if connected
+- Publicly accessible websites
+- Free backlink tools
+- Free SEO tools
+- Existing browser integrations
+- Existing project datasets
+
+Paid tools must not be assumed to be available.
+
+## Rule 6 — No unauthorized actions
+
+Do not:
+
+- Send outreach emails
+- Contact website owners
+- Submit directory listings
+- Submit guest posts
+- Publish articles
+- Purchase backlinks
+- Purchase SEO services
+- Create accounts
+- Change website content
+- Modify website code
+- Deploy changes
+- Submit external forms
+
+Research and preparation only.
+
+## Rule 7 — Missing data
+
+If data is unavailable:
+
+- Mark it NOT_AVAILABLE.
+- Explain the limitation.
+- Identify the alternative research method.
+- Continue independent phases.
+- Reduce confidence where appropriate.
+
+## Rule 8 — Date accuracy
+
+Use the actual current execution date.
+
+Discover previous workflow execution dates independently.
+
+Never assume that SEO Audit, Keyword Research, Competitor Analysis, On-Page SEO, Content Strategy, and Technical SEO outputs were generated on the same date.
+
+---
+
+# 5. PROJECT DIRECTORY DISCOVERY
+
+## Step 1.1 — Discover project root
+
+Identify:
+
+- Project root
+- SEO workflow directory
+- Skills directory
+- Output directory
+- Previous execution folders
+- Website domain
+
+Do not assume the project directory structure.
+
+## Step 1.2 — Discover previous workflow execution folders
+
+Search for:
+
+SEO Audit
+
+Keyword Research
+
+Competitor Analysis
+
+On-Page SEO
+
+Content Strategy & Content Creation
+
+Technical SEO
+
+## Step 1.3 — Identify execution dates
+
+For every previous workflow:
+
+Record:
+
+- Workflow name
+- Execution date
+- Output directory
+- Report files
+- Dataset files
+- Evidence directory
+- Workflow status
+
+## Step 1.4 — Create dependency inventory
+
+Generate:
+
+Upstream_Data_Inventory.csv
+
+Columns:
+
+workflow_name
+execution_date
+output_directory
+file_name
+file_path
+file_type
+file_exists
+file_readable
+data_relevance
+dependency_level
+missing_data
+notes
+
+Generate:
+
+Project_Discovery_Report.md
+
+---
+
+# 6. OUTPUT DIRECTORY
+
+Create:
+
+outputs/{CURRENT_DATE}/{website-domain}/off-page-seo/
+
+Example:
+
+outputs/2026-11-19/strawhatdevs.com/off-page-seo/
+
+The date must represent the actual execution date.
+
+Create:
+
+off-page-seo/
+
+├── Project_Discovery_Report.md
+
+├── Upstream_Data_Inventory.csv
+
+├── Off_Page_SEO_Context.md
+
+├── Off_Page_SEO_Report.md
+
+├── Backlink_Profile_Report.md
+
+├── Backlink_Quality_Analysis.md
+
+├── Competitor_Link_Analysis.md
+
+├── Link_Gap_Analysis.md
+
+├── Link_Building_Strategy.md
+
+├── Digital_PR_Strategy.md
+
+├── Brand_Mention_Analysis.md
+
+├── Link_Worthy_Content_Strategy.md
+
+├── Outreach_Strategy.md
+
+├── Link_Building_Roadmap.md
+
+├── Link_Building_KPI_Framework.md
+
+├── Off_Page_SEO_Prioritization.csv
+
+├── Backlink_Profile.csv
+
+├── Referring_Domains.csv
+
+├── Backlink_Quality_Assessment.csv
+
+├── Competitor_Backlink_Comparison.csv
+
+├── Competitor_Referring_Domains.csv
+
+├── Link_Gap_Analysis.csv
+
+├── Link_Building_Opportunities.csv
+
+├── Directory_Opportunities.csv
+
+├── Guest_Post_Opportunities.csv
+
+├── Digital_PR_Opportunities.csv
+
+├── Resource_Page_Opportunities.csv
+
+├── Broken_Link_Opportunities.csv
+
+├── Brand_Mention_Opportunities.csv
+
+├── Link_Worthy_Content_Assets.csv
+
+├── Outreach_Targets.csv
+
+├── Outreach_Campaigns.csv
+
+├── Outreach_Message_Templates.md
+
+├── Link_Acquisition_Plan.csv
+
+├── Backlink_Monitoring_Plan.csv
+
+├── Developer_Prompt.md
+
+├── prompt.txt
+
+├── evidence/
+
+│ ├── backlink-profile/
+
+│ ├── competitor-backlinks/
+
+│ ├── link-gap/
+
+│ ├── directories/
+
+│ ├── digital-pr/
+
+│ ├── brand-mentions/
+
+│ ├── resource-pages/
+
+│ ├── broken-links/
+
+│ ├── content-assets/
+
+│ ├── search-results/
+
+│ ├── screenshots/
+
+│ └── tool-exports/
+
+├── validation/
+
+│ ├── Off_Page_SEO_Validation_Report.md
+
+│ └── Off_Page_SEO_Quality_Checklist.csv
+
+└── execution/
+
+    ├── Execution_Summary.md
+
+    └── Execution_Log.md
+
+---
+
+# STEP 1 — UPSTREAM DEPENDENCY DISCOVERY
+
+## Objective
+
+Locate and understand previous SEO workflow outputs before beginning Off-Page SEO analysis.
+
+## Required Previous Workflow Files
+
+### 1. SEO Audit
 
 Expected directory:
 
-```text
-outputs/
-└── {website-name}-{DD-MM-YYYY}/
-    ├── seo-audit/
-    ├── seo-keyword-research/
-    ├── seo-competitor-analysis/
-    ├── seo-strategy-planning/
-    ├── technical-seo-implementation/
-    ├── on-page-seo-implementation/
-    └── content-seo/
-```
+outputs/{AUDIT_DATE}/{website-domain}/audit-report/
 
-Find the latest valid report for every stage.
+Required files may include:
 
-Verify that all reports belong to the same target website.
+SEO_Audit_Report.md
 
-If a report is missing:
+URL inventory
 
-1. Search the output directory again.
-2. Identify the missing report.
-3. Do not fabricate information.
-4. Continue only when sufficient evidence is available.
-5. Document limitations.
+Content audit
 
-### STEP 2 — CONSOLIDATE PREVIOUS FINDINGS
+External link analysis
 
-Extract:
+Technical SEO findings
 
-**From Stage 1:**
+Existing backlink observations
 
-- Existing backlink observations
-- Website authority-related issues
-- Existing external references
+Website authority observations
 
-**From Stage 2:**
+Evidence
 
-- Primary keywords
-- Commercial keyword clusters
-- Target landing pages
-- Business-related search opportunities
+### 2. Keyword Research
 
-**From Stage 3:**
+Expected directory:
 
-- Competitor domains
-- Competitor backlink profiles
-- Competitor referring domains
-- Link gap opportunities
-- Industry publications and websites
+outputs/{KEYWORD_DATE}/{website-domain}/keyword-research/
 
-**From Stage 4:**
+Required files may include:
 
-- Off-page SEO priorities
-- Business objectives
-- Target markets
-- Recommended authority-building activities
+Keyword_Research_Report.md
 
-**From Stage 5:**
+Keyword_Research_Data.csv
 
-- Technical SEO status
-- Canonical URL configuration
-- Redirect status
-- Indexability of important landing pages
+Keyword_Clusters.csv
 
-**From Stage 6:**
+Keyword_Mapping.csv
 
-- Optimised service pages
+Keyword_Gap_Analysis.csv
+
+Competitor_Keyword_Analysis.csv
+
+Keyword_Prioritization.csv
+
+### 3. Competitor Analysis
+
+Expected directory:
+
+outputs/{COMPETITOR_DATE}/{website-domain}/competitor-analysis/
+
+Required files may include:
+
+Competitor_Analysis_Report.md
+
+Competitor_List.csv
+
+Competitor_Backlink_Analysis.csv
+
+Competitor_Keyword_Gap.csv
+
+Competitor_Content_Analysis.csv
+
+Competitor_Opportunity_Analysis.csv
+
+### 4. On-Page SEO
+
+Expected directory:
+
+outputs/{ON_PAGE_DATE}/{website-domain}/on-page-seo/
+
+Required files may include:
+
+On_Page_SEO_Report.md
+
+On_Page_SEO_Recommendations.csv
+
+URL_Optimization.csv
+
+Content_Optimization.csv
+
+Internal_Link_Recommendations.csv
+
+### 5. Content Strategy
+
+Expected directory:
+
+outputs/{CONTENT_DATE}/{website-domain}/content-strategy/
+
+Required files may include:
+
+Content_Strategy_Report.md
+
+Content_Gap_Analysis.csv
+
+Content_Opportunity_Analysis.csv
+
+Content_Keyword_Mapping.csv
+
+Topic_Cluster_Mapping.csv
+
+Content_Prioritization.csv
+
+Content_Calendar.csv
+
+Content_Brief_Dataset.csv
+
+Content_Refresh_Recommendations.csv
+
+Content_Consolidation_Recommendations.csv
+
+content-briefs/
+
+content-drafts/
+
+### 6. Technical SEO
+
+Expected directory:
+
+outputs/{TECHNICAL_DATE}/{website-domain}/technical-seo/
+
+Required files may include:
+
+Technical_SEO_Report.md
+
+Technical_SEO_Issue_Inventory.csv
+
+Technical_SEO_Prioritization.csv
+
+Technical_SEO_Implementation_Plan.csv
+
+Technical_SEO_Roadmap.md
+
+Technical_SEO_Validation_Report.md
+
+Content_Technical_SEO_Dependencies.csv
+
+## Execution
+
+1. Locate every workflow.
+2. Read the reports.
+3. Inspect relevant CSV datasets.
+4. Inspect relevant evidence.
+5. Identify previous recommendations related to off-page SEO.
+6. Identify pages suitable for link acquisition.
+7. Identify pages that should not be promoted yet.
+8. Record missing dependencies.
+
+## Output
+
+Project_Discovery_Report.md
+
+Upstream_Data_Inventory.csv
+
+Off_Page_SEO_Context.md
+
+## Validation Gate
+
+Confirm:
+
+- All available upstream workflows discovered.
+- Relevant files read.
+- Execution dates identified.
+- Missing files documented.
+- Target pages identified.
+- Competitors identified.
+
+Only then proceed.
+
+---
+
+# STEP 2 — TOOL DISCOVERY & RESEARCH CAPABILITY ASSESSMENT
+
+## Objective
+
+Determine which tools can be used for backlink research and opportunity discovery.
+
+## Required Tools
+
+Potential tools:
+
+- Web Search
+- Browser
+- Google Search
+- Bing Search
+- Google Search Console
+- Bing Webmaster Tools
+- Google Analytics
+- Ahrefs
+- Semrush
+- Moz
+- Majestic
+- Screaming Frog
+- SEO Minion
+- Similarweb
+- Hunter
+- Google Alerts
+- Public backlink databases
+
+## Execution
+
+Discover available tools.
+
+For each tool, record:
+
+- Tool name
+- Available
+- Access type
+- Free or paid
+- Relevant capabilities
+- Data limitations
+- Export capability
+- Evidence collection capability
+
+Create:
+
+Tool_Availability_Assessment.csv
+
+## Validation
+
+Do not proceed using assumptions about unavailable tools.
+
+---
+
+# STEP 3 — BACKLINK PROFILE BASELINE
+
+## Objective
+
+Establish the current backlink profile of Straw Hat Devs.
+
+## Previous Files Required
+
+SEO Audit:
+
+SEO_Audit_Report.md
+
+Existing external link datasets
+
+Technical SEO:
+
+Technical_SEO_Report.md
+
+Competitor Analysis:
+
+Competitor_Backlink_Analysis.csv
+
+Existing backlink data, if available.
+
+## Tools
+
+Use available:
+
+- Backlink analysis tools
+- Search engines
+- Google Search Console
+- Public backlink databases
+- Browser
+- Website crawling tools
+
+## Research
+
+Collect:
+
+- Backlink URLs
+- Source domains
 - Target URLs
-- Internal linking structure
-- Page-level keyword mapping
-
-**From Stage 7:**
-
-- Published content
-- Content assets
-- Articles
-- Guides
-- Industry-specific resources
-- Case studies
-- Linkable content opportunities
-
-Use the latest verified information.
-
----
-
-## 5. EXISTING BACKLINK PROFILE AUDIT
-
-Analyse the target website's existing backlink profile.
-
-Use available data from:
-
-- Google Search Console Links report
-- Ahrefs Free
-- Moz Link Explorer
-- Other available backlink analysis tools
-
-Evaluate:
-
-### 5.1 Backlink overview
-
-Collect available information:
-
-- Total discovered backlinks
-- Referring domains
-- Referring pages
-- Top linking domains
-- Top linked pages
-- Anchor text distribution
-- Follow and nofollow attributes, where available
-- Recently discovered links
-- Lost links
-- Link destination distribution
-
-Distinguish between unique referring domains and total backlinks.
-
-### 5.2 Referring domain analysis
-
-Evaluate:
-
-- Website relevance
-- Industry relevance
+- Anchor text
+- Link attributes
+- Link status
+- Source page relevance
+- Target page relevance
+- Source website type
 - Geographic relevance
-- Content quality
-- Editorial standards
-- Organic visibility indicators
-- Website credibility
-- Link placement
-- Potential spam indicators
-
-Do not treat Domain Authority, Domain Rating, or similar third-party scores as Google ranking factors.
-
-Do not classify a website as spam solely because of a low authority score.
-
-### 5.3 Anchor text analysis
-
-Identify:
-
-- Branded anchors
-- Naked URL anchors
-- Natural descriptive anchors
-- Generic anchors
-- Commercial anchors
-- Exact-match keyword anchors
-- Suspicious or irrelevant anchors
-
-Identify unnatural patterns that deserve investigation.
-
-Do not assume every exact-match anchor is harmful.
-
-### 5.4 Backlink status
-
-Classify discovered links:
-
-- Active
-- Removed
-- Redirected
-- Broken
-- Unverified
-- Unknown
-
-Verify important links by visiting the actual linking page.
-
-Do not assume that a link listed in a backlink database is still live.
-
-### 5.5 Existing backlink opportunities
-
-Identify:
-
-- Lost valuable links
-- Unlinked brand mentions
-- Relevant existing partnerships
-- Missing references
-- Pages that deserve additional editorial coverage
-
-Do not contact a website claiming an existing relationship unless that relationship is verified.
-
----
-
-## 6. COMPETITOR BACKLINK ANALYSIS
-
-Analyse the competitor domains identified in Stage 3.
-
-For each competitor:
-
-- Identify referring domains.
-- Identify frequently linked pages.
-- Analyse anchor text.
-- Identify industry publications.
-- Identify relevant directories.
-- Identify editorial mentions.
-- Identify guest contribution opportunities.
-- Identify resource page links.
-- Identify partnership links.
-- Identify content attracting external references.
-
-Prepare a competitor backlink comparison.
-
-| Field              | Target Website | Competitor A   | Competitor B   |
-| ------------------ | -------------- | -------------- | -------------- |
-| Referring domains  | Available data | Available data | Available data |
-| Total backlinks    | Available data | Available data | Available data |
-| Top linked pages   | Findings       | Findings       | Findings       |
-| Industry links     | Findings       | Findings       | Findings       |
-| Editorial mentions | Findings       | Findings       | Findings       |
-| Link opportunities | Findings       | Findings       | Findings       |
-
-Use only available evidence.
-
-Do not invent backlink counts or third-party authority metrics.
-
-### Competitor backlink gap analysis
-
-Identify websites that link to relevant competitors but do not appear to link to the target website.
-
-For each domain, investigate:
-
-- Why the competitor received the link
-- Whether the linking page is relevant
-- Whether the target website has something useful to contribute
-- Whether a genuine outreach opportunity exists
-
-A competitor backlink is an opportunity to investigate, not an automatic reason to request the same link.
-
----
-
-## 7. LINK OPPORTUNITY DISCOVERY
-
-Identify legitimate link opportunities.
-
-Classify opportunities into the following categories.
-
-### 7.1 Relevant business directories
-
-Find legitimate business and industry directories.
-
-Evaluate:
-
 - Industry relevance
-- Geographic relevance
-- Website credibility
-- Listing requirements
-- Editorial quality
-- Cost, if applicable
-- Whether the listing provides genuine user value
-
-Examples of categories to investigate:
-
-- Software development directories
-- IT service directories
-- Business directories
-- Startup directories
-- Technology company directories
-- Regional business associations
-- Professional service directories
-
-For Indian business visibility, investigate relevant Indian business and technology directories.
-
-Do not recommend mass submissions to low-quality directories.
-
-### 7.2 Guest contribution opportunities
-
-Identify websites that accept genuine expert contributions.
-
-Evaluate:
-
-- Relevant topics
-- Editorial standards
-- Audience relevance
-- Article quality
-- Contributor requirements
-- Existing publication quality
-- Link placement policies
-
-Prepare original article ideas based on the business's actual expertise.
-
-Do not recommend paid guest posts that sell ranking credit or manipulative exact-match backlinks.
-
-### 7.3 Digital PR opportunities
-
-Identify opportunities to gain editorial coverage through useful contributions.
-
-Examples:
-
-- Industry insights
-- Software development expertise
-- Workflow automation research
-- Technology trends
-- Original industry surveys
-- Useful business resources
-- Expert commentary
-- Relevant company announcements
-
-For every PR opportunity, specify:
-
-- Publication or journalist
-- Topic
-- Why it is relevant
-- Potential story angle
-- Required evidence
-- Outreach approach
-
-Do not invent company achievements or statistics.
-
-### 7.4 Unlinked brand mentions
-
-Identify pages that mention the target brand without linking to the website.
-
-Verify:
-
-- Brand name
-- Mentioning page
 - Context
-- Existing relationship
-- Whether a link would improve reader usefulness
+- Evidence
 
-Prepare a polite link-request draft where appropriate.
+Analyze:
 
-Do not treat every mention as an entitlement to a backlink.
+- Backlink volume
+- Referring domains
+- Unique referring domains
+- Follow links
+- Nofollow links
+- Sponsored links
+- UGC links
+- Homepage backlinks
+- Deep links
+- Anchor text distribution
+- Branded anchors
+- Exact-match anchors
+- Partial-match anchors
+- Generic anchors
+- Naked URLs
+- Editorial links
+- Directory links
+- Contextual links
+- Image links
 
-### 7.5 Resource page opportunities
+Do not fabricate metrics.
 
-Find relevant resource pages that link to useful external tools, services, guides, or educational resources.
+If complete backlink data is unavailable, clearly document limitations.
 
-Evaluate whether the target website has a genuinely useful resource worth including.
+## Output
+
+Backlink_Profile_Report.md
+
+Backlink_Profile.csv
+
+Referring_Domains.csv
+
+evidence/backlink-profile/
+
+## Validation
+
+Every collected backlink must have a source URL or evidence.
+
+---
+
+# STEP 4 — BACKLINK QUALITY & RISK ANALYSIS
+
+## Objective
+
+Evaluate the quality, relevance, and potential risk of existing backlinks.
+
+## Input
+
+Step 3:
+
+Backlink_Profile.csv
+
+Referring_Domains.csv
+
+SEO Audit:
+
+SEO_Audit_Report.md
+
+## Analysis Criteria
+
+Evaluate:
+
+- Topical relevance
+- Domain relevance
+- Source page relevance
+- Editorial quality
+- Contextual placement
+- Website credibility
+- Organic visibility
+- Real audience
+- Geographic relevance
+- Industry relevance
+- Traffic potential
+- Link attributes
+- Spam indicators
+- Manipulative patterns
+
+## Classifications
+
+HIGH_QUALITY
+
+GOOD
+
+MODERATE
+
+LOW_QUALITY
+
+SUSPICIOUS
+
+NEEDS_MANUAL_REVIEW
+
+UNKNOWN
+
+## Important
+
+Do not classify links as toxic based solely on domain authority.
+
+Do not recommend disavowing links without evidence and a careful risk assessment.
+
+## Output
+
+Backlink_Quality_Analysis.md
+
+Backlink_Quality_Assessment.csv
+
+evidence/backlink-profile/
+
+## Validation
+
+Every classification must have a reason and evidence.
+
+---
+
+# STEP 5 — COMPETITOR BACKLINK RESEARCH
+
+## Objective
+
+Identify how competitors acquire relevant backlinks.
+
+## Previous Files Required
+
+Competitor Analysis:
+
+Competitor_List.csv
+
+Competitor_Backlink_Analysis.csv
+
+Competitor_Opportunity_Analysis.csv
+
+Competitor_Content_Analysis.csv
+
+Keyword Research:
+
+Competitor_Keyword_Analysis.csv
+
+## Execution
+
+Analyze competitors individually.
+
+Identify:
+
+- Referring domains
+- Editorial backlinks
+- Guest contributions
+- Directory links
+- Industry links
+- Resource links
+- Digital PR
+- Case studies
+- Partnerships
+- Community links
+- Educational links
+- Link-worthy content
+- Content attracting backlinks
+- Link acquisition patterns
+
+Determine:
+
+- Common referring domains
+- Unique referring domains
+- Competitor strengths
+- Competitor weaknesses
+- Replicable opportunities
+- Non-replicable opportunities
+
+## Output
+
+Competitor_Link_Analysis.md
+
+Competitor_Backlink_Comparison.csv
+
+Competitor_Referring_Domains.csv
+
+evidence/competitor-backlinks/
+
+## Validation
+
+Do not claim competitors have backlinks unless verified.
+
+---
+
+# STEP 6 — LINK GAP ANALYSIS
+
+## Objective
+
+Find websites linking to competitors but not Straw Hat Devs.
+
+## Input
+
+Step 5:
+
+Competitor_Backlink_Comparison.csv
+
+Competitor_Referring_Domains.csv
+
+Step 3:
+
+Referring_Domains.csv
+
+Competitor Analysis:
+
+Competitor_Opportunity_Analysis.csv
+
+## Execution
+
+For every potential link gap:
+
+Identify:
+
+- Source domain
+- Source URL
+- Competitor
+- Competitor target URL
+- Link context
+- Why the competitor received the link
+- Opportunity type
+- Potential Straw Hat Devs target page
+- Relevant content asset
+- Acquisition method
+- Estimated difficulty
+- Potential value
+- Priority
+
+## Opportunity Types
+
+- Editorial
+- Resource page
+- Guest contribution
+- Directory
+- Industry association
+- Digital PR
+- Partnership
+- Case study
+- Broken link
+- Brand mention
+- Community
+
+## Output
+
+Link_Gap_Analysis.md
+
+Link_Gap_Analysis.csv
+
+evidence/link-gap/
+
+## Validation
+
+Every opportunity must have a verifiable source.
+
+---
+
+# STEP 7 — DIRECTORY & BUSINESS LISTING OPPORTUNITIES
+
+## Objective
+
+Identify legitimate business directories and industry listings.
+
+## Input
+
+Project Discovery:
+
+Business type
+
+Target industries
+
+Target countries
+
+SEO Audit:
+
+Existing business listings
+
+Competitor Analysis:
+
+Competitor directories
+
+## Research
+
+Find relevant:
+
+- Technology directories
+- Software development directories
+- Web development directories
+- AI development directories
+- Business directories
+- Indian business directories
+- Startup directories
+- Industry directories
+- Regional business directories
+- Professional associations
+- Chamber of commerce listings
+
+## Exclusions
+
+Do not recommend:
+
+- Link farms
+- Spam directories
+- Automated backlink networks
+- Low-quality mass submission sites
+- Sites with no real audience
+- Sites created primarily to sell links
+
+## For Every Opportunity
+
+Record:
+
+- Website name
+- Domain
+- Listing URL
+- Category
+- Geographic relevance
+- Industry relevance
+- Submission URL
+- Submission requirements
+- Link type
+- Cost, if verified
+- Quality assessment
+- Priority
+- Evidence
+
+## Output
+
+Directory_Opportunities.csv
+
+evidence/directories/
+
+## Validation
+
+Confirm website accessibility and relevance.
+
+---
+
+# STEP 8 — GUEST CONTRIBUTION OPPORTUNITIES
+
+## Objective
+
+Identify websites accepting relevant expert contributions.
+
+## Input
+
+Content Strategy:
+
+Content_Strategy_Report.md
+
+Content_Opportunity_Analysis.csv
+
+Content_Brief_Dataset.csv
+
+Topic_Cluster_Mapping.csv
+
+Keyword Research:
+
+Keyword_Clusters.csv
+
+Competitor Analysis:
+
+Competitor_Content_Analysis.csv
+
+## Research Topics
+
+- Software development
+- Web development
+- Business automation
+- AI implementation
+- Workflow automation
+- SaaS
+- Technology
+- Startup
+- Software engineering
+- Digital transformation
+- Business technology
+
+## For Every Opportunity
+
+Record:
+
+- Website
+- Domain
+- Topic relevance
+- Audience
+- Contributor guidelines
+- Submission page
+- Content requirements
+- Link policy
+- Editorial quality
+- Acquisition difficulty
+- Potential target content
+- Suggested article topic
+- Priority
+- Evidence
+
+## Output
+
+Guest_Post_Opportunities.csv
+
+evidence/resource-pages/
+
+## Validation
+
+Do not classify a website as accepting guest posts unless evidence exists.
+
+---
+
+# STEP 9 — RESOURCE PAGE OPPORTUNITIES
+
+## Objective
+
+Identify relevant resource pages where Straw Hat Devs content could genuinely add value.
+
+## Input
+
+Content Strategy:
+
+Content_Strategy_Report.md
+
+Content_Opportunity_Analysis.csv
+
+Link_Worthy_Content_Assets.csv, if available.
+
+## Research
+
+Identify resource pages related to:
+
+- Software development
+- Business automation
+- AI tools
+- Web development
+- Startup resources
+- Business technology
+- Software engineering
+- Workflow automation
+
+## Analyze
+
+- Resource page URL
+- Website
+- Resource category
+- Existing resources
+- Link placement requirements
+- Relevance
+- Target asset
+- Opportunity rationale
+- Difficulty
+- Priority
+
+## Output
+
+Resource_Page_Opportunities.csv
+
+evidence/resource-pages/
+
+## Validation
+
+Ensure the proposed resource is genuinely useful to the target page audience.
+
+---
+
+# STEP 10 — BROKEN LINK OPPORTUNITIES
+
+## Objective
+
+Identify relevant broken external links that could potentially be replaced with useful Straw Hat Devs resources.
+
+## Input
+
+Content Strategy:
+
+Existing content assets
+
+Content drafts
+
+Content opportunity datasets
+
+Competitor Analysis:
+
+Competitor resources
+
+## Research
+
+Identify broken links on relevant:
+
+- Resource pages
+- Technology blogs
+- Business automation pages
+- Industry publications
+- Software development pages
+
+For each opportunity:
+
+Record:
+
+- Broken URL
+- Source page
+- Source website
+- Broken destination
+- Broken content topic
+- Proposed replacement
+- Replacement relevance
+- Contact page
+- Evidence
+- Priority
+
+## Important
+
+Do not recommend replacement links where Straw Hat Devs has no genuinely relevant content.
+
+If necessary, recommend creating a content asset first.
+
+## Output
+
+Broken_Link_Opportunities.csv
+
+evidence/broken-links/
+
+---
+
+# STEP 11 — BRAND MENTION ANALYSIS
+
+## Objective
+
+Discover existing mentions of Straw Hat Devs and determine whether link opportunities exist.
+
+## Research
+
+Search for:
+
+- Straw Hat Devs
+- Brand variations
+- Company name variations
+- Relevant public references
+- Company profile references
+
+Analyze:
+
+- Linked mentions
+- Unlinked mentions
+- Publication mentions
+- Directory mentions
+- Partnership mentions
+- Social mentions
+- Community mentions
+
+For every mention:
+
+Record:
+
+- URL
+- Source domain
+- Mention text
+- Mention type
+- Existing link
+- Target URL
+- Context
+- Relevance
+- Recommended action
+- Contact information, if verified
+- Evidence
+
+## Output
+
+Brand_Mention_Analysis.md
+
+Brand_Mention_Opportunities.csv
+
+evidence/brand-mentions/
+
+---
+
+# STEP 12 — DIGITAL PR OPPORTUNITIES
+
+## Objective
+
+Identify realistic PR opportunities for Straw Hat Devs.
+
+## Input
+
+Content Strategy:
+
+Content_Strategy_Report.md
+
+Content_Opportunity_Analysis.csv
+
+Content_Brief_Dataset.csv
+
+Competitor Analysis:
+
+Competitor_Analysis_Report.md
+
+SEO Audit:
+
+SEO_Audit_Report.md
+
+## Research
+
+Identify:
+
+- Technology publications
+- Business publications
+- Startup publications
+- Industry publications
+- Regional publications
+- Journalist opportunities
+- Expert commentary opportunities
+- Podcasts
+- Interviews
+- Industry research opportunities
+- Digital PR campaigns
+
+## Potential PR Angles
+
+- AI implementation in SMEs
+- Business process automation
+- Software automation challenges
+- Technology adoption in Indian businesses
+- Digital transformation
+- Workflow optimization
+- Software modernization
+- AI-powered business workflows
+
+These are hypotheses.
+
+Validate every angle against actual expertise and available evidence.
+
+Never invent:
+
+- Research
+- Statistics
+- Customer results
+- Expertise
+- News
+- Testimonials
+
+## Output
+
+Digital_PR_Strategy.md
+
+Digital_PR_Opportunities.csv
+
+evidence/digital-pr/
+
+---
+
+# STEP 13 — PARTNERSHIP OPPORTUNITIES
+
+## Objective
+
+Identify relevant organizations that could create genuine business and editorial relationships.
+
+## Research
+
+Potential partners:
+
+- Software development agencies
+- Technology consultants
+- SaaS companies
+- Technology vendors
+- Business consultants
+- Startup organizations
+- Industry associations
+- Educational organizations
+- Technology communities
+- Integration partners
+
+## Analyze
+
+- Organization
+- Website
+- Relationship opportunity
+- Business relevance
+- Audience overlap
+- Collaboration type
+- Potential content
+- Potential referral relationship
+- Potential editorial opportunity
+- Risk
+- Priority
+
+## Output
+
+Partnership_Opportunities.csv
+
+Partnership_Strategy.md
+
+---
+
+# STEP 14 — LINK-WORTHY CONTENT ASSET ANALYSIS
+
+## Objective
+
+Determine what content can naturally attract links.
+
+## Previous Files Required
+
+Content Strategy:
+
+Content_Strategy_Report.md
+
+Content_Gap_Analysis.csv
+
+Content_Opportunity_Analysis.csv
+
+Content_Keyword_Mapping.csv
+
+Topic_Cluster_Mapping.csv
+
+Content_Prioritization.csv
+
+Content_Brief_Dataset.csv
+
+Content drafts
+
+On-Page SEO:
+
+Content_Optimization.csv
+
+Technical SEO:
+
+Content_Technical_SEO_Dependencies.csv
+
+## Analyze Existing Assets
+
+- Blog posts
+- Tutorials
+- Case studies
+- Guides
+- Landing pages
+- Tools
+- Templates
+- Checklists
+- Research
+- Data
+- Resource pages
+
+Determine:
+
+- Existing linkability
+- Content quality
+- Originality
+- Link potential
+- Promotion potential
+- Target audience
+- Target websites
+- Missing content
+
+## Recommend New Assets
 
 Potential assets:
 
-- Educational guides
-- Technical resources
-- Software development guides
-- Workflow automation resources
-- Industry-specific tools
 - Original research
+- Industry reports
+- Technology guides
+- Business automation guides
+- AI implementation guides
+- Case studies
+- Tutorials
+- Free tools
+- Calculators
+- Templates
+- Checklists
+- Data visualizations
+- Industry statistics
+- Comparison guides
 
-Do not request links to thin promotional pages.
+For every asset:
 
-### 7.6 Partnership and collaboration opportunities
+Record:
 
-Identify genuine opportunities with:
+- Asset ID
+- Asset name
+- Asset type
+- Topic
+- Audience
+- Target keyword
+- Search intent
+- Linkable value
+- Originality
+- Data requirements
+- Production requirements
+- Target referring domains
+- Promotion strategy
+- Target URL
+- Estimated effort
+- Priority
 
-- Technology communities
-- Software development communities
-- Industry associations
-- Relevant technology companies
-- Educational organisations
-- Startup ecosystems
-- Business networks
+## Output
 
-Distinguish genuine business partnerships from artificial link exchanges.
+Link_Worthy_Content_Strategy.md
 
-Do not recommend reciprocal link schemes designed primarily to manipulate rankings.
-
----
-
-## 8. LINK OPPORTUNITY QUALITY EVALUATION
-
-Evaluate every prospect.
-
-Use the following scoring model as an internal prioritisation framework, not as a Google ranking metric.
-
-| Evaluation factor       | Score |
-| ----------------------- | ----: |
-| Industry relevance      |  0–25 |
-| Audience relevance      |  0–20 |
-| Editorial quality       |  0–20 |
-| Website credibility     |  0–15 |
-| Geographic relevance    |  0–10 |
-| Genuine opportunity fit |  0–10 |
-| Total                   |   100 |
-
-Classify:
-
-- 80–100: High-priority prospect
-- 60–79: Medium-priority prospect
-- 40–59: Low-priority prospect
-- Below 40: Usually reject or investigate further
-
-Do not rely on third-party authority scores alone.
-
-Also identify:
-
-- Spam indicators
-- Irrelevant content
-- Suspicious outbound links
-- Excessive commercial link placement
-- Unclear ownership
-- Unreasonable payment requests
-- Risk of manipulative link acquisition
-
-Do not recommend a prospect simply because its domain score is high.
+Link_Worthy_Content_Assets.csv
 
 ---
 
-## 9. OUTREACH CAMPAIGN PREPARATION
+# STEP 15 — LINK BUILDING OPPORTUNITY CONSOLIDATION
 
-Prepare personalised outreach campaigns.
+## Objective
 
-Campaign categories:
+Consolidate every discovered opportunity into a single dataset.
 
-1. Business directory submission
-2. Guest contribution
-3. Digital PR
+## Input
+
+All previous opportunity datasets.
+
+## Output
+
+Link_Building_Opportunities.csv
+
+Columns:
+
+opportunity_id
+opportunity_name
+opportunity_url
+domain
+opportunity_type
+source
+competitor_reference
+target_url
+target_keyword
+target_content_asset
+topical_relevance
+business_relevance
+website_quality
+audience_relevance
+traffic_potential
+acquisition_feasibility
+geographic_relevance
+opportunity_score
+priority
+effort
+acquisition_method
+contact_url
+contact_information
+validation_status
+risk_level
+recommended_action
+evidence
+discovered_date
+last_verified_date
+
+## Rules
+
+- Deduplicate domains and opportunities.
+- Preserve unique opportunity types.
+- Verify URLs.
+- Do not fabricate contacts.
+- Document uncertainty.
+- Keep evidence references.
+
+---
+
+# STEP 16 — OPPORTUNITY SCORING & PRIORITIZATION
+
+## Objective
+
+Rank all link acquisition opportunities.
+
+## Scoring Model
+
+Topical Relevance:
+
+25%
+
+Business Relevance:
+
+20%
+
+Website Quality:
+
+15%
+
+Audience Relevance:
+
+15%
+
+Traffic Potential:
+
+10%
+
+Acquisition Feasibility:
+
+10%
+
+Geographic Relevance:
+
+5%
+
+Formula:
+
+Opportunity Score =
+
+Topical Relevance × 0.25
+
+- Business Relevance × 0.20
+
+- Website Quality × 0.15
+
+- Audience Relevance × 0.15
+
+- Traffic Potential × 0.10
+
+- Acquisition Feasibility × 0.10
+
+- Geographic Relevance × 0.05
+
+Score each dimension from 1–5.
+
+Priority:
+
+P0 — Immediate
+
+P1 — High
+
+P2 — Medium
+
+P3 — Low
+
+P4 — Not Recommended
+
+Effort:
+
+LOW
+
+MEDIUM
+
+HIGH
+
+VERY_HIGH
+
+## Output
+
+Off_Page_SEO_Prioritization.csv
+
+---
+
+# STEP 17 — OUTREACH STRATEGY
+
+## Objective
+
+Prepare a personalized, ethical outreach strategy.
+
+## Input
+
+Link_Building_Opportunities.csv
+
+Digital_PR_Opportunities.csv
+
+Guest_Post_Opportunities.csv
+
+Resource_Page_Opportunities.csv
+
+Brand_Mention_Opportunities.csv
+
+Broken_Link_Opportunities.csv
+
+Partnership_Opportunities.csv
+
+## Campaign Types
+
+1. Guest contribution
+2. Resource page inclusion
+3. Broken link replacement
 4. Unlinked brand mention
-5. Resource page inclusion
-6. Relevant industry partnership
-7. Lost backlink recovery
+5. Expert commentary
+6. Digital PR
+7. Partnership
+8. Directory submission
+9. Case study collaboration
 
-For each prospect, prepare:
+## Templates
 
-- Website name
-- Contact page or verified public contact
-- Relevant page
-- Outreach purpose
-- Personalisation details
-- Subject line
-- Email draft
-- Proposed value to the recipient
-- Relevant target URL
-- Follow-up suggestion
+Generate templates for each campaign type.
 
-### Outreach requirements
+Templates must:
 
-- Write natural and personalised emails.
-- Explain why the recipient should care.
-- Offer genuine value.
-- Avoid generic mass emails.
-- Avoid misleading subject lines.
-- Do not promise rankings.
-- Do not demand followed links.
-- Do not pressure recipients.
-- Respect opt-out requests.
-- Do not collect unnecessary personal information.
+- Be personalized
+- Be professional
+- Explain the value
+- Be relevant to the recipient
+- Avoid mass spam
+- Avoid deceptive claims
+- Avoid fabricated relationships
+- Avoid fake statistics
+- Avoid manipulative tactics
 
-**Do not send emails or messages automatically.**
+## Output
 
-Prepare drafts only unless the user explicitly authorises sending through an available email integration.
+Outreach_Strategy.md
+
+Outreach_Message_Templates.md
+
+Outreach_Targets.csv
+
+Outreach_Campaigns.csv
+
+## Authorization
+
+Preparation only.
+
+Do not send outreach.
 
 ---
 
-## 10. LINK ACQUISITION EXECUTION TRACKER
+# STEP 18 — LINK ACQUISITION ROADMAP
 
-Maintain a structured opportunity tracker.
+## Objective
 
-| Field             | Description                               |
-| ----------------- | ----------------------------------------- |
-| Prospect ID       | Unique identifier                         |
-| Domain            | Linking website                           |
-| Linking Page      | Relevant page                             |
-| Opportunity Type  | Directory, PR, guest contribution, etc.   |
-| Target URL        | Website page to promote                   |
-| Relevance Score   | Internal score                            |
-| Evidence          | Why it is relevant                        |
-| Contact Method    | Verified public contact                   |
-| Outreach Status   | Not contacted, draft prepared, sent, etc. |
-| Response Status   | Pending, accepted, rejected               |
-| Link Status       | Not acquired, live, removed, etc.         |
-| Link Attribute    | Follow, nofollow, sponsored, UGC, unknown |
-| Verification Date | Date last checked                         |
-| Notes             | Additional details                        |
+Create an actionable implementation roadmap.
+
+## Phase A — Foundation
+
+- Review existing backlinks.
+- Review business profiles.
+- Identify relevant directories.
+- Identify missing profiles.
+- Identify existing brand mentions.
+- Validate technical readiness of target pages.
+
+## Phase B — Quick Wins
+
+- Legitimate directories
+- Existing unlinked mentions
+- Existing partnerships
+- Relevant resource pages
+- Broken link opportunities
+- Competitor link gaps
+
+## Phase C — Content-Based Link Building
+
+- Guest contributions
+- Technical content
+- Case studies
+- Original research
+- Resource assets
+- Tutorials
+- Tools
+
+## Phase D — Digital PR
+
+- Expert commentary
+- Research campaigns
+- Industry publications
+- Interviews
+- Podcasts
+- Newsworthy content
+
+## Phase E — Sustainable Authority
+
+- Industry partnerships
+- Community engagement
+- Original research
+- Link-worthy assets
+- Brand visibility
+
+## Roadmap Requirements
+
+Create:
+
+30-day plan
+
+60-day plan
+
+90-day plan
+
+For every task:
+
+- Task ID
+- Task
+- Objective
+- Opportunity
+- Priority
+- Timeline
+- Dependency
+- Effort
+- Expected outcome
+- KPI
+- Risk
+- Owner
+- Status
+
+## Output
+
+Link_Building_Roadmap.md
+
+Link_Acquisition_Plan.csv
+
+---
+
+# STEP 19 — KPI & MONITORING FRAMEWORK
+
+## Objective
+
+Define how Off-Page SEO performance should be monitored.
+
+## Backlink KPIs
+
+- New referring domains
+- New relevant referring domains
+- New editorial links
+- New contextual links
+- Link quality distribution
+- Follow links
+- Nofollow links
+- Links to commercial pages
+- Links to content assets
+
+## Brand KPIs
+
+- Brand mentions
+- Linked brand mentions
+- Unlinked brand mentions
+- Brand visibility
+- Brand searches
+
+## Referral KPIs
+
+- Referral traffic
+- Referral conversions
+- Engaged sessions
+- Leads from referral traffic
+
+## Content KPIs
+
+- Backlinks per content asset
+- Referring domains per asset
+- Promotion performance
+
+## Campaign KPIs
+
+- Outreach targets
+- Outreach sent
+- Response rate
+- Positive response rate
+- Opportunities secured
+- Link acquisition rate
+
+Do not invent historical baselines.
+
+If targets are proposed, label them:
+
+RECOMMENDED_TARGET
+
+Explain the assumptions.
+
+## Output
+
+Link_Building_KPI_Framework.md
+
+Backlink_Monitoring_Plan.csv
+
+---
+
+# STEP 20 — FINAL VALIDATION & REPORTING
+
+## Objective
+
+Validate the complete Off-Page SEO workflow.
+
+## Validation Checklist
+
+Confirm:
+
+- All available upstream dependencies were discovered.
+- Previous reports were read.
+- Relevant datasets were analyzed.
+- Backlink research was completed.
+- Competitor research was completed.
+- Link gap analysis was completed.
+- Opportunities were validated.
+- Opportunity sources were recorded.
+- Priority scoring was completed.
+- Content assets were analyzed.
+- Outreach strategy was prepared.
+- Roadmap was generated.
+- KPI framework was generated.
+- No data was fabricated.
+- No external actions were performed.
+- All required files were created.
+- CSV files contain valid structured data.
+- Evidence is available for important findings.
+- Limitations are documented.
+
+## Output
+
+Off_Page_SEO_Validation_Report.md
+
+Off_Page_SEO_Quality_Checklist.csv
+
+Off_Page_SEO_Report.md
+
+Execution_Summary.md
+
+Execution_Log.md
+
+---
+
+# 7. FINAL REPORT STRUCTURE
+
+Off_Page_SEO_Report.md
+
+## Executive Summary
+
+- Website
+- Business
+- Execution date
+- Workflow status
+- Major findings
+- Opportunities
+- Risks
+- Recommendations
+
+## 1. Upstream Context
+
+- Previous workflow dates
+- Relevant recommendations
+- Target pages
+- Target keywords
+- Competitors
+- Link-worthy content
+
+## 2. Current Backlink Profile
+
+- Data availability
+- Backlink profile
+- Referring domains
+- Anchor text
+- Link types
+- Limitations
+
+## 3. Backlink Quality
+
+- Quality distribution
+- Relevant backlinks
+- Weak backlinks
+- Suspicious backlinks
+- Manual review requirements
+
+## 4. Competitor Backlink Analysis
+
+- Competitors
+- Strong backlink sources
+- Link acquisition patterns
+- Competitor advantages
+
+## 5. Link Gap Analysis
+
+- Link gaps
+- High-priority opportunities
+- Acquisition strategies
+
+## 6. Link Building Opportunities
+
+- Directories
+- Guest contributions
+- Resource pages
+- Broken links
+- Brand mentions
+- Partnerships
+- Digital PR
+
+## 7. Link-Worthy Content Strategy
+
+- Existing content assets
+- Content improvements
+- New content opportunities
+
+## 8. Outreach Strategy
+
+- Campaign types
+- Target audience
+- Messaging
+- Priorities
+
+## 9. Prioritized Roadmap
+
+- 30-day plan
+- 60-day plan
+- 90-day plan
+
+## 10. KPI Framework
+
+- Baseline
+- KPIs
+- Measurement
+- Reporting cadence
+
+## 11. Risks
+
+- Link spam
+- Manipulative strategies
+- Reputation risks
+- Data limitations
+
+## 12. Recommendations
+
+- Immediate actions
+- Short-term actions
+- Medium-term actions
+- Long-term actions
+
+## 13. Limitations
+
+- Tool limitations
+- Data limitations
+- Access limitations
+- Research limitations
+
+---
+
+# 8. EXECUTION LOG
+
+Create:
+
+execution/Execution_Log.md
+
+For every step record:
+
+- Step number
+- Step name
+- Start time
+- Completion time
+- Status
+- Tools used
+- Input files
+- Output files
+- Evidence
+- Errors
+- Retries
+- Limitations
+- Notes
 
 Statuses:
 
-- Discovered
-- Verified
-- Qualified
-- Rejected
-- Draft Prepared
-- Awaiting Approval
-- Outreach Sent
-- Response Received
-- Accepted
-- Link Published
-- Link Verified
-- Link Lost
+COMPLETED
 
-Never mark a link as acquired simply because outreach was sent or accepted.
+PARTIALLY_COMPLETED
+
+BLOCKED
+
+FAILED
+
+NOT_STARTED
 
 ---
 
-## 11. BACKLINK RISK MANAGEMENT
+# 9. FAILURE HANDLING
 
-Follow ethical link acquisition practices.
+If a tool fails:
 
-Avoid:
+1. Record the failure.
+2. Retry reasonably.
+3. Try an alternative tool.
+4. Continue independent research.
+5. Document missing data.
+6. Do not fabricate findings.
 
-- Purchased ranking backlinks
-- Private blog networks
-- Automated backlink creation
-- Mass directory submissions
-- Spam comments
-- Forum link spam
-- Excessive reciprocal links
-- Hidden links
-- Keyword-rich sitewide footer links
-- Manipulative guest posting
-- Link farms
-- Automated mass outreach
-- Fake brand mentions
-- Fabricated testimonials
-- Unrelated link exchanges
+If backlink data is unavailable:
 
-Follow current Google Search spam policies.
+- Mark DATA_UNAVAILABLE.
+- Explain the limitation.
+- Perform qualitative backlink research.
+- Analyze competitors where possible.
+- Create a recommendation for obtaining backlink data.
 
-If advertising or sponsorship placements are considered, ensure links are appropriately qualified, such as rel="sponsored" or rel="nofollow".
+If a website cannot be verified:
 
-Do not recommend disavowing links solely because a third-party tool labels them toxic.
+- Mark UNVERIFIED.
+- Do not treat it as a confirmed opportunity.
 
-Investigate actual risk and available evidence before proposing removal or disavowal.
+If contact information cannot be verified:
 
-Do not upload a disavow file or request backlink removal without explicit approval.
+- Do not invent contact information.
+- Record the contact page.
+- Mark contact details unavailable.
 
----
+If an upstream workflow is missing:
 
-## 12. TOOLS AND DATA SOURCES
-
-Prefer free tools and open-source solutions.
-
-| Tool                  | Purpose                                              |
-| --------------------- | ---------------------------------------------------- |
-| Google Search Console | First-party backlink report                          |
-| Ahrefs Free           | Backlink analysis for verified sites                 |
-| Moz Link Explorer     | Backlink research                                    |
-| Semrush Free Tools    | Competitor and backlink research                     |
-| Google Search         | Link prospect discovery                              |
-| Bing Search           | Additional prospect discovery                        |
-| Hunter Free tools     | Public business contact discovery, subject to limits |
-| Screaming Frog        | Inspect linking pages                                |
-| Python Requests       | Limited page verification                            |
-| BeautifulSoup         | HTML and link extraction                             |
-
-Tool rules:
-
-- Respect robots.txt and website terms.
-- Follow rate limits.
-- Do not bypass access restrictions.
-- Do not scrape personal contact data indiscriminately.
-- Do not automate Google Search queries in violation of its terms.
-- Do not claim complete backlink coverage from limited free-tool data.
-- Record the source and date of research.
+- Record the dependency.
+- Continue independent steps.
+- Reduce confidence where necessary.
 
 ---
 
-## 13. IMPLEMENTATION APPROVAL RULES
+# 10. FINAL EXECUTION RESPONSE
 
-Separate off-page work into:
+After execution, provide:
 
-**Research**
+## Off-Page SEO Execution Summary
 
-- Discover prospects.
-- Analyse websites.
-- Verify opportunities.
-- Prepare prioritisation.
+Website:
 
-**Preparation**
+https://strawhatdevs.com
 
-- Create outreach drafts.
-- Prepare guest article pitches.
-- Prepare directory listing information.
-- Prepare digital PR materials.
+Execution Date:
 
-**Execution**
+Workflow Status:
 
-- Submit business listings.
-- Contact publications.
-- Send outreach.
-- Participate in approved partnerships.
+## Completed Steps
 
-**Verification**
+List every completed step.
 
-- Check published links.
-- Confirm destination URLs.
-- Inspect anchor text.
-- Inspect link attributes.
-- Record link status.
+## Partially Completed Steps
 
-The AI agent may complete research and prepare drafts.
+List limitations.
 
-It must not:
+## Major Findings
 
-- Send outreach without approval.
-- Pay for directory submissions.
-- Purchase backlinks.
-- Create accounts on third-party websites.
-- Publish guest articles.
-- Sign partnership agreements.
-- Submit disavow files.
-- Modify external websites.
+Summarize the most important findings.
 
-These actions require explicit authorisation.
+## High-Priority Opportunities
 
----
+List validated opportunities.
 
-## 14. OFF-PAGE SEO MONITORING
+## Recommended Roadmap
 
-Prepare a monitoring strategy.
+Summarize the immediate, 30-day, 60-day, and 90-day actions.
 
-Track:
+## Generated Files
 
-- New referring domains
-- New backlinks
-- Lost backlinks
-- Referring domain relevance
-- Link destination pages
-- Anchor text changes
-- Brand mentions
-- Outreach response rate
-- Accepted opportunities
-- Published contributions
-- Verified live links
+List the important reports and datasets.
 
-Review the backlink profile periodically.
+## Output Directory
 
-Use Google Search Console and available backlink tools.
+Provide the actual output directory.
 
-Remember that Google Search Console's Links report is a sample of links Google has found, not a complete inventory.
+## Limitations
 
-Distinguish discovered backlinks from verified live backlinks.
+Explain unavailable tools and data.
+
+## Recommended Next Step
+
+Identify the next workflow stage.
 
 ---
 
-## 15. FINAL REPORT STRUCTURE
+# EXECUTION COMMAND
 
-Generate one comprehensive Markdown report.
+Execute:
 
-# Off-Page SEO Implementation Report
+$seo-off-page-link-building
 
-## 1. Executive Summary
+Website URL:
 
-## 2. Previous Reports Validation
+https://strawhatdevs.com
 
-## 3. Existing Backlink Profile Audit
+Website Name:
 
-## 4. Referring Domain Analysis
+Straw Hat Devs
 
-## 5. Anchor Text Analysis
+Target Countries:
 
-## 6. Backlink Quality and Risk Assessment
+India and worldwide.
 
-## 7. Competitor Backlink Analysis
+Target Audience:
 
-## 8. Competitor Backlink Gap Analysis
+Small, medium, and large businesses requiring websites, custom software, AI solutions, workflow automation, payroll automation, operational automation, and technology services.
 
-## 9. Link Opportunity Discovery
+Execution Mode:
 
-## 10. Business Directory Opportunities
+STRICT SEQUENTIAL.
 
-## 11. Guest Contribution Opportunities
+Research Authorization:
 
-## 12. Digital PR Opportunities
+AUTHORIZED.
 
-## 13. Unlinked Brand Mention Opportunities
+Website Modification:
 
-## 14. Resource Page Opportunities
+NOT AUTHORIZED.
 
-## 15. Partnership Opportunities
+Publishing:
 
-## 16. Link Prospect Quality Scoring
+NOT AUTHORIZED.
 
-## 17. Outreach Campaign Strategy
+Outreach:
 
-## 18. Outreach Email Drafts
+NOT AUTHORIZED.
 
-## 19. Link Acquisition Tracker
+External Link Acquisition:
 
-## 20. Backlink Verification Results
+NOT AUTHORIZED.
 
-## 21. Risk Management and Compliance
+Payments:
 
-## 22. Off-Page SEO Monitoring Strategy
+NOT AUTHORIZED.
 
-## 23. Pending Approvals and Dependencies
+Begin with:
 
-## 24. Final Recommendations
+STEP 1 — UPSTREAM DEPENDENCY DISCOVERY.
 
-## 25. Next Workflow Stage
+Execute each step sequentially.
 
-Clearly identify:
+For every step:
 
-**Stage 9 — Local SEO Implementation**
+- Identify required previous-step output files.
+- Discover their actual locations.
+- Read the required files.
+- Identify tools.
+- Execute the analysis.
+- Generate outputs.
+- Validate outputs.
+- Record the execution.
+- Proceed to the next step.
 
-Explain which business information, directory opportunities, geographic markets, and brand details should be passed to the next stage.
+Do not skip phases silently.
 
----
+Do not fabricate data.
 
-## 16. OUTPUT DIRECTORY AND FILE NAMING
-
-### Base output directory
-
-Use:
-
-```text
-C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs
-```
-
-The user may manually change this directory.
-
-### Parent folder
-
-Reuse the existing website/date parent folder:
-
-```text
-{website-name}-{DD-MM-YYYY}
-```
-
-Example:
-
-```text
-strawhatdevs-18-11-2026
-```
-
-Generate the date once at execution time and reuse it.
-
-**Never include time, hours, minutes, seconds, or timestamps in folder names or filenames.**
-
-### Stage-specific folder
-
-```text
-off-page-seo
-```
-
-### Final report filename
-
-```text
-{website-name}-{DD-MM-YYYY}-off-page-seo-reports.md
-```
-
-### Expected directory structure
-
-```text
-outputs/
-└── {website-name}-{DD-MM-YYYY}/
-    └── off-page-seo/
-        └── {website-name}-{DD-MM-YYYY}-off-page-seo-reports.md
-```
-
-Example:
-
-```text
-C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs\strawhatdevs-18-11-2026\off-page-seo\strawhatdevs-18-11-2026-off-page-seo-reports.md
-```
-
-### File management rules
-
-1. Check whether the website/date parent folder exists.
-2. Reuse it if available.
-3. Create it only if absent.
-4. Never recreate or rename the existing parent folder.
-5. Check whether the stage folder exists.
-6. Reuse it if available.
-7. Create it only if absent.
-8. Inspect existing reports before updating them.
-9. Never overwrite existing reports unintentionally.
-10. Use a non-conflicting filename if required, without adding timestamps.
-11. Save the complete final report as Markdown.
-12. Verify that the report exists and contains all expected sections.
-
-Generate exactly one final report.
-
-Do not generate separate JSON, CSV, Excel, or PDF reports.
-
-If filesystem access is unavailable, clearly state that the report could not be saved.
-
----
-
-## 17. STRICT EXECUTION RULES
-
-- Execute all steps sequentially.
-- Read all seven previous reports.
-- Verify the target website and competitors.
-- Analyse the actual backlink profile where data is available.
-- Distinguish verified links from estimated data.
-- Research relevant prospects.
-- Evaluate link quality.
-- Prepare personalised outreach drafts.
-- Maintain an acquisition tracker.
-- Do not purchase backlinks.
-- Do not create spam backlinks.
-- Do not send outreach without approval.
-- Do not invent partnerships or business relationships.
-- Do not claim a link was acquired without verification.
-- Do not fabricate metrics.
-- Do not generate multiple final reports.
-- Do not add timestamps to output names.
-
----
-
-## 18. FINAL EXECUTION INSTRUCTION
-
-Start by locating and validating all seven previous SEO workflow reports.
-
-Then:
-
-1. Consolidate previous findings.
-2. Audit the existing backlink profile.
-3. Analyse competitor backlinks.
-4. Identify backlink gaps.
-5. Discover relevant link prospects.
-6. Evaluate each prospect.
-7. Identify business directory opportunities.
-8. Identify guest contribution opportunities.
-9. Identify digital PR opportunities.
-10. Identify unlinked brand mentions.
-11. Identify resource and partnership opportunities.
-12. Prepare personalised outreach drafts.
-13. Create the link acquisition tracker.
-14. Document backlink risks.
-15. Define the monitoring strategy.
-16. Generate the final Markdown report.
-17. Save and verify the report.
-
-At the end, provide:
-
-- Execution status
-- Previous reports validation status
-- Existing referring domains analysed
-- Competitors analysed
-- Link opportunities discovered
-- High-priority prospects
-- Medium-priority prospects
-- Low-priority prospects
-- Outreach drafts prepared
-- Outreach actions awaiting approval
-- Backlinks verified
-- Blocked or unavailable data
-- Final report location
-- Next recommended stage: Stage 9 — Local SEO Implementation
-
-**IMPORTANT: The purpose of off-page SEO is to earn relevant recognition and genuine references. Do not optimise for backlink quantity at the expense of website quality, business reputation, or search engine compliance.**
+Complete the workflow and provide the final execution summary.

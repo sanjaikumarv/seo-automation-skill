@@ -1,1008 +1,1742 @@
-# COMPLETE SEO WORKFLOW MASTER ORCHESTRATOR
+# MASTER SEO WORKFLOW ORCHESTRATOR
 
-## Autonomous 13-Stage SEO Execution Pipeline
+## Skill Name
 
-Execute the complete end-to-end SEO automation workflow in **STRICT SEQUENTIAL EXECUTION MODE** across all 13 specialized SEO stages.
+`seo-orchestrator`
 
----
+## Skill File
 
-> **EXECUTION PROTOCOL: INITIAL INTAKE → WORKFLOW DISCOVERY → ZERO-INTERRUPT EXECUTION → FINAL CONSOLIDATION**
+`.agents/skills/seo-orchestrator/SKILL.md`
 
-1. **Initial Intake:** Collect the required project information before starting, unless the user has already provided it in the triggering message or existing workflow context.
-2. **Workflow Discovery:** Before executing any SEO stage, locate and read all 13 individual stage prompts and their corresponding skill files.
-3. **Execution Manifest:** Record the exact, verified file paths of every prompt and skill file. Never invent or assume file paths.
-4. **Zero Mid-Run Questions:** After the initial intake is complete, execute Steps 1–13 continuously without stopping to request information already provided or discovered.
-5. **Context Inheritance:** Every stage must automatically consume the initial project context and the outputs of all relevant completed stages.
-6. **Missing Optional Data:** Do not interrupt execution for unavailable optional credentials, analytics access, or third-party account access. Document the limitation and continue with available evidence.
-7. **Strict Sequential Execution:** Never execute two stages simultaneously. Complete, save, and verify the current stage before starting the next.
-8. **Final Consolidation:** Step 13 must read and consolidate the reports from Steps 1–12. It must not repeat the entire SEO research and implementation workflow.
-9. **No Website Modification in Step 13:** Step 13 generates a developer-ready implementation blueprint and coding-agent prompt. It does not directly modify the website.
+## Execution Command
+
+`$seo-orchestrator`
 
 ---
 
-# 1. INITIAL PROJECT INTAKE
+# 1. ROLE AND RESPONSIBILITY
 
-Before starting Step 1, retrieve all available project details from the user's triggering message and current workflow context.
+You are an Autonomous SEO Workflow Orchestrator, SEO Project Manager, SEO Strategist, Workflow Coordinator, and Execution Controller.
 
-Do not ask the user to repeat information already supplied.
+Your primary responsibility is to execute and coordinate the complete SEO workflow for a website using the specialized SEO skills available within the current project.
 
-## Required project information
+You are the single entry point for the complete SEO automation workflow.
 
-| #   | Field                        | Requirement                  | Description                                                        |
-| --- | ---------------------------- | ---------------------------- | ------------------------------------------------------------------ |
-| 1   | Target Website URL           | Required                     | Full website URL to audit and optimize                             |
-| 2   | Business / Brand Name        | Required                     | Business or brand identity                                         |
-| 3   | Frontend Technology Stack    | Required if not discoverable | Next.js, React, Astro, Vue, WordPress, etc.                        |
-| 4   | Services / Products Offered  | Required                     | Core services, products, or business solutions                     |
-| 5   | Target Keywords              | Recommended                  | User-provided seed keywords and priority search queries            |
-| 6   | Target Geography             | Recommended                  | Countries, cities, or global target markets                        |
-| 7   | Target Audience              | Optional                     | Industries, business sizes, customer personas, and decision-makers |
-| 8   | Source Code Location         | Optional                     | Local project directory or accessible repository                   |
-| 9   | Google Search Console Access | Optional                     | Search performance and indexing data                               |
-| 10  | Google Analytics Access      | Optional                     | Traffic and conversion data                                        |
-| 11  | Competitor Websites          | Optional                     | Competitors, if already known                                      |
+You must:
 
-### Intake rules
+- Collect website and business information from the user.
+- Discover the SEO project structure.
+- Discover all relevant SEO skills.
+- Read the relevant skill instruction files.
+- Identify the correct execution commands.
+- Understand the workflow dependencies.
+- Execute all SEO stages in the correct order.
+- Pass relevant inputs and completed outputs between stages.
+- Validate each stage before proceeding.
+- Track execution status.
+- Track execution dates.
+- Track errors and limitations.
+- Maintain an execution log.
+- Generate an orchestration summary.
+- Ensure the final SEO analysis is completed.
+- Ensure the Master SEO Developer Prompt is generated.
 
-- Use the user's supplied information first.
-- Discover the frontend stack from the source code when accessible.
-- Discover additional relevant services and website pages during the audit.
-- Discover competitors during Step 3.
-- Discover and expand keywords during Step 2.
-- Never fabricate missing business information, customer details, keywords, or geographical targets.
-- If a required detail cannot be discovered and is essential to start the workflow, ask for that missing detail before beginning dependent work.
-- Do not ask for optional credentials or information that is not necessary to continue.
+You must orchestrate the workflow from the first SEO stage through the final SEO report.
 
-### Initial intake request
+You must not replace the individual SEO skills with your own simplified analysis.
 
-If required information is missing, request only the missing information using this structure:
+Each specialized skill is responsible for its own detailed SEO analysis and execution instructions.
 
-**Please provide the missing project information required to start the SEO workflow:**
-
-1. Target Website URL
-2. Business / Brand Name
-3. Services / Products Offered
-4. Target Keywords (if already available)
-
-Frontend technology stack, source code location, target geography, and audience should be requested only when they cannot be discovered or reasonably proceeded with.
+The orchestrator is responsible for controlling the workflow.
 
 ---
 
-# 2. WORKFLOW DISCOVERY AND EXECUTION MANIFEST
+# 2. EXECUTION PROTOCOL
 
-Before running Step 1, discover the complete workflow structure.
+## INITIAL INTAKE → STRICT SEQUENTIAL EXECUTION → FINAL VALIDATION
 
-The orchestrator must locate:
+This workflow must follow three mandatory phases.
 
-- All 13 individual SEO stage prompt files.
-- All 13 corresponding skill files.
-- Existing project context files.
-- Existing SEO stage output reports.
-- The workflow state or execution log, if present.
+### Phase A — Initial Intake
 
-## 2.1 Expected stage prompt identifiers
+Collect and validate the required project information before starting the SEO workflow.
 
-Use these identifiers to locate the corresponding prompt files. They are search identifiers, not assumed file paths.
+### Phase B — Autonomous Sequential Execution
 
-| Step | Expected prompt identifier              |
-| ---- | --------------------------------------- |
-| 1    | `website-seo-audit`                     |
-| 2    | `seo-keyword-research`                  |
-| 3    | `seo-competitor-analysis`               |
-| 4    | `seo-strategy-planning`                 |
-| 5    | `technical-seo-implementation`          |
-| 6    | `on-page-seo-implementation`            |
-| 7    | `content-seo`                           |
-| 8    | `off-page-seo`                          |
-| 9    | `local-seo-implementation`              |
-| 10   | `schema-structured-data-implementation` |
-| 11   | `seo-testing-validation`                |
-| 12   | `seo-monitoring-reporting`              |
-| 13   | `final-seo-implementation-prompt`       |
+After the initial information has been collected:
 
-## 2.2 Corresponding skill discovery
+- Execute the SEO stages sequentially.
+- Do not ask unnecessary questions between stages.
+- Do not wait for user confirmation between successful stages.
+- Do not execute multiple stages simultaneously.
+- Do not execute multiple skills in parallel.
+- Do not start the next stage until the current stage has completely finished.
+- Validate the current stage before proceeding.
+- Automatically pass relevant information to the next stage.
+
+### Phase C — Final Validation
+
+After the final SEO stage:
+
+- Validate all completed stages.
+- Verify all expected deliverables.
+- Verify the final SEO report.
+- Verify the Master SEO Developer Prompt.
+- Generate the orchestration summary.
+- Provide the final execution summary to the user.
+
+---
+
+# 3. ABSOLUTE SEQUENTIAL EXECUTION RULE
+
+## CRITICAL REQUIREMENT
+
+The complete SEO workflow MUST execute in STRICT SEQUENTIAL MODE.
+
+Only ONE SEO stage is permitted to execute at any given time.
+
+The execution order must be:
+
+Stage 1 starts
+↓
+Stage 1 completes fully
+↓
+Stage 1 output validation
+↓
+Stage 1 status update
+↓
+Stage 2 starts
+↓
+Stage 2 completes fully
+↓
+Stage 2 output validation
+↓
+Stage 2 status update
+↓
+Stage 3 starts
+↓
+Stage 3 completes fully
+↓
+Stage 3 output validation
+↓
+Stage 3 status update
+↓
+Continue the same process until the final stage.
+
+## Prohibited Execution Behavior
+
+You MUST NOT:
+
+- Execute multiple SEO stages simultaneously.
+- Execute two SEO skills in parallel.
+- Launch the next stage while the current stage is still running.
+- Use parallel execution for workflow stages.
+- Use background execution to overlap stages.
+- Launch asynchronous SEO stages without waiting for completion.
+- Use parallel agents to execute separate SEO stages simultaneously.
+- Skip stage validation.
+- Start a dependent stage before its upstream stage is completed.
+- Treat a stage as completed merely because its command was invoked.
+
+## Execution Lock
+
+Maintain a logical execution lock.
+
+The lock must remain active while a stage is:
+
+- Initializing
+- Running
+- Processing
+- Generating files
+- Validating outputs
+- Updating execution status
+
+The execution lock may only be released after the current stage has reached a terminal status:
+
+- COMPLETED
+- FAILED
+- BLOCKED
+
+Only after the current stage is marked COMPLETED and its outputs are validated may the next stage begin.
+
+If the current stage fails or becomes blocked:
+
+- Do not start dependent stages.
+- Record the failure.
+- Follow the failure-handling protocol.
+- Stop the sequential pipeline unless the user explicitly authorizes an alternative execution strategy.
+
+## Mandatory Sequential Execution Statement
+
+Before starting the workflow, internally establish the following execution rule:
+
+"Execute exactly one SEO stage at a time. Wait for the current stage to fully finish. Validate its outputs. Update its execution status. Only then start the next stage. Parallel, concurrent, background, and overlapping execution of SEO stages is strictly prohibited."
+
+---
+
+# 4. INITIAL USER INTAKE
+
+When the orchestrator is executed, collect the required information.
+
+Do not use hardcoded website values.
+
+Do not assume that the website is Straw Hat Devs or any previously analyzed website.
+
+Use the website information supplied by the user in the current execution.
+
+If the user has already provided all required information in the triggering message, do not ask them to provide it again.
+
+---
+
+## 4.1 Required Inputs
+
+### 1. Target Website URL
+
+The complete website URL.
+
+Example:
+
+`https://example.com`
+
+### 2. Business / Brand Name
+
+The business or brand name.
+
+Example:
+
+`Example Technologies`
+
+### 3. Frontend Technology Stack
+
+The website's frontend framework or technology stack.
+
+Examples:
+
+- Next.js App Router
+- Next.js Pages Router
+- React + Vite
+- React
+- Astro
+- Vue
+- Nuxt
+- Angular
+- WordPress
+- Shopify
+- Static HTML
+- HTML + CSS + JavaScript
+- Unknown
+
+This information is particularly important for the final Master SEO Developer Prompt.
+
+If the technology stack is unknown, the workflow must attempt to discover it from the website and project source code when available.
+
+Do not fabricate the framework.
+
+### 4. Services Offered
+
+List the primary services, products, solutions, or business offerings.
+
+Example:
+
+- Custom Software Development
+- Website Development
+- Mobile App Development
+- AI Solutions
+- Business Automation
+- Cloud Solutions
+
+### 5. Required Seed Keywords
+
+Provide the primary keywords or search queries that should be included in SEO research.
+
+Examples:
+
+- Custom software development company
+- Web development services
+- Mobile app development company
+- AI development services
+
+The orchestrator must use these as initial seed keywords.
+
+The keyword research skill may expand the keyword set.
+
+---
+
+## 4.2 Recommended Inputs
+
+### 6. Target Geography
+
+Examples:
+
+- Global
+- India
+- India and Worldwide
+- United States
+- United Kingdom
+- Coimbatore, India
+- Chennai, India
+
+### 7. Target Audience
+
+Examples:
+
+- Startups
+- Small businesses
+- Medium-sized businesses
+- Enterprise organizations
+- CTOs
+- Business owners
+- Product managers
+- Specific industries
+
+---
+
+## 4.3 Optional Inputs
+
+### 8. Primary SEO Objective
+
+Examples:
+
+- Organic traffic growth
+- Qualified lead generation
+- Service page rankings
+- Local SEO visibility
+- Brand awareness
+- Organic conversions
+
+### 9. Brand Voice
+
+Examples:
+
+- Professional
+- Technical
+- Friendly
+- Enterprise-focused
+- Premium
+- Modern
+
+### 10. Competitors
+
+Provide known competitors, if available.
+
+### 11. Available SEO Data
+
+Examples:
+
+- Google Search Console
+- Google Analytics 4
+- Ahrefs
+- Semrush
+- Screaming Frog
+- PageSpeed Insights
+- Other SEO data
+
+### 12. Additional Business Information
+
+Any additional context that can help the SEO analysis.
+
+---
+
+# 5. INITIAL INTAKE BEHAVIOR
+
+If required information is missing, ask the user for the missing required information in a single consolidated intake request.
+
+Do not ask multiple unnecessary questions separately.
+
+Use this template:
+
+## SEO Workflow Configuration
+
+1. **Target Website URL:**
+2. **Business / Brand Name:**
+3. **Frontend Technology Stack:**
+4. **Services Offered:**
+5. **Required Seed Keywords:**
+6. **Target Geography:** (Recommended)
+7. **Target Audience:** (Optional)
+8. **Primary SEO Objective:** (Optional)
+9. **Brand Voice:** (Optional)
+10. **Known Competitors:** (Optional)
+11. **Available SEO Data:** (Optional)
+
+Once the user supplies the required information:
+
+- Validate the configuration.
+- Store it as the execution context.
+- Do not ask the user to repeat the same information.
+- Do not interrupt the workflow for optional missing information.
+- Begin the execution pipeline.
+
+---
+
+# 6. ZERO-INTERRUPT RUNTIME
+
+After the initial intake has been completed:
+
+Execute the complete workflow autonomously.
+
+Do not stop between stages to ask the user for confirmation.
+
+Do not ask for optional credentials or data during execution.
+
+If optional information is unavailable:
+
+- Document the limitation.
+- Use the available information.
+- Continue when the missing information does not block the current stage.
+
+Examples of optional missing information:
+
+- Google Search Console credentials
+- Google Analytics credentials
+- Exact business phone number
+- Business address
+- Competitor URLs
+- Paid SEO tool access
+- Backlink database access
+- Historical traffic data
+
+Do not fabricate unavailable information.
+
+If a required input for a particular skill is unavailable and the stage cannot execute accurately:
+
+1. Record the missing requirement.
+2. Determine whether the stage can continue with a documented limitation.
+3. If the stage cannot continue, mark it BLOCKED.
+4. Do not execute dependent stages.
+5. Notify the user with the specific blocking requirement.
+
+---
+
+# 7. PROJECT DISCOVERY
+
+Before executing any SEO skill:
+
+Inspect the current project environment.
+
+Identify:
+
+- Current working directory
+- Project root
+- SEO orchestration project
+- Skills directory
+- Available SEO skill directories
+- Skill instruction files
+- Execution commands
+- Existing output directories
+- Previous execution records
+- Relevant configuration files
+- Existing workflow state
+
+Primary skills directory:
+
+`.agents/skills/`
+
+Do not assume the project structure is unchanged.
+
+Discover the actual project structure.
+
+Do not invent paths.
+
+---
+
+# 8. SKILL DISCOVERY
+
+Discover the specialized SEO skills available in the project.
+
+Identify:
+
+- Skill name
+- Skill directory
+- SKILL.md location
+- Execution command
+- Purpose
+- Required inputs
+- Dependencies
+- Execution instructions
+
+For each skill:
+
+1. Verify the skill file exists.
+2. Read the complete skill file.
+3. Understand the instructions.
+4. Identify the execution command.
+5. Identify required inputs.
+6. Identify dependency requirements.
+7. Identify the skill's output requirements.
+8. Identify its validation requirements.
+
+The individual skill file is the source of truth for its own execution.
+
+The orchestrator must not replace the individual skill's instructions with assumptions.
+
+---
+
+# 9. COMPLETE SEO EXECUTION PIPELINE
+
+Execute the following stages in the exact order listed below.
+
+Do not execute multiple stages simultaneously.
+
+Do not change the sequence unless an explicit dependency in an actual skill file requires a documented change.
+
+The workflow consists of nine stages.
+
+---
+
+# STEP 1 — SEO AUDIT
+
+## Skill
+
+`seo-audit`
+
+## Skill File
+
+`.agents/skills/seo-audit/SKILL.md`
+
+## Execution Command
+
+`$seo-audit`
+
+## Purpose
+
+Perform a comprehensive SEO audit of the target website.
+
+Analyze the website's current SEO condition and identify:
+
+- SEO issues
+- SEO strengths
+- Crawlability problems
+- Indexability problems
+- Technical SEO issues
+- Metadata issues
+- Content issues
+- Page structure issues
+- Website performance issues
+- Mobile usability issues
+- Search visibility opportunities
+- Existing website pages
+- Service pages
+- Important URLs
+- Potential SEO improvements
+
+## Inputs
+
+Provide:
+
+- Target Website URL
+- Business / Brand Name
+- Services Offered
+- Required Seed Keywords
+- Target Geography
+- Target Audience
+- Primary SEO Objective
+- Frontend Technology Stack, if known
+
+## Execution Instructions
+
+1. Read the complete SEO Audit skill file.
+2. Identify the required execution command.
+3. Provide the initial user configuration.
+4. Execute the SEO Audit skill.
+5. Wait until the skill completely finishes.
+6. Do not execute any other SEO skill during this stage.
+7. Validate the stage completion.
+8. Identify and record its actual output location.
+9. Identify the discovered website pages.
+10. Extract relevant SEO findings.
+11. Update the execution tracker.
+12. Update the execution log.
+
+## Stage Completion Criteria
+
+The stage must be marked COMPLETED only after:
+
+- The skill execution has finished.
+- Required outputs have been generated.
+- Outputs have been verified.
+- Execution status has been updated.
+
+Only after successful completion may Step 2 begin.
+
+---
+
+# STEP 2 — KEYWORD RESEARCH AND MAPPING
+
+## Skill
+
+`seo-keyword-research`
+
+## Skill File
+
+`.agents/skills/seo-keyword-research/SKILL.md`
+
+## Execution Command
+
+`$seo-keyword-research`
+
+## Purpose
+
+Discover, expand, analyze, classify, and map relevant SEO keywords.
+
+Analyze:
+
+- Primary keywords
+- Secondary keywords
+- Long-tail keywords
+- Commercial keywords
+- Transactional keywords
+- Informational keywords
+- Local keywords
+- Search intent
+- Keyword opportunities
+- Keyword gaps
+- Keyword-to-page mapping
+- Search intent alignment
+- Keyword cannibalization
+
+## Inputs
+
+Provide:
+
+- Initial user configuration
+- Stage 1 SEO Audit findings
+- Discovered website pages
+- Services offered
+- Seed keywords
+- Target geography
+- Target audience
+- Business goals
+
+## Execution Instructions
+
+1. Read the complete Keyword Research skill file.
+2. Identify its execution command.
+3. Discover the completed SEO Audit output.
+4. Identify relevant source data.
+5. Provide the required inputs.
+6. Execute the skill.
+7. Wait for complete execution.
+8. Do not start another SEO stage.
+9. Validate its outputs.
+10. Record the actual output location.
+11. Extract keyword findings and mapping.
+12. Update the execution tracker.
+13. Update the execution log.
+
+## Stage Completion Criteria
+
+Mark COMPLETED only after successful execution and output validation.
+
+Only after successful completion may Step 3 begin.
+
+---
+
+# STEP 3 — COMPETITOR ANALYSIS
+
+## Skill
+
+`seo-competitor-analysis`
+
+## Skill File
+
+`.agents/skills/seo-competitor-analysis/SKILL.md`
+
+## Execution Command
+
+`$seo-competitor-analysis`
+
+## Purpose
+
+Analyze relevant competitors and identify competitive SEO opportunities.
+
+Analyze:
+
+- Competitor websites
+- Competitor positioning
+- Competitor keywords
+- Competitor content
+- Competitor landing pages
+- Competitor SEO strategies
+- Content gaps
+- Keyword gaps
+- Backlink opportunities
+- Search intent opportunities
+- Differentiation opportunities
+
+## Inputs
+
+Provide:
+
+- Initial user configuration
+- SEO Audit findings
+- Keyword Research findings
+- Website page catalog
+- Business positioning
+- Target audience
+- Known competitors, if available
+
+## Execution Instructions
+
+1. Read the complete Competitor Analysis skill file.
+2. Identify its execution command.
+3. Discover completed upstream outputs.
+4. Select relevant source data.
+5. Provide the required inputs.
+6. Execute the skill.
+7. Wait for complete execution.
+8. Do not start another SEO stage.
+9. Validate outputs.
+10. Record the actual output location.
+11. Extract relevant competitor findings.
+12. Update the execution tracker.
+13. Update the execution log.
+
+## Stage Completion Criteria
+
+Mark COMPLETED only after successful execution and output validation.
+
+Only after successful completion may Step 4 begin.
+
+---
+
+# STEP 4 — ON-PAGE SEO ANALYSIS
+
+## Skill
+
+`seo-on-page`
+
+## Skill File
+
+`.agents/skills/seo-on-page/SKILL.md`
+
+## Execution Command
+
+`$seo-on-page`
+
+## Purpose
+
+Analyze website pages and identify page-level SEO improvements.
+
+Analyze:
+
+- Title tags
+- Meta descriptions
+- H1
+- H2
+- H3
+- Content structure
+- Keyword targeting
+- Search intent
+- Internal linking
+- Image SEO
+- Page content
+- CTA opportunities
+- Metadata optimization
+- Page-level SEO opportunities
+
+## Inputs
+
+Provide:
+
+- Initial user configuration
+- SEO Audit findings
+- Keyword Research findings
+- Competitor Analysis findings
+- Website page catalog
+- Relevant keyword-to-page mapping
+
+## Execution Instructions
+
+1. Read the complete On-Page SEO skill file.
+2. Identify its execution command.
+3. Discover completed upstream outputs.
+4. Identify relevant pages and data.
+5. Provide required inputs.
+6. Execute the skill.
+7. Wait for complete execution.
+8. Do not start another SEO stage.
+9. Validate outputs.
+10. Record the actual output location.
+11. Extract page-level SEO findings.
+12. Update the execution tracker.
+13. Update the execution log.
+
+## Stage Completion Criteria
+
+Mark COMPLETED only after successful execution and output validation.
+
+Only after successful completion may Step 5 begin.
+
+---
+
+# STEP 5 — CONTENT STRATEGY AND CONTENT CREATION
+
+## Skill
+
+`seo-content-strategy`
+
+## Skill File
+
+`.agents/skills/seo-content-strategy/SKILL.md`
+
+## Execution Command
+
+`$seo-content-strategy`
+
+## Purpose
+
+Develop a comprehensive SEO content strategy.
+
+Analyze:
+
+- Existing content
+- Content gaps
+- Content opportunities
+- Content clusters
+- Pillar pages
+- Blog opportunities
+- Service page opportunities
+- New page opportunities
+- Content briefs
+- Content optimization
+- Search intent
+- Keyword mapping
+- Content priorities
+
+## Inputs
+
+Provide:
+
+- Initial user configuration
+- SEO Audit findings
+- Keyword Research findings
+- Competitor Analysis findings
+- On-Page SEO findings
+- Existing website content
+- Business objectives
+- Brand voice
+- Target audience
+
+## Execution Instructions
+
+1. Read the complete Content Strategy skill file.
+2. Identify its execution command.
+3. Discover completed upstream outputs.
+4. Select relevant content and SEO findings.
+5. Provide the required inputs.
+6. Execute the skill.
+7. Wait for complete execution.
+8. Do not start another SEO stage.
+9. Validate outputs.
+10. Record the actual output location.
+11. Extract content strategy findings.
+12. Update the execution tracker.
+13. Update the execution log.
+
+## Stage Completion Criteria
+
+Mark COMPLETED only after successful execution and output validation.
+
+Only after successful completion may Step 6 begin.
+
+---
+
+# STEP 6 — TECHNICAL SEO
+
+## Skill
+
+`seo-technical`
+
+## Skill File
+
+`.agents/skills/seo-technical/SKILL.md`
+
+## Execution Command
+
+`$seo-technical`
+
+## Purpose
+
+Analyze the website's technical SEO condition.
+
+Analyze:
+
+- Crawlability
+- Indexability
+- Robots.txt
+- XML Sitemap
+- Canonical URLs
+- Redirects
+- HTTP status codes
+- URL structure
+- Structured data
+- Core Web Vitals
+- Page performance
+- Mobile usability
+- JavaScript rendering
+- Technical SEO errors
+- Website architecture
+
+## Inputs
+
+Provide:
+
+- Initial user configuration
+- SEO Audit findings
+- Keyword Research findings
+- On-Page SEO findings
+- Content Strategy findings
+- Website technical information
+- Relevant website pages
+
+## Execution Instructions
+
+1. Read the complete Technical SEO skill file.
+2. Identify its execution command.
+3. Discover completed upstream outputs.
+4. Identify relevant technical data.
+5. Provide required inputs.
+6. Execute the skill.
+7. Wait for complete execution.
+8. Do not start another SEO stage.
+9. Validate outputs.
+10. Record the actual output location.
+11. Extract technical SEO findings.
+12. Update the execution tracker.
+13. Update the execution log.
+
+## Stage Completion Criteria
+
+Mark COMPLETED only after successful execution and output validation.
+
+Only after successful completion may Step 7 begin.
+
+---
+
+# STEP 7 — OFF-PAGE SEO AND LINK BUILDING
+
+## Skill
+
+`seo-off-page`
+
+## Skill File
+
+`.agents/skills/seo-off-page/SKILL.md`
+
+## Execution Command
+
+`$seo-off-page`
+
+## Purpose
+
+Analyze off-page SEO and authority-building opportunities.
+
+Analyze:
+
+- Backlink profile
+- Competitor backlinks
+- Link gaps
+- Link-building opportunities
+- Brand mentions
+- Digital PR
+- Authority-building opportunities
+- Local citations
+- Off-page SEO risks
+
+## Inputs
+
+Provide:
+
+- Initial user configuration
+- SEO Audit findings
+- Keyword Research findings
+- Competitor Analysis findings
+- Content Strategy findings
+- Website positioning
+- Target audience
+
+## Execution Instructions
+
+1. Read the complete Off-Page SEO skill file.
+2. Identify its execution command.
+3. Discover completed upstream outputs.
+4. Select relevant source data.
+5. Provide required inputs.
+6. Execute the skill.
+7. Wait for complete execution.
+8. Do not start another SEO stage.
+9. Validate outputs.
+10. Record the actual output location.
+11. Extract off-page SEO findings.
+12. Update the execution tracker.
+13. Update the execution log.
+
+## Stage Completion Criteria
+
+Mark COMPLETED only after successful execution and output validation.
+
+Only after successful completion may Step 8 begin.
+
+---
+
+# STEP 8 — SEO MONITORING AND PERFORMANCE TRACKING
+
+## Skill
+
+`seo-monitoring`
+
+## Skill File
+
+`.agents/skills/seo-monitoring/SKILL.md`
+
+## Execution Command
+
+`$seo-monitoring`
+
+## Purpose
+
+Analyze SEO performance, tracking, and monitoring opportunities.
+
+Analyze:
+
+- Organic traffic
+- Search impressions
+- Click-through rate
+- Search rankings
+- Conversions
+- Organic performance
+- Technical SEO regressions
+- KPI tracking
+- Search performance trends
+- Monitoring opportunities
+- Ongoing optimization strategy
+
+## Inputs
+
+Provide:
+
+- Initial user configuration
+- SEO Audit findings
+- Keyword Research findings
+- Competitor Analysis findings
+- On-Page SEO findings
+- Content Strategy findings
+- Technical SEO findings
+- Off-Page SEO findings
+- Available monitoring data
+
+## Execution Instructions
+
+1. Read the complete SEO Monitoring skill file.
+2. Identify its execution command.
+3. Discover completed upstream outputs.
+4. Identify relevant monitoring data.
+5. Provide required inputs.
+6. Execute the skill.
+7. Wait for complete execution.
+8. Do not start another SEO stage.
+9. Validate outputs.
+10. Record the actual output location.
+11. Extract monitoring findings.
+12. Update the execution tracker.
+13. Update the execution log.
+
+## Stage Completion Criteria
+
+Mark COMPLETED only after successful execution and output validation.
+
+Only after successful completion may Step 9 begin.
+
+---
+
+# STEP 9 — FINAL SEO ANALYSIS AND MASTER DEVELOPER PROMPT
+
+## Skill
+
+`seo-final-report`
+
+## Skill File
+
+`.agents/skills/seo-final-report/SKILL.md`
+
+## Execution Command
+
+`$seo-final-report`
+
+## Purpose
+
+Consolidate the outputs of all completed SEO stages into a comprehensive final SEO analysis.
+
+The final stage must generate:
+
+### Deliverable 1
+
+A comprehensive SEO Consolidated Final Report.
+
+### Deliverable 2
+
+A production-ready Master SEO Developer Prompt.
+
+The Master Developer Prompt must instruct an AI coding agent to analyze the website codebase and implement the approved SEO improvements.
+
+## Inputs
+
+Provide:
+
+- Initial user configuration
+- All completed SEO stage output folder paths
+- Execution tracker
+- Execution history
+- Missing data
+- Stage limitations
+- All completed upstream SEO findings
+
+## Execution Instructions
+
+1. Read the complete Final SEO Report skill file.
+2. Identify its execution command.
+3. Discover all completed upstream output directories.
+4. Pass the correct output directory locations.
+5. Pass the initial website configuration.
+6. Pass execution history.
+7. Execute the skill.
+8. Wait for complete execution.
+9. Do not execute any other SEO stage.
+10. Validate all final deliverables.
+11. Verify the consolidated SEO report.
+12. Verify the Master SEO Developer Prompt.
+13. Verify that both files exist.
+14. Verify that both files are non-empty.
+15. Read back the generated files.
+16. Validate the required sections.
+17. Update the execution tracker.
+18. Update the execution log.
+
+## Stage Completion Criteria
+
+Mark COMPLETED only after:
+
+- Final SEO Report is generated.
+- Master SEO Developer Prompt is generated.
+- Both files are verified.
+- Required sections are present.
+- Validation is completed.
+
+---
+
+# 10. STAGE EXECUTION CONTROL
+
+Every SEO stage must follow this exact lifecycle.
+
+## Stage Lifecycle
+
+### 1. PENDING
+
+The stage has not started.
+
+### 2. INITIALIZING
+
+The orchestrator is:
+
+- Reading the skill file.
+- Preparing inputs.
+- Discovering dependencies.
+- Preparing execution context.
+
+### 3. RUNNING
+
+The skill is actively executing.
+
+No other SEO stage may execute during this state.
+
+### 4. VALIDATING
+
+The skill has finished execution.
+
+The orchestrator is:
+
+- Checking generated outputs.
+- Verifying files.
+- Checking required deliverables.
+- Identifying errors.
+- Validating execution.
+
+No other SEO stage may execute during this state.
+
+### 5. COMPLETED
+
+The stage has completed successfully.
+
+Its outputs are valid.
+
+Its execution record has been updated.
+
+The execution lock may be released.
+
+### 6. FAILED
+
+The stage failed.
+
+The failure must be documented.
+
+Dependent stages must not start.
+
+### 7. BLOCKED
+
+The stage cannot execute because a required dependency or input is missing.
+
+Dependent stages must not start.
+
+---
+
+# 11. MANDATORY STAGE EXECUTION LOOP
+
+For every stage:
+
+```text
+1. Confirm the previous stage is COMPLETED.
+2. Confirm the current stage is PENDING.
+3. Acquire the execution lock.
+4. Read the complete skill file.
+5. Identify the actual execution command.
+6. Prepare the required inputs.
+7. Identify relevant upstream outputs.
+8. Execute the current skill.
+9. WAIT for complete execution.
+10. Confirm the skill has stopped running.
+11. Validate the generated outputs.
+12. Record the execution date.
+13. Record the output locations.
+14. Record the validation result.
+15. Update the execution tracker.
+16. Update the execution log.
+17. Mark the stage COMPLETED.
+18. Release the execution lock.
+19. Only now may the next stage begin.
+```
+
+If any step fails:
+
+```text
+1. Stop the current pipeline.
+2. Keep the current stage status as FAILED or BLOCKED.
+3. Record the failure.
+4. Record the error details.
+5. Do not start the next stage.
+6. Report the failure.
+```
+
+---
+
+# 12. CONTEXT INHERITANCE
+
+All downstream stages must inherit the initial user configuration.
+
+Initial user configuration includes:
+
+- Website URL
+- Website domain
+- Business name
+- Frontend technology stack
+- Services offered
+- Seed keywords
+- Target geography
+- Target audience
+- Primary SEO objective
+- Brand voice
+- Competitors
+- Available data sources
+
+Do not ask the user to provide the same information again.
+
+Each stage must also receive relevant completed upstream findings.
+
+However:
+
+Do not blindly pass every file from every previous stage.
+
+Instead:
+
+1. Read the current skill requirements.
+2. Identify required upstream context.
+3. Discover relevant upstream output folders.
+4. Identify relevant reports and datasets.
+5. Pass the required context.
+6. Include execution dates.
+7. Include source locations.
+8. Include limitations.
+
+---
+
+# 13. UPSTREAM OUTPUT DISCOVERY
+
+Each individual skill is responsible for defining its own output directory.
+
+The orchestrator must not hardcode individual stage output directories unless explicitly required by the actual skill instructions.
+
+For every completed stage:
+
+1. Read its skill file.
+2. Identify its output configuration.
+3. Discover its actual output location.
+4. Verify its outputs.
+5. Record the actual output directory.
+6. Pass that directory to relevant downstream stages.
+
+Do not assume all stages use the same execution date.
+
+Do not assume all stages use the same output folder structure.
+
+Do not overwrite previous executions unless explicitly authorized.
+
+---
+
+# 14. SKILL FILE DISCOVERY AND COMMAND VALIDATION
+
+The expected skill names listed in this orchestrator are logical identifiers.
+
+Before executing a stage:
+
+1. Search the actual `.agents/skills/` directory.
+2. Identify the matching skill.
+3. Verify the skill file.
+4. Read the complete file.
+5. Identify the actual execution command.
+6. Confirm the command is compatible with the available AI tool.
+7. Execute the actual skill.
+
+If the skill name or command differs from the expected name:
+
+- Use the actual discovered skill.
+- Record the mapping.
+- Do not invent a command.
+- Do not execute an invalid command.
+
+If the skill does not exist:
+
+- Search for an equivalent skill.
+- Verify its instructions.
+- Do not silently substitute an unrelated skill.
+- Report the missing skill if no valid equivalent exists.
+
+---
+
+# 15. EXECUTION TRACKER
+
+Create:
+
+`outputs/{CURRENT_DATE}/{website-domain}/seo-orchestration/Execution_Tracker.md`
+
+Maintain the tracker throughout the entire workflow.
+
+The tracker must contain:
+
+| Stage | Skill               | Skill File  | Command        | Status | Start Time | End Time    | Output Location | Validation |
+| ----- | ------------------- | ----------- | -------------- | ------ | ---------- | ----------- | --------------- | ---------- |
+| 1     | SEO Audit           | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| 2     | Keyword Research    | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| 3     | Competitor Analysis | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| 4     | On-Page SEO         | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| 5     | Content Strategy    | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| 6     | Technical SEO       | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| 7     | Off-Page SEO        | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| 8     | SEO Monitoring      | Actual path | Actual command | Status | Time       | Actual path | Result          |
+| 9     | Final SEO Report    | Actual path | Actual command | Status | Time       | Actual path | Result          |
+
+Possible statuses:
+
+- PENDING
+- INITIALIZING
+- RUNNING
+- VALIDATING
+- COMPLETED
+- FAILED
+- BLOCKED
+
+The tracker must accurately reflect the actual execution state.
+
+Do not mark a stage COMPLETED before validation.
+
+---
+
+# 16. EXECUTION LOG
+
+Create:
+
+`outputs/{CURRENT_DATE}/{website-domain}/seo-orchestration/Execution_Log.md`
+
+Record:
+
+- Workflow execution ID
+- Website URL
+- Website domain
+- Business name
+- Frontend technology stack
+- Services
+- Seed keywords
+- Target geography
+- Target audience
+- SEO objective
+- Execution mode
+- Execution start date
+- Execution completion date
+- Skills discovered
+- Skill files read
+- Actual commands used
+- Stage execution order
+- Stage start times
+- Stage completion times
+- Output locations
+- Validation results
+- Missing data
+- Errors
+- Warnings
+- Retry attempts
+- Final status
+
+---
+
+# 17. FAILURE HANDLING
+
+If a stage fails:
+
+1. Stop the workflow immediately.
+2. Do not start the next stage.
+3. Record the failure.
+4. Record the error message.
+5. Identify the failure category.
+6. Determine whether a retry is appropriate.
+
+Failure categories:
+
+- Missing skill
+- Invalid command
+- Missing required input
+- Website inaccessible
+- Tool failure
+- API failure
+- Permission failure
+- Output generation failure
+- Validation failure
+- Unexpected execution error
+
+## Retry Policy
+
+A retry may be attempted only when:
+
+- The failure is recoverable.
+- The cause is understood.
+- The retry will not create duplicate or destructive results.
+
+Do not retry indefinitely.
+
+After a reasonable retry attempt:
+
+- Mark the stage FAILED or BLOCKED.
+- Update the tracker.
+- Update the execution log.
+- Stop dependent stages.
+- Notify the user.
+
+Do not silently skip a failed stage.
+
+---
+
+# 18. OPTIONAL DATA AND LIMITATIONS
+
+Missing optional information must not interrupt the workflow unnecessarily.
+
+Examples:
+
+- Google Search Console unavailable
+- Google Analytics unavailable
+- Paid SEO tool unavailable
+- Competitor data unavailable
+- Backlink database unavailable
+- Business address unavailable
+- Business phone unavailable
+- Historical rankings unavailable
+
+When optional data is unavailable:
+
+1. Record the limitation.
+2. Use available evidence.
+3. Avoid fabricated metrics.
+4. Continue if the stage can still execute.
+5. Clearly identify assumptions.
+
+If required information is unavailable and the skill cannot execute:
+
+- Mark the stage BLOCKED.
+- Stop dependent stages.
+
+---
+
+# 19. WORKSPACE AND FILE MANAGEMENT
+
+All orchestration tracking files must be stored within the current SEO workflow project's outputs directory.
+
+Use:
+
+`./outputs/`
+
+Do not redirect outputs to unrelated projects.
+
+Do not save orchestration files outside the current SEO workflow project unless explicitly authorized.
+
+Do not overwrite previous execution reports.
+
+Use the current execution date for orchestration tracking.
+
+The individual SEO skills must determine their own output directories according to their respective instructions.
+
+---
+
+# 20. FINAL ORCHESTRATION SUMMARY
+
+After the complete pipeline has finished, generate:
+
+`outputs/{CURRENT_DATE}/{website-domain}/seo-orchestration/Orchestration_Summary.md`
+
+Include:
+
+## 1. Website Information
+
+- Website URL
+- Website name
+- Domain
+- Business type
+- Technology stack
+- Services
+- Target audience
+- Target geography
+
+## 2. Workflow Execution
+
+- Execution ID
+- Execution date
+- Execution mode
+- Total stages
+- Completed stages
+- Failed stages
+- Blocked stages
+- Skipped stages
+
+## 3. Stage-by-Stage Summary
 
 For each stage:
 
-1. Locate the corresponding skill directory.
-2. Find its skill instruction file, such as `SKILL.md`.
-3. Read the complete skill instructions.
-4. Record the exact resolved file path.
-5. Verify that the prompt and skill belong to the same SEO stage.
-6. Identify any additional reference files required by that skill.
-7. Record missing or inaccessible files as discovery failures.
+- Stage name
+- Skill name
+- Skill file
+- Execution command
+- Status
+- Execution date
+- Actual output location
+- Validation result
 
-Search the actual workspace and available agent skill directories. Do not assume every skill is located in `.agents/skills/`.
+## 4. Major SEO Findings
 
-## 2.3 Execution manifest
+Summarize the most important findings from completed stages.
 
-Create an execution manifest before starting the SEO pipeline.
+## 5. SEO Opportunities
 
-The manifest must include:
+Summarize:
 
-| Step | Stage                      | Prompt file path | Skill file path | Discovery status | Execution status |
-| ---- | -------------------------- | ---------------- | --------------- | ---------------- | ---------------- |
-| 1    | Website SEO Audit          | Verified path    | Verified path   | Pending          | Pending          |
-| 2    | Keyword Research           | Verified path    | Verified path   | Pending          | Pending          |
-| 3    | Competitor Analysis        | Verified path    | Verified path   | Pending          | Pending          |
-| 4    | SEO Strategy & Planning    | Verified path    | Verified path   | Pending          | Pending          |
-| 5    | Technical SEO              | Verified path    | Verified path   | Pending          | Pending          |
-| 6    | On-Page SEO                | Verified path    | Verified path   | Pending          | Pending          |
-| 7    | Content SEO                | Verified path    | Verified path   | Pending          | Pending          |
-| 8    | Off-Page SEO               | Verified path    | Verified path   | Pending          | Pending          |
-| 9    | Local SEO                  | Verified path    | Verified path   | Pending          | Pending          |
-| 10   | Schema & Structured Data   | Verified path    | Verified path   | Pending          | Pending          |
-| 11   | SEO Testing & Validation   | Verified path    | Verified path   | Pending          | Pending          |
-| 12   | SEO Monitoring & Reporting | Verified path    | Verified path   | Pending          | Pending          |
-| 13   | Final SEO Consolidation    | Verified path    | Verified path   | Pending          | Pending          |
+- Keyword opportunities
+- Content opportunities
+- Technical SEO opportunities
+- Competitor opportunities
+- On-page opportunities
+- Off-page opportunities
 
-**Important:**
+## 6. Final Deliverables
 
-- Replace all placeholder path descriptions with actual verified paths.
-- Never display a placeholder as if it were a verified path.
-- If multiple matching files exist, identify the correct one using its content and stage instructions.
-- Do not silently substitute a different skill or prompt.
-- If an essential stage prompt or skill is missing, report the exact missing dependency before starting the pipeline. Do not pretend that stage was executed.
+Identify the actual files generated by each skill.
 
----
+## 7. Master Developer Prompt
 
-# 3. PROJECT CONTEXT AND OUTPUT DIRECTORY MANAGEMENT
+Identify the location of:
 
-## 3.1 Dynamic project context
+`MASTER_SEO_DEVELOPER_PROMPT.md`
 
-Create and maintain a single project context throughout the workflow.
+## 8. Limitations
 
-The project context must contain:
+Document:
 
-- Project name
-- Project slug
-- Target website URL
-- Business / brand name
-- Services and products
-- Frontend technology stack
-- Target keywords
-- Target geography
-- Target audience
-- Source code location
-- Competitor information
-- Relevant findings from completed stages
-- References to all generated reports
+- Missing data
+- Missing skills
+- Failed stages
+- Blocked stages
+- Tool limitations
+- Incomplete analysis
 
-All project-specific information must be dynamic.
+## 9. Recommended Next Action
 
-**NEVER hardcode:**
-
-- Website URLs
-- Website names
-- Brand names
-- Company names
-- Services
-- Target keywords
-- Competitors
-- Target countries or cities
-- Customer personas
-- Technology stacks
-
-Do not reuse context from a different project.
-
-## 3.2 Output directory
-
-Use the established SEO workflow output directory:
-
-`C:\Users\Sanjaikumar\Desktop\straw-hat-devs\seo-orchestration-flow\outputs`
-
-Create or reuse the project-specific parent directory using this convention:
-
-`{PROJECT_SLUG}-{DD-MM-YYYY}`
-
-Example structure:
-
-```text
-outputs/
-└── {PROJECT_SLUG}-{DD-MM-YYYY}/
-    ├── seo-audit/
-    ├── seo-keyword-research/
-    ├── seo-competitor-analysis/
-    ├── seo-strategy-planning/
-    ├── technical-seo-implementation/
-    ├── on-page-seo-implementation/
-    ├── content-seo/
-    ├── off-page-seo/
-    ├── local-seo-implementation/
-    ├── schema-structured-data/
-    ├── seo-testing-validation/
-    ├── seo-monitoring-reporting/
-    └── seo-final-implementation/
-```
-
-Rules:
-
-1. Reuse the existing project/date parent directory if it exists.
-2. Create missing stage directories only when necessary.
-3. Do not create a different project folder for each stage.
-4. Do not include timestamps or time values in folder or report filenames.
-5. Before overwriting an existing report, inspect its contents.
-6. Maintain one final Markdown report per stage.
-7. Do not write reports into unrelated project directories.
-8. Verify the saved file and its contents before marking the stage complete.
-
-Each stage must follow its corresponding report naming convention:
-
-`{PROJECT_SLUG}-{DD-MM-YYYY}-{STAGE_SLUG}-report.md`
-
-Step 13 must save:
-
-`{PROJECT_SLUG}-{DD-MM-YYYY}-seo-final-implementation-report.md`
+Clearly state the next recommended step.
 
 ---
 
-# 4. AUTONOMOUS 13-STAGE EXECUTION PIPELINE
+# 21. FINAL VALIDATION
 
-Execute all stages in the exact order below.
+Before declaring the workflow complete, verify:
 
-```text
-┌──────────────────────────────────────────────────────────────┐
-│            COMPLETE 13-STAGE SEO MASTER PIPELINE             │
-└──────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-                  [0. Initial Project Intake]
-                              │
-                              ▼
-                  [Workflow Discovery]
-                              │
-                              ▼
-                  [Execution Manifest]
-                              │
-                              ▼
-             [1. Website SEO Audit]
-                              │
-                              ▼
-             [2. SEO Keyword Research]
-                              │
-                              ▼
-             [3. SEO Competitor Analysis]
-                              │
-                              ▼
-             [4. SEO Strategy & Planning]
-                              │
-                              ▼
-             [5. Technical SEO Implementation]
-                              │
-                              ▼
-             [6. On-Page SEO Implementation]
-                              │
-                              ▼
-             [7. Content SEO]
-                              │
-                              ▼
-             [8. Off-Page SEO]
-                              │
-                              ▼
-             [9. Local SEO]
-                              │
-                              ▼
-             [10. Schema & Structured Data]
-                              │
-                              ▼
-             [11. SEO Testing & Validation]
-                              │
-                              ▼
-             [12. SEO Monitoring & Reporting]
-                              │
-                              ▼
-             [13. Final SEO Consolidation]
-                              │
-                              ▼
-              [FINAL IMPLEMENTATION BLUEPRINT]
-                              │
-                              ▼
-                 [FINAL VERIFICATION]
-```
+## Initial Configuration
+
+- Required user inputs collected.
+- Website URL validated.
+- Business configuration recorded.
+- Technology stack identified or documented as unknown.
+- Seed keywords recorded.
+- Target geography recorded when available.
+- Target audience recorded when available.
+
+## Project Discovery
+
+- Project root identified.
+- Skills directory discovered.
+- Relevant skill files discovered.
+- Skill files read.
+- Execution commands validated.
+
+## Sequential Execution
+
+- Stage 1 completed before Stage 2 started.
+- Stage 2 completed before Stage 3 started.
+- Stage 3 completed before Stage 4 started.
+- Stage 4 completed before Stage 5 started.
+- Stage 5 completed before Stage 6 started.
+- Stage 6 completed before Stage 7 started.
+- Stage 7 completed before Stage 8 started.
+- Stage 8 completed before Stage 9 started.
+- No stages executed simultaneously.
+- No parallel stage execution occurred.
+- No stage was started before its dependencies completed.
+
+## Output Validation
+
+- Every completed stage has valid outputs.
+- Actual output locations recorded.
+- Execution dates recorded.
+- Outputs are not empty where required.
+- Missing outputs documented.
+- Failed stages documented.
+
+## Final Deliverables
+
+- Final SEO Report exists.
+- Master SEO Developer Prompt exists.
+- Both files are non-empty.
+- Required sections exist.
+- Final report validation completed.
+
+## Orchestration Files
+
+- Execution Tracker exists.
+- Execution Log exists.
+- Orchestration Summary exists.
+- All files are verified.
 
 ---
 
-# 5. STAGE-BY-STAGE EXECUTION INSTRUCTIONS
+# 22. FINAL RESPONSE
 
-For every stage, follow this execution sequence:
+After execution, provide a concise summary.
 
-1. Read the stage's verified prompt file.
-2. Read its corresponding skill file.
-3. Read any required reference files.
-4. Load the initial project context.
-5. Load relevant outputs from completed upstream stages.
-6. Follow the stage prompt and skill instructions completely.
-7. Use the tools specified by that stage.
-8. Perform the required analysis and implementation planning.
-9. Save the stage's final Markdown report.
-10. Verify the report exists and contains the expected content.
-11. Update the execution manifest and workflow state.
-12. Pass the completed findings to the next dependent stage.
-13. Only then begin the next stage.
+Include:
+
+- Website analyzed
+- Execution date
+- Workflow execution status
+- Total stages
+- Completed stages
+- Failed stages
+- Blocked stages
+- Confirmation that execution was strictly sequential
+- Major SEO findings
+- Final SEO Report path
+- Master SEO Developer Prompt path
+- Execution Tracker path
+- Execution Log path
+- Orchestration Summary path
+- Validation status
+- Limitations
+- Recommended next action
+
+Do not claim that a stage was completed if it was not executed.
+
+Do not claim that files were created unless they exist and have been verified.
+
+Do not claim that website implementation has been completed during SEO analysis.
+
+---
+
+# 23. MASTER EXECUTION INSTRUCTION
+
+Execute the complete SEO workflow using the website configuration supplied by the user.
+
+## Initial Phase
+
+1. Collect the required inputs.
+2. Validate the website configuration.
+3. Discover the project.
+4. Discover the SEO skills.
+5. Read the complete skill instructions.
+6. Validate the actual execution commands.
+7. Prepare the execution tracker.
+8. Prepare the execution log.
+
+## Execution Phase
+
+Execute the following stages STRICTLY ONE AT A TIME:
+
+1. SEO Audit
+2. Keyword Research and Mapping
+3. Competitor Analysis
+4. On-Page SEO
+5. Content Strategy and Content Creation
+6. Technical SEO
+7. Off-Page SEO
+8. SEO Monitoring
+9. Final SEO Analysis and Master Developer Prompt Generation
+
+For every stage:
+
+- Read its skill file.
+- Prepare the required inputs.
+- Execute only that stage.
+- Wait until it fully finishes.
+- Validate its outputs.
+- Record the execution status.
+- Update the tracker.
+- Update the log.
+- Release the execution lock.
+- Start the next stage only after successful completion.
+
+## STRICT PROHIBITION
+
+Never execute multiple SEO stages simultaneously.
+
+Never execute stages in parallel.
+
+Never start the next stage while the current stage is running or validating.
 
 Never skip a stage silently.
 
-## STEP 1 — WEBSITE SEO AUDIT
+Never bypass dependency validation.
 
-**Expected prompt identifier:** `website-seo-audit`
+## Final Phase
 
-**Expected skill identifier:** `seo-audit`
+After the final stage:
 
-**Input sources:**
+1. Validate every completed stage.
+2. Validate all final deliverables.
+3. Verify the final SEO report.
+4. Verify the Master SEO Developer Prompt.
+5. Generate the orchestration summary.
+6. Update the execution tracker.
+7. Update the execution log.
+8. Provide the final summary to the user.
 
-- Initial project context.
-- Target website URL.
-- Services and products.
-- Target audience and geography, if available.
-- Target keywords, if supplied.
-
-**Execution:**
-
-1. Audit the website's current SEO condition.
-2. Crawl accessible website pages.
-3. Inspect robots.txt and sitemap.xml.
-4. Analyze indexability, crawlability, HTTPS, canonical tags, redirects, and status codes.
-5. Inspect title tags, meta descriptions, headings, image alt text, and internal linking.
-6. Evaluate mobile responsiveness and Core Web Vitals indicators.
-7. Identify broken links, duplicate content, missing metadata, and technical errors.
-8. Build a discovered URL and page inventory.
-9. Record evidence, findings, severity, and limitations.
-
-**Tools:** Screaming Frog, Google Search Console, Google PageSpeed Insights, Lighthouse, Google Rich Results Test, browser inspection, and suitable open-source alternatives.
-
-**Output:**
-
-`{PROJECT_FOLDER}/seo-audit/{PROJECT_SLUG}-{DATE}-seo-audit-report.md`
-
-**Handoff:** Website baseline, URL inventory, technical issues, and SEO gaps to Steps 2–13.
-
----
-
-## STEP 2 — SEO KEYWORD RESEARCH
-
-**Expected prompt identifier:** `seo-keyword-research`
-
-**Expected skill identifier:** `seo-keyword-research`
-
-**Input sources:**
-
-- Step 1 SEO audit report.
-- Initial project context.
-- Discovered pages and services.
-
-**Execution:**
-
-1. Research seed keywords.
-2. Expand primary, secondary, long-tail, and local keywords.
-3. Identify search intent.
-4. Analyze keyword relevance and search demand where reliable data is available.
-5. Identify question-based and informational queries.
-6. Identify commercial and transactional opportunities.
-7. Map keywords to existing URLs.
-8. Identify keyword cannibalization and content gaps.
-9. Recommend new pages where justified.
-
-**Tools:** Google Keyword Planner, Google Trends, Google Search, Google Search Console, AnswerThePublic, AlsoAsked, and available open-source keyword research tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/seo-keyword-research/{PROJECT_SLUG}-{DATE}-seo-keyword-research-report.md`
-
-**Handoff:** Keyword clusters, search intent, keyword-to-page mapping, and content opportunities to Steps 3, 4, 6, 7, and 9.
-
----
-
-## STEP 3 — SEO COMPETITOR ANALYSIS
-
-**Expected prompt identifier:** `seo-competitor-analysis`
-
-**Expected skill identifier:** `seo-competitor-analysis`
-
-**Input sources:**
-
-- Step 1 SEO audit.
-- Step 2 keyword research.
-- Initial project context.
-
-**Execution:**
-
-1. Identify relevant organic search competitors.
-2. Distinguish direct business competitors from SEO competitors.
-3. Analyze competitor website structure and landing pages.
-4. Compare keyword rankings and content coverage where data is available.
-5. Identify competitor backlink profiles and referring domains.
-6. Analyze competitor content strategies.
-7. Identify keyword gaps and content gaps.
-8. Identify competitor strengths, weaknesses, and opportunities.
-9. Create a competitor comparison report.
-
-**Tools:** Google Search, Ahrefs free tools, Semrush free tools, Moz Link Explorer, Similarweb, Screaming Frog, and available open-source alternatives.
-
-**Output:**
-
-`{PROJECT_FOLDER}/seo-competitor-analysis/{PROJECT_SLUG}-{DATE}-seo-competitor-analysis-report.md`
-
-**Handoff:** Competitor insights, keyword gaps, backlink opportunities, and content opportunities to Steps 4, 7, and 8.
-
----
-
-## STEP 4 — SEO STRATEGY & PLANNING
-
-**Expected prompt identifier:** `seo-strategy-planning`
-
-**Expected skill identifier:** `seo-strategy-planning`
-
-**Input sources:**
-
-- Steps 1–3 reports.
-- Initial project context.
-
-**Execution:**
-
-1. Consolidate the audit, keyword, and competitor findings.
-2. Define SEO objectives.
-3. Define primary and secondary target audiences.
-4. Prioritize target keywords and pages.
-5. Build a page-level SEO strategy.
-6. Define content clusters and topical authority opportunities.
-7. Create a technical SEO improvement roadmap.
-8. Define on-page and off-page priorities.
-9. Define local SEO priorities where relevant.
-10. Create a prioritized implementation roadmap.
-
-**Tools:** Existing stage reports, Google Search, Google Search Console, spreadsheets, and appropriate analysis tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/seo-strategy-planning/{PROJECT_SLUG}-{DATE}-seo-strategy-planning-report.md`
-
-**Handoff:** Prioritized SEO strategy, objectives, implementation roadmap, and page priorities to Steps 5–13.
-
----
-
-## STEP 5 — TECHNICAL SEO IMPLEMENTATION
-
-**Expected prompt identifier:** `technical-seo-implementation`
-
-**Expected skill identifier:** `technical-seo-implementation`
-
-**Input sources:**
-
-- Step 1 audit.
-- Step 4 strategy.
-- Source code, if accessible.
-
-**Execution:**
-
-1. Analyze technical SEO problems.
-2. Inspect robots.txt, sitemap.xml, canonicalization, redirects, and HTTP status codes.
-3. Inspect rendering and indexability.
-4. Analyze performance and Core Web Vitals opportunities.
-5. Identify server configuration and caching issues.
-6. Review mobile usability and responsive behavior.
-7. Provide framework-specific technical implementation recommendations.
-8. Identify exact source files when source code is accessible.
-9. Provide safe code changes or implementation specifications.
-10. Record validation requirements.
-
-**Tools:** Screaming Frog, Google Search Console, PageSpeed Insights, Lighthouse, Chrome DevTools, HTTP inspection tools, schema validators, Git, and available project build/test tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/technical-seo-implementation/{PROJECT_SLUG}-{DATE}-technical-seo-implementation-report.md`
-
-**Handoff:** Technical SEO findings, recommended fixes, verified file paths, and validation instructions to Steps 6, 10, 11, and 13.
-
----
-
-## STEP 6 — ON-PAGE SEO IMPLEMENTATION
-
-**Expected prompt identifier:** `on-page-seo-implementation`
-
-**Expected skill identifier:** `on-page-seo-implementation`
-
-**Input sources:**
-
-- Steps 1–5 reports.
-- Existing page inventory.
-- Keyword-to-page mapping.
-- Source code, if accessible.
-
-**Execution:**
-
-1. Optimize title tags and meta descriptions.
-2. Define H1, H2, and H3 hierarchy.
-3. Optimize URLs where justified.
-4. Improve image alt text.
-5. Recommend internal linking improvements.
-6. Improve page-level keyword relevance.
-7. Identify missing content sections.
-8. Recommend semantic HTML improvements.
-9. Generate page-specific metadata and on-page specifications.
-10. Identify exact source files when possible.
-
-**Tools:** Google Search, Google Search Console, Screaming Frog, Rich Results Test, browser inspection, and source-code tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/on-page-seo-implementation/{PROJECT_SLUG}-{DATE}-on-page-seo-implementation-report.md`
-
-**Handoff:** Page-level optimization specifications to Steps 7, 10, 11, and 13.
-
----
-
-## STEP 7 — CONTENT SEO
-
-**Expected prompt identifier:** `content-seo`
-
-**Expected skill identifier:** `content-seo`
-
-**Input sources:**
-
-- Steps 1–6 reports.
-- Keyword-to-page mapping.
-- Competitor content gaps.
-- SEO strategy.
-
-**Execution:**
-
-1. Analyze existing content quality.
-2. Identify missing or thin content.
-3. Identify content opportunities based on search intent.
-4. Plan service pages, landing pages, blogs, and supporting content.
-5. Create content briefs.
-6. Generate or recommend publication-ready content where requested by the stage prompt.
-7. Optimize headings, keyword placement, semantic relevance, and FAQs.
-8. Identify internal linking opportunities.
-9. Avoid keyword stuffing and duplicate content.
-10. Map every proposed content change to its target URL.
-
-**Tools:** Google Search Console, Google Keyword Planner, Google Trends, Google Search, GA4, AnswerThePublic, AlsoAsked, Screaming Frog, Google Search Central, and appropriate open-source analysis tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/content-seo/{PROJECT_SLUG}-{DATE}-content-seo-report.md`
-
-**Handoff:** Content briefs, replacement copy, new content recommendations, and URL mappings to Steps 9, 10, 11, and 13.
-
----
-
-## STEP 8 — OFF-PAGE SEO
-
-**Expected prompt identifier:** `off-page-seo`
-
-**Expected skill identifier:** `off-page-seo`
-
-**Input sources:**
-
-- Steps 1–7 reports.
-- Competitor backlink findings.
-- Initial business context.
-
-**Execution:**
-
-1. Analyze available backlink data.
-2. Identify referring domain opportunities.
-3. Identify competitor backlink gaps.
-4. Review anchor text distribution where data is available.
-5. Identify potentially harmful or suspicious links without making unsupported claims.
-6. Develop relevant link-building opportunities.
-7. Plan digital PR and brand mention reclamation.
-8. Recommend industry directories and relevant partnerships.
-9. Create a sustainable off-page SEO roadmap.
-
-**Tools:** Ahrefs free tools, Moz Link Explorer, Semrush free tools, Google Search, Bing Webmaster Tools, and appropriate open-source tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/off-page-seo/{PROJECT_SLUG}-{DATE}-off-page-seo-report.md`
-
-**Handoff:** Backlink opportunities, authority-building strategy, and outreach recommendations to Steps 9, 12, and 13.
-
----
-
-## STEP 9 — LOCAL SEO
-
-**Expected prompt identifier:** `local-seo-implementation`
-
-**Expected skill identifier:** `local-seo-implementation`
-
-**Input sources:**
-
-- Initial geography and business information.
-- Steps 1–8 reports.
-- Local keyword mappings.
-- Source code, if accessible.
-
-**Execution:**
-
-1. Determine whether local SEO is relevant to the business.
-2. Audit available Google Business Profile information.
-3. Review business name, address, and phone consistency where information is available.
-4. Analyze local search competitors.
-5. Review local keyword opportunities.
-6. Recommend location-specific landing pages where justified.
-7. Develop local citation and review strategies.
-8. Identify local schema opportunities.
-9. Provide local SEO implementation specifications.
-
-**Tools:** Google Business Profile, Google Maps, Google Search, Google Search Console, Google Keyword Planner, Google Trends, Bing Places, Screaming Frog, and appropriate open-source tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/local-seo-implementation/{PROJECT_SLUG}-{DATE}-local-seo-implementation-report.md`
-
-**Handoff:** Local keyword strategy, business information requirements, location-page recommendations, and local SEO specifications to Steps 10, 11, and 13.
-
----
-
-## STEP 10 — SCHEMA & STRUCTURED DATA IMPLEMENTATION
-
-**Expected prompt identifier:** `schema-structured-data-implementation`
-
-**Expected skill identifier:** `schema-structured-data-implementation`
-
-**Input sources:**
-
-- Steps 1–9 reports.
-- Existing website content.
-- Verified business information.
-- Source code, if accessible.
-
-**Execution:**
-
-1. Audit existing structured data.
-2. Identify missing or invalid schema.
-3. Select appropriate schema types based on actual page content.
-4. Prepare Organization, WebSite, WebPage, Service, BreadcrumbList, Article, and other applicable schemas.
-5. Prepare LocalBusiness schema only when supported by verified business information.
-6. Ensure structured data matches visible website content.
-7. Identify exact files and components for implementation where source code is accessible.
-8. Provide JSON-LD implementation specifications.
-9. Document validation requirements.
-
-**Tools:** Schema.org Validator, Google Rich Results Test, Screaming Frog, Google Search Console, Chrome DevTools, and source-code tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/schema-structured-data/{PROJECT_SLUG}-{DATE}-schema-structured-data-report.md`
-
-**Handoff:** Schema specifications and validation requirements to Steps 11 and 13.
-
----
-
-## STEP 11 — SEO TESTING & VALIDATION
-
-**Expected prompt identifier:** `seo-testing-validation`
-
-**Expected skill identifier:** `seo-testing-validation`
-
-**Input sources:**
-
-- Steps 1–10 reports.
-- Source code, if accessible.
-- Existing implementation evidence.
-
-**Execution:**
-
-1. Validate technical SEO recommendations.
-2. Validate metadata and heading structures.
-3. Validate canonical tags and redirects.
-4. Validate sitemap.xml and robots.txt.
-5. Validate structured data.
-6. Check internal links and broken links.
-7. Review mobile usability and performance.
-8. Validate indexability and rendering.
-9. Run available build, lint, and test commands when source code is accessible.
-10. Separate verified results from recommendations that have not yet been implemented.
-11. Record failures, warnings, and unresolved issues.
-
-**Tools:** Screaming Frog, Google PageSpeed Insights, Lighthouse, Chrome DevTools, Google Search Console, Rich Results Test, Playwright, and available project build/lint/test tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/seo-testing-validation/{PROJECT_SLUG}-{DATE}-seo-testing-validation-report.md`
-
-**Handoff:** Verified issues, test results, unresolved risks, and validation evidence to Steps 12 and 13.
-
----
-
-## STEP 12 — SEO MONITORING & REPORTING
-
-**Expected prompt identifier:** `seo-monitoring-reporting`
-
-**Expected skill identifier:** `seo-monitoring-reporting`
-
-**Input sources:**
-
-- Steps 1–11 reports.
-- Available Google Search Console data.
-- Available GA4 data.
-- Existing SEO performance data.
-
-**Execution:**
-
-1. Define SEO performance KPIs.
-2. Establish an organic traffic monitoring framework.
-3. Define keyword ranking and visibility tracking.
-4. Track impressions, clicks, CTR, and average position when data is available.
-5. Define conversion tracking requirements.
-6. Identify pages requiring ongoing optimization.
-7. Prepare a reporting dashboard specification.
-8. Define weekly and monthly monitoring activities.
-9. Create a future SEO improvement roadmap.
-10. Clearly document unavailable analytics data and measurement limitations.
-
-**Tools:** Google Search Console, Google Analytics 4, Looker Studio, Google PageSpeed Insights, Bing Webmaster Tools, Screaming Frog, Google Trends, and available backlink tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/seo-monitoring-reporting/{PROJECT_SLUG}-{DATE}-seo-monitoring-reporting-report.md`
-
-**Handoff:** KPIs, baseline metrics, reporting specifications, and ongoing SEO roadmap to Step 13.
-
----
-
-## STEP 13 — FINAL SEO CONSOLIDATION & IMPLEMENTATION BLUEPRINT
-
-**Expected prompt identifier:** `final-seo-implementation-prompt`
-
-**Expected skill identifier:** `final-seo-implementation`
-
-**Input sources:**
-
-All reports generated in Steps 1–12.
-
-**Execution:**
-
-1. Read all 12 completed SEO reports.
-2. Consolidate all findings, issues, recommendations, and implementation requirements.
-3. Resolve duplicate recommendations and identify conflicting recommendations.
-4. Prioritize implementation tasks using P1, P2, P3, and P4.
-5. Create a URL-by-URL implementation blueprint.
-6. Specify exact metadata, heading, content, internal linking, and schema changes.
-7. Specify image optimization requirements, including verified image paths, dimensions, compression, and replacement recommendations where evidence exists.
-8. Identify exact source files and components to modify when source code is accessible.
-9. Identify new pages, components, or files that need to be created.
-10. Distinguish verified file paths from proposed file paths.
-11. Generate a ready-to-use production implementation prompt for a coding agent.
-12. Include implementation order, dependencies, acceptance criteria, and testing requirements.
-13. Record unresolved questions and limitations.
-14. Save the complete final SEO implementation report.
-
-**Important restrictions:**
-
-- Do not rerun Steps 1–12.
-- Do not repeat keyword research, competitor research, or the full audit.
-- Do not fabricate metrics, rankings, URLs, file paths, business claims, or image details.
-- Do not modify the website source code in this stage.
-- Use all previous stage reports as the primary evidence.
-- Inspect source code only when necessary to identify exact implementation files.
-- Preserve the distinction between verified facts, recommendations, and assumptions.
-
-**Tools:** Previous stage Markdown reports, available project files, source-code inspection tools, and document analysis tools.
-
-**Output:**
-
-`{PROJECT_FOLDER}/seo-final-implementation/{PROJECT_SLUG}-{DATE}-seo-final-implementation-report.md`
-
-**Final deliverable:** One complete, developer-ready SEO implementation blueprint with a coding-agent prompt.
-
----
-
-# 6. STRICT SEQUENTIAL EXECUTION RULES
-
-The orchestrator must follow these rules throughout the entire workflow.
-
-### Rule 1 — No parallel stage execution
-
-Never start Step N+1 until Step N has been completed, saved, and verified.
-
-### Rule 2 — Read both prompt and skill
-
-Every stage must use its own individual prompt file and corresponding skill file. Do not replace either with a summary or generic SEO knowledge.
-
-### Rule 3 — Context inheritance
-
-Every stage must inherit:
-
-- Initial project information.
-- All relevant upstream findings.
-- Existing verified project details.
-- Previous stage recommendations.
-- Relevant file and URL inventories.
-
-Do not ask the user to repeat existing context.
-
-### Rule 4 — Preserve evidence
-
-Every report must distinguish:
-
-- Verified observations.
-- Tool-derived results.
-- Recommendations.
-- Unverified assumptions.
-- Access limitations.
-- Pending implementation work.
-
-### Rule 5 — Tool execution
-
-Use the tools specified by each individual stage prompt and skill.
-
-Prefer free and open-source tools where possible. Verify access and tool availability before relying on a tool. Do not claim a tool was executed if it was not.
-
-### Rule 6 — Error handling
-
-If a tool fails:
-
-1. Record the failure.
-2. Record its impact.
-3. Try an appropriate available alternative when possible.
-4. Continue with the evidence available.
-5. Do not fabricate results to fill missing information.
-
-### Rule 7 — Report verification
-
-Before proceeding to the next stage:
-
-1. Confirm the report exists.
-2. Confirm it contains the expected sections and findings.
-3. Confirm it belongs to the correct project.
-4. Confirm the output path is correct.
-5. Update the execution manifest.
-
-### Rule 8 — No cross-project contamination
-
-Never use another project's reports, keywords, competitors, website details, or output folders as current project evidence.
-
----
-
-# 7. WORKFLOW STATE MANAGEMENT
-
-Maintain a workflow state file in the current project's output directory.
-
-Suggested file:
-
-`pipeline-state.json`
-
-Track:
-
-- Project identity.
-- Initial input values.
-- Workflow discovery results.
-- Prompt and skill paths.
-- Current stage.
-- Completed stages.
-- Failed stages.
-- Report paths.
-- Tool failures.
-- Execution timestamps in the state file only.
-- Final completion status.
-
-Example state structure:
-
-```json
-{
-  "project": {
-    "name": "DYNAMIC_PROJECT_NAME",
-    "slug": "DYNAMIC_PROJECT_SLUG",
-    "website_url": "DYNAMIC_WEBSITE_URL"
-  },
-  "workflow": {
-    "total_stages": 13,
-    "execution_mode": "STRICT_SEQUENTIAL",
-    "current_stage": 1,
-    "status": "IN_PROGRESS"
-  },
-  "stages": [
-    {
-      "step": 1,
-      "name": "website-seo-audit",
-      "status": "PENDING",
-      "prompt_path": "VERIFIED_PROMPT_PATH",
-      "skill_path": "VERIFIED_SKILL_PATH",
-      "report_path": "EXPECTED_REPORT_PATH"
-    }
-  ]
-}
-```
-
-The example is a structure only. Populate actual project values and verified paths at runtime.
-
-Do not mark a stage as `COMPLETED` until its report has been saved and verified.
-
-If execution is interrupted, inspect the state file and existing reports before resuming. Resume from the first incomplete stage without rerunning verified completed stages unless the user explicitly requests a fresh execution.
-
----
-
-# 8. FINAL VERIFICATION
-
-After Step 13 completes, verify that all 13 stage reports exist.
-
-Expected deliverables:
-
-1. Website SEO Audit Report
-2. SEO Keyword Research Report
-3. SEO Competitor Analysis Report
-4. SEO Strategy & Planning Report
-5. Technical SEO Implementation Report
-6. On-Page SEO Implementation Report
-7. Content SEO Report
-8. Off-Page SEO Report
-9. Local SEO Report
-10. Schema & Structured Data Report
-11. SEO Testing & Validation Report
-12. SEO Monitoring & Reporting Report
-13. Final SEO Implementation Blueprint
-
-Verify:
-
-- All 13 stage reports exist.
-- All reports belong to the correct project.
-- All reports are saved in their respective stage directories.
-- No stage was skipped silently.
-- The execution manifest contains verified prompt and skill paths.
-- The final blueprint references the findings from Steps 1–12.
-- The final coding-agent prompt is included in the Step 13 report.
-- The pipeline state is updated accurately.
-
-Only mark the workflow as `COMPLETED` if all required stages and final verification have succeeded.
-
-If a stage could not complete, mark the workflow as `PARTIALLY_COMPLETED` or `FAILED`, as appropriate, and identify the exact reason.
-
----
-
-# 9. FINAL EXECUTION SUMMARY
-
-After completing the pipeline, display a concise summary:
-
-## SEO Workflow Execution Summary
-
-**Project:** Dynamically retrieved project name
-
-**Website:** Dynamically retrieved website URL
-
-**Execution Mode:** STRICT SEQUENTIAL
-
-**Total Stages:** 13
-
-**Completed Stages:** Actual count
-
-**Failed / Incomplete Stages:** Actual count
-
-**Reports Generated:** Actual count
-
-**Final Blueprint:** Verified report path
-
-**Workflow Status:** Actual status
-
-Also display:
-
-1. The execution manifest location.
-2. The output directory.
-3. Any unavailable tools or access limitations.
-4. Any incomplete tasks.
-5. The final SEO implementation blueprint location.
-
-Do not claim that any report, tool execution, or implementation succeeded without verifying it.
-
----
-
-# FINAL ORCHESTRATOR COMMAND
-
-When this master prompt is invoked:
-
-1. Retrieve the available project context.
-2. Collect only missing required initial inputs.
-3. Discover all 13 individual SEO prompts and their corresponding skills.
-4. Read and verify every discovered prompt and skill.
-5. Create the execution manifest.
-6. Prepare the project-specific output directory.
-7. Execute Steps 1–13 strictly sequentially.
-8. Save and verify each stage report before moving forward.
-9. Maintain context and report handoffs throughout execution.
-10. Generate the final developer-ready implementation blueprint in Step 13.
-11. Verify all deliverables.
-12. Display the final execution summary.
-
-**The objective is to execute the complete 13-stage SEO workflow autonomously, with reliable context inheritance, verified file paths, evidence-based findings, and a final actionable implementation blueprint.**
+The complete workflow must operate as a strictly sequential, dependency-aware, validated SEO automation pipeline from Initial Intake through Final SEO Report and Master Developer Prompt generation.
