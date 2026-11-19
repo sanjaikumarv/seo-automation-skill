@@ -1,6 +1,6 @@
 ---
 name: seo-orchestrator
-description: Coordinate and execute the complete 9-stage end-to-end SEO automation pipeline in strict sequential order.
+description: Collect and validate the full SEO intake, then run all nine SEO stages in strict sequential order.
 ---
 
 # Master SEO Workflow Orchestrator
@@ -83,11 +83,11 @@ This workflow must follow three mandatory phases.
 
 ### Phase A — Initial Intake
 
-Collect and validate the required project information before starting the SEO workflow.
+Apply the intake gate in Sections 4 and 5. Keep every SEO stage pending until the user has supplied or explicitly confirmed every required field for this run.
 
 ### Phase B — Autonomous Sequential Execution
 
-After the initial information has been collected:
+After the intake status is `READY`:
 
 - Execute the SEO stages sequentially.
 - Do not ask unnecessary questions between stages.
@@ -200,204 +200,101 @@ Before starting the workflow, internally establish the following execution rule:
 
 # 4. INITIAL USER INTAKE
 
-When the orchestrator is executed, collect the required information.
+Use this section as the intake contract for all nine stages. Where a shared reference or stage skill uses a different intake default, apply this contract before handing off the validated values.
 
-Do not use hardcoded website values.
+## 4.1 Required user inputs
 
-Do not assume any hardcoded website values or any previously analyzed website.
+| Field                     | Variable          | What the user supplies or confirms                                                                                                                                 |
+| ------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Target website URL        | `WEBSITE_URL`     | The complete public HTTP or HTTPS URL for the website in scope.                                                                                                    |
+| Domain name               | `DOMAIN_NAME`     | The website hostname or domain. The user may explicitly ask you to use the domain from the supplied URL. Confirm any mismatch that changes which site is in scope. |
+| Website name              | `WEBSITE_NAME`    | The public-facing name of the website.                                                                                                                             |
+| Brand name                | `BRAND_NAME`      | The business or brand represented by the site. The user may specify “same as website name” when both names match.                                                  |
+| Target country            | `TARGET_COUNTRY`  | The primary country for this SEO campaign. Accept “Global” or “No single primary country” when the user explicitly chooses that scope.                             |
+| Target audience           | `TARGET_AUDIENCE` | The main buyer, user, industry or other audience the campaign should reach.                                                                                        |
+| Business type             | `BUSINESS_TYPE`   | The business model or category, such as a software consultancy, training provider, SaaS company or retailer.                                                       |
+| Services or offerings     | `SERVICES`        | The primary services, products or solutions in scope. A non-service business can provide its product or offering categories.                                       |
+| Seed keywords             | `SEED_KEYWORDS`   | At least one starting search query. User-supplied queries or an explicitly approved list both qualify.                                                             |
+| Frontend technology stack | `FRONTEND_STACK`  | The known framework or an explicit “Unknown” or “Discover during the audit.” Verify the stack after intake when evidence is available.                             |
 
-Use the website information supplied by the user in the current execution.
+Required fields must be explicit and usable. Blank entries, template examples, placeholder variables and vague answers that leave the target or scope undefined remain unresolved. A URL or domain plus seed keywords alone is insufficient. A website footer, previous report or earlier campaign can help suggest a value. Use a value from that context only after the user explicitly adopts it for this run.
 
-If the user has already provided all required information in the triggering message, do not ask them to provide it again.
+## 4.2 Optional user inputs and system fields
 
----
+| Field                           | Variable             | How to handle it                                                                                                                                                                                                                                         |
+| ------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Target geography                | `TARGET_GEOGRAPHY`   | Ask for any specific local, national or multi-country focus. When omitted, record the confirmed country or global scope and leave any narrower geography unspecified.                                                                                    |
+| Competitors                     | `COMPETITORS`        | Accept known names or URLs. If omitted or unknown, record that and discover search competitors during Stage 3.                                                                                                                                           |
+| Primary SEO objective           | `SEO_OBJECTIVE`      | Ask for the main outcome, such as qualified leads or course sign-ups. If omitted, record it as unspecified.                                                                                                                                              |
+| Brand voice                     | `BRAND_VOICE`        | Ask how the brand should sound. If omitted, use clear, professional prose and record that editorial default.                                                                                                                                             |
+| Project ID                      | `PROJECT_ID`         | Accept an existing ID if the user has one. Keep it distinct from the generated workflow execution ID.                                                                                                                                                    |
+| Available SEO data              | `SEO_DATA_SOURCES`   | Accept existing exports, reports or references to approved connected sources. Ask for the available data, never for credentials.                                                                                                                         |
+| Additional business information | `ADDITIONAL_CONTEXT` | Accept positioning, priorities, exclusions or other context the user wants the workflow to use.                                                                                                                                                          |
+| Current execution date          | `CURRENT_DATE`       | Set automatically to the actual run date in the configured user or project time zone, formatted as `YYYY-MM-DD`. Show it in intake and record it in the execution context. Do not require the user to supply it or use a sample date from an attachment. |
 
-## 4.1 Required Inputs
+## 4.3 Accepted input sources
 
-### 1. Target Website URL
-
-The complete website URL.
-
-Example:
-
-`https://example.com`
-
-### 2. Business / Brand Name
-
-The business or brand name.
-
-Example:
-
-`Example Technologies`
-
-### 3. Frontend Technology Stack
-
-The website's frontend framework or technology stack.
-
-Examples:
-
-- Next.js App Router
-- Next.js Pages Router
-- React + Vite
-- React
-- Astro
-- Vue
-- Nuxt
-- Angular
-- WordPress
-- Shopify
-- Static HTML
-- HTML + CSS + JavaScript
-- Unknown
-
-This information is particularly important for the final Master SEO Developer Prompt.
-
-If the technology stack is unknown, the workflow must attempt to discover it from the website and project source code when available.
-
-Do not fabricate the framework.
-
-### 4. Services Offered
-
-List the primary services, products, solutions, or business offerings.
-
-Example:
-
-- Custom Software Development
-- Website Development
-- Mobile App Development
-- AI Solutions
-- Business Automation
-- Cloud Solutions
-
-### 5. Required Seed Keywords
-
-Provide the primary keywords or search queries that should be included in SEO research.
-
-Examples:
-
-- Custom software development company
-- Web development services
-- Mobile app development company
-- AI development services
-
-The orchestrator must use these as initial seed keywords.
-
-The keyword research skill may expand the keyword set.
+- Accept a chat reply, a completed Markdown brief or a combination of the two. Read each file the user designates as a source before assessing intake completeness.
+- An uploaded orchestrator prompt, blank template or worked example supplies instructions or formatting. It supplies campaign values only where it clearly contains filled-in data for this run.
+- Accept values in prose, lists, YAML front matter or Markdown tables. Map clear labels to the fields above even when the labels differ slightly.
+- Preserve valid values already provided for this run. An explicit correction in the latest user message takes precedence. If two sources still conflict or a file's role is unclear, ask the user to resolve only the affected fields.
+- If an attachment cannot be read, ask for a readable copy or the unresolved fields in chat. Keep the intake open if the remaining evidence does not cover the required fields.
 
 ---
 
-## 4.2 Recommended Inputs
+# 5. INITIAL INTAKE GATE
 
-### 6. Target Geography
+Begin in `AWAITING_INTAKE`. Read the user's message and any supplied intake files, then check every field in Section 4. Report what is present and what still needs input. Mark the intake `READY` only after all required fields are valid, conflicts affecting them are resolved, and the optional-input check below is closed or waived.
 
-Examples:
+## 5.1 What to ask before Stage 1
 
-- Global
-- India
-- India and Worldwide
-- United States
-- United Kingdom
-- Coimbatore, India
-- Chennai, India
+1. **Only the orchestrator or a blank form is supplied.** Ask for the full configuration using the template below. Offer to accept a filled-in Markdown file or a reply in chat.
+2. **Some required fields are missing, unclear or conflicting.** Make one consolidated request. Briefly list the required values already captured, ask only for the unresolved required fields, and invite any optional details in the same message. A suggested value counts only when the user approves it.
+3. **All required fields are valid and optional details are unresolved.** If the user has not already said to proceed with available information or leave optional fields blank, ask once whether the intake is complete or whether they want to add those optional details. Accept “proceed,” “none,” “unknown” or “skip optional fields.” The user does not need to supply optional values.
+4. **The user requested execution and the intake is complete.** Summarize the confirmed scope and begin Stage 1. Explicitly skipped optional fields and statements such as “run with this brief” are sufficient to close the optional check. A complete brief submitted for immediate execution needs no repeat confirmation.
 
-### 7. Target Audience
+While intake is awaiting a response, keep all nine stages pending. Do not crawl, research, execute a stage or generate SEO stage reports. Before marking intake ready, check the URL format and compare its hostname with the supplied domain. If a follow-up still leaves required fields missing, ask only for those remaining fields. Once intake is ready, save the complete configuration with the source or confirmation for each required value, record optional omissions, resolve the execution date, and pass the configuration to every stage. Use the normal failure protocol if a later stage encounters a separate required dependency.
 
-Examples:
+## 5.2 Intake template
 
-- Startups
-- Small businesses
-- Medium-sized businesses
-- Enterprise organizations
-- CTOs
-- Business owners
-- Product managers
-- Specific industries
+Show the whole template when the user supplies no campaign data. For a partial intake, show only the unanswered or conflicting fields and a brief list of the values already captured.
 
----
+```markdown
+## Required for Stage 1
 
-## 4.3 Optional Inputs
+- Target website URL
+- Domain name
+- Website name
+- Brand name
+- Target country
+- Target audience
+- Business type
+- Services or offerings
+- Seed keywords
+- Frontend technology stack (known stack or Unknown)
 
-### 8. Primary SEO Objective
+## Optional
 
-Examples:
+- Target geography (city, region or market scope)
+- Known competitors
+- Primary SEO objective
+- Brand voice
+- Project ID
+- Available SEO data or attached reports
+- Additional business information
 
-- Organic traffic growth
-- Qualified lead generation
-- Service page rankings
-- Local SEO visibility
-- Brand awareness
-- Organic conversions
+## Filled in automatically
 
-### 9. Brand Voice
+- Current execution date (YYYY-MM-DD)
+```
 
-Examples:
-
-- Professional
-- Technical
-- Friendly
-- Enterprise-focused
-- Premium
-- Modern
-
-### 10. Competitors
-
-Provide known competitors, if available.
-
-### 11. Available SEO Data
-
-Examples:
-
-- Google Search Console
-- Google Analytics 4
-- Ahrefs
-- Semrush
-- Screaming Frog
-- PageSpeed Insights
-- Other SEO data
-
-### 12. Additional Business Information
-
-Any additional context that can help the SEO analysis.
-
----
-
-# 5. INITIAL INTAKE BEHAVIOR
-
-If required information is missing, ask the user for the missing required information in a single consolidated intake request.
-
-Do not ask multiple unnecessary questions separately.
-
-Use this template:
-
-## SEO Workflow Configuration
-
-1. **Target Website URL:**
-2. **Business / Brand Name:**
-3. **Frontend Technology Stack:**
-4. **Services Offered:**
-5. **Required Seed Keywords:**
-6. **Target Geography:** (Recommended)
-7. **Target Audience:** (Optional)
-8. **Primary SEO Objective:** (Optional)
-9. **Brand Voice:** (Optional)
-10. **Known Competitors:** (Optional)
-11. **Available SEO Data:** (Optional)
-
-Once the user supplies the required information:
-
-- Validate the configuration.
-- Store it as the execution context.
-- Do not ask the user to repeat the same information.
-- Do not interrupt the workflow for optional missing information.
-- Begin the execution pipeline.
+When requesting input, say explicitly that Stage 1 is pending until the required fields are complete. After intake closes, run the nine stages in order without further optional intake questions.
 
 ---
 
 # 6. ZERO-INTERRUPT RUNTIME
 
-After the initial intake has been completed:
-
-Execute the complete workflow autonomously.
+Once the intake status is `READY`, execute the complete workflow autonomously.
 
 Do not stop between stages to ask the user for confirmation.
 
@@ -548,14 +445,9 @@ Analyze the website's current SEO condition and identify:
 
 Provide:
 
-- Target Website URL
-- Business / Brand Name
-- Services Offered
-- Required Seed Keywords
-- Target Geography
-- Target Audience
-- Primary SEO Objective
-- Frontend Technology Stack, if known
+- Validated intake configuration from Sections 4 and 5, including website URL, domain name, website name, brand name, target country, target audience, business type, services, seed keywords and frontend stack or explicit Unknown.
+- Target geography, primary SEO objective and other optional inputs when supplied.
+- Current execution date.
 
 ## Execution Instructions
 
@@ -1219,7 +1111,7 @@ Dependent stages must not start.
 For every stage:
 
 ```text
-1. Confirm the previous stage is COMPLETED.
+1. For Stage 1, confirm intake is READY. For Stages 2–9, confirm the previous stage is COMPLETED.
 2. Confirm the current stage is PENDING.
 3. Acquire the execution lock.
 4. Read the complete skill file.
@@ -1257,20 +1149,7 @@ If any step fails:
 
 All downstream stages must inherit the initial user configuration.
 
-Initial user configuration includes:
-
-- Website URL
-- Website domain
-- Business name
-- Frontend technology stack
-- Services offered
-- Seed keywords
-- Target geography
-- Target audience
-- Primary SEO objective
-- Brand voice
-- Competitors
-- Available data sources
+The execution context includes the validated website URL, domain name, website name, brand name, target country, target audience, business type, services, seed keywords and frontend stack or explicit Unknown. Include target geography, competitors, SEO objective, brand voice, project ID, available data and additional context when supplied. Pass the actual execution date, required-field sources or confirmations and any optional omissions.
 
 Do not ask the user to provide the same information again.
 
@@ -1393,15 +1272,11 @@ Create:
 Record:
 
 - Workflow execution ID
-- Website URL
-- Website domain
-- Business name
-- Frontend technology stack
-- Services
-- Seed keywords
-- Target geography
-- Target audience
-- SEO objective
+- Website URL, domain name, website name and brand name
+- Target country, target audience and target geography
+- Business type, services, seed keywords and frontend technology stack
+- Competitors, SEO objective, brand voice, project ID and available data when provided
+- Current execution date, intake status, source of each required value and optional omissions
 - Execution mode
 - Execution start date
 - Execution completion date
@@ -1527,14 +1402,10 @@ Include:
 
 ## 1. Website Information
 
-- Website URL
-- Website name
-- Domain
-- Business type
-- Technology stack
-- Services
-- Target audience
-- Target geography
+- Website URL, website name, brand name and domain
+- Business type, technology stack, services and seed keywords
+- Target country, target audience and target geography
+- SEO objective and project ID when supplied
 
 ## 2. Workflow Execution
 
@@ -1608,13 +1479,12 @@ Before declaring the workflow complete, verify:
 
 ## Initial Configuration
 
-- Required user inputs collected.
-- Website URL validated.
-- Business configuration recorded.
-- Technology stack identified or documented as unknown.
-- Seed keywords recorded.
-- Target geography recorded when available.
-- Target audience recorded when available.
+- Intake reached `READY` before Stage 1 began.
+- The user supplied or confirmed the website URL, domain name, website name, brand name, target country, target audience, business type, services, seed keywords and frontend stack or explicit Unknown.
+- The URL and domain were checked together and conflicts affecting scope were resolved.
+- The source or confirmation of each required field was recorded.
+- Optional inputs or omissions were recorded, including target geography, competitors, objective, brand voice, project ID and data sources where available.
+- The actual execution date was recorded in `YYYY-MM-DD` format.
 
 ## Project Discovery
 
@@ -1702,9 +1572,9 @@ Execute the complete SEO workflow using the website configuration supplied by th
 
 ## Initial Phase
 
-1. Collect the required inputs.
-2. Validate the website configuration.
-3. Discover the project.
+1. Read the triggering message and any intake attachments.
+2. Apply Sections 4 and 5. Request any unresolved required values together and keep all stages pending until intake is READY.
+3. Discover the project using the validated intake.
 4. Discover the SEO skills.
 5. Read the complete skill instructions.
 6. Validate the actual execution commands.
